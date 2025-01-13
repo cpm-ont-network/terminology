@@ -9,31 +9,33 @@
 <http://w3id.org/cterm> rdf:type owl:Ontology ;
                          owl:imports <http://w3id.org/ci> ,
                                      <http://w3id.org/cr> ;
+                         <http://purl.org/dc/terms/bibliographicCitation> "" ;
                          <http://purl.org/dc/terms/contributor> _:genid1 ,
                                                                 _:genid3 ;
-                         <http://purl.org/dc/terms/created> "2024-12-12"^^xsd:date ;
+                         <http://purl.org/dc/terms/created> "2024-10-12"^^xsd:date ;
                          <http://purl.org/dc/terms/creator> _:genid5 ,
                                                             _:genid8 ;
                          <http://purl.org/dc/terms/description> "The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management."@en ;
                          <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                         <http://purl.org/dc/terms/modified> "2024-10-22"^^xsd:date ;
-                         <http://purl.org/dc/terms/rights> "Copyright 2024 by DABC, PoliMi" ;
+                         <http://purl.org/dc/terms/modified> "2025-01-13"^^xsd:date ;
+                         <http://purl.org/dc/terms/rights> "Copyright 2025 by DABC, PoliMi" ;
                          <http://purl.org/dc/terms/title> "The Construction Terminology (CTERM) Ontology"@en ;
                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "cterm" ;
                          <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                         owl:versionInfo "0.1" .
+                         owl:versionInfo "0.1" ;
+                         <https://schema.org/schema:codeRepository> <https://github.com/cpm-ont-network/terminology> .
 
 _:genid1 rdf:type <https://schema.org/Person> ;
           <https://schema.org/email> <mailto:claudio.mirarchi@polimi.it> ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-9288-8662> ;
           <https://schema.org/memberOf> _:genid2 ;
-          <https://schema.org/name> "Claudio Mirarchi" .
+          <https://schema.org/name> "Mirarchi, Claudio" .
 
 _:genid3 rdf:type <https://schema.org/Person> ;
           <https://schema.org/email> <mailto:katharina.sigalov@rub.de> ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-3070-0759> ;
           <https://schema.org/memberOf> _:genid4 ;
-          <https://schema.org/name> "Katharina Sigalov" .
+          <https://schema.org/name> "Sigalov, Katharina" .
 
 _:genid5 rdf:type <https://schema.org/Person> ;
           <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> ;
@@ -41,22 +43,22 @@ _:genid5 rdf:type <https://schema.org/Person> ;
           <https://schema.org/memberOf> _:genid6 ,
                                         [ <https://schema.org/name> "Politecnico di Milano"
                                         ] ;
-          <https://schema.org/name> "Philipp Hagedorn" .
+          <https://schema.org/name> "Hagedorn, Philipp" .
 
 _:genid8 rdf:type <https://schema.org/Person> ;
           <https://schema.org/email> <mailto:jacopo.cassandro@polimi.it> ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0001-6058-7614> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-1487-8178> ;
           <https://schema.org/memberOf> _:genid9 ;
-          <https://schema.org/name> "Jacopo Cassandro" .
+          <https://schema.org/name> "Cassandro, Jacopo" .
 
 _:genid2 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/claudio-mirarchi/> ;
-          <https://schema.org/name> "Politecnico di Milano" .
+          <https://schema.org/name> "Politecnico di Milano, Dipartimento ABC" .
 
 _:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/katharina_sigalov.html.en> ;
           <https://schema.org/name> "Ruhr University Bochum" .
 
 _:genid6 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
-          <https://schema.org/name> "Ruhr University Bochum" .
+          <https://schema.org/name> "Ruhr University Bochum, Computing in Engineering" .
 
 _:genid9 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/jacopo-cassandro/> ;
           <https://schema.org/name> "Politecnico di Milano" .
@@ -64,6 +66,10 @@ _:genid9 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/jac
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
@@ -123,6 +129,10 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 
 ###  https://schema.org/name
 <https://schema.org/name> rdf:type owl:AnnotationProperty .
+
+
+###  https://schema.org/schema:codeRepository
+<https://schema.org/schema:codeRepository> rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/cterm#code
@@ -400,8 +410,8 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> rdf:type owl:Class .
+###  http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
 
 
 ###  http://qudt.org/schema/qudt/Unit
@@ -549,7 +559,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Classification
 <https://w3id.org/cterm#Classification> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error4> ,
+                                        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
                                                         owl:Thing ,
                                                         [ rdf:type owl:Restriction ;
                                                           owl:onProperty <https://w3id.org/cterm#hasClassificationSystem> ;
@@ -725,10 +735,6 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cterm#Material> rdf:type owl:Class ;
                                   rdfs:subClassOf <https://w3id.org/cterm#Terminology> ;
                                   rdfs:label "Material" .
-
-
-###  https://w3id.org/cterm#MaterialOfWorkOfTemporaryWork
-<https://w3id.org/cterm#MaterialOfWorkOfTemporaryWork> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cterm#Object
@@ -1052,6 +1058,13 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Individuals
 #################################################################
+
+###  https://schema.org/ConstrutcionSite
+<https://schema.org/ConstrutcionSite> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/cterm#FamilyOfWork> ;
+                                      rdfs:label "Construtcion site"@en ,
+                                                 "Ergotecnica"@it .
+
 
 ###  https://w3id.org/cterm#AboveGround
 <https://w3id.org/cterm#AboveGround> rdf:type owl:NamedIndividual ,
@@ -2757,7 +2770,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#GenericNaturalWood
 <https://w3id.org/cterm#GenericNaturalWood> rdf:type owl:NamedIndividual ,
-                                                     <https://w3id.org/cterm#MaterialOfWorkOfTemporaryWork> ;
+                                                     <https://w3id.org/cterm#Material> ;
                                             rdfs:label "Allgemeines Naturholz"@de ,
                                                        "Generic Natural Wood"@en ,
                                                        "legno naturale generico"@it .
@@ -3505,6 +3518,11 @@ xsd:date rdf:type rdfs:Datatype .
                                                        "movimentazione meccanizzata"@it .
 
 
+###  https://w3id.org/cterm#Mesh
+<https://w3id.org/cterm#Mesh> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/cterm#ObjectOfMaterial> .
+
+
 ###  https://w3id.org/cterm#MetalProp
 <https://w3id.org/cterm#MetalProp> rdf:type owl:NamedIndividual ,
                                             <https://w3id.org/cterm#TypeOfEquipment> ;
@@ -4143,6 +4161,14 @@ xsd:date rdf:type rdfs:Datatype .
                                                     "Vorgeformte Paneele"@de .
 
 
+###  https://w3id.org/cterm#Preparations
+<https://w3id.org/cterm#Preparations> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/cterm#FamilyOfEquipment> ;
+                                      rdfs:label "Apprestamenti"@it ,
+                                                 "Einrichtung"@de ,
+                                                 "Preparations"@en .
+
+
 ###  https://w3id.org/cterm#Pressure
 <https://w3id.org/cterm#Pressure> rdf:type owl:NamedIndividual ,
                                            <https://w3id.org/cterm#PerformanceParameterType> ;
@@ -4174,6 +4200,14 @@ xsd:date rdf:type rdfs:Datatype .
                                              "Products"@en ,
                                              "Produkte"@de ,
                                              "prodotti"@it .
+
+
+###  https://w3id.org/cterm#Prop
+<https://w3id.org/cterm#Prop> rdf:type owl:NamedIndividual ,
+                                       <https://w3id.org/cterm#ObjectOfEquipment> ;
+                              rdfs:label "Prop"@en ,
+                                         "Puntello"@it ,
+                                         "Requisite"@de .
 
 
 ###  https://w3id.org/cterm#Protection
@@ -4255,6 +4289,11 @@ xsd:date rdf:type rdfs:Datatype .
                                      rdfs:label "Realization"@en ,
                                                 "Realizzazione"@it ,
                                                 "Umsetzung"@de .
+
+
+###  https://w3id.org/cterm#Rebar
+<https://w3id.org/cterm#Rebar> rdf:type owl:NamedIndividual ,
+                                        <https://w3id.org/cterm#ObjectOfMaterial> .
 
 
 ###  https://w3id.org/cterm#RebatedEdgePanels
@@ -4394,6 +4433,11 @@ xsd:date rdf:type rdfs:Datatype .
                                                     "ferri d'armatura"@it .
 
 
+###  https://w3id.org/cterm#Reinforcment
+<https://w3id.org/cterm#Reinforcment> rdf:type owl:NamedIndividual ,
+                                               <https://w3id.org/cterm#UseOfMaterial> .
+
+
 ###  https://w3id.org/cterm#Removal
 <https://w3id.org/cterm#Removal> rdf:type owl:NamedIndividual ,
                                           <https://w3id.org/cterm#ObjectOfActivity> ;
@@ -4461,10 +4505,12 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Ribbed
 <https://w3id.org/cterm#Ribbed> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/cterm#FinishingOfMaterial> ,
                                          <https://w3id.org/cterm#TypeOfMaterial> ;
                                 rdfs:label "Gerippt"@de ,
                                            "Ribbed"@en ,
-                                           "nervata"@it .
+                                           "nervata"@it ,
+                                           "Ribbed" .
 
 
 ###  https://w3id.org/cterm#RibbedBars
@@ -4798,12 +4844,12 @@ xsd:date rdf:type rdfs:Datatype .
                                                             "struttura in conglomerato cementizio semplice"@it .
 
 
-###  https://w3id.org/cterm#SiteSetupSystems
-<https://w3id.org/cterm#SiteSetupSystems> rdf:type owl:NamedIndividual ,
-                                                   <https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork> ;
-                                          rdfs:label "Baustelleneinrichtungen"@de ,
-                                                     "Site Setup Systems"@en ,
-                                                     "sistemi di apprestamento di cantiere"@it .
+###  https://w3id.org/cterm#SitePreparationSystems
+<https://w3id.org/cterm#SitePreparationSystems> rdf:type owl:NamedIndividual ,
+                                                         <https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork> ;
+                                                rdfs:label "Baustelleneinrichtungen"@de ,
+                                                           "Site Setup Systems"@en ,
+                                                           "sistemi di apprestamento di cantiere"@it .
 
 
 ###  https://w3id.org/cterm#SixStrands
@@ -5452,6 +5498,22 @@ xsd:date rdf:type rdfs:Datatype .
                                                    "spessore totale"@it .
 
 
+###  https://w3id.org/cterm#TowerCraneRotatingAtTheTop
+<https://w3id.org/cterm#TowerCraneRotatingAtTheTop> rdf:type owl:NamedIndividual ,
+                                                             <https://w3id.org/cterm#TypeOfEquipment> ;
+                                                    rdfs:label "Gru a torre a rotazione in alto"@it ,
+                                                               "Tower crane rotating at the top"@en ,
+                                                               "Turmdrehkran an der Oberseite"@de .
+
+
+###  https://w3id.org/cterm#TowerCranes
+<https://w3id.org/cterm#TowerCranes> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/cterm#ObjectOfEquipment> ;
+                                     rdfs:label "Feste Kräne"@de ,
+                                                "Fixed Cranes"@en ,
+                                                "gru fisse"@it .
+
+
 ###  https://w3id.org/cterm#Traditional
 <https://w3id.org/cterm#Traditional> rdf:type owl:NamedIndividual ,
                                               <https://w3id.org/cterm#TypeOfWorkOfTemporaryWork> ;
@@ -5768,6 +5830,11 @@ xsd:date rdf:type rdfs:Datatype .
                                            "Peso"@it ,
                                            "Weight"@en ,
                                            "peso"@it .
+
+
+###  https://w3id.org/cterm#Welded
+<https://w3id.org/cterm#Welded> rdf:type owl:NamedIndividual ,
+                                         <https://w3id.org/cterm#TypeOfMaterial> .
 
 
 ###  https://w3id.org/cterm#White

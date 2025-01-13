@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/cterm#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://w3id.org/cterm#","name":"The Construction Terminology (CTERM) Ontology", "headline":"Document describing the ontology http://w3id.org/cterm#", "dateReleased":"2024-12-12", "dateModified":"2024-10-22", "version":"0.1", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Philipp Hagedorn"},{"@type":"Person","name":"Jacopo Cassandro"}], "contributor":[{"@type":"Person","name":"Claudio Mirarchi"},{"@type":"Person","name":"Katharina Sigalov"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://w3id.org/cterm#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://w3id.org/cterm#","name":"The Construction Terminology (CTERM) Ontology", "headline":"Document describing the ontology http://w3id.org/cterm#", "dateReleased":"2024-10-12", "dateModified":"2025-01-13", "version":"0.1", "license":"https://creativecommons.org/licenses/by/4.0/", "author":[{"@type":"Person","name":"Hagedorn, Philipp"},{"@type":"Person","name":"Cassandro, Jacopo"}], "contributor":[{"@type":"Person","name":"Mirarchi, Claudio"},{"@type":"Person","name":"Sigalov, Katharina"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -64,27 +64,27 @@ $(function(){
 <body>
 <div class="container">
 <div class="head">
-<div style="float:right">language <a href="index-de.html"><b>de</b></a> <a href="index.html"><b>en</b></a> <a href="index-it.html"><b>it</b></a> </div>
+   <div style="float:right">language <a href="index-de.html"><b>de</b></a> <a href="index.html"><b>en</b></a> <a href="index-it.html"><b>it</b></a> </div>
 <h1>The Construction Terminology (CTERM) Ontology</h1>
-<h2>Release: 2024-12-12</h2>
+<h2>Release: 2024-10-12</h2>
 
 
 <dl>
-<dt>Modified on: 2024-10-22</dt>
+<dt>Modified on: 2025-01-13</dt>
 <dt>Latest version:</dt>
 <dd><a href="http://w3id.org/cterm#">http://w3id.org/cterm#</a></dd>
 <dt>Revision:</dt>
 <dd>0.1</dd>
 <dt>Authors:</dt>
-<dd>Philipp Hagedorn<a href="mailto:philipp.hagedorn-n6v@rub.de">&#9993;</a></dd><dd>Jacopo Cassandro<a href="mailto:jacopo.cassandro@polimi.it">&#9993;</a></dd>
+<dd>Hagedorn, Philipp<a href="mailto:philipp.hagedorn-n6v@rub.de">&#9993;</a></dd><dd>Cassandro, Jacopo<a href="mailto:jacopo.cassandro@polimi.it">&#9993;</a></dd>
 
 <dt>Contributors:</dt>
-<dd>Claudio Mirarchi<a href="mailto:claudio.mirarchi@polimi.it">&#9993;</a></dd><dd>Katharina Sigalov<a href="mailto:katharina.sigalov@rub.de">&#9993;</a></dd>
+<dd>Mirarchi, Claudio<a href="mailto:claudio.mirarchi@polimi.it">&#9993;</a></dd><dd>Sigalov, Katharina<a href="mailto:katharina.sigalov@rub.de">&#9993;</a></dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by/4.0/" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
-<dd>Philipp Hagedorn, Jacopo Cassandro. The Construction Terminology (CTERM) Ontology. Revision: 0.1.</dd>
+<dd>Hagedorn, Philipp, Cassandro, Jacopo. The Construction Terminology (CTERM) Ontology. Revision: 0.1.</dd>
 </dl>
 
 <hr/>
@@ -759,6 +759,9 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/cterm#ConstructionWorkers" title="https://w3id.org/cterm#ConstructionWorkers">Construction Workers</a>
    </li>
    <li>
+      <a href="#https://schema.org/ConstrutcionSite" title="https://schema.org/ConstrutcionSite">Construtcion site</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/cterm#ContaminatedSites" title="https://w3id.org/cterm#ContaminatedSites">Contaminated Sites</a>
    </li>
    <li>
@@ -978,6 +981,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#FixedCranes" title="https://w3id.org/cterm#FixedCranes">Fixed Cranes</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/cterm#TowerCranes" title="https://w3id.org/cterm#TowerCranes">Fixed Cranes</a>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#FixedGoal" title="https://w3id.org/cterm#FixedGoal">Fixed Goal</a>
@@ -1379,6 +1385,11 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/cterm#MechanizedHandling" title="https://w3id.org/cterm#MechanizedHandling">Mechanized Handling</a>
    </li>
    <li>
+      <a href="#https://w3id.org/cterm#Mesh" title="https://w3id.org/cterm#Mesh">
+         <span>Mesh</span>
+      </a>
+   </li>
+   <li>
       <a href="#https://w3id.org/cterm#MetalProp" title="https://w3id.org/cterm#MetalProp">Metal Prop</a>
    </li>
    <li>
@@ -1632,6 +1643,9 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/cterm#PreformedPanels" title="https://w3id.org/cterm#PreformedPanels">Preformed Panels</a>
    </li>
    <li>
+      <a href="#https://w3id.org/cterm#Preparations" title="https://w3id.org/cterm#Preparations">Preparations</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/cterm#Pressure" title="https://w3id.org/cterm#Pressure">Pressure</a>
    </li>
    <li>
@@ -1642,6 +1656,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#Products" title="https://w3id.org/cterm#Products">Products</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/cterm#Prop" title="https://w3id.org/cterm#Prop">Prop</a>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#Protection" title="https://w3id.org/cterm#Protection">Protection</a>
@@ -1672,6 +1689,11 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#Realization" title="https://w3id.org/cterm#Realization">Realization</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/cterm#Rebar" title="https://w3id.org/cterm#Rebar">
+         <span>Rebar</span>
+      </a>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#RebatedEdgePanels" title="https://w3id.org/cterm#RebatedEdgePanels">Rebated Edge Panels</a>
@@ -1729,6 +1751,11 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#ReinforcingBars" title="https://w3id.org/cterm#ReinforcingBars">Reinforcing Bars</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/cterm#Reinforcment" title="https://w3id.org/cterm#Reinforcment">
+         <span>Reinforcment</span>
+      </a>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#Removal" title="https://w3id.org/cterm#Removal">Removal</a>
@@ -1882,7 +1909,7 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/cterm#SimpleConcreteStructure" title="https://w3id.org/cterm#SimpleConcreteStructure">Simple Concrete Structure</a>
    </li>
    <li>
-      <a href="#https://w3id.org/cterm#SiteSetupSystems" title="https://w3id.org/cterm#SiteSetupSystems">Site Setup Systems</a>
+      <a href="#https://w3id.org/cterm#SitePreparationSystems" title="https://w3id.org/cterm#SitePreparationSystems">Site Setup Systems</a>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#Skin" title="https://w3id.org/cterm#Skin">Skin</a>
@@ -2132,6 +2159,10 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/cterm#TotalThickness" title="https://w3id.org/cterm#TotalThickness">Total Thickness</a>
    </li>
    <li>
+      <a href="#https://w3id.org/cterm#TowerCraneRotatingAtTheTop"
+         title="https://w3id.org/cterm#TowerCraneRotatingAtTheTop">Tower crane rotating at the top</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/cterm#Traditional" title="https://w3id.org/cterm#Traditional">Traditional</a>
    </li>
    <li>
@@ -2255,6 +2286,11 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#Weight" title="https://w3id.org/cterm#Weight">Weight</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/cterm#Welded" title="https://w3id.org/cterm#Welded">
+         <span>Welded</span>
+      </a>
    </li>
    <li>
       <a href="#https://w3id.org/cterm#White" title="https://w3id.org/cterm#White">White</a>
@@ -2703,7 +2739,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#ExcavationSystems" title="https://w3id.org/cterm#ExcavationSystems">Excavation Systems</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SiteSetupSystems" title="https://w3id.org/cterm#SiteSetupSystems">Site Setup Systems</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StructuralSystem" title="https://w3id.org/cterm#StructuralSystem">Structural System</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WallSystems" title="https://w3id.org/cterm#WallSystems">Wall Systems</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#ExcavationSystems" title="https://w3id.org/cterm#ExcavationSystems">Excavation Systems</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SitePreparationSystems" title="https://w3id.org/cterm#SitePreparationSystems">Site Setup Systems</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StructuralSystem" title="https://w3id.org/cterm#StructuralSystem">Structural System</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WallSystems" title="https://w3id.org/cterm#WallSystems">Wall Systems</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -2721,7 +2757,7 @@ This section provides details for each class and property defined by The Constru
     has super-classes
    </dt>
    <dd>
-    <a href="http://org.semanticweb.owlapi/error#Error4" target="_blank" title="http://org.semanticweb.owlapi/error#Error4">Error4</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    <a href="http://org.semanticweb.owlapi/error#Error1" target="_blank" title="http://org.semanticweb.owlapi/error#Error1">Error1</a> <sup class="type-c" title="class">c</sup>, <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -2889,7 +2925,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#Handling" title="https://w3id.org/cterm#Handling">Handling</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Semi-FinishedProducts" title="https://w3id.org/cterm#Semi-FinishedProducts">Semi-Finished Products</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Setups" title="https://w3id.org/cterm#Setups">Setups</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#Handling" title="https://w3id.org/cterm#Handling">Handling</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Preparations" title="https://w3id.org/cterm#Preparations">Preparations</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Semi-FinishedProducts" title="https://w3id.org/cterm#Semi-FinishedProducts">Semi-Finished Products</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Setups" title="https://w3id.org/cterm#Setups">Setups</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -2943,7 +2979,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#Architecture" title="https://w3id.org/cterm#Architecture">Architecture</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CivilEngineering" title="https://w3id.org/cterm#CivilEngineering">Civil Engineering</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ElectricalEngineering" title="https://w3id.org/cterm#ElectricalEngineering">Electrical Engineering</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FireSafety" title="https://w3id.org/cterm#FireSafety">Fire Safety</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Furniture" title="https://w3id.org/cterm#Furniture">Furniture</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#HydraulicEngineering" title="https://w3id.org/cterm#HydraulicEngineering">Hydraulic Engineering</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Landscaping" title="https://w3id.org/cterm#Landscaping">Landscaping</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MechanicalEngineering" title="https://w3id.org/cterm#MechanicalEngineering">Mechanical Engineering</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PrefabricatedStructuresInConcrete" title="https://w3id.org/cterm#PrefabricatedStructuresInConcrete">Prefabricated Structures in Concrete</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Soil" title="https://w3id.org/cterm#Soil">Soil</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StructuralEngineering" title="https://w3id.org/cterm#StructuralEngineering">Structural Engineering</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#Architecture" title="https://w3id.org/cterm#Architecture">Architecture</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CivilEngineering" title="https://w3id.org/cterm#CivilEngineering">Civil Engineering</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://schema.org/ConstrutcionSite" title="https://schema.org/ConstrutcionSite">Construtcion site</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ElectricalEngineering" title="https://w3id.org/cterm#ElectricalEngineering">Electrical Engineering</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FireSafety" title="https://w3id.org/cterm#FireSafety">Fire Safety</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Furniture" title="https://w3id.org/cterm#Furniture">Furniture</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#HydraulicEngineering" title="https://w3id.org/cterm#HydraulicEngineering">Hydraulic Engineering</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Landscaping" title="https://w3id.org/cterm#Landscaping">Landscaping</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MechanicalEngineering" title="https://w3id.org/cterm#MechanicalEngineering">Mechanical Engineering</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PrefabricatedStructuresInConcrete" title="https://w3id.org/cterm#PrefabricatedStructuresInConcrete">Prefabricated Structures in Concrete</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Soil" title="https://w3id.org/cterm#Soil">Soil</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StructuralEngineering" title="https://w3id.org/cterm#StructuralEngineering">Structural Engineering</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
    <dt>
     is disjoint with
@@ -2991,7 +3027,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#Bitumen" title="https://w3id.org/cterm#Bitumen">Bitumen</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BlackColor" title="https://w3id.org/cterm#BlackColor">Black Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Blend" title="https://w3id.org/cterm#Blend">Blend</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Coated" title="https://w3id.org/cterm#Coated">Coated</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Galvanized" title="https://w3id.org/cterm#Galvanized">Galvanized</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericBitumen" title="https://w3id.org/cterm#GenericBitumen">Generic Bitumen</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GoldenYellowColor" title="https://w3id.org/cterm#GoldenYellowColor">Golden Yellow Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Granular" title="https://w3id.org/cterm#Granular">Granular</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GrayColor" title="https://w3id.org/cterm#GrayColor">Gray Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Green" title="https://w3id.org/cterm#Green">Green</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MatteBronzeColor" title="https://w3id.org/cterm#MatteBronzeColor">Matte Bronze Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#OliveGrayColor" title="https://w3id.org/cterm#OliveGrayColor">Olive Gray Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#OrangeColor" title="https://w3id.org/cterm#OrangeColor">Orange Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Paint" title="https://w3id.org/cterm#Paint">Paint</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PartiallySubliming" title="https://w3id.org/cterm#PartiallySubliming">Partially Subliming</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PinkColor" title="https://w3id.org/cterm#PinkColor">Pink Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PlasticCoating" title="https://w3id.org/cterm#PlasticCoating">Plastic Coating</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PlasticFilm" title="https://w3id.org/cterm#PlasticFilm">Plastic Film</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Plastic-Coated" title="https://w3id.org/cterm#Plastic-Coated">Plastic-Coated</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyamideMaterial" title="https://w3id.org/cterm#PolyamideMaterial">Polyamide Material</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyethyleneCoatedKraftPaper" title="https://w3id.org/cterm#PolyethyleneCoatedKraftPaper">Polyethylene Coated Kraft Paper</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolymericCoating" title="https://w3id.org/cterm#PolymericCoating">Polymeric Coating</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyurethanePaint" title="https://w3id.org/cterm#PolyurethanePaint">Polyurethane Paint</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Printed" title="https://w3id.org/cterm#Printed">Printed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Red" title="https://w3id.org/cterm#Red">Red</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RefractoryCeramics" title="https://w3id.org/cterm#RefractoryCeramics">Refractory Ceramics</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Rough" title="https://w3id.org/cterm#Rough">Rough</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RoughWithoutSkin" title="https://w3id.org/cterm#RoughWithoutSkin">Rough Without Skin</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Stainless" title="https://w3id.org/cterm#Stainless">Stainless</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WaterRepellent" title="https://w3id.org/cterm#WaterRepellent">Water Repellent</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#White" title="https://w3id.org/cterm#White">White</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WhiteColor" title="https://w3id.org/cterm#WhiteColor">White Color</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#Bitumen" title="https://w3id.org/cterm#Bitumen">Bitumen</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BlackColor" title="https://w3id.org/cterm#BlackColor">Black Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Blend" title="https://w3id.org/cterm#Blend">Blend</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Coated" title="https://w3id.org/cterm#Coated">Coated</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Galvanized" title="https://w3id.org/cterm#Galvanized">Galvanized</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericBitumen" title="https://w3id.org/cterm#GenericBitumen">Generic Bitumen</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GoldenYellowColor" title="https://w3id.org/cterm#GoldenYellowColor">Golden Yellow Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Granular" title="https://w3id.org/cterm#Granular">Granular</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GrayColor" title="https://w3id.org/cterm#GrayColor">Gray Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Green" title="https://w3id.org/cterm#Green">Green</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MatteBronzeColor" title="https://w3id.org/cterm#MatteBronzeColor">Matte Bronze Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#OliveGrayColor" title="https://w3id.org/cterm#OliveGrayColor">Olive Gray Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#OrangeColor" title="https://w3id.org/cterm#OrangeColor">Orange Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Paint" title="https://w3id.org/cterm#Paint">Paint</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PartiallySubliming" title="https://w3id.org/cterm#PartiallySubliming">Partially Subliming</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PinkColor" title="https://w3id.org/cterm#PinkColor">Pink Color</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PlasticCoating" title="https://w3id.org/cterm#PlasticCoating">Plastic Coating</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PlasticFilm" title="https://w3id.org/cterm#PlasticFilm">Plastic Film</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Plastic-Coated" title="https://w3id.org/cterm#Plastic-Coated">Plastic-Coated</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyamideMaterial" title="https://w3id.org/cterm#PolyamideMaterial">Polyamide Material</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyethyleneCoatedKraftPaper" title="https://w3id.org/cterm#PolyethyleneCoatedKraftPaper">Polyethylene Coated Kraft Paper</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolymericCoating" title="https://w3id.org/cterm#PolymericCoating">Polymeric Coating</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyurethanePaint" title="https://w3id.org/cterm#PolyurethanePaint">Polyurethane Paint</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Printed" title="https://w3id.org/cterm#Printed">Printed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Red" title="https://w3id.org/cterm#Red">Red</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RefractoryCeramics" title="https://w3id.org/cterm#RefractoryCeramics">Refractory Ceramics</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Ribbed" title="https://w3id.org/cterm#Ribbed">Ribbed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Rough" title="https://w3id.org/cterm#Rough">Rough</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RoughWithoutSkin" title="https://w3id.org/cterm#RoughWithoutSkin">Rough Without Skin</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Stainless" title="https://w3id.org/cterm#Stainless">Stainless</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WaterRepellent" title="https://w3id.org/cterm#WaterRepellent">Water Repellent</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#White" title="https://w3id.org/cterm#White">White</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WhiteColor" title="https://w3id.org/cterm#WhiteColor">White Color</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -3219,7 +3255,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#AutoclavedAeratedConcrete" title="https://w3id.org/cterm#AutoclavedAeratedConcrete">Autoclaved Aerated Concrete</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CellularGlass" title="https://w3id.org/cterm#CellularGlass">Cellular Glass</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CementitiousCompound" title="https://w3id.org/cterm#CementitiousCompound">Cementitious Compound</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CeramicTerracotta-Brick" title="https://w3id.org/cterm#CeramicTerracotta-Brick">Ceramic Terracotta-Brick</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CorkVegetableFiber" title="https://w3id.org/cterm#CorkVegetableFiber">Cork Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#EPDMRubber" title="https://w3id.org/cterm#EPDMRubber">EPDM Rubber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedClay" title="https://w3id.org/cterm#ExpandedClay">Expanded Clay</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedCorkVegetableFiber" title="https://w3id.org/cterm#ExpandedCorkVegetableFiber">Expanded Cork Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedNaturalRockPerlite" title="https://w3id.org/cterm#ExpandedNaturalRockPerlite">Expanded Natural Rock Perlite</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedNaturalRockVermiculite" title="https://w3id.org/cterm#ExpandedNaturalRockVermiculite">Expanded Natural Rock Vermiculite</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedPolyethylenePlastic" title="https://w3id.org/cterm#ExpandedPolyethylenePlastic">Expanded Polyethylene Plastic</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedPolystyrenePlastic" title="https://w3id.org/cterm#ExpandedPolystyrenePlastic">Expanded Polystyrene Plastic (EPS)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExtrudedPolystyrenePlastic" title="https://w3id.org/cterm#ExtrudedPolystyrenePlastic">Extruded Polystyrene Plastic (XPS)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FerrousAlloySteelB450A" title="https://w3id.org/cterm#FerrousAlloySteelB450A">Ferrous Alloy Steel B450A</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FerrousAlloySteelB450C" title="https://w3id.org/cterm#FerrousAlloySteelB450C">Ferrous Alloy Steel B450C</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericBitumen" title="https://w3id.org/cterm#GenericBitumen">Generic Bitumen</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericCement" title="https://w3id.org/cterm#GenericCement">Generic Cement</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericEngineeredWood" title="https://w3id.org/cterm#GenericEngineeredWood">Generic Engineered Wood</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericFerrousAlloy" title="https://w3id.org/cterm#GenericFerrousAlloy">Generic Ferrous Alloy</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericFerrousAlloySteel" title="https://w3id.org/cterm#GenericFerrousAlloySteel">Generic Ferrous Alloy Steel</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericMaterial" title="https://w3id.org/cterm#GenericMaterial">Generic Material</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericMetal" title="https://w3id.org/cterm#GenericMetal">Generic Metal</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericMineralFiber" title="https://w3id.org/cterm#GenericMineralFiber">Generic Mineral Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericNaturalRock" title="https://w3id.org/cterm#GenericNaturalRock">Generic Natural Rock</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericPlaster" title="https://w3id.org/cterm#GenericPlaster">Generic Plaster</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericRubber" title="https://w3id.org/cterm#GenericRubber">Generic Rubber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GraphiteExpandedPolystyrenePlastic" title="https://w3id.org/cterm#GraphiteExpandedPolystyrenePlastic">Graphite Expanded Polystyrene Plastic (EPS)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#HempVegetableFiber" title="https://w3id.org/cterm#HempVegetableFiber">Hemp Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#HighDensityRockWool" title="https://w3id.org/cterm#HighDensityRockWool">High Density Rock Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#IronMetal" title="https://w3id.org/cterm#IronMetal">Iron Metal</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Lime-SilicaMixMaterial" title="https://w3id.org/cterm#Lime-SilicaMixMaterial">Lime-Silica Mix Material</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralFiberFirWool" title="https://w3id.org/cterm#MineralFiberFirWool">Mineral Fiber Fir Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralFiberGlassWool" title="https://w3id.org/cterm#MineralFiberGlassWool">Mineral Fiber Glass Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralFiberRockWool" title="https://w3id.org/cterm#MineralFiberRockWool">Mineral Fiber Rock Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralFiberWoodWool" title="https://w3id.org/cterm#MineralFiberWoodWool">Mineral Fiber Wood Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralizedWoodVegetableFiber" title="https://w3id.org/cterm#MineralizedWoodVegetableFiber">Mineralized Wood Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#NaturalBlondCorkVegetableFiber" title="https://w3id.org/cterm#NaturalBlondCorkVegetableFiber">Natural Blond Cork Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Non-RelevantGenericMaterial" title="https://w3id.org/cterm#Non-RelevantGenericMaterial">Non-Relevant Generic Material</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyethylenePlastic" title="https://w3id.org/cterm#PolyethylenePlastic">Polyethylene Plastic (PE)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyurethaneFoamPlastic" title="https://w3id.org/cterm#PolyurethaneFoamPlastic">Polyurethane Foam Plastic (PIR)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RubberCompound" title="https://w3id.org/cterm#RubberCompound">Rubber Compound</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SlakedLime" title="https://w3id.org/cterm#SlakedLime">Slaked Lime</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StainlessSteelAlloy" title="https://w3id.org/cterm#StainlessSteelAlloy">Stainless Steel Alloy</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StainlessSteelAlloyAISI304" title="https://w3id.org/cterm#StainlessSteelAlloyAISI304">Stainless Steel Alloy AISI 304</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StainlessSteelAlloyAISI304l" title="https://w3id.org/cterm#StainlessSteelAlloyAISI304l">Stainless Steel Alloy AISI 304l</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StainlessSteelAlloyAISI316L" title="https://w3id.org/cterm#StainlessSteelAlloyAISI316L">Stainless Steel Alloy AISI 316L</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SyntheticAcrylicResin" title="https://w3id.org/cterm#SyntheticAcrylicResin">Synthetic Acrylic Resin</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SyntheticRubber" title="https://w3id.org/cterm#SyntheticRubber">Synthetic Rubber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#VulcanizedRockWool" title="https://w3id.org/cterm#VulcanizedRockWool">Vulcanized Rock Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#VulcanizedRubber" title="https://w3id.org/cterm#VulcanizedRubber">Vulcanized Rubber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WoodVegetableFiber" title="https://w3id.org/cterm#WoodVegetableFiber">Wood Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#AutoclavedAeratedConcrete" title="https://w3id.org/cterm#AutoclavedAeratedConcrete">Autoclaved Aerated Concrete</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CellularGlass" title="https://w3id.org/cterm#CellularGlass">Cellular Glass</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CementitiousCompound" title="https://w3id.org/cterm#CementitiousCompound">Cementitious Compound</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CeramicTerracotta-Brick" title="https://w3id.org/cterm#CeramicTerracotta-Brick">Ceramic Terracotta-Brick</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CorkVegetableFiber" title="https://w3id.org/cterm#CorkVegetableFiber">Cork Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#EPDMRubber" title="https://w3id.org/cterm#EPDMRubber">EPDM Rubber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedClay" title="https://w3id.org/cterm#ExpandedClay">Expanded Clay</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedCorkVegetableFiber" title="https://w3id.org/cterm#ExpandedCorkVegetableFiber">Expanded Cork Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedNaturalRockPerlite" title="https://w3id.org/cterm#ExpandedNaturalRockPerlite">Expanded Natural Rock Perlite</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedNaturalRockVermiculite" title="https://w3id.org/cterm#ExpandedNaturalRockVermiculite">Expanded Natural Rock Vermiculite</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedPolyethylenePlastic" title="https://w3id.org/cterm#ExpandedPolyethylenePlastic">Expanded Polyethylene Plastic</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExpandedPolystyrenePlastic" title="https://w3id.org/cterm#ExpandedPolystyrenePlastic">Expanded Polystyrene Plastic (EPS)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExtrudedPolystyrenePlastic" title="https://w3id.org/cterm#ExtrudedPolystyrenePlastic">Extruded Polystyrene Plastic (XPS)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FerrousAlloySteelB450A" title="https://w3id.org/cterm#FerrousAlloySteelB450A">Ferrous Alloy Steel B450A</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FerrousAlloySteelB450C" title="https://w3id.org/cterm#FerrousAlloySteelB450C">Ferrous Alloy Steel B450C</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericBitumen" title="https://w3id.org/cterm#GenericBitumen">Generic Bitumen</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericCement" title="https://w3id.org/cterm#GenericCement">Generic Cement</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericEngineeredWood" title="https://w3id.org/cterm#GenericEngineeredWood">Generic Engineered Wood</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericFerrousAlloy" title="https://w3id.org/cterm#GenericFerrousAlloy">Generic Ferrous Alloy</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericFerrousAlloySteel" title="https://w3id.org/cterm#GenericFerrousAlloySteel">Generic Ferrous Alloy Steel</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericMaterial" title="https://w3id.org/cterm#GenericMaterial">Generic Material</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericMetal" title="https://w3id.org/cterm#GenericMetal">Generic Metal</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericMineralFiber" title="https://w3id.org/cterm#GenericMineralFiber">Generic Mineral Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericNaturalRock" title="https://w3id.org/cterm#GenericNaturalRock">Generic Natural Rock</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericNaturalWood" title="https://w3id.org/cterm#GenericNaturalWood">Generic Natural Wood</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericPlaster" title="https://w3id.org/cterm#GenericPlaster">Generic Plaster</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericRubber" title="https://w3id.org/cterm#GenericRubber">Generic Rubber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GraphiteExpandedPolystyrenePlastic" title="https://w3id.org/cterm#GraphiteExpandedPolystyrenePlastic">Graphite Expanded Polystyrene Plastic (EPS)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#HempVegetableFiber" title="https://w3id.org/cterm#HempVegetableFiber">Hemp Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#HighDensityRockWool" title="https://w3id.org/cterm#HighDensityRockWool">High Density Rock Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#IronMetal" title="https://w3id.org/cterm#IronMetal">Iron Metal</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Lime-SilicaMixMaterial" title="https://w3id.org/cterm#Lime-SilicaMixMaterial">Lime-Silica Mix Material</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralFiberFirWool" title="https://w3id.org/cterm#MineralFiberFirWool">Mineral Fiber Fir Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralFiberGlassWool" title="https://w3id.org/cterm#MineralFiberGlassWool">Mineral Fiber Glass Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralFiberRockWool" title="https://w3id.org/cterm#MineralFiberRockWool">Mineral Fiber Rock Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralFiberWoodWool" title="https://w3id.org/cterm#MineralFiberWoodWool">Mineral Fiber Wood Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MineralizedWoodVegetableFiber" title="https://w3id.org/cterm#MineralizedWoodVegetableFiber">Mineralized Wood Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#NaturalBlondCorkVegetableFiber" title="https://w3id.org/cterm#NaturalBlondCorkVegetableFiber">Natural Blond Cork Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Non-RelevantGenericMaterial" title="https://w3id.org/cterm#Non-RelevantGenericMaterial">Non-Relevant Generic Material</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyethylenePlastic" title="https://w3id.org/cterm#PolyethylenePlastic">Polyethylene Plastic (PE)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PolyurethaneFoamPlastic" title="https://w3id.org/cterm#PolyurethaneFoamPlastic">Polyurethane Foam Plastic (PIR)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RubberCompound" title="https://w3id.org/cterm#RubberCompound">Rubber Compound</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SlakedLime" title="https://w3id.org/cterm#SlakedLime">Slaked Lime</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StainlessSteelAlloy" title="https://w3id.org/cterm#StainlessSteelAlloy">Stainless Steel Alloy</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StainlessSteelAlloyAISI304" title="https://w3id.org/cterm#StainlessSteelAlloyAISI304">Stainless Steel Alloy AISI 304</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StainlessSteelAlloyAISI304l" title="https://w3id.org/cterm#StainlessSteelAlloyAISI304l">Stainless Steel Alloy AISI 304l</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StainlessSteelAlloyAISI316L" title="https://w3id.org/cterm#StainlessSteelAlloyAISI316L">Stainless Steel Alloy AISI 316L</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SyntheticAcrylicResin" title="https://w3id.org/cterm#SyntheticAcrylicResin">Synthetic Acrylic Resin</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SyntheticRubber" title="https://w3id.org/cterm#SyntheticRubber">Synthetic Rubber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#VulcanizedRockWool" title="https://w3id.org/cterm#VulcanizedRockWool">Vulcanized Rock Wool</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#VulcanizedRubber" title="https://w3id.org/cterm#VulcanizedRubber">Vulcanized Rubber</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WoodVegetableFiber" title="https://w3id.org/cterm#WoodVegetableFiber">Wood Vegetable Fiber</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -3261,7 +3297,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#ConcretePumps" title="https://w3id.org/cterm#ConcretePumps">Concrete Pumps</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ConcreteVibrator" title="https://w3id.org/cterm#ConcreteVibrator">Concrete Vibrator</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FixedCranes" title="https://w3id.org/cterm#FixedCranes">Fixed Cranes</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Formwork" title="https://w3id.org/cterm#Formwork">Formwork</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#ConcretePumps" title="https://w3id.org/cterm#ConcretePumps">Concrete Pumps</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ConcreteVibrator" title="https://w3id.org/cterm#ConcreteVibrator">Concrete Vibrator</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FixedCranes" title="https://w3id.org/cterm#FixedCranes">Fixed Cranes</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#TowerCranes" title="https://w3id.org/cterm#TowerCranes">Fixed Cranes</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Formwork" title="https://w3id.org/cterm#Formwork">Formwork</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Prop" title="https://w3id.org/cterm#Prop">Prop</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -3297,7 +3333,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#Aggregate" title="https://w3id.org/cterm#Aggregate">Aggregate</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Binder" title="https://w3id.org/cterm#Binder">Binder</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Ironware" title="https://w3id.org/cterm#Ironware">Ironware</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Net" title="https://w3id.org/cterm#Net">Net</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Panel" title="https://w3id.org/cterm#Panel">Panel</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ReadyMixture" title="https://w3id.org/cterm#ReadyMixture">Ready Mixture</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#Aggregate" title="https://w3id.org/cterm#Aggregate">Aggregate</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Binder" title="https://w3id.org/cterm#Binder">Binder</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Ironware" title="https://w3id.org/cterm#Ironware">Ironware</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Mesh" title="https://w3id.org/cterm#Mesh">Mesh</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Net" title="https://w3id.org/cterm#Net">Net</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Panel" title="https://w3id.org/cterm#Panel">Panel</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ReadyMixture" title="https://w3id.org/cterm#ReadyMixture">Ready Mixture</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Rebar" title="https://w3id.org/cterm#Rebar">Rebar</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -3669,7 +3705,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#MetalProp" title="https://w3id.org/cterm#MetalProp">Metal Prop</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MobileCrane" title="https://w3id.org/cterm#MobileCrane">Mobile Crane</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ModularFormwork" title="https://w3id.org/cterm#ModularFormwork">Modular Formwork</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Self-ErectingCranewithBottomSlewing" title="https://w3id.org/cterm#Self-ErectingCranewithBottomSlewing">Self-Erecting Crane with Bottom Slewing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Top-SlewingTowerCrane" title="https://w3id.org/cterm#Top-SlewingTowerCrane">Top-Slewing Tower Crane</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#TraditionalWoodenFormwork" title="https://w3id.org/cterm#TraditionalWoodenFormwork">Traditional Wooden Formwork</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#TruckwithCrane" title="https://w3id.org/cterm#TruckwithCrane">Truck with Crane</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Truck-MountedPump" title="https://w3id.org/cterm#Truck-MountedPump">Truck-Mounted Pump</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#MetalProp" title="https://w3id.org/cterm#MetalProp">Metal Prop</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#MobileCrane" title="https://w3id.org/cterm#MobileCrane">Mobile Crane</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ModularFormwork" title="https://w3id.org/cterm#ModularFormwork">Modular Formwork</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Self-ErectingCranewithBottomSlewing" title="https://w3id.org/cterm#Self-ErectingCranewithBottomSlewing">Self-Erecting Crane with Bottom Slewing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Top-SlewingTowerCrane" title="https://w3id.org/cterm#Top-SlewingTowerCrane">Top-Slewing Tower Crane</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#TowerCraneRotatingAtTheTop" title="https://w3id.org/cterm#TowerCraneRotatingAtTheTop">Tower crane rotating at the top</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#TraditionalWoodenFormwork" title="https://w3id.org/cterm#TraditionalWoodenFormwork">Traditional Wooden Formwork</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#TruckwithCrane" title="https://w3id.org/cterm#TruckwithCrane">Truck with Crane</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Truck-MountedPump" title="https://w3id.org/cterm#Truck-MountedPump">Truck-Mounted Pump</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -3705,7 +3741,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#BirdRepellent" title="https://w3id.org/cterm#BirdRepellent">Bird Repellent</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Chemical" title="https://w3id.org/cterm#Chemical">Chemical</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Conglomerate" title="https://w3id.org/cterm#Conglomerate">Conglomerate</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Diwdag" title="https://w3id.org/cterm#Diwdag">Diwdag (Construction Technique)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#DoubleTwist" title="https://w3id.org/cterm#DoubleTwist">Double Twist</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Electrifiable" title="https://w3id.org/cterm#Electrifiable">Electrifiable</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Electro-Welded" title="https://w3id.org/cterm#Electro-Welded">Electro-Welded</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Electroforged" title="https://w3id.org/cterm#Electroforged">Electroforged</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Fixed" title="https://w3id.org/cterm#Fixed">Fixed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ForFootball" title="https://w3id.org/cterm#ForFootball">For Football</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Hydraulic" title="https://w3id.org/cterm#Hydraulic">Hydraulic</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ImprovedAdhesion" title="https://w3id.org/cterm#ImprovedAdhesion">Improved Adhesion</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Insulation" title="https://w3id.org/cterm#Insulation">Insulation</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#LooseMesh" title="https://w3id.org/cterm#LooseMesh">Loose Mesh</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Ribbed" title="https://w3id.org/cterm#Ribbed">Ribbed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Rolling" title="https://w3id.org/cterm#Rolling">Rolling</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Sand" title="https://w3id.org/cterm#Sand">Sand</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Shaped" title="https://w3id.org/cterm#Shaped">Shaped</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Sliding" title="https://w3id.org/cterm#Sliding">Sliding</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Strand" title="https://w3id.org/cterm#Strand">Strand</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Threaded" title="https://w3id.org/cterm#Threaded">Threaded</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Wire" title="https://w3id.org/cterm#Wire">Wire</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#BirdRepellent" title="https://w3id.org/cterm#BirdRepellent">Bird Repellent</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Chemical" title="https://w3id.org/cterm#Chemical">Chemical</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Conglomerate" title="https://w3id.org/cterm#Conglomerate">Conglomerate</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Diwdag" title="https://w3id.org/cterm#Diwdag">Diwdag (Construction Technique)</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#DoubleTwist" title="https://w3id.org/cterm#DoubleTwist">Double Twist</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Electrifiable" title="https://w3id.org/cterm#Electrifiable">Electrifiable</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Electro-Welded" title="https://w3id.org/cterm#Electro-Welded">Electro-Welded</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Electroforged" title="https://w3id.org/cterm#Electroforged">Electroforged</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Fixed" title="https://w3id.org/cterm#Fixed">Fixed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ForFootball" title="https://w3id.org/cterm#ForFootball">For Football</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Hydraulic" title="https://w3id.org/cterm#Hydraulic">Hydraulic</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ImprovedAdhesion" title="https://w3id.org/cterm#ImprovedAdhesion">Improved Adhesion</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Insulation" title="https://w3id.org/cterm#Insulation">Insulation</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#LooseMesh" title="https://w3id.org/cterm#LooseMesh">Loose Mesh</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Ribbed" title="https://w3id.org/cterm#Ribbed">Ribbed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Rolling" title="https://w3id.org/cterm#Rolling">Rolling</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Sand" title="https://w3id.org/cterm#Sand">Sand</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Shaped" title="https://w3id.org/cterm#Shaped">Shaped</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Sliding" title="https://w3id.org/cterm#Sliding">Sliding</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Strand" title="https://w3id.org/cterm#Strand">Strand</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Threaded" title="https://w3id.org/cterm#Threaded">Threaded</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Welded" title="https://w3id.org/cterm#Welded">Welded</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Wire" title="https://w3id.org/cterm#Wire">Wire</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -3909,7 +3945,7 @@ This section provides details for each class and property defined by The Constru
     has members
    </dt>
    <dd>
-    <a href="#https://w3id.org/cterm#Attic" title="https://w3id.org/cterm#Attic">Attic</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BaseLayer" title="https://w3id.org/cterm#BaseLayer">Base Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Bathrooms" title="https://w3id.org/cterm#Bathrooms">Bathrooms</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BikePaths" title="https://w3id.org/cterm#BikePaths">Bike Paths</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BinderLayer" title="https://w3id.org/cterm#BinderLayer">Binder Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BirdRepellentDevice" title="https://w3id.org/cterm#BirdRepellentDevice">Bird Repellent Device</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BituminousMix" title="https://w3id.org/cterm#BituminousMix">Bituminous Mix</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CementitiousCompound" title="https://w3id.org/cterm#CementitiousCompound">Cementitious Compound</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CoatingLayer" title="https://w3id.org/cterm#CoatingLayer">Coating Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CoveringLayers" title="https://w3id.org/cterm#CoveringLayers">Covering Layers</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CrackRepair" title="https://w3id.org/cterm#CrackRepair">Crack Repair</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#DrainingSyntheticLayer" title="https://w3id.org/cterm#DrainingSyntheticLayer">Draining Synthetic Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Draining-NoiseAbsorbingWearingLayer" title="https://w3id.org/cterm#Draining-NoiseAbsorbingWearingLayer">Draining-Noise Absorbing Wearing Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Exterior" title="https://w3id.org/cterm#Exterior">Exterior</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExternalSurfaces" title="https://w3id.org/cterm#ExternalSurfaces">External Surfaces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExternalWalls" title="https://w3id.org/cterm#ExternalWalls">External Walls</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FixedGoal" title="https://w3id.org/cterm#FixedGoal">Fixed Goal</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FlatRoofs" title="https://w3id.org/cterm#FlatRoofs">Flat Roofs</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Floor" title="https://w3id.org/cterm#Floor">Floor</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FloorSlab" title="https://w3id.org/cterm#FloorSlab">Floor Slab</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Flooring" title="https://w3id.org/cterm#Flooring">Flooring</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FloorsOverUnheatedAreas" title="https://w3id.org/cterm#FloorsOverUnheatedAreas">Floors Over Unheated Areas</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FormworkForReinforcedConcreteStructures" title="https://w3id.org/cterm#FormworkForReinforcedConcreteStructures">Formwork For Reinforced Concrete Structures</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FormworkForThermalBridges" title="https://w3id.org/cterm#FormworkForThermalBridges">Formwork For Thermal Bridges</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericStructures" title="https://w3id.org/cterm#GenericStructures">Generic Structures</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Grout" title="https://w3id.org/cterm#Grout">Grout</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#HorizontalSurfaces" title="https://w3id.org/cterm#HorizontalSurfaces">Horizontal Surfaces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Interior" title="https://w3id.org/cterm#Interior">Interior</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#IntermediateFloors" title="https://w3id.org/cterm#IntermediateFloors">Intermediate Floors</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#InternalPartitionWalls" title="https://w3id.org/cterm#InternalPartitionWalls">Internal Partition Walls</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#InternalSurfaces" title="https://w3id.org/cterm#InternalSurfaces">Internal Surfaces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Kitchens" title="https://w3id.org/cterm#Kitchens">Kitchens</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#LightweightConcrete" title="https://w3id.org/cterm#LightweightConcrete">Lightweight Concrete</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Masonry" title="https://w3id.org/cterm#Masonry">Masonry</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PartitionWalls" title="https://w3id.org/cterm#PartitionWalls">Partition Walls</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PartitionWallsWithMetalStructure" title="https://w3id.org/cterm#PartitionWallsWithMetalStructure">Partition Walls With Metal Structure</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Perimeter_PartitionCavities" title="https://w3id.org/cterm#Perimeter_PartitionCavities">Perimeter/Partition Cavities</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PitchedRoofs" title="https://w3id.org/cterm#PitchedRoofs">Pitched Roofs</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PitchedRoofsWithShingles" title="https://w3id.org/cterm#PitchedRoofsWithShingles">Pitched Roofs With Shingles</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PitchedRoofsWithTiles" title="https://w3id.org/cterm#PitchedRoofsWithTiles">Pitched Roofs With Tiles</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Plasterboard" title="https://w3id.org/cterm#Plasterboard">Plasterboard</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PyramidPlayStructure" title="https://w3id.org/cterm#PyramidPlayStructure">Pyramid Play Structure</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RegulationGoal" title="https://w3id.org/cterm#RegulationGoal">Regulation Goal</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ReinforcedConcrete" title="https://w3id.org/cterm#ReinforcedConcrete">Reinforced Concrete</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ReinforcedConcreteStructures" title="https://w3id.org/cterm#ReinforcedConcreteStructures">Reinforced Concrete Structures</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ReinforcingBars" title="https://w3id.org/cterm#ReinforcingBars">Reinforcing Bars</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RetainingWalls" title="https://w3id.org/cterm#RetainingWalls">Retaining Walls</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RoadBarriers" title="https://w3id.org/cterm#RoadBarriers">Road Barriers</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RoadWorks" title="https://w3id.org/cterm#RoadWorks">Road Works</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RockfallBarriers" title="https://w3id.org/cterm#RockfallBarriers">Rockfall Barriers</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Roofing" title="https://w3id.org/cterm#Roofing">Roofing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RubberFlooring" title="https://w3id.org/cterm#RubberFlooring">Rubber Flooring</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Sidewalks" title="https://w3id.org/cterm#Sidewalks">Sidewalks</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SportsFlooring" title="https://w3id.org/cterm#SportsFlooring">Sports Flooring</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StabilizedEarthCarpets" title="https://w3id.org/cterm#StabilizedEarthCarpets">Stabilized Earth Carpets</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SyntheticCompound" title="https://w3id.org/cterm#SyntheticCompound">Synthetic Compound</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#TableTennis" title="https://w3id.org/cterm#TableTennis">Table Tennis</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Terraces" title="https://w3id.org/cterm#Terraces">Terraces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ThermalBridges" title="https://w3id.org/cterm#ThermalBridges">Thermal Bridges</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#VerticalSurfaces" title="https://w3id.org/cterm#VerticalSurfaces">Vertical Surfaces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WallsWithInsulatedPlasterSystem" title="https://w3id.org/cterm#WallsWithInsulatedPlasterSystem">Walls With Insulated Plaster System</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WearingLayer" title="https://w3id.org/cterm#WearingLayer">Wearing Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WindowSills" title="https://w3id.org/cterm#WindowSills">Window Sills</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#https://w3id.org/cterm#Attic" title="https://w3id.org/cterm#Attic">Attic</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BaseLayer" title="https://w3id.org/cterm#BaseLayer">Base Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Bathrooms" title="https://w3id.org/cterm#Bathrooms">Bathrooms</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BikePaths" title="https://w3id.org/cterm#BikePaths">Bike Paths</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BinderLayer" title="https://w3id.org/cterm#BinderLayer">Binder Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BirdRepellentDevice" title="https://w3id.org/cterm#BirdRepellentDevice">Bird Repellent Device</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#BituminousMix" title="https://w3id.org/cterm#BituminousMix">Bituminous Mix</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CementitiousCompound" title="https://w3id.org/cterm#CementitiousCompound">Cementitious Compound</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CoatingLayer" title="https://w3id.org/cterm#CoatingLayer">Coating Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CoveringLayers" title="https://w3id.org/cterm#CoveringLayers">Covering Layers</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#CrackRepair" title="https://w3id.org/cterm#CrackRepair">Crack Repair</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#DrainingSyntheticLayer" title="https://w3id.org/cterm#DrainingSyntheticLayer">Draining Synthetic Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Draining-NoiseAbsorbingWearingLayer" title="https://w3id.org/cterm#Draining-NoiseAbsorbingWearingLayer">Draining-Noise Absorbing Wearing Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Exterior" title="https://w3id.org/cterm#Exterior">Exterior</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExternalSurfaces" title="https://w3id.org/cterm#ExternalSurfaces">External Surfaces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ExternalWalls" title="https://w3id.org/cterm#ExternalWalls">External Walls</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FixedGoal" title="https://w3id.org/cterm#FixedGoal">Fixed Goal</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FlatRoofs" title="https://w3id.org/cterm#FlatRoofs">Flat Roofs</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Floor" title="https://w3id.org/cterm#Floor">Floor</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FloorSlab" title="https://w3id.org/cterm#FloorSlab">Floor Slab</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Flooring" title="https://w3id.org/cterm#Flooring">Flooring</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FloorsOverUnheatedAreas" title="https://w3id.org/cterm#FloorsOverUnheatedAreas">Floors Over Unheated Areas</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FormworkForReinforcedConcreteStructures" title="https://w3id.org/cterm#FormworkForReinforcedConcreteStructures">Formwork For Reinforced Concrete Structures</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#FormworkForThermalBridges" title="https://w3id.org/cterm#FormworkForThermalBridges">Formwork For Thermal Bridges</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#GenericStructures" title="https://w3id.org/cterm#GenericStructures">Generic Structures</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Grout" title="https://w3id.org/cterm#Grout">Grout</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#HorizontalSurfaces" title="https://w3id.org/cterm#HorizontalSurfaces">Horizontal Surfaces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Interior" title="https://w3id.org/cterm#Interior">Interior</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#IntermediateFloors" title="https://w3id.org/cterm#IntermediateFloors">Intermediate Floors</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#InternalPartitionWalls" title="https://w3id.org/cterm#InternalPartitionWalls">Internal Partition Walls</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#InternalSurfaces" title="https://w3id.org/cterm#InternalSurfaces">Internal Surfaces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Kitchens" title="https://w3id.org/cterm#Kitchens">Kitchens</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#LightweightConcrete" title="https://w3id.org/cterm#LightweightConcrete">Lightweight Concrete</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Masonry" title="https://w3id.org/cterm#Masonry">Masonry</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PartitionWalls" title="https://w3id.org/cterm#PartitionWalls">Partition Walls</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PartitionWallsWithMetalStructure" title="https://w3id.org/cterm#PartitionWallsWithMetalStructure">Partition Walls With Metal Structure</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Perimeter_PartitionCavities" title="https://w3id.org/cterm#Perimeter_PartitionCavities">Perimeter/Partition Cavities</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PitchedRoofs" title="https://w3id.org/cterm#PitchedRoofs">Pitched Roofs</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PitchedRoofsWithShingles" title="https://w3id.org/cterm#PitchedRoofsWithShingles">Pitched Roofs With Shingles</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PitchedRoofsWithTiles" title="https://w3id.org/cterm#PitchedRoofsWithTiles">Pitched Roofs With Tiles</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Plasterboard" title="https://w3id.org/cterm#Plasterboard">Plasterboard</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#PyramidPlayStructure" title="https://w3id.org/cterm#PyramidPlayStructure">Pyramid Play Structure</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RegulationGoal" title="https://w3id.org/cterm#RegulationGoal">Regulation Goal</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ReinforcedConcrete" title="https://w3id.org/cterm#ReinforcedConcrete">Reinforced Concrete</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ReinforcedConcreteStructures" title="https://w3id.org/cterm#ReinforcedConcreteStructures">Reinforced Concrete Structures</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ReinforcingBars" title="https://w3id.org/cterm#ReinforcingBars">Reinforcing Bars</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Reinforcment" title="https://w3id.org/cterm#Reinforcment">Reinforcment</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RetainingWalls" title="https://w3id.org/cterm#RetainingWalls">Retaining Walls</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RoadBarriers" title="https://w3id.org/cterm#RoadBarriers">Road Barriers</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RoadWorks" title="https://w3id.org/cterm#RoadWorks">Road Works</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RockfallBarriers" title="https://w3id.org/cterm#RockfallBarriers">Rockfall Barriers</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Roofing" title="https://w3id.org/cterm#Roofing">Roofing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#RubberFlooring" title="https://w3id.org/cterm#RubberFlooring">Rubber Flooring</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Sidewalks" title="https://w3id.org/cterm#Sidewalks">Sidewalks</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SportsFlooring" title="https://w3id.org/cterm#SportsFlooring">Sports Flooring</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#StabilizedEarthCarpets" title="https://w3id.org/cterm#StabilizedEarthCarpets">Stabilized Earth Carpets</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#SyntheticCompound" title="https://w3id.org/cterm#SyntheticCompound">Synthetic Compound</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#TableTennis" title="https://w3id.org/cterm#TableTennis">Table Tennis</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#Terraces" title="https://w3id.org/cterm#Terraces">Terraces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#ThermalBridges" title="https://w3id.org/cterm#ThermalBridges">Thermal Bridges</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#VerticalSurfaces" title="https://w3id.org/cterm#VerticalSurfaces">Vertical Surfaces</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WallsWithInsulatedPlasterSystem" title="https://w3id.org/cterm#WallsWithInsulatedPlasterSystem">Walls With Insulated Plaster System</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WearingLayer" title="https://w3id.org/cterm#WearingLayer">Wearing Layer</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#https://w3id.org/cterm#WindowSills" title="https://w3id.org/cterm#WindowSills">Window Sills</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -4832,6 +4868,7 @@ This section provides details for each class and property defined by The Constru
   <li><a href="#https://w3id.org/cterm#Construction" title="https://w3id.org/cterm#Construction">Construction</a></li>
   <li><a href="#https://w3id.org/cterm#ConstructionSiteFences" title="https://w3id.org/cterm#ConstructionSiteFences">Construction Site Fences</a></li>
   <li><a href="#https://w3id.org/cterm#ConstructionWorkers" title="https://w3id.org/cterm#ConstructionWorkers">Construction Workers</a></li>
+  <li><a href="#https://schema.org/ConstrutcionSite" title="https://schema.org/ConstrutcionSite">Construtcion site</a></li>
   <li><a href="#https://w3id.org/cterm#ContaminatedSites" title="https://w3id.org/cterm#ContaminatedSites">Contaminated Sites</a></li>
   <li><a href="#https://w3id.org/cterm#ContinuousFoundations" title="https://w3id.org/cterm#ContinuousFoundations">Continuous Foundations</a></li>
   <li><a href="#https://w3id.org/cterm#CorkVegetableFiber" title="https://w3id.org/cterm#CorkVegetableFiber">Cork Vegetable Fiber</a></li>
@@ -4903,6 +4940,7 @@ This section provides details for each class and property defined by The Constru
   <li><a href="#https://w3id.org/cterm#FirstCoat" title="https://w3id.org/cterm#FirstCoat">First Coat</a></li>
   <li><a href="#https://w3id.org/cterm#Fixed" title="https://w3id.org/cterm#Fixed">Fixed</a></li>
   <li><a href="#https://w3id.org/cterm#FixedCranes" title="https://w3id.org/cterm#FixedCranes">Fixed Cranes</a></li>
+  <li><a href="#https://w3id.org/cterm#TowerCranes" title="https://w3id.org/cterm#TowerCranes">Fixed Cranes</a></li>
   <li><a href="#https://w3id.org/cterm#FixedGoal" title="https://w3id.org/cterm#FixedGoal">Fixed Goal</a></li>
   <li><a href="#https://w3id.org/cterm#FlatHead" title="https://w3id.org/cterm#FlatHead">Flat Head</a></li>
   <li><a href="#https://w3id.org/cterm#FlatRoof" title="https://w3id.org/cterm#FlatRoof">Flat Roof</a></li>
@@ -5033,6 +5071,7 @@ This section provides details for each class and property defined by The Constru
   <li><a href="#https://w3id.org/cterm#MatteBronzeColor" title="https://w3id.org/cterm#MatteBronzeColor">Matte Bronze Color</a></li>
   <li><a href="#https://w3id.org/cterm#MechanicalEngineering" title="https://w3id.org/cterm#MechanicalEngineering">Mechanical Engineering</a></li>
   <li><a href="#https://w3id.org/cterm#MechanizedHandling" title="https://w3id.org/cterm#MechanizedHandling">Mechanized Handling</a></li>
+  <li><a href="#https://w3id.org/cterm#Mesh" title="https://w3id.org/cterm#Mesh"> <span>Mesh</span> </a></li>
   <li><a href="#https://w3id.org/cterm#MetalProp" title="https://w3id.org/cterm#MetalProp">Metal Prop</a></li>
   <li><a href="#https://w3id.org/cterm#Metalworkers" title="https://w3id.org/cterm#Metalworkers">Metalworkers</a></li>
   <li><a href="#https://w3id.org/cterm#MineralFiberFirWool" title="https://w3id.org/cterm#MineralFiberFirWool">Mineral Fiber Fir Wool</a></li>
@@ -5114,10 +5153,12 @@ This section provides details for each class and property defined by The Constru
   <li><a href="#https://w3id.org/cterm#Prefabricated" title="https://w3id.org/cterm#Prefabricated">Prefabricated</a></li>
   <li><a href="#https://w3id.org/cterm#PrefabricatedStructuresInConcrete" title="https://w3id.org/cterm#PrefabricatedStructuresInConcrete">Prefabricated Structures in Concrete</a></li>
   <li><a href="#https://w3id.org/cterm#PreformedPanels" title="https://w3id.org/cterm#PreformedPanels">Preformed Panels</a></li>
+  <li><a href="#https://w3id.org/cterm#Preparations" title="https://w3id.org/cterm#Preparations">Preparations</a></li>
   <li><a href="#https://w3id.org/cterm#Pressure" title="https://w3id.org/cterm#Pressure">Pressure</a></li>
   <li><a href="#https://w3id.org/cterm#Printed" title="https://w3id.org/cterm#Printed">Printed</a></li>
   <li><a href="#https://w3id.org/cterm#Production" title="https://w3id.org/cterm#Production">Production</a></li>
   <li><a href="#https://w3id.org/cterm#Products" title="https://w3id.org/cterm#Products">Products</a></li>
+  <li><a href="#https://w3id.org/cterm#Prop" title="https://w3id.org/cterm#Prop">Prop</a></li>
   <li><a href="#https://w3id.org/cterm#Protection" title="https://w3id.org/cterm#Protection">Protection</a></li>
   <li><a href="#https://w3id.org/cterm#ProvisionalElements" title="https://w3id.org/cterm#ProvisionalElements">Provisional Elements</a></li>
   <li><a href="#https://w3id.org/cterm#Pultruded" title="https://w3id.org/cterm#Pultruded">Pultruded</a></li>
@@ -5128,6 +5169,7 @@ This section provides details for each class and property defined by The Constru
   <li><a href="#https://w3id.org/cterm#QuiltedMat" title="https://w3id.org/cterm#QuiltedMat">Quilted Mat</a></li>
   <li><a href="#https://w3id.org/cterm#ReadyMixture" title="https://w3id.org/cterm#ReadyMixture">Ready Mixture</a></li>
   <li><a href="#https://w3id.org/cterm#Realization" title="https://w3id.org/cterm#Realization">Realization</a></li>
+  <li><a href="#https://w3id.org/cterm#Rebar" title="https://w3id.org/cterm#Rebar"> <span>Rebar</span> </a></li>
   <li><a href="#https://w3id.org/cterm#RebatedEdgePanels" title="https://w3id.org/cterm#RebatedEdgePanels">Rebated Edge Panels</a></li>
   <li><a href="#https://w3id.org/cterm#Reconstruction" title="https://w3id.org/cterm#Reconstruction">Reconstruction</a></li>
   <li><a href="#https://w3id.org/cterm#RectangularColumns" title="https://w3id.org/cterm#RectangularColumns">Rectangular Columns</a></li>
@@ -5145,6 +5187,7 @@ This section provides details for each class and property defined by The Constru
   <li><a href="#https://w3id.org/cterm#Reinforcement" title="https://w3id.org/cterm#Reinforcement">Reinforcement</a></li>
   <li><a href="#https://w3id.org/cterm#ReinforcementsandStrengthening" title="https://w3id.org/cterm#ReinforcementsandStrengthening">Reinforcements and Strengthening</a></li>
   <li><a href="#https://w3id.org/cterm#ReinforcingBars" title="https://w3id.org/cterm#ReinforcingBars">Reinforcing Bars</a></li>
+  <li><a href="#https://w3id.org/cterm#Reinforcment" title="https://w3id.org/cterm#Reinforcment"> <span>Reinforcment</span> </a></li>
   <li><a href="#https://w3id.org/cterm#Removal" title="https://w3id.org/cterm#Removal">Removal</a></li>
   <li><a href="#https://w3id.org/cterm#Repair" title="https://w3id.org/cterm#Repair">Repair</a></li>
   <li><a href="#https://w3id.org/cterm#Replacement" title="https://w3id.org/cterm#Replacement">Replacement</a></li>
@@ -5195,7 +5238,7 @@ This section provides details for each class and property defined by The Constru
   <li><a href="#https://w3id.org/cterm#SideClosure" title="https://w3id.org/cterm#SideClosure">Side Closure</a></li>
   <li><a href="#https://w3id.org/cterm#Sidewalks" title="https://w3id.org/cterm#Sidewalks">Sidewalks</a></li>
   <li><a href="#https://w3id.org/cterm#SimpleConcreteStructure" title="https://w3id.org/cterm#SimpleConcreteStructure">Simple Concrete Structure</a></li>
-  <li><a href="#https://w3id.org/cterm#SiteSetupSystems" title="https://w3id.org/cterm#SiteSetupSystems">Site Setup Systems</a></li>
+  <li><a href="#https://w3id.org/cterm#SitePreparationSystems" title="https://w3id.org/cterm#SitePreparationSystems">Site Setup Systems</a></li>
   <li><a href="#https://w3id.org/cterm#Skin" title="https://w3id.org/cterm#Skin">Skin</a></li>
   <li><a href="#https://w3id.org/cterm#SlakedLime" title="https://w3id.org/cterm#SlakedLime">Slaked Lime</a></li>
   <li><a href="#https://w3id.org/cterm#Sliding" title="https://w3id.org/cterm#Sliding">Sliding</a></li>
@@ -5274,6 +5317,7 @@ This section provides details for each class and property defined by The Constru
   <li><a href="#https://w3id.org/cterm#TongueAndGroovePanels" title="https://w3id.org/cterm#TongueAndGroovePanels">Tongue And Groove Panels</a></li>
   <li><a href="#https://w3id.org/cterm#Top-SlewingTowerCrane" title="https://w3id.org/cterm#Top-SlewingTowerCrane">Top-Slewing Tower Crane</a></li>
   <li><a href="#https://w3id.org/cterm#TotalThickness" title="https://w3id.org/cterm#TotalThickness">Total Thickness</a></li>
+  <li><a href="#https://w3id.org/cterm#TowerCraneRotatingAtTheTop" title="https://w3id.org/cterm#TowerCraneRotatingAtTheTop">Tower crane rotating at the top</a></li>
   <li><a href="#https://w3id.org/cterm#Traditional" title="https://w3id.org/cterm#Traditional">Traditional</a></li>
   <li><a href="#https://w3id.org/cterm#TraditionalWoodenFormwork" title="https://w3id.org/cterm#TraditionalWoodenFormwork">Traditional Wooden Formwork</a></li>
   <li><a href="#https://w3id.org/cterm#Transport" title="https://w3id.org/cterm#Transport">Transport</a></li>
@@ -5314,6 +5358,7 @@ This section provides details for each class and property defined by The Constru
   <li><a href="#https://w3id.org/cterm#Wear-Resistant" title="https://w3id.org/cterm#Wear-Resistant">Wear-Resistant</a></li>
   <li><a href="#https://w3id.org/cterm#WearingLayer" title="https://w3id.org/cterm#WearingLayer">Wearing Layer</a></li>
   <li><a href="#https://w3id.org/cterm#Weight" title="https://w3id.org/cterm#Weight">Weight</a></li>
+  <li><a href="#https://w3id.org/cterm#Welded" title="https://w3id.org/cterm#Welded"> <span>Welded</span> </a></li>
   <li><a href="#https://w3id.org/cterm#White" title="https://w3id.org/cterm#White">White</a></li>
   <li><a href="#https://w3id.org/cterm#WhiteColor" title="https://w3id.org/cterm#WhiteColor">White Color</a></li>
   <li><a href="#https://w3id.org/cterm#Width" title="https://w3id.org/cterm#Width">Width</a></li>
@@ -6569,6 +6614,18 @@ This section provides details for each class and property defined by The Constru
    </dd>
   </dl>
  </div>
+ <div class="entity" id="https://schema.org/ConstrutcionSite">
+  <h3>Construtcion site<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://schema.org/ConstrutcionSite</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#FamilyOfWork" title="https://w3id.org/cterm#FamilyOfWork">Family of Work</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://w3id.org/cterm#ContaminatedSites">
   <h3>Contaminated Sites<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/cterm#ContaminatedSites</p>
@@ -7425,6 +7482,18 @@ This section provides details for each class and property defined by The Constru
    </dd>
   </dl>
  </div>
+ <div class="entity" id="https://w3id.org/cterm#TowerCranes">
+  <h3>Fixed Cranes<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/cterm#TowerCranes</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#ObjectOfEquipment" title="https://w3id.org/cterm#ObjectOfEquipment">Object of equipment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://w3id.org/cterm#FixedGoal">
   <h3>Fixed Goal<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/cterm#FixedGoal</p>
@@ -7919,7 +7988,7 @@ This section provides details for each class and property defined by The Constru
     belongs to
    </dt>
    <dd>
-    <a href="https://w3id.org/cterm#MaterialOfWorkOfTemporaryWork" target="_blank" title="https://w3id.org/cterm#MaterialOfWorkOfTemporaryWork">Material Of Work Of Temporary Work</a> <sup class="type-c" title="class">c</sup>
+    <a href="#https://w3id.org/cterm#Material" title="https://w3id.org/cterm#Material">Material</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -9030,6 +9099,18 @@ This section provides details for each class and property defined by The Constru
    </dd>
   </dl>
  </div>
+ <div class="entity" id="https://w3id.org/cterm#Mesh">
+  <h3>Mesh<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/cterm#Mesh</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#ObjectOfMaterial" title="https://w3id.org/cterm#ObjectOfMaterial">Object of material</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://w3id.org/cterm#MetalProp">
   <h3>Metal Prop<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/cterm#MetalProp</p>
@@ -10026,6 +10107,18 @@ This section provides details for each class and property defined by The Constru
    </dd>
   </dl>
  </div>
+ <div class="entity" id="https://w3id.org/cterm#Preparations">
+  <h3>Preparations<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/cterm#Preparations</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#FamilyOfEquipment" title="https://w3id.org/cterm#FamilyOfEquipment">Family of equipment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://w3id.org/cterm#Pressure">
   <h3>Pressure<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/cterm#Pressure</p>
@@ -10071,6 +10164,18 @@ This section provides details for each class and property defined by The Constru
    </dt>
    <dd>
     <a href="#https://w3id.org/cterm#CategoryOfMaterial" title="https://w3id.org/cterm#CategoryOfMaterial">Category of material</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/cterm#Prop">
+  <h3>Prop<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/cterm#Prop</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#ObjectOfEquipment" title="https://w3id.org/cterm#ObjectOfEquipment">Object of equipment</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -10194,6 +10299,18 @@ This section provides details for each class and property defined by The Constru
    </dt>
    <dd>
     <a href="#https://w3id.org/cterm#CategoryOfActivity" title="https://w3id.org/cterm#CategoryOfActivity">Category Of Activity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/cterm#Rebar">
+  <h3>Rebar<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/cterm#Rebar</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#ObjectOfMaterial" title="https://w3id.org/cterm#ObjectOfMaterial">Object of material</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -10407,6 +10524,18 @@ This section provides details for each class and property defined by The Constru
    </dd>
   </dl>
  </div>
+ <div class="entity" id="https://w3id.org/cterm#Reinforcment">
+  <h3>Reinforcment<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/cterm#Reinforcment</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#UseOfMaterial" title="https://w3id.org/cterm#UseOfMaterial">Use of material</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://w3id.org/cterm#Removal">
   <h3>Removal<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/cterm#Removal</p>
@@ -10510,6 +10639,9 @@ This section provides details for each class and property defined by The Constru
    <dt>
     belongs to
    </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#FinishingOfMaterial" title="https://w3id.org/cterm#FinishingOfMaterial">Finishing of material</a> <sup class="type-c" title="class">c</sup>
+   </dd>
    <dd>
     <a href="#https://w3id.org/cterm#TypeOfMaterial" title="https://w3id.org/cterm#TypeOfMaterial">Type of material</a> <sup class="type-c" title="class">c</sup>
    </dd>
@@ -11013,9 +11145,9 @@ This section provides details for each class and property defined by The Constru
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://w3id.org/cterm#SiteSetupSystems">
+ <div class="entity" id="https://w3id.org/cterm#SitePreparationSystems">
   <h3>Site Setup Systems<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/cterm#SiteSetupSystems</p>
+  <p><strong>IRI:</strong> https://w3id.org/cterm#SitePreparationSystems</p>
   <dl class="description">
    <dt>
     belongs to
@@ -11973,6 +12105,18 @@ This section provides details for each class and property defined by The Constru
    </dd>
   </dl>
  </div>
+ <div class="entity" id="https://w3id.org/cterm#TowerCraneRotatingAtTheTop">
+  <h3>Tower crane rotating at the top<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/cterm#TowerCraneRotatingAtTheTop</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#TypeOfEquipment" title="https://w3id.org/cterm#TypeOfEquipment">Type of equipment</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="https://w3id.org/cterm#Traditional">
   <h3>Traditional<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/cterm#Traditional</p>
@@ -12459,6 +12603,18 @@ This section provides details for each class and property defined by The Constru
    </dt>
    <dd>
     <a href="#https://w3id.org/cterm#PhysicalParameterType" title="https://w3id.org/cterm#PhysicalParameterType">Physical parameter type</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/cterm#Welded">
+  <h3>Welded<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/cterm#Welded</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/cterm#TypeOfMaterial" title="https://w3id.org/cterm#TypeOfMaterial">Type of material</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>

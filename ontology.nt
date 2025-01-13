@@ -1,50 +1,52 @@
 <http://w3id.org/cterm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://w3id.org/cterm> <http://www.w3.org/2002/07/owl#imports> <http://w3id.org/ci> .
 <http://w3id.org/cterm> <http://www.w3.org/2002/07/owl#imports> <http://w3id.org/cr> .
+<http://w3id.org/cterm> <http://purl.org/dc/terms/bibliographicCitation> "" .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/contributor> _:genid1 .
-_:genid1 <https://schema.org/name> "Claudio Mirarchi" .
+_:genid1 <https://schema.org/name> "Mirarchi, Claudio" .
 _:genid1 <https://schema.org/memberOf> _:genid2 .
-_:genid2 <https://schema.org/name> "Politecnico di Milano" .
+_:genid2 <https://schema.org/name> "Politecnico di Milano, Dipartimento ABC" .
 _:genid2 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/claudio-mirarchi/> .
 _:genid1 <https://schema.org/identifier> <https://orcid.org/0000-0002-9288-8662> .
 _:genid1 <https://schema.org/email> <mailto:claudio.mirarchi@polimi.it> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
 <https://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/contributor> _:genid3 .
-_:genid3 <https://schema.org/name> "Katharina Sigalov" .
+_:genid3 <https://schema.org/name> "Sigalov, Katharina" .
 _:genid3 <https://schema.org/memberOf> _:genid4 .
 _:genid4 <https://schema.org/name> "Ruhr University Bochum" .
 _:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/katharina_sigalov.html.en> .
 _:genid3 <https://schema.org/identifier> <https://orcid.org/0000-0002-3070-0759> .
 _:genid3 <https://schema.org/email> <mailto:katharina.sigalov@rub.de> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
-<http://w3id.org/cterm> <http://purl.org/dc/terms/created> "2024-12-12"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/cterm> <http://purl.org/dc/terms/created> "2024-10-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/creator> _:genid5 .
-_:genid5 <https://schema.org/name> "Philipp Hagedorn" .
+_:genid5 <https://schema.org/name> "Hagedorn, Philipp" .
 _:genid5 <https://schema.org/memberOf> _:genid7 .
 _:genid7 <https://schema.org/name> "Politecnico di Milano" .
 _:genid5 <https://schema.org/memberOf> _:genid6 .
-_:genid6 <https://schema.org/name> "Ruhr University Bochum" .
+_:genid6 <https://schema.org/name> "Ruhr University Bochum, Computing in Engineering" .
 _:genid6 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> .
 _:genid5 <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> .
 _:genid5 <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/creator> _:genid8 .
-_:genid8 <https://schema.org/name> "Jacopo Cassandro" .
+_:genid8 <https://schema.org/name> "Cassandro, Jacopo" .
 _:genid8 <https://schema.org/memberOf> _:genid9 .
 _:genid9 <https://schema.org/name> "Politecnico di Milano" .
 _:genid9 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/jacopo-cassandro/> .
-_:genid8 <https://schema.org/identifier> <https://orcid.org/0000-0001-6058-7614> .
+_:genid8 <https://schema.org/identifier> <https://orcid.org/0000-0002-1487-8178> .
 _:genid8 <https://schema.org/email> <mailto:jacopo.cassandro@polimi.it> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/description> "The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management."@en .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<http://w3id.org/cterm> <http://purl.org/dc/terms/modified> "2024-10-22"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://w3id.org/cterm> <http://purl.org/dc/terms/rights> "Copyright 2024 by DABC, PoliMi" .
+<http://w3id.org/cterm> <http://purl.org/dc/terms/modified> "2025-01-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/cterm> <http://purl.org/dc/terms/rights> "Copyright 2025 by DABC, PoliMi" .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/title> "The Construction Terminology (CTERM) Ontology"@en .
 <http://w3id.org/cterm> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cterm" .
 <http://w3id.org/cterm> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://w3id.org/cterm#> .
 <http://w3id.org/cterm> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
+<http://w3id.org/cterm> <https://schema.org/schema:codeRepository> <https://github.com/cpm-ont-network/terminology> .
 # 
 # 
 # #################################################################
@@ -53,6 +55,9 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # #
 # #################################################################
 # 
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -98,6 +103,9 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://schema.org/name
 <https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/schema:codeRepository
+<https://schema.org/schema:codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://w3id.org/cterm#code
 <https://w3id.org/cterm#code> <http://www.w3.org/2000/01/rdf-schema#label> "code" .
@@ -371,8 +379,8 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # #################################################################
 # 
 # 
-# http://org.semanticweb.owlapi/error#Error4
-<http://org.semanticweb.owlapi/error#Error4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://org.semanticweb.owlapi/error#Error1
+<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://qudt.org/schema/qudt/Unit
 # 
@@ -484,7 +492,7 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://w3id.org/cterm#Classification
 <https://w3id.org/cterm#Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error4> .
+<https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
 <https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
 _:genid10 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#ClassificationSystem> .
@@ -634,9 +642,6 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#Material> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Terminology> .
 <https://w3id.org/cterm#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material" .
-# 
-# https://w3id.org/cterm#MaterialOfWorkOfTemporaryWork
-<https://w3id.org/cterm#MaterialOfWorkOfTemporaryWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/cterm#Object
 <https://w3id.org/cterm#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -927,6 +932,12 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #
 # #################################################################
 # 
+# 
+# https://schema.org/ConstrutcionSite
+<https://schema.org/ConstrutcionSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://schema.org/ConstrutcionSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FamilyOfWork> .
+<https://schema.org/ConstrutcionSite> <http://www.w3.org/2000/01/rdf-schema#label> "Construtcion site"@en .
+<https://schema.org/ConstrutcionSite> <http://www.w3.org/2000/01/rdf-schema#label> "Ergotecnica"@it .
 # 
 # https://w3id.org/cterm#AboveGround
 <https://w3id.org/cterm#AboveGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2423,7 +2434,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#GenericNaturalWood
 <https://w3id.org/cterm#GenericNaturalWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#GenericNaturalWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#MaterialOfWorkOfTemporaryWork> .
+<https://w3id.org/cterm#GenericNaturalWood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#Material> .
 <https://w3id.org/cterm#GenericNaturalWood> <http://www.w3.org/2000/01/rdf-schema#label> "Allgemeines Naturholz"@de .
 <https://w3id.org/cterm#GenericNaturalWood> <http://www.w3.org/2000/01/rdf-schema#label> "Generic Natural Wood"@en .
 <https://w3id.org/cterm#GenericNaturalWood> <http://www.w3.org/2000/01/rdf-schema#label> "legno naturale generico"@it .
@@ -3079,6 +3090,10 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#MechanizedHandling> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanized Handling"@en .
 <https://w3id.org/cterm#MechanizedHandling> <http://www.w3.org/2000/01/rdf-schema#label> "movimentazione meccanizzata"@it .
 # 
+# https://w3id.org/cterm#Mesh
+<https://w3id.org/cterm#Mesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#Mesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ObjectOfMaterial> .
+# 
 # https://w3id.org/cterm#MetalProp
 <https://w3id.org/cterm#MetalProp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#MetalProp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfEquipment> .
@@ -3637,6 +3652,13 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#PreformedPanels> <http://www.w3.org/2000/01/rdf-schema#label> "Preformed Panels"@en .
 <https://w3id.org/cterm#PreformedPanels> <http://www.w3.org/2000/01/rdf-schema#label> "Vorgeformte Paneele"@de .
 # 
+# https://w3id.org/cterm#Preparations
+<https://w3id.org/cterm#Preparations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#Preparations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FamilyOfEquipment> .
+<https://w3id.org/cterm#Preparations> <http://www.w3.org/2000/01/rdf-schema#label> "Apprestamenti"@it .
+<https://w3id.org/cterm#Preparations> <http://www.w3.org/2000/01/rdf-schema#label> "Einrichtung"@de .
+<https://w3id.org/cterm#Preparations> <http://www.w3.org/2000/01/rdf-schema#label> "Preparations"@en .
+# 
 # https://w3id.org/cterm#Pressure
 <https://w3id.org/cterm#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#PerformanceParameterType> .
@@ -3665,6 +3687,13 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Products> <http://www.w3.org/2000/01/rdf-schema#label> "Products"@en .
 <https://w3id.org/cterm#Products> <http://www.w3.org/2000/01/rdf-schema#label> "Produkte"@de .
 <https://w3id.org/cterm#Products> <http://www.w3.org/2000/01/rdf-schema#label> "prodotti"@it .
+# 
+# https://w3id.org/cterm#Prop
+<https://w3id.org/cterm#Prop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#Prop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ObjectOfEquipment> .
+<https://w3id.org/cterm#Prop> <http://www.w3.org/2000/01/rdf-schema#label> "Prop"@en .
+<https://w3id.org/cterm#Prop> <http://www.w3.org/2000/01/rdf-schema#label> "Puntello"@it .
+<https://w3id.org/cterm#Prop> <http://www.w3.org/2000/01/rdf-schema#label> "Requisite"@de .
 # 
 # https://w3id.org/cterm#Protection
 <https://w3id.org/cterm#Protection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3736,6 +3765,10 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Realization> <http://www.w3.org/2000/01/rdf-schema#label> "Realization"@en .
 <https://w3id.org/cterm#Realization> <http://www.w3.org/2000/01/rdf-schema#label> "Realizzazione"@it .
 <https://w3id.org/cterm#Realization> <http://www.w3.org/2000/01/rdf-schema#label> "Umsetzung"@de .
+# 
+# https://w3id.org/cterm#Rebar
+<https://w3id.org/cterm#Rebar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#Rebar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ObjectOfMaterial> .
 # 
 # https://w3id.org/cterm#RebatedEdgePanels
 <https://w3id.org/cterm#RebatedEdgePanels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3857,6 +3890,10 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#ReinforcingBars> <http://www.w3.org/2000/01/rdf-schema#label> "Reinforcing Bars"@en .
 <https://w3id.org/cterm#ReinforcingBars> <http://www.w3.org/2000/01/rdf-schema#label> "ferri d'armatura"@it .
 # 
+# https://w3id.org/cterm#Reinforcment
+<https://w3id.org/cterm#Reinforcment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#Reinforcment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#UseOfMaterial> .
+# 
 # https://w3id.org/cterm#Removal
 <https://w3id.org/cterm#Removal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Removal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ObjectOfActivity> .
@@ -3916,10 +3953,12 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Ribbed
 <https://w3id.org/cterm#Ribbed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#Ribbed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FinishingOfMaterial> .
 <https://w3id.org/cterm#Ribbed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfMaterial> .
 <https://w3id.org/cterm#Ribbed> <http://www.w3.org/2000/01/rdf-schema#label> "Gerippt"@de .
 <https://w3id.org/cterm#Ribbed> <http://www.w3.org/2000/01/rdf-schema#label> "Ribbed"@en .
 <https://w3id.org/cterm#Ribbed> <http://www.w3.org/2000/01/rdf-schema#label> "nervata"@it .
+<https://w3id.org/cterm#Ribbed> <http://www.w3.org/2000/01/rdf-schema#label> "Ribbed" .
 # 
 # https://w3id.org/cterm#RibbedBars
 <https://w3id.org/cterm#RibbedBars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -4211,12 +4250,12 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#SimpleConcreteStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Simple Concrete Structure"@en .
 <https://w3id.org/cterm#SimpleConcreteStructure> <http://www.w3.org/2000/01/rdf-schema#label> "struttura in conglomerato cementizio semplice"@it .
 # 
-# https://w3id.org/cterm#SiteSetupSystems
-<https://w3id.org/cterm#SiteSetupSystems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#SiteSetupSystems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork> .
-<https://w3id.org/cterm#SiteSetupSystems> <http://www.w3.org/2000/01/rdf-schema#label> "Baustelleneinrichtungen"@de .
-<https://w3id.org/cterm#SiteSetupSystems> <http://www.w3.org/2000/01/rdf-schema#label> "Site Setup Systems"@en .
-<https://w3id.org/cterm#SiteSetupSystems> <http://www.w3.org/2000/01/rdf-schema#label> "sistemi di apprestamento di cantiere"@it .
+# https://w3id.org/cterm#SitePreparationSystems
+<https://w3id.org/cterm#SitePreparationSystems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#SitePreparationSystems> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork> .
+<https://w3id.org/cterm#SitePreparationSystems> <http://www.w3.org/2000/01/rdf-schema#label> "Baustelleneinrichtungen"@de .
+<https://w3id.org/cterm#SitePreparationSystems> <http://www.w3.org/2000/01/rdf-schema#label> "Site Setup Systems"@en .
+<https://w3id.org/cterm#SitePreparationSystems> <http://www.w3.org/2000/01/rdf-schema#label> "sistemi di apprestamento di cantiere"@it .
 # 
 # https://w3id.org/cterm#SixStrands
 <https://w3id.org/cterm#SixStrands> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -4784,6 +4823,20 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#TotalThickness> <http://www.w3.org/2000/01/rdf-schema#label> "Total Thickness"@en .
 <https://w3id.org/cterm#TotalThickness> <http://www.w3.org/2000/01/rdf-schema#label> "spessore totale"@it .
 # 
+# https://w3id.org/cterm#TowerCraneRotatingAtTheTop
+<https://w3id.org/cterm#TowerCraneRotatingAtTheTop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#TowerCraneRotatingAtTheTop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfEquipment> .
+<https://w3id.org/cterm#TowerCraneRotatingAtTheTop> <http://www.w3.org/2000/01/rdf-schema#label> "Gru a torre a rotazione in alto"@it .
+<https://w3id.org/cterm#TowerCraneRotatingAtTheTop> <http://www.w3.org/2000/01/rdf-schema#label> "Tower crane rotating at the top"@en .
+<https://w3id.org/cterm#TowerCraneRotatingAtTheTop> <http://www.w3.org/2000/01/rdf-schema#label> "Turmdrehkran an der Oberseite"@de .
+# 
+# https://w3id.org/cterm#TowerCranes
+<https://w3id.org/cterm#TowerCranes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#TowerCranes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ObjectOfEquipment> .
+<https://w3id.org/cterm#TowerCranes> <http://www.w3.org/2000/01/rdf-schema#label> "Feste Kräne"@de .
+<https://w3id.org/cterm#TowerCranes> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed Cranes"@en .
+<https://w3id.org/cterm#TowerCranes> <http://www.w3.org/2000/01/rdf-schema#label> "gru fisse"@it .
+# 
 # https://w3id.org/cterm#Traditional
 <https://w3id.org/cterm#Traditional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Traditional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfWorkOfTemporaryWork> .
@@ -5061,6 +5114,10 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Peso"@it .
 <https://w3id.org/cterm#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Weight"@en .
 <https://w3id.org/cterm#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "peso"@it .
+# 
+# https://w3id.org/cterm#Welded
+<https://w3id.org/cterm#Welded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#Welded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfMaterial> .
 # 
 # https://w3id.org/cterm#White
 <https://w3id.org/cterm#White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

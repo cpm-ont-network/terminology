@@ -8,7 +8,7 @@
     },
     "iri" : "http://w3id.org/cterm",
     "version" : "0.1",
-    "author" : [ "_:genid2147483681", "_:genid2147483680" ],
+    "author" : [ "_:genid2147483649", "_:genid2147483651" ],
     "description" : {
       "en" : "The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management."
     },
@@ -22,29 +22,35 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483680",
+        "value" : "_:genid2147483651",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "_:genid2147483681",
+        "value" : "_:genid2147483649",
         "type" : "label"
       } ],
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483679",
+        "value" : "_:genid2147483650",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "_:genid2147483678",
+        "value" : "_:genid2147483648",
         "type" : "label"
       } ],
       "created" : [ {
         "identifier" : "created",
         "language" : "undefined",
-        "value" : "2024-12-12",
+        "value" : "2024-10-12",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright 2025 by DABC, PoliMi",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -53,16 +59,10 @@
         "value" : "cterm",
         "type" : "label"
       } ],
-      "rights" : [ {
-        "identifier" : "rights",
-        "language" : "undefined",
-        "value" : "Copyright 2024 by DABC, PoliMi",
-        "type" : "label"
-      } ],
       "modified" : [ {
         "identifier" : "modified",
         "language" : "undefined",
-        "value" : "2024-10-22",
+        "value" : "2025-01-13",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
@@ -70,6 +70,18 @@
         "language" : "undefined",
         "value" : "http://w3id.org/cterm#",
         "type" : "iri"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/cpm-ont-network/terminology",
+        "type" : "iri"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
@@ -87,7 +99,7 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "10",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
     "id" : "19",
@@ -102,10 +114,10 @@
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "34",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "40",
     "type" : "owl:Class"
   }, {
     "id" : "41",
@@ -117,7 +129,7 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "52",
     "type" : "owl:Class"
   }, {
     "id" : "57",
@@ -132,7 +144,7 @@
     "id" : "89",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
+    "id" : "51",
     "type" : "owl:Class"
   }, {
     "id" : "93",
@@ -150,16 +162,16 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "80",
-    "type" : "owl:Class"
-  }, {
     "id" : "68",
     "type" : "owl:Class"
   }, {
-    "id" : "70",
+    "id" : "80",
     "type" : "owl:Class"
   }, {
     "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
     "type" : "owl:Class"
   }, {
     "id" : "65",
@@ -168,7 +180,7 @@
     "id" : "109",
     "type" : "owl:Class"
   }, {
-    "id" : "40",
+    "id" : "38",
     "type" : "owl:Class"
   }, {
     "id" : "110",
@@ -204,16 +216,16 @@
     "id" : "92",
     "type" : "owl:Class"
   }, {
-    "id" : "61",
-    "type" : "owl:Class"
-  }, {
-    "id" : "133",
-    "type" : "owl:Class"
-  }, {
     "id" : "88",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
     "type" : "owl:Class"
   }, {
     "id" : "83",
@@ -222,10 +234,10 @@
     "id" : "168",
     "type" : "owl:Class"
   }, {
-    "id" : "72",
+    "id" : "50",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
+    "id" : "72",
     "type" : "owl:Class"
   }, {
     "id" : "21",
@@ -249,10 +261,10 @@
     "id" : "42",
     "type" : "owl:Class"
   }, {
-    "id" : "14",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
     "id" : "44",
@@ -291,13 +303,13 @@
     "id" : "33",
     "type" : "owl:Class"
   }, {
-    "id" : "13",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "241",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "84",
@@ -306,7 +318,7 @@
     "id" : "242",
     "type" : "owl:Thing"
   }, {
-    "id" : "134",
+    "id" : "133",
     "type" : "owl:Class"
   }, {
     "id" : "170",
@@ -348,7 +360,7 @@
     "id" : "191",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "209",
+    "id" : "211",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "127",
@@ -369,10 +381,10 @@
     "id" : "248",
     "type" : "owl:Class"
   }, {
-    "id" : "82",
+    "id" : "240",
     "type" : "owl:Class"
   }, {
-    "id" : "240",
+    "id" : "82",
     "type" : "owl:Class"
   }, {
     "id" : "28",
@@ -385,9 +397,6 @@
     "type" : "owl:Class"
   }, {
     "id" : "43",
-    "type" : "owl:Class"
-  }, {
-    "id" : "278",
     "type" : "owl:Class"
   }, {
     "id" : "270",
@@ -405,7 +414,7 @@
     "id" : "274",
     "type" : "owl:Class"
   }, {
-    "id" : "211",
+    "id" : "209",
     "type" : "owl:Class"
   }, {
     "id" : "98",
@@ -463,8 +472,8 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "10",
-    "superClasses" : [ "11" ]
+    "id" : "13",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://w3id.org/ci#Work",
     "baseIri" : "https://w3id.org/ci",
@@ -507,6 +516,17 @@
     "attributes" : [ "external" ],
     "id" : "35"
   }, {
+    "iri" : "https://w3id.org/cterm#PerformanceParameter",
+    "baseIri" : "https://w3id.org/cterm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PerformanceParameter",
+      "undefined" : "Performance Parameter"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "39" ]
+  }, {
     "iri" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork",
     "baseIri" : "https://w3id.org/cterm",
     "instances" : 0,
@@ -521,23 +541,12 @@
         "de" : "Schalungen",
         "IRI-based" : "Formwork",
         "en" : "Formwork",
-        "it" : "cassaforma"
+        "it" : "casseforme"
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "36",
+    "id" : "40",
     "superClasses" : [ "7" ]
-  }, {
-    "iri" : "https://w3id.org/cterm#PerformanceParameter",
-    "baseIri" : "https://w3id.org/cterm",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PerformanceParameter",
-      "undefined" : "Performance Parameter"
-    },
-    "attributes" : [ "external" ],
-    "id" : "34",
-    "superClasses" : [ "37" ]
   }, {
     "iri" : "https://w3id.org/cterm#ParameterType",
     "baseIri" : "https://w3id.org/cterm",
@@ -559,15 +568,6 @@
       "undefined" : "TypeOfActivity"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/cterm#TwoLayers",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Zwei Durchgänge",
-        "IRI-based" : "TwoLayers",
-        "en" : "Two Layers",
-        "it" : "Due Riprese"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#WithMechanicalMeans",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -575,6 +575,15 @@
         "IRI-based" : "WithMechanicalMeans",
         "en" : "With Mechanical Means",
         "it" : "Con Mezzo Meccanico"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#TwoLayers",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Zwei Durchgänge",
+        "IRI-based" : "TwoLayers",
+        "en" : "Two Layers",
+        "it" : "Due Riprese"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Complete",
@@ -586,15 +595,6 @@
         "it" : "Totale"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#OnSite",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Vor Ort",
-        "IRI-based" : "OnSite",
-        "en" : "On Site",
-        "it" : "In Opera"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Prefabricated",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -602,6 +602,15 @@
         "IRI-based" : "Prefabricated",
         "en" : "Prefabricated",
         "it" : "Prefabbricata"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#OnSite",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Vor Ort",
+        "IRI-based" : "OnSite",
+        "en" : "On Site",
+        "it" : "In Opera"
       }
     }, {
       "iri" : "https://w3id.org/cterm#FirstCoat",
@@ -721,15 +730,6 @@
         "it" : "con gru"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Manual",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Manuell",
-        "IRI-based" : "Manual",
-        "en" : "Manual",
-        "it" : "A Mano"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Spray",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -737,6 +737,15 @@
         "IRI-based" : "Spray",
         "en" : "Spray",
         "it" : "A Spruzzo"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Manual",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Manuell",
+        "IRI-based" : "Manual",
+        "en" : "Manual",
+        "it" : "A Mano"
       }
     }, {
       "iri" : "https://w3id.org/cterm#WithPump",
@@ -769,15 +778,6 @@
         "it" : "fluido"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#RigidPanels",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Starre Paneele",
-        "IRI-based" : "RigidPanels",
-        "en" : "Rigid Panels",
-        "it" : "Pannelli Rigidi"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#RebatedEdgePanels",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -785,6 +785,15 @@
         "IRI-based" : "RebatedEdgePanels",
         "en" : "Rebated Edge Panels",
         "it" : "Pannelli A Bordi Risegati"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#RigidPanels",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Starre Paneele",
+        "IRI-based" : "RigidPanels",
+        "en" : "Rigid Panels",
+        "it" : "Pannelli Rigidi"
       }
     }, {
       "iri" : "https://w3id.org/cterm#InModularPanels",
@@ -802,7 +811,7 @@
         "de" : "Nicht brennbar",
         "IRI-based" : "Non-Combustible",
         "en" : "Non-Combustible",
-        "it" : "incombustibile"
+        "it" : "Incombustibile"
       }
     }, {
       "iri" : "https://w3id.org/cterm#InPanels",
@@ -841,15 +850,6 @@
         "it" : "Pannelli A Bordi Battentati/Incastro"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Pultruded",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Pultrudiertes Material",
-        "IRI-based" : "Pultruded",
-        "en" : "Pultruded",
-        "it" : "pultruso"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#DifferentiatedMesh",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -857,6 +857,15 @@
         "IRI-based" : "DifferentiatedMesh",
         "en" : "Differentiated Mesh",
         "it" : "maglia differenziata"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Pultruded",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Pultrudiertes Material",
+        "IRI-based" : "Pultruded",
+        "en" : "Pultruded",
+        "it" : "pultruso"
       }
     }, {
       "iri" : "https://w3id.org/cterm#SquareMesh",
@@ -937,7 +946,7 @@
         "de" : "Sechseckiges Netz",
         "IRI-based" : "HexagonalMesh",
         "en" : "Hexagonal Mesh",
-        "it" : "maglia esagonale"
+        "it" : "maglie esagonali"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Square",
@@ -1042,15 +1051,6 @@
         "it" : "Strade"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#LandSlopes",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Gelände/Hänge",
-        "IRI-based" : "LandSlopes",
-        "en" : "Land/Slopes",
-        "it" : "Terreno/Versanti"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Residences",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -1058,6 +1058,15 @@
         "IRI-based" : "Residences",
         "en" : "Residences",
         "it" : "Residenze"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#LandSlopes",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Gelände/Hänge",
+        "IRI-based" : "LandSlopes",
+        "en" : "Land/Slopes",
+        "it" : "Terreno/Versanti"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Coastal_River",
@@ -1096,15 +1105,6 @@
         "it" : "Condotte/Fogna/Acquedotto"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#ContaminatedSites",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Kontaminierte Standorte",
-        "IRI-based" : "ContaminatedSites",
-        "en" : "Contaminated Sites",
-        "it" : "Siti Contaminati"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#RoadsideGreen",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -1112,6 +1112,15 @@
         "IRI-based" : "RoadsideGreen",
         "en" : "Roadside Green",
         "it" : "Verde Stradale"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#ContaminatedSites",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Kontaminierte Standorte",
+        "IRI-based" : "ContaminatedSites",
+        "en" : "Contaminated Sites",
+        "it" : "Siti Contaminati"
       }
     }, {
       "iri" : "https://w3id.org/cterm#GreenAreas",
@@ -1129,7 +1138,7 @@
         "de" : "Flüsse",
         "IRI-based" : "Rivers",
         "en" : "Rivers",
-        "it" : "Fiumi"
+        "it" : "Canali"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Green_Forest",
@@ -1142,7 +1151,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "49",
+    "id" : "52",
     "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/cterm#FamilyOfLabour",
@@ -1168,12 +1177,12 @@
         "de" : "Bauwerk",
         "IRI-based" : "Construction",
         "en" : "Construction",
-        "it" : "Edilizia"
+        "it" : "Costruzioni"
       }
     } ],
     "attributes" : [ "external" ],
     "id" : "57",
-    "superClasses" : [ "11" ]
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://w3id.org/cterm#FamilyOfWork",
     "baseIri" : "https://w3id.org/cterm",
@@ -1219,15 +1228,6 @@
         "it" : "Arredo"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#MechanicalEngineering",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Gebäudeausrüstung",
-        "IRI-based" : "MechanicalEngineering",
-        "en" : "Mechanical Engineering",
-        "it" : "Ingegneria Meccanica"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#HydraulicEngineering",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -1235,6 +1235,15 @@
         "IRI-based" : "HydraulicEngineering",
         "en" : "Hydraulic Engineering",
         "it" : "Ingegneria Idraulica"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#MechanicalEngineering",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Gebäudeausrüstung",
+        "IRI-based" : "MechanicalEngineering",
+        "en" : "Mechanical Engineering",
+        "it" : "Ingegneria Meccanica"
       }
     }, {
       "iri" : "https://w3id.org/cterm#StructuralEngineering",
@@ -1270,7 +1279,7 @@
         "de" : "Boden",
         "IRI-based" : "Soil",
         "en" : "Soil",
-        "it" : "Terreno"
+        "it" : "Suolo"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Landscaping",
@@ -1281,10 +1290,18 @@
         "en" : "Landscaping",
         "it" : "Verde E Paesaggio"
       }
+    }, {
+      "iri" : "https://schema.org/ConstrutcionSite",
+      "baseIri" : "https://schema.org",
+      "labels" : {
+        "IRI-based" : "ConstrutcionSite",
+        "en" : "Construtcion site",
+        "it" : "Ergotecnica"
+      }
     } ],
     "attributes" : [ "external" ],
     "id" : "78",
-    "superClasses" : [ "11" ]
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://w3id.org/cterm#Type",
     "baseIri" : "https://w3id.org/cterm",
@@ -1325,7 +1342,7 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "52",
+    "id" : "51",
     "superClasses" : [ "25" ]
   }, {
     "iri" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork",
@@ -1349,7 +1366,7 @@
     },
     "attributes" : [ "equivalent", "external" ],
     "id" : "95",
-    "superClasses" : [ "14" ]
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/cr#MaterialResource",
     "baseIri" : "https://w3id.org/cr",
@@ -1395,13 +1412,13 @@
         "it" : "pilastri a sezione rettangolare-quadrata"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#WallsforStaircasesandElevators",
+      "iri" : "https://w3id.org/cterm#StraightStairLandingsandRampsinReinforcedConcrete",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wände für Treppen- und Aufzugsschächte",
-        "IRI-based" : "WallsforStaircasesandElevators",
-        "en" : "Walls for Staircases and Elevators",
-        "it" : "pareti per vani scala e ascensori"
+        "de" : "Gerade Treppenabsätze und Rampen in Stahlbeton",
+        "IRI-based" : "StraightStairLandingsandRampsinReinforcedConcrete",
+        "en" : "Straight Stair Landings and Ramps in Reinforced Concrete",
+        "it" : "pianerottoli e rampe scale rettilinei in c.a."
       }
     }, {
       "iri" : "https://w3id.org/cterm#PointFoundations",
@@ -1413,13 +1430,13 @@
         "it" : "fondazioni puntuali"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#StraightStairLandingsandRampsinReinforcedConcrete",
+      "iri" : "https://w3id.org/cterm#WallsforStaircasesandElevators",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gerade Treppenabsätze und Rampen in Stahlbeton",
-        "IRI-based" : "StraightStairLandingsandRampsinReinforcedConcrete",
-        "en" : "Straight Stair Landings and Ramps in Reinforced Concrete",
-        "it" : "pianerottoli e rampe scale rettilinei in c.a."
+        "de" : "Wände für Treppen- und Aufzugsschächte",
+        "IRI-based" : "WallsforStaircasesandElevators",
+        "en" : "Walls for Staircases and Elevators",
+        "it" : "pareti per vani scala e ascensori"
       }
     }, {
       "iri" : "https://w3id.org/cterm#MixedSlabwithDeepBeamsforFlatStructures",
@@ -1528,6 +1545,18 @@
     "id" : "6",
     "superClasses" : [ "7" ]
   }, {
+    "iri" : "https://w3id.org/cterm#Finishing",
+    "baseIri" : "https://w3id.org/cterm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Finishing",
+      "undefined" : "Finishing"
+    },
+    "subClasses" : [ "67", "70", "72", "77" ],
+    "attributes" : [ "external" ],
+    "id" : "68",
+    "superClasses" : [ "25" ]
+  }, {
     "iri" : "https://w3id.org/cterm#AspectOfEquipment",
     "baseIri" : "https://w3id.org/cterm",
     "instances" : 0,
@@ -1558,17 +1587,58 @@
     "id" : "80",
     "superClasses" : [ "2" ]
   }, {
-    "iri" : "https://w3id.org/cterm#Finishing",
+    "iri" : "https://w3id.org/cterm#ClassificationSystem",
     "baseIri" : "https://w3id.org/cterm",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Finishing",
-      "undefined" : "Finishing"
+      "IRI-based" : "ClassificationSystem",
+      "undefined" : "Classification system"
     },
-    "subClasses" : [ "67", "70", "72", "77" ],
+    "individuals" : [ {
+      "iri" : "https://w3id.org/cterm#Uniformat",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "Uniformat",
+        "undefined" : "Uniformat"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Omniclass",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "Omniclass",
+        "undefined" : "Omniclass"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#StLB",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "StLB",
+        "undefined" : "St LB"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#UNI8290",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "UNI8290",
+        "undefined" : "UNI8290"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Uniclass",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "Uniclass",
+        "undefined" : "Uniclass"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#DIN276",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "DIN276",
+        "undefined" : "DIN276"
+      }
+    } ],
     "attributes" : [ "external" ],
-    "id" : "68",
-    "superClasses" : [ "25" ]
+    "id" : "104"
   }, {
     "iri" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork",
     "baseIri" : "https://w3id.org/cterm",
@@ -1670,15 +1740,6 @@
         "it" : "sabbiato"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Rough-Sandblasted",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Rau-Gesandstrahlt",
-        "IRI-based" : "Rough-Sandblasted",
-        "en" : "Rough-Sandblasted",
-        "it" : "rugoso-sabbiato"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#CoatedwithFireproofMortar",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -1686,6 +1747,15 @@
         "IRI-based" : "CoatedwithFireproofMortar",
         "en" : "Coated with Fireproof Mortar",
         "it" : "rivestito con malta antincendio"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Rough-Sandblasted",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Rau-Gesandstrahlt",
+        "IRI-based" : "Rough-Sandblasted",
+        "en" : "Rough-Sandblasted",
+        "it" : "rugoso-sabbiato"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Classic-Rustic",
@@ -1720,7 +1790,7 @@
         "de" : "Graue Farbe",
         "IRI-based" : "GrayColor",
         "en" : "Gray Color",
-        "it" : "colore grigio"
+        "it" : "Colore Grigio"
       }
     }, {
       "iri" : "https://w3id.org/cterm#BitumenLayer",
@@ -1756,14 +1826,6 @@
         "it" : "Membrana Armata Con Velo Vetro Ardesiata"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#GlassFiber",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "GlassFiber",
-        "en" : "Glass Fiber",
-        "it" : "Velo Vetro"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#CoatedwithSpecialCardboard",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -1771,6 +1833,14 @@
         "IRI-based" : "CoatedwithSpecialCardboard",
         "en" : "Coated with Special Cardboard",
         "it" : "rivestito in cartone speciale"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#GlassFiber",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "GlassFiber",
+        "en" : "Glass Fiber",
+        "it" : "Velo Vetro"
       }
     }, {
       "iri" : "https://w3id.org/cterm#CoatedwithRefractoryCeramicLayer",
@@ -1796,7 +1866,7 @@
         "de" : "Beschichtet",
         "IRI-based" : "Coated",
         "en" : "Coated",
-        "it" : "Rivestito"
+        "it" : "rivestito"
       }
     }, {
       "iri" : "https://w3id.org/cterm#CoatedWithRefractoryCeramicLayer",
@@ -1875,14 +1945,6 @@
         "it" : "Lana Di Abete Mineralizzata"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Skin",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "Skin",
-        "en" : "Skin",
-        "it" : "Pelle"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Smooth",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -1890,6 +1952,14 @@
         "IRI-based" : "Smooth",
         "en" : "Smooth",
         "it" : "liscio"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Skin",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "Skin",
+        "en" : "Skin",
+        "it" : "Pelle"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Bitumen",
@@ -1917,6 +1987,14 @@
         "it" : "Liscia Con Pelle"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#WoodWool",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "WoodWool",
+        "en" : "Wood Wool",
+        "it" : "Lana Di Legno"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#Rough",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -1924,14 +2002,6 @@
         "IRI-based" : "Rough",
         "en" : "Rough",
         "it" : "Ruvida"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#WoodWool",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "WoodWool",
-        "en" : "Wood Wool",
-        "it" : "Lana Di Legno"
       }
     }, {
       "iri" : "https://w3id.org/cterm#FirWool",
@@ -1945,59 +2015,6 @@
     "attributes" : [ "external" ],
     "id" : "70",
     "superClasses" : [ "68" ]
-  }, {
-    "iri" : "https://w3id.org/cterm#ClassificationSystem",
-    "baseIri" : "https://w3id.org/cterm",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassificationSystem",
-      "undefined" : "Classification system"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/cterm#Uniformat",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "Uniformat",
-        "undefined" : "Uniformat"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#Omniclass",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "Omniclass",
-        "undefined" : "Omniclass"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#StLB",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "StLB",
-        "undefined" : "St LB"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#UNI8290",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "UNI8290",
-        "undefined" : "UNI8290"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#Uniclass",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "Uniclass",
-        "undefined" : "Uniclass"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#DIN276",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "DIN276",
-        "undefined" : "DIN276"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "104"
   }, {
     "iri" : "https://w3id.org/cterm#TypeOfProductWork",
     "baseIri" : "https://w3id.org/cterm",
@@ -2027,15 +2044,6 @@
         "it" : "conglomerato cementizio aerato autoclavato"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#MineralFiberWoodWool",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Mineralfaser Holzwolle",
-        "IRI-based" : "MineralFiberWoodWool",
-        "en" : "Mineral Fiber Wood Wool",
-        "it" : "Fibra Minerale Lana Di Legno"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#SyntheticAcrylicResin",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2043,6 +2051,15 @@
         "IRI-based" : "SyntheticAcrylicResin",
         "en" : "Synthetic Acrylic Resin",
         "it" : "resina sintetica acrilica"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#MineralFiberWoodWool",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Mineralfaser Holzwolle",
+        "IRI-based" : "MineralFiberWoodWool",
+        "en" : "Mineral Fiber Wood Wool",
+        "it" : "Fibra Minerale Lana Di Legno"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ExpandedNaturalRockVermiculite",
@@ -2071,15 +2088,6 @@
         "it" : "Plastica Polietilene (PE)"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#GenericMetal",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Allgemeines Metall",
-        "IRI-based" : "GenericMetal",
-        "en" : "Generic Metal",
-        "it" : "metallo generico"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#MineralFiberFirWool",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2087,6 +2095,15 @@
         "IRI-based" : "MineralFiberFirWool",
         "en" : "Mineral Fiber Fir Wool",
         "it" : "Fibra Minerale Lana Di Abete"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#GenericMetal",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Allgemeines Metall",
+        "IRI-based" : "GenericMetal",
+        "en" : "Generic Metal",
+        "it" : "metallo generico"
       }
     }, {
       "iri" : "https://w3id.org/cterm#WoodVegetableFiber",
@@ -2107,15 +2124,6 @@
         "it" : "materiale generico non rilevante"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#StainlessSteelAlloyAISI316L",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Edelstahllegierung AISI 316L",
-        "IRI-based" : "StainlessSteelAlloyAISI316L",
-        "en" : "Stainless Steel Alloy AISI 316L",
-        "it" : "lega ferrosa acciaio inox AISI 316L"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#ExpandedCorkVegetableFiber",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2123,6 +2131,15 @@
         "IRI-based" : "ExpandedCorkVegetableFiber",
         "en" : "Expanded Cork Vegetable Fiber",
         "it" : "Fibra Vegetale Sughero Espanso"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#StainlessSteelAlloyAISI316L",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Edelstahllegierung AISI 316L",
+        "IRI-based" : "StainlessSteelAlloyAISI316L",
+        "en" : "Stainless Steel Alloy AISI 316L",
+        "it" : "lega ferrosa acciaio inox AISI 316L"
       }
     }, {
       "iri" : "https://w3id.org/cterm#GenericNaturalRock",
@@ -2170,15 +2187,6 @@
         "it" : "lega ferrosa generico"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#ExpandedPolystyrenePlastic",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Kunststoff expandiertes Polystyrol (EPS)",
-        "IRI-based" : "ExpandedPolystyrenePlastic",
-        "en" : "Expanded Polystyrene Plastic (EPS)",
-        "it" : "Plastica Polistirene Espanso (EPS)"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#ExtrudedPolystyrenePlastic",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2186,6 +2194,15 @@
         "IRI-based" : "ExtrudedPolystyrenePlastic",
         "en" : "Extruded Polystyrene Plastic (XPS)",
         "it" : "Plastica Polistirene Estruso (XPS)"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#ExpandedPolystyrenePlastic",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Kunststoff expandiertes Polystyrol (EPS)",
+        "IRI-based" : "ExpandedPolystyrenePlastic",
+        "en" : "Expanded Polystyrene Plastic (EPS)",
+        "it" : "Plastica Polistirene Espanso (EPS)"
       }
     }, {
       "iri" : "https://w3id.org/cterm#NaturalBlondCorkVegetableFiber",
@@ -2303,6 +2320,14 @@
         "it" : "conglomerato gomma"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#ExpandedClay",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "ExpandedClay",
+        "en" : "Expanded Clay",
+        "it" : "Argilla Espansa"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#MineralFiberRockWool",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2310,14 +2335,6 @@
         "IRI-based" : "MineralFiberRockWool",
         "en" : "Mineral Fiber Rock Wool",
         "it" : "Fibra Minerale Lana Di Roccia"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#ExpandedClay",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "ExpandedClay",
-        "en" : "Expanded Clay",
-        "it" : "Argilla Espansa"
       }
     }, {
       "iri" : "https://w3id.org/cterm#GenericCement",
@@ -2336,6 +2353,15 @@
         "IRI-based" : "CementitiousCompound",
         "en" : "Cementitious Compound",
         "it" : "conglomerato cementizio"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#GenericNaturalWood",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Allgemeines Naturholz",
+        "IRI-based" : "GenericNaturalWood",
+        "en" : "Generic Natural Wood",
+        "it" : "legno naturale generico"
       }
     }, {
       "iri" : "https://w3id.org/cterm#SlakedLime",
@@ -2382,15 +2408,6 @@
         "it" : "legno artificiale generico"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#FerrousAlloySteelB450A",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Eisenlegierung Stahl B450A",
-        "IRI-based" : "FerrousAlloySteelB450A",
-        "en" : "Ferrous Alloy Steel B450A",
-        "it" : "lega ferrosa acciaio B450A"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#StainlessSteelAlloy",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2400,21 +2417,21 @@
         "it" : "lega ferrosa acciaio inox"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#FerrousAlloySteelB450A",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Eisenlegierung Stahl B450A",
+        "IRI-based" : "FerrousAlloySteelB450A",
+        "en" : "Ferrous Alloy Steel B450A",
+        "it" : "lega ferrosa acciaio B450A"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#MineralizedWoodVegetableFiber",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
         "IRI-based" : "MineralizedWoodVegetableFiber",
         "en" : "Mineralized Wood Vegetable Fiber",
         "it" : "Fibra Vegetale Legno Mineralizzata"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#GraphiteExpandedPolystyrenePlastic",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Expandiertes Polystyrol (EPS) mit Graphit",
-        "IRI-based" : "GraphiteExpandedPolystyrenePlastic",
-        "en" : "Graphite Expanded Polystyrene Plastic (EPS)",
-        "it" : "Plastica Polistirene Espanso (EPS) Con Grafite"
       }
     }, {
       "iri" : "https://w3id.org/cterm#FerrousAlloySteelB450C",
@@ -2426,13 +2443,22 @@
         "it" : "lega ferrosa acciaio B450C"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#GraphiteExpandedPolystyrenePlastic",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Expandiertes Polystyrol (EPS) mit Graphit",
+        "IRI-based" : "GraphiteExpandedPolystyrenePlastic",
+        "en" : "Graphite Expanded Polystyrene Plastic (EPS)",
+        "it" : "Plastica Polistirene Espanso (EPS) Con Grafite"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#GenericRubber",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
         "de" : "Allgemeiner Gummi",
         "IRI-based" : "GenericRubber",
         "en" : "Generic Rubber",
-        "it" : "Gomma Generico"
+        "it" : "gomma generico"
       }
     }, {
       "iri" : "https://w3id.org/cterm#StainlessSteelAlloyAISI304l",
@@ -2450,7 +2476,7 @@
         "de" : "Allgemeines Material",
         "IRI-based" : "GenericMaterial",
         "en" : "Generic Material",
-        "it" : "Materiale Generico"
+        "it" : "materiale generico"
       }
     }, {
       "iri" : "https://w3id.org/cterm#GenericMineralFiber",
@@ -2483,8 +2509,8 @@
       "undefined" : "Dimension Parameter"
     },
     "attributes" : [ "external" ],
-    "id" : "40",
-    "superClasses" : [ "37" ]
+    "id" : "38",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "https://w3id.org/cterm#FunctionOfMateriaResource",
     "baseIri" : "https://w3id.org/cterm",
@@ -2547,15 +2573,6 @@
         "it" : "Finitura"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Ventilation",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Belüftung",
-        "IRI-based" : "Ventilation",
-        "en" : "Ventilation",
-        "it" : "Ventilazione"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#FrontClosure",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2563,6 +2580,15 @@
         "IRI-based" : "FrontClosure",
         "en" : "Front Closure",
         "it" : "Chiusura Frontale"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Ventilation",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Belüftung",
+        "IRI-based" : "Ventilation",
+        "en" : "Ventilation",
+        "it" : "Ventilazione"
       }
     }, {
       "iri" : "https://w3id.org/cterm#SoundAbsorbing",
@@ -2580,7 +2606,7 @@
         "de" : "Nicht brennbar",
         "IRI-based" : "Non-Combustible",
         "en" : "Non-Combustible",
-        "it" : "incombustibile"
+        "it" : "Incombustibile"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ThermalInsulation",
@@ -2589,7 +2615,7 @@
         "de" : "Wärmedämmend",
         "IRI-based" : "ThermalInsulation",
         "en" : "Thermal Insulation",
-        "it" : "Isolamento Termico"
+        "it" : "Termoisolante"
       }
     }, {
       "iri" : "https://w3id.org/cterm#SideClosure",
@@ -2650,7 +2676,7 @@
       "IRI-based" : "Object",
       "undefined" : "Object"
     },
-    "subClasses" : [ "6", "9", "16", "18", "21", "23", "49", "36" ],
+    "subClasses" : [ "6", "9", "16", "18", "21", "23", "52", "40" ],
     "attributes" : [ "external" ],
     "id" : "7",
     "superClasses" : [ "25" ]
@@ -2735,24 +2761,6 @@
         "it" : "tamponamento"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Tensioning",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Abspannung",
-        "IRI-based" : "Tensioning",
-        "en" : "Tensioning",
-        "it" : "tirantatura"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#Consolidation",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Konsolidierung",
-        "IRI-based" : "Consolidation",
-        "en" : "Consolidation",
-        "it" : "consolidamento"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#FireproofPartitionWall",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2768,7 +2776,25 @@
         "de" : "Wärmedämmend",
         "IRI-based" : "ThermalInsulation",
         "en" : "Thermal Insulation",
-        "it" : "Isolamento Termico"
+        "it" : "Termoisolante"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Consolidation",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Konsolidierung",
+        "IRI-based" : "Consolidation",
+        "en" : "Consolidation",
+        "it" : "Consolidamento"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Tensioning",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Abspannung",
+        "IRI-based" : "Tensioning",
+        "en" : "Tensioning",
+        "it" : "tirantatura"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Casing",
@@ -2780,15 +2806,6 @@
         "it" : "incassettature"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#VentilatedCrawlSpaceFormation",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Verlegung von Hohlkörpern zur Belüftung",
-        "IRI-based" : "VentilatedCrawlSpaceFormation",
-        "en" : "Ventilated Hollow Space Formation",
-        "it" : "Formazione Vespai Aerati"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Reinforcement",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2796,6 +2813,15 @@
         "IRI-based" : "Reinforcement",
         "en" : "Reinforcement",
         "it" : "rinforzo"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#VentilatedCrawlSpaceFormation",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Verlegung von Hohlkörpern zur Belüftung",
+        "IRI-based" : "VentilatedCrawlSpaceFormation",
+        "en" : "Ventilated Hollow Space Formation",
+        "it" : "Formazione Vespai Aerati"
       }
     }, {
       "iri" : "https://w3id.org/cterm#PartitionWall",
@@ -2807,15 +2833,6 @@
         "it" : "controparete"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Semi-Load-Bearing",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Halbtragend",
-        "IRI-based" : "Semi-Load-Bearing",
-        "en" : "Semi-Load-Bearing",
-        "it" : "semiportante"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#PipeClosures",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2823,6 +2840,15 @@
         "IRI-based" : "PipeClosures",
         "en" : "Pipe Closures",
         "it" : "chiusure canne"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Semi-Load-Bearing",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Halbtragend",
+        "IRI-based" : "Semi-Load-Bearing",
+        "en" : "Semi-Load-Bearing",
+        "it" : "semiportante"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Stitching",
@@ -2884,6 +2910,15 @@
       "undefined" : "Type of labour"
     },
     "individuals" : [ {
+      "iri" : "https://w3id.org/cterm#LevelD2",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Stufe D2",
+        "IRI-based" : "LevelD2",
+        "en" : "Level D2",
+        "it" : "livello D2"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#LevelC1",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2902,15 +2937,6 @@
         "it" : "livello 3°"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#LevelD2",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Stufe D2",
-        "IRI-based" : "LevelD2",
-        "en" : "Level D2",
-        "it" : "livello D2"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#LevelD1",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2920,15 +2946,6 @@
         "it" : "livello D1"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Level1",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Stufe 1",
-        "IRI-based" : "Level1",
-        "en" : "Level 1",
-        "it" : "livello 1°"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#LevelC3",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -2936,6 +2953,15 @@
         "IRI-based" : "LevelC3",
         "en" : "Level C3",
         "it" : "livello C3"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Level1",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Stufe 1",
+        "IRI-based" : "Level1",
+        "en" : "Level 1",
+        "it" : "livello 1°"
       }
     }, {
       "iri" : "https://w3id.org/cterm#LevelB1",
@@ -3038,9 +3064,9 @@
       "iri" : "https://w3id.org/cterm#FloorSlab",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Deckenplatte",
+        "de" : "Decke",
         "IRI-based" : "FloorSlab",
-        "en" : "FloorSlab",
+        "en" : "Floor Slab",
         "it" : "solaio"
       }
     }, {
@@ -3069,6 +3095,12 @@
         "IRI-based" : "RubberFlooring",
         "en" : "Rubber Flooring",
         "it" : "pavimentazione in gomma"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Reinforcment",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "Reinforcment"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Kitchens",
@@ -3116,15 +3148,6 @@
         "it" : "Coperture A Falde Con Tegole"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Masonry",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Mauerwerk",
-        "IRI-based" : "Masonry",
-        "en" : "Masonry",
-        "it" : "Murature"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#RockfallBarriers",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -3132,6 +3155,15 @@
         "IRI-based" : "RockfallBarriers",
         "en" : "Rockfall Barriers",
         "it" : "paramassi"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Masonry",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Mauerwerk",
+        "IRI-based" : "Masonry",
+        "en" : "Masonry",
+        "it" : "Murature"
       }
     }, {
       "iri" : "https://w3id.org/cterm#CoatingLayer",
@@ -3272,7 +3304,7 @@
       "iri" : "https://w3id.org/cterm#FloorsOverUnheatedAreas",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Decken über unbeheizten Bereichen",
+        "de" : "Böden über unbeheizten Bereichen",
         "IRI-based" : "FloorsOverUnheatedAreas",
         "en" : "Floors Over Unheated Areas",
         "it" : "Solai Su Zone Non Riscaldate"
@@ -3296,15 +3328,6 @@
         "it" : "superfici interne"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#ThermalBridges",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Wärmebrücken",
-        "IRI-based" : "ThermalBridges",
-        "en" : "Thermal Bridges",
-        "it" : "Ponti Termici"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#IntermediateFloors",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -3312,6 +3335,15 @@
         "IRI-based" : "IntermediateFloors",
         "en" : "Intermediate Floors",
         "it" : "Solai Intermedi"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#ThermalBridges",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Wärmebrücken",
+        "IRI-based" : "ThermalBridges",
+        "en" : "Thermal Bridges",
+        "it" : "Ponti Termici"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Sidewalks",
@@ -3332,15 +3364,6 @@
         "it" : "Cartongesso"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Attic",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Dachboden",
-        "IRI-based" : "Attic",
-        "en" : "Attic",
-        "it" : "Sottotetto"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#WallsWithInsulatedPlasterSystem",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -3348,6 +3371,15 @@
         "IRI-based" : "WallsWithInsulatedPlasterSystem",
         "en" : "Walls With Insulated Plaster System",
         "it" : "Pareti Con Sistema A Cappotto"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Attic",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Dachboden",
+        "IRI-based" : "Attic",
+        "en" : "Attic",
+        "it" : "Sottotetto"
       }
     }, {
       "iri" : "https://w3id.org/cterm#DrainingSyntheticLayer",
@@ -3449,15 +3481,6 @@
         "it" : "Casseri Per Strutture In Conglomerato Cementizio"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#ReinforcingBars",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Bewehrungsstahl",
-        "IRI-based" : "ReinforcingBars",
-        "en" : "Reinforcing Bars",
-        "it" : "ferri d'armatura"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Perimeter_PartitionCavities",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -3465,6 +3488,15 @@
         "IRI-based" : "Perimeter_PartitionCavities",
         "en" : "Perimeter/Partition Cavities",
         "it" : "Intercapedini Perimetrali/Divisorie"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#ReinforcingBars",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Bewehrungsstahl",
+        "IRI-based" : "ReinforcingBars",
+        "en" : "Reinforcing Bars",
+        "it" : "ferri d'armatura"
       }
     }, {
       "iri" : "https://w3id.org/cterm#InternalPartitionWalls",
@@ -3515,10 +3547,10 @@
       "iri" : "https://w3id.org/cterm#Flooring",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Bodenbelag",
+        "de" : "Bodenbeläge",
         "IRI-based" : "Flooring",
         "en" : "Flooring",
-        "it" : "pavimentazione"
+        "it" : "Pavimentazioni"
       }
     }, {
       "iri" : "https://w3id.org/cterm#StabilizedEarthCarpets",
@@ -3590,7 +3622,18 @@
     },
     "attributes" : [ "external" ],
     "id" : "92",
-    "superClasses" : [ "37" ]
+    "superClasses" : [ "39" ]
+  }, {
+    "iri" : "https://w3id.org/cterm#Classification",
+    "baseIri" : "https://w3id.org/cterm",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Classification",
+      "undefined" : "Classification"
+    },
+    "attributes" : [ "external" ],
+    "id" : "88",
+    "superClasses" : [ "133" ]
   }, {
     "iri" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork",
     "baseIri" : "https://w3id.org/cterm",
@@ -3648,9 +3691,9 @@
       "iri" : "https://w3id.org/cterm#FloorSlab",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Deckenplatte",
+        "de" : "Decke",
         "IRI-based" : "FloorSlab",
-        "en" : "FloorSlab",
+        "en" : "Floor Slab",
         "it" : "solaio"
       }
     }, {
@@ -3847,19 +3890,8 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "133",
-    "superClasses" : [ "14" ]
-  }, {
-    "iri" : "https://w3id.org/cterm#Classification",
-    "baseIri" : "https://w3id.org/cterm",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Classification",
-      "undefined" : "Classification"
-    },
-    "attributes" : [ "external" ],
-    "id" : "88",
-    "superClasses" : [ "134" ]
+    "id" : "134",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/cterm#Parameter",
     "baseIri" : "https://w3id.org/cterm",
@@ -3868,9 +3900,9 @@
       "IRI-based" : "Parameter",
       "undefined" : "Parameter"
     },
-    "subClasses" : [ "40", "34", "92" ],
+    "subClasses" : [ "38", "34", "92" ],
     "attributes" : [ "external" ],
-    "id" : "37"
+    "id" : "39"
   }, {
     "iri" : "https://w3id.org/cterm#TypeOfEquipment",
     "baseIri" : "https://w3id.org/cterm",
@@ -3916,6 +3948,15 @@
         "it" : "Autocarro con gru"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#TowerCraneRotatingAtTheTop",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Turmdrehkran an der Oberseite",
+        "IRI-based" : "TowerCraneRotatingAtTheTop",
+        "en" : "Tower crane rotating at the top",
+        "it" : "Gru a torre a rotazione in alto"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#TraditionalWoodenFormwork",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -3925,15 +3966,6 @@
         "it" : "cassaforma tradizionale in legno"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#MobileCrane",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Autokran",
-        "IRI-based" : "MobileCrane",
-        "en" : "Mobile Crane",
-        "it" : "autogrù"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#ModularFormwork",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -3941,6 +3973,15 @@
         "IRI-based" : "ModularFormwork",
         "en" : "Modular Formwork",
         "it" : "cassaforma componibile"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#MobileCrane",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Autokran",
+        "IRI-based" : "MobileCrane",
+        "en" : "Mobile Crane",
+        "it" : "autogrù"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Self-ErectingCranewithBottomSlewing",
@@ -3993,7 +4034,16 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "168",
-    "superClasses" : [ "14" ]
+    "superClasses" : [ "12" ]
+  }, {
+    "iri" : "https://w3id.org/cr#Material",
+    "baseIri" : "https://w3id.org/cr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Material"
+    },
+    "attributes" : [ "external" ],
+    "id" : "50"
   }, {
     "iri" : "https://w3id.org/cterm#FinishingOfMaterial",
     "baseIri" : "https://w3id.org/cterm",
@@ -4012,15 +4062,6 @@
         "it" : "melange"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Stainless",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Edelstahl",
-        "IRI-based" : "Stainless",
-        "en" : "Stainless",
-        "it" : "inox"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#WaterRepellent",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4028,6 +4069,15 @@
         "IRI-based" : "WaterRepellent",
         "en" : "Water Repellent",
         "it" : "Idrorepellente"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Stainless",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Edelstahl",
+        "IRI-based" : "Stainless",
+        "en" : "Stainless",
+        "it" : "inox"
       }
     }, {
       "iri" : "https://w3id.org/cterm#PolyurethanePaint",
@@ -4066,15 +4116,6 @@
         "it" : "Colore Nero"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#White",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Weiß",
-        "IRI-based" : "White",
-        "en" : "White",
-        "it" : "colore bianco"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#PolymericCoating",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4082,6 +4123,15 @@
         "IRI-based" : "PolymericCoating",
         "en" : "Polymeric Coating",
         "it" : "rivestimento polimerico"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#White",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Weiß",
+        "IRI-based" : "White",
+        "en" : "White",
+        "it" : "colore bianco"
       }
     }, {
       "iri" : "https://w3id.org/cterm#MatteBronzeColor",
@@ -4099,7 +4149,7 @@
         "de" : "Graue Farbe",
         "IRI-based" : "GrayColor",
         "en" : "Gray Color",
-        "it" : "colore grigio"
+        "it" : "Colore Grigio"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Plastic-Coated",
@@ -4153,7 +4203,7 @@
         "de" : "Beschichtet",
         "IRI-based" : "Coated",
         "en" : "Coated",
-        "it" : "Rivestito"
+        "it" : "rivestito"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Printed",
@@ -4192,6 +4242,15 @@
         "it" : "Granulata"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#RefractoryCeramics",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Feuerfeste Keramik",
+        "IRI-based" : "RefractoryCeramics",
+        "en" : "Refractory Ceramics",
+        "it" : "Ceramica Refrattaria"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#Bitumen",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4208,15 +4267,6 @@
         "IRI-based" : "PartiallySubliming",
         "en" : "Partially Subliming",
         "it" : "Parzialmente Sublimante"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#RefractoryCeramics",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Feuerfeste Keramik",
-        "IRI-based" : "RefractoryCeramics",
-        "en" : "Refractory Ceramics",
-        "it" : "Ceramica Refrattaria"
       }
     }, {
       "iri" : "https://w3id.org/cterm#PolyamideMaterial",
@@ -4264,13 +4314,14 @@
         "it" : "Ruvida"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#GenericBitumen",
+      "iri" : "https://w3id.org/cterm#Ribbed",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Allgemeines Bitumen",
-        "IRI-based" : "GenericBitumen",
-        "en" : "Generic Bitumen",
-        "it" : "Bitume Generico"
+        "de" : "Gerippt",
+        "IRI-based" : "Ribbed",
+        "en" : "Ribbed",
+        "it" : "nervata",
+        "undefined" : "Ribbed"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Paint",
@@ -4280,6 +4331,15 @@
         "IRI-based" : "Paint",
         "en" : "Paint",
         "it" : "vernice"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#GenericBitumen",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Allgemeines Bitumen",
+        "IRI-based" : "GenericBitumen",
+        "en" : "Generic Bitumen",
+        "it" : "Bitume Generico"
       }
     }, {
       "iri" : "https://w3id.org/cterm#PinkColor",
@@ -4294,15 +4354,6 @@
     "attributes" : [ "external" ],
     "id" : "72",
     "superClasses" : [ "68" ]
-  }, {
-    "iri" : "https://w3id.org/cr#Material",
-    "baseIri" : "https://w3id.org/cr",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Material"
-    },
-    "attributes" : [ "external" ],
-    "id" : "51"
   }, {
     "iri" : "https://w3id.org/cterm#ObjectOfMaterial",
     "baseIri" : "https://w3id.org/cterm",
@@ -4330,6 +4381,12 @@
         "it" : "rete"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#Rebar",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "Rebar"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#Panel",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4355,6 +4412,12 @@
         "IRI-based" : "ReadyMixture",
         "en" : "Ready Mixture",
         "it" : "Impsto Preconfezionato"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Mesh",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "Mesh"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Binder",
@@ -4396,15 +4459,6 @@
         "it" : "ad aderenza migliorata"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Electro-Welded",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Elektroschweißgitter",
-        "IRI-based" : "Electro-Welded",
-        "en" : "Electro-Welded",
-        "it" : "elettrosaldata"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Wire",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4412,6 +4466,15 @@
         "IRI-based" : "Wire",
         "en" : "Wire",
         "it" : "filo"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Electro-Welded",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Elektroschweißgitter",
+        "IRI-based" : "Electro-Welded",
+        "en" : "Electro-Welded",
+        "it" : "elettrosaldata"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Insulation",
@@ -4477,6 +4540,15 @@
         "it" : "a maglia sciolta"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#Electroforged",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Elektroschmiedegitter",
+        "IRI-based" : "Electroforged",
+        "en" : "Electroforged",
+        "it" : "elettroforgiata"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#Diwdag",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4495,15 +4567,6 @@
         "it" : "trefolo"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Electroforged",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Elektroschmiedegitter",
-        "IRI-based" : "Electroforged",
-        "en" : "Electroforged",
-        "it" : "elettroforgiata"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Fixed",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4511,6 +4574,12 @@
         "IRI-based" : "Fixed",
         "en" : "Fixed",
         "it" : "fissa"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Welded",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "Welded"
       }
     }, {
       "iri" : "https://w3id.org/cterm#DoubleTwist",
@@ -4522,15 +4591,6 @@
         "it" : "a doppia torsione"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Ribbed",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Gerippt",
-        "IRI-based" : "Ribbed",
-        "en" : "Ribbed",
-        "it" : "nervata"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#BirdRepellent",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4538,6 +4598,16 @@
         "IRI-based" : "BirdRepellent",
         "en" : "Bird Repellent",
         "it" : "antipiccione"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Ribbed",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Gerippt",
+        "IRI-based" : "Ribbed",
+        "en" : "Ribbed",
+        "it" : "nervata",
+        "undefined" : "Ribbed"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Chemical",
@@ -4549,15 +4619,6 @@
         "it" : "chimico"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Conglomerate",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Gemisch",
-        "IRI-based" : "Conglomerate",
-        "en" : "Conglomerate",
-        "it" : "conglomerato"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Rolling",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4565,6 +4626,15 @@
         "IRI-based" : "Rolling",
         "en" : "Rolling",
         "it" : "avvolgibile"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Conglomerate",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Gemisch",
+        "IRI-based" : "Conglomerate",
+        "en" : "Conglomerate",
+        "it" : "conglomerato"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Sliding",
@@ -4594,7 +4664,7 @@
         "de" : "Mauerwerksschicht",
         "IRI-based" : "MasonryLayer",
         "en" : "Masonry Layer",
-        "it" : "strato di muratura"
+        "it" : "Strato Di Muratura"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Reinforcement",
@@ -4654,13 +4724,13 @@
       "undefined" : "Object of equipment"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/cterm#Formwork",
+      "iri" : "https://w3id.org/cterm#Prop",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Schalungen",
-        "IRI-based" : "Formwork",
-        "en" : "Formwork",
-        "it" : "cassaforma"
+        "de" : "Requisite",
+        "IRI-based" : "Prop",
+        "en" : "Prop",
+        "it" : "Puntello"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ConcretePumps",
@@ -4670,6 +4740,24 @@
         "IRI-based" : "ConcretePumps",
         "en" : "Concrete Pumps",
         "it" : "pompe per cls"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Formwork",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Schalungen",
+        "IRI-based" : "Formwork",
+        "en" : "Formwork",
+        "it" : "casseforme"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#TowerCranes",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Feste Kräne",
+        "IRI-based" : "TowerCranes",
+        "en" : "Fixed Cranes",
+        "it" : "gru fisse"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ConcreteVibrator",
@@ -4726,12 +4814,12 @@
         "de" : "Bauwerk",
         "IRI-based" : "Construction",
         "en" : "Construction",
-        "it" : "Edilizia"
+        "it" : "Costruzioni"
       }
     } ],
     "attributes" : [ "external" ],
     "id" : "150",
-    "superClasses" : [ "11" ]
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://w3id.org/cterm#PhysicalParameterType",
     "baseIri" : "https://w3id.org/cterm",
@@ -4741,6 +4829,15 @@
       "undefined" : "Physical parameter type"
     },
     "individuals" : [ {
+      "iri" : "https://w3id.org/cterm#Weight",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Gewicht",
+        "IRI-based" : "Weight",
+        "en" : "Weight",
+        "it" : "peso"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#SpecificWeight",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4748,15 +4845,6 @@
         "IRI-based" : "SpecificWeight",
         "en" : "Specific Weight",
         "it" : "peso specifico"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#Weight",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Gewicht",
-        "IRI-based" : "Weight",
-        "en" : "Weight",
-        "it" : "Peso"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Density",
@@ -4779,9 +4867,9 @@
       "IRI-based" : "Category",
       "undefined" : "Category"
     },
-    "subClasses" : [ "163", "96", "166", "168", "170", "133", "157", "95" ],
+    "subClasses" : [ "163", "96", "166", "168", "170", "134", "157", "95" ],
     "attributes" : [ "external" ],
-    "id" : "14",
+    "id" : "12",
     "superClasses" : [ "25" ]
   }, {
     "iri" : "https://w3id.org/cterm#Family",
@@ -4791,9 +4879,9 @@
       "IRI-based" : "Family",
       "undefined" : "Family"
     },
-    "subClasses" : [ "57", "10", "145", "147", "78", "150" ],
+    "subClasses" : [ "57", "13", "145", "147", "78", "150" ],
     "attributes" : [ "external" ],
-    "id" : "11",
+    "id" : "14",
     "superClasses" : [ "25" ]
   }, {
     "iri" : "https://w3id.org/cterm#DimensionParameterType",
@@ -4831,15 +4919,6 @@
         "it" : "sbraccio"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#NominalDiameter",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Nennmaß-Durchmesser",
-        "IRI-based" : "NominalDiameter",
-        "en" : "Nominal Diameter",
-        "it" : "diametro nominale"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Granulometry",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -4847,6 +4926,15 @@
         "IRI-based" : "Granulometry",
         "en" : "Granulometry",
         "it" : "Granulometria"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#NominalDiameter",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Nennmaß-Durchmesser",
+        "IRI-based" : "NominalDiameter",
+        "en" : "Nominal Diameter",
+        "it" : "diametro nominale"
       }
     }, {
       "iri" : "https://w3id.org/cterm#HeadDiameter",
@@ -4918,7 +5006,7 @@
         "de" : "Länge",
         "IRI-based" : "Length",
         "en" : "Length",
-        "it" : "Lunghezza"
+        "it" : "lunghezza"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Thickness",
@@ -4968,10 +5056,19 @@
         "en" : "Setups",
         "it" : "apprestamenti"
       }
+    }, {
+      "iri" : "https://w3id.org/cterm#Preparations",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Einrichtung",
+        "IRI-based" : "Preparations",
+        "en" : "Preparations",
+        "it" : "Apprestamenti"
+      }
     } ],
     "attributes" : [ "external" ],
     "id" : "147",
-    "superClasses" : [ "11" ]
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://w3id.org/cr#EquipmentResource",
     "baseIri" : "https://w3id.org/cr",
@@ -4999,6 +5096,15 @@
         "it" : "sistema stutturale"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#SitePreparationSystems",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Baustelleneinrichtungen",
+        "IRI-based" : "SitePreparationSystems",
+        "en" : "Site Setup Systems",
+        "it" : "sistemi di apprestamento di cantiere"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#ExcavationSystems",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -5006,15 +5112,6 @@
         "IRI-based" : "ExcavationSystems",
         "en" : "Excavation Systems",
         "it" : "sistemi di scavo"
-      }
-    }, {
-      "iri" : "https://w3id.org/cterm#SiteSetupSystems",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Baustelleneinrichtungen",
-        "IRI-based" : "SiteSetupSystems",
-        "en" : "Site Setup Systems",
-        "it" : "sistemi di apprestamento di cantiere"
       }
     }, {
       "iri" : "https://w3id.org/cterm#WallSystems",
@@ -5028,7 +5125,7 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "166",
-    "superClasses" : [ "14" ]
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/cr#Resource",
     "baseIri" : "https://w3id.org/cr",
@@ -5065,15 +5162,6 @@
         "it" : "Difesa Suolo"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Transport",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Transport",
-        "IRI-based" : "Transport",
-        "en" : "Transport",
-        "it" : "Trasporti"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Buildings",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -5081,6 +5169,15 @@
         "IRI-based" : "Buildings",
         "en" : "Buildings",
         "it" : "Edifici"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Transport",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Transport",
+        "IRI-based" : "Transport",
+        "en" : "Transport",
+        "it" : "Trasporti"
       }
     }, {
       "iri" : "https://w3id.org/cterm#AgroForestry",
@@ -5112,7 +5209,7 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "163",
-    "superClasses" : [ "14" ]
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionWork",
     "equivalent" : [ "95" ],
@@ -5128,7 +5225,7 @@
       "labels" : {
         "IRI-based" : "InsulationSystems",
         "en" : "Insulation Systems",
-        "it" : "Dämmsysteme"
+        "it" : "Sistemi Di Isolamento"
       }
     }, {
       "iri" : "https://w3id.org/cterm#FoundationSystems",
@@ -5151,7 +5248,7 @@
     } ],
     "attributes" : [ "equivalent", "external" ],
     "id" : "96",
-    "superClasses" : [ "14" ]
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork",
     "baseIri" : "https://w3id.org/cterm",
@@ -5266,15 +5363,6 @@
         "it" : "sponde di travi e cordoli"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#WallsforStaircasesandElevators",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Wände für Treppen- und Aufzugsschächte",
-        "IRI-based" : "WallsforStaircasesandElevators",
-        "en" : "Walls for Staircases and Elevators",
-        "it" : "pareti per vani scala e ascensori"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#PointFoundations",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -5282,6 +5370,15 @@
         "IRI-based" : "PointFoundations",
         "en" : "Point Foundations",
         "it" : "fondazioni puntuali"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#WallsforStaircasesandElevators",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Wände für Treppen- und Aufzugsschächte",
+        "IRI-based" : "WallsforStaircasesandElevators",
+        "en" : "Walls for Staircases and Elevators",
+        "it" : "pareti per vani scala e ascensori"
       }
     }, {
       "iri" : "https://w3id.org/cterm#StraightBalconyParapets",
@@ -5390,23 +5487,23 @@
   }, {
     "instances" : 0,
     "union" : [ "19", "201", "99" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "33"
   }, {
     "instances" : 0,
     "union" : [ "89", "176", "216", "19" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "13"
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "11"
   }, {
     "instances" : 0,
-    "union" : [ "176", "19", "201", "51" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "176", "19", "201", "50" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "241"
   }, {
     "instances" : 0,
     "union" : [ "19", "201", "99" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "39"
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "37"
   }, {
     "iri" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork",
     "baseIri" : "https://w3id.org/cterm",
@@ -5416,15 +5513,6 @@
       "undefined" : "Type Of Work Of TemporaryWork"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/cterm#PouringWalkway",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Gusslaufsteg",
-        "IRI-based" : "PouringWalkway",
-        "en" : "Pouring Walkway",
-        "it" : "passerella di getto"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Modular",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -5432,6 +5520,15 @@
         "IRI-based" : "Modular",
         "en" : "Modular",
         "it" : "componibile"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#PouringWalkway",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Gusslaufsteg",
+        "IRI-based" : "PouringWalkway",
+        "en" : "Pouring Walkway",
+        "it" : "passerella di getto"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Traditional",
@@ -5454,15 +5551,15 @@
       "undefined" : "Thing"
     }
   }, {
-    "iri" : "http://org.semanticweb.owlapi/error#Error4",
+    "iri" : "http://org.semanticweb.owlapi/error#Error1",
     "baseIri" : "http://org.semanticweb.owlapi/error",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Error4"
+      "IRI-based" : "Error1"
     },
     "subClasses" : [ "88" ],
     "attributes" : [ "external" ],
-    "id" : "134"
+    "id" : "133"
   }, {
     "iri" : "https://w3id.org/cterm#CategoryOfMaterial",
     "baseIri" : "https://w3id.org/cterm",
@@ -5478,7 +5575,7 @@
         "de" : "Produkte",
         "IRI-based" : "Products",
         "en" : "Products",
-        "it" : "Prodotti"
+        "it" : "prodotti"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Accessories",
@@ -5510,7 +5607,7 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "170",
-    "superClasses" : [ "14" ]
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -5605,7 +5702,7 @@
         "de" : "Konsolidierung",
         "IRI-based" : "Consolidation",
         "en" : "Consolidation",
-        "it" : "consolidamento"
+        "it" : "Consolidamento"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Handling",
@@ -5626,15 +5723,6 @@
         "it" : "Raschiatura"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Distribution",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Verteilung",
-        "IRI-based" : "Distribution",
-        "en" : "Distribution",
-        "it" : "Distribuzione"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Casting",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -5642,6 +5730,15 @@
         "IRI-based" : "Casting",
         "en" : "Casting",
         "it" : "Getto"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Distribution",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Verteilung",
+        "IRI-based" : "Distribution",
+        "en" : "Distribution",
+        "it" : "Distribuzione"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Plastering",
@@ -5704,7 +5801,7 @@
         "de" : "Zusammenbau",
         "IRI-based" : "Assembly",
         "en" : "Assembly",
-        "it" : "Montaggio"
+        "it" : "Assemblaggio"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Assistance",
@@ -5811,7 +5908,7 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "157",
-    "superClasses" : [ "14" ]
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -5886,7 +5983,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "209",
+    "id" : "211",
     "label" : {
       "IRI-based" : "string"
     }
@@ -6035,15 +6132,6 @@
         "it" : "impasti"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Insulations",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Dämmstoffe",
-        "IRI-based" : "Insulations",
-        "en" : "Insulations",
-        "it" : "Isolamenti"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#WindowsAndDoors",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -6051,6 +6139,15 @@
         "IRI-based" : "WindowsAndDoors",
         "en" : "Windows And Doors",
         "it" : "Serramenti"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Insulations",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Dämmstoffe",
+        "IRI-based" : "Insulations",
+        "en" : "Insulations",
+        "it" : "Isolamenti"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Fastenings",
@@ -6089,15 +6186,6 @@
         "it" : "delimitazioni-protezioni"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Soil",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Boden",
-        "IRI-based" : "Soil",
-        "en" : "Soil",
-        "it" : "Terreno"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Roofing",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -6107,13 +6195,22 @@
         "it" : "Coperture"
       }
     }, {
+      "iri" : "https://w3id.org/cterm#Soil",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Boden",
+        "IRI-based" : "Soil",
+        "en" : "Soil",
+        "it" : "Suolo"
+      }
+    }, {
       "iri" : "https://w3id.org/cterm#Flooring",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Bodenbelag",
+        "de" : "Bodenbeläge",
         "IRI-based" : "Flooring",
         "en" : "Flooring",
-        "it" : "pavimentazione"
+        "it" : "Pavimentazioni"
       }
     }, {
       "iri" : "https://w3id.org/cterm#SoilConsolidation",
@@ -6244,7 +6341,7 @@
     } ],
     "attributes" : [ "external" ],
     "id" : "145",
-    "superClasses" : [ "11" ]
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "https://w3id.org/cterm#FurnishingOfMaterial",
     "baseIri" : "https://w3id.org/cterm",
@@ -6274,6 +6371,15 @@
     "attributes" : [ "external" ],
     "id" : "248"
   }, {
+    "iri" : "https://w3id.org/cr#LabourResource",
+    "baseIri" : "https://w3id.org/cr",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LabourResource"
+    },
+    "attributes" : [ "external" ],
+    "id" : "240"
+  }, {
     "iri" : "https://w3id.org/cterm#TypeOfConstructionWork",
     "baseIri" : "https://w3id.org/cterm",
     "instances" : 0,
@@ -6284,15 +6390,6 @@
     "attributes" : [ "external" ],
     "id" : "82",
     "superClasses" : [ "47" ]
-  }, {
-    "iri" : "https://w3id.org/cr#LabourResource",
-    "baseIri" : "https://w3id.org/cr",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "LabourResource"
-    },
-    "attributes" : [ "external" ],
-    "id" : "240"
   }, {
     "iri" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork",
     "baseIri" : "https://w3id.org/cterm",
@@ -6359,9 +6456,9 @@
       "iri" : "https://w3id.org/cterm#FloorSlab",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Deckenplatte",
+        "de" : "Decke",
         "IRI-based" : "FloorSlab",
-        "en" : "FloorSlab",
+        "en" : "Floor Slab",
         "it" : "solaio"
       }
     }, {
@@ -6418,14 +6515,6 @@
         "it" : "Sottotetti Non Riscaldati"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Lintels",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "IRI-based" : "Lintels",
-        "en" : "Lintels",
-        "it" : "Architravi"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Diaphragms",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -6433,6 +6522,14 @@
         "IRI-based" : "Diaphragms",
         "en" : "Diaphragms",
         "it" : "diaframmi"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Lintels",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "IRI-based" : "Lintels",
+        "en" : "Lintels",
+        "it" : "Architravi"
       }
     }, {
       "iri" : "https://w3id.org/cterm#BasementFlooring",
@@ -6462,15 +6559,6 @@
         "it" : "Sottopavimenti"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Elevation-Foundation",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Erhöhung-Fundament",
-        "IRI-based" : "Elevation-Foundation",
-        "en" : "Elevation-Foundation",
-        "it" : "elevazione-fondazione"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#BasementWalls",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -6478,6 +6566,15 @@
         "IRI-based" : "BasementWalls",
         "en" : "Buried Walls",
         "it" : "Pareti Interrate"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Elevation-Foundation",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Erhöhung-Fundament",
+        "IRI-based" : "Elevation-Foundation",
+        "en" : "Elevation-Foundation",
+        "it" : "elevazione-fondazione"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ReinforcedConcreteStructures",
@@ -6540,7 +6637,7 @@
         "de" : "Mauerwerksschicht",
         "IRI-based" : "MasonryLayer",
         "en" : "Masonry Layer",
-        "it" : "strato di muratura"
+        "it" : "Strato Di Muratura"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Openings",
@@ -6579,15 +6676,6 @@
         "it" : "Sottotetti Non Praticabili"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#RoofGarden",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Dachgarten",
-        "IRI-based" : "RoofGarden",
-        "en" : "Roof garden",
-        "it" : "Giardino pensile"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#ExistingScreeds",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -6597,13 +6685,13 @@
         "it" : "Massetti Esistenti"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#FloorsOverUnheatedAreas",
+      "iri" : "https://w3id.org/cterm#RoofGarden",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Decken über unbeheizten Bereichen",
-        "IRI-based" : "FloorsOverUnheatedAreas",
-        "en" : "Floors Over Unheated Areas",
-        "it" : "Solai Su Zone Non Riscaldate"
+        "de" : "Dachgarten",
+        "IRI-based" : "RoofGarden",
+        "en" : "Roof garden",
+        "it" : "Giardino pensile"
       }
     }, {
       "iri" : "https://w3id.org/cterm#InternalWalls",
@@ -6612,6 +6700,15 @@
         "IRI-based" : "InternalWalls",
         "en" : "Internal Walls",
         "it" : "Pareti Dall Interno"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#FloorsOverUnheatedAreas",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Böden über unbeheizten Bereichen",
+        "IRI-based" : "FloorsOverUnheatedAreas",
+        "en" : "Floors Over Unheated Areas",
+        "it" : "Solai Su Zone Non Riscaldate"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Columns",
@@ -6690,7 +6787,7 @@
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
         "IRI-based" : "Pillars",
-        "en" : "Pillars",
+        "en" : "Säulen",
         "it" : "Pilastri"
       }
     }, {
@@ -6721,15 +6818,6 @@
         "it" : "collegamenti"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#ConcreteStructures",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Betonstrukturen",
-        "IRI-based" : "ConcreteStructures",
-        "en" : "Concrete Structures",
-        "it" : "strutture in conglomerato cementizio"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#DriveableFlatRoof",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -6737,6 +6825,15 @@
         "IRI-based" : "DriveableFlatRoof",
         "en" : "Driveable Flat Roof",
         "it" : "Copertura Piana Carrabile"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#ConcreteStructures",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Betonstrukturen",
+        "IRI-based" : "ConcreteStructures",
+        "en" : "Concrete Structures",
+        "it" : "strutture in conglomerato cementizio"
       }
     }, {
       "iri" : "https://w3id.org/cterm#VentilatedPitchedRoof",
@@ -6771,7 +6868,7 @@
         "de" : "Boden",
         "IRI-based" : "Soil",
         "en" : "Soil",
-        "it" : "Terreno"
+        "it" : "Suolo"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Wall-Ceiling",
@@ -6856,7 +6953,7 @@
         "de" : "Druckfestigkeit",
         "IRI-based" : "CompressionStrength",
         "en" : "Compression Strength",
-        "it" : "Resistenza A Compressione"
+        "it" : "resistenza a compressione"
       }
     }, {
       "iri" : "https://w3id.org/cterm#LoadClass",
@@ -6916,10 +7013,10 @@
       "iri" : "https://w3id.org/cterm#Capacity",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Tragfähigkeit",
+        "de" : "Kapazität",
         "IRI-based" : "Capacity",
         "en" : "Capacity",
-        "it" : "portata"
+        "it" : "capacità"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ExposureClass",
@@ -6931,15 +7028,6 @@
         "it" : "classe di esposizione"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Power",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Leistung",
-        "IRI-based" : "Power",
-        "en" : "Power",
-        "it" : "potenza"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#SpreadClass",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -6949,13 +7037,13 @@
         "it" : "classe di spandimento"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#CharacteristicStrength",
+      "iri" : "https://w3id.org/cterm#Power",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Charakteristische Festigkeit",
-        "IRI-based" : "CharacteristicStrength",
-        "en" : "Characteristic Strength",
-        "it" : "resistenza caratteristica"
+        "de" : "Leistung",
+        "IRI-based" : "Power",
+        "en" : "Power",
+        "it" : "potenza"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Consistency",
@@ -6965,6 +7053,15 @@
         "IRI-based" : "Consistency",
         "en" : "Consistency",
         "it" : "consistenza"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#CharacteristicStrength",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Charakteristische Festigkeit",
+        "IRI-based" : "CharacteristicStrength",
+        "en" : "Characteristic Strength",
+        "it" : "resistenza caratteristica"
       }
     }, {
       "iri" : "https://w3id.org/cterm#SoundAbsorption",
@@ -6991,7 +7088,7 @@
         "de" : "Wärmeleitfähigkeit",
         "IRI-based" : "ThermalConductivity",
         "en" : "Thermal Conductivity",
-        "it" : "Conducibilità Termica"
+        "it" : "conducibilità termica"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ThermalResistance",
@@ -7009,7 +7106,7 @@
         "de" : "Wasserdampfdiffusionswiderstand",
         "IRI-based" : "WaterVaporDiffusionResistance",
         "en" : "Water Vapor Diffusion Resistance",
-        "it" : "Resistenza Alla Diffusione Del Vapore Acqueo"
+        "it" : "Resistenza A Diffusione Del Vapore Acqueo"
       }
     }, {
       "iri" : "https://w3id.org/cterm#TensileStrengthPerpendicularToFaces",
@@ -7021,15 +7118,6 @@
         "it" : "Resistenza A Trazione Perpendicolare Alle Facce"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#FallHeights",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Fallhöhen",
-        "IRI-based" : "FallHeights",
-        "en" : "Fall Heights",
-        "it" : "altezze di caduta"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#VolumetricMass",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -7037,6 +7125,15 @@
         "IRI-based" : "VolumetricMass",
         "en" : "Volumetric Mass",
         "it" : "massa volumica"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#FallHeights",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Fallhöhen",
+        "IRI-based" : "FallHeights",
+        "en" : "Fall Heights",
+        "it" : "altezze di caduta"
       }
     }, {
       "iri" : "https://w3id.org/cterm#CompressionResistance",
@@ -7054,7 +7151,7 @@
         "de" : "Feuerbeständigkeit",
         "IRI-based" : "FireResistance",
         "en" : "Fire Resistance",
-        "it" : "resistenza al fuoco"
+        "it" : "Resistenza Al Fuoco"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ResistanceClass",
@@ -7063,7 +7160,7 @@
         "de" : "Widerstandsklasse",
         "IRI-based" : "ResistanceClass",
         "en" : "Resistance Class",
-        "it" : "classe di resistenza"
+        "it" : "Classe Di Resistenza"
       }
     }, {
       "iri" : "https://w3id.org/cterm#FireReaction",
@@ -7072,40 +7169,21 @@
         "de" : "Brandverhalten",
         "IRI-based" : "FireReaction",
         "en" : "Fire Reaction",
-        "it" : "reazione al fuoco"
+        "it" : "Reazione Al Fuoco"
       }
     } ],
     "attributes" : [ "external" ],
     "id" : "43",
     "superClasses" : [ "41" ]
   }, {
-    "iri" : "https://w3id.org/cterm#MaterialOfWorkOfTemporaryWork",
-    "baseIri" : "https://w3id.org/cterm",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MaterialOfWorkOfTemporaryWork"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/cterm#GenericNaturalWood",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Allgemeines Naturholz",
-        "IRI-based" : "GenericNaturalWood",
-        "en" : "Generic Natural Wood",
-        "it" : "legno naturale generico"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "278"
-  }, {
     "instances" : 0,
     "union" : [ "89", "176", "216", "19" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "270"
   }, {
     "instances" : 0,
     "union" : [ "89", "176", "216", "19" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "153"
   }, {
     "iri" : "https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork",
@@ -7120,23 +7198,23 @@
     "superClasses" : [ "68" ]
   }, {
     "instances" : 0,
-    "union" : [ "89", "176", "19", "201", "51" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "89", "176", "19", "50", "201" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "229"
   }, {
     "instances" : 0,
     "union" : [ "89", "176", "216", "19" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "274"
   }, {
     "instances" : 0,
-    "union" : [ "89", "176", "19", "51", "201" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "211"
+    "union" : [ "89", "176", "19", "201", "50" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "209"
   }, {
     "instances" : 0,
-    "union" : [ "176", "19", "201", "51" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "176", "19", "201", "50" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "98"
   }, {
     "iri" : "https://w3id.org/cterm#FunctionOfMaterial",
@@ -7246,15 +7324,6 @@
         "it" : "termoisolante"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Waterproof",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Wasserdicht",
-        "IRI-based" : "Waterproof",
-        "en" : "Waterproof",
-        "it" : "impermeabile"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Pre-Tensioning",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -7262,6 +7331,15 @@
         "IRI-based" : "Pre-Tensioning",
         "en" : "Pre-Tensioning",
         "it" : "precompressione"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Waterproof",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Wasserdicht",
+        "IRI-based" : "Waterproof",
+        "en" : "Waterproof",
+        "it" : "impermeabile"
       }
     }, {
       "iri" : "https://w3id.org/cterm#HeatReflective",
@@ -7291,15 +7369,6 @@
         "it" : "strutturale"
       }
     }, {
-      "iri" : "https://w3id.org/cterm#Wear-Resistant",
-      "baseIri" : "https://w3id.org/cterm",
-      "labels" : {
-        "de" : "Verschleißfest",
-        "IRI-based" : "Wear-Resistant",
-        "en" : "Wear-Resistant",
-        "it" : "resistente all'usura"
-      }
-    }, {
       "iri" : "https://w3id.org/cterm#Anti-Trauma",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
@@ -7307,6 +7376,15 @@
         "IRI-based" : "Anti-Trauma",
         "en" : "Anti-Trauma",
         "it" : "antitrauma"
+      }
+    }, {
+      "iri" : "https://w3id.org/cterm#Wear-Resistant",
+      "baseIri" : "https://w3id.org/cterm",
+      "labels" : {
+        "de" : "Verschleißfest",
+        "IRI-based" : "Wear-Resistant",
+        "en" : "Wear-Resistant",
+        "it" : "resistente all'usura"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Injection",
@@ -7340,33 +7418,33 @@
       "IRI-based" : "Terminology",
       "undefined" : "Terminology"
     },
-    "subClasses" : [ "68", "14", "127", "2", "11", "47", "24", "7", "41", "94", "52", "109", "74" ],
+    "subClasses" : [ "68", "12", "127", "2", "14", "47", "24", "7", "41", "94", "51", "109", "74" ],
     "attributes" : [ "external" ],
     "id" : "25"
   }, {
     "instances" : 0,
-    "union" : [ "19", "201", "51" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "19", "50", "201" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "200"
   }, {
     "instances" : 0,
-    "union" : [ "19", "51" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "19", "50" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "183"
   }, {
     "instances" : 0,
     "union" : [ "89", "176", "216", "19" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "46"
   }, {
     "instances" : 0,
     "union" : [ "19", "201", "99" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "91"
   }, {
     "instances" : 0,
-    "union" : [ "89", "19", "201", "51" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "89", "19", "50", "201" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "129"
   } ],
   "property" : [ {
@@ -7382,7 +7460,7 @@
     "id" : "8",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "12",
+    "id" : "10",
     "type" : "owl:objectProperty"
   }, {
     "id" : "15",
@@ -7400,13 +7478,13 @@
     "id" : "32",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "38",
+    "id" : "36",
     "type" : "owl:objectProperty"
   }, {
     "id" : "45",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "50",
+    "id" : "49",
     "type" : "owl:objectProperty"
   }, {
     "id" : "53",
@@ -7689,10 +7767,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "208",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "210",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "212",
     "type" : "owl:disjointWith"
@@ -7859,59 +7937,59 @@
     "id" : "277",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "279",
+    "id" : "278",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
     "range" : "2",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "range" : "7",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "5"
   }, {
     "range" : "7",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "8"
   }, {
     "iri" : "https://w3id.org/cterm#hasCategory",
     "baseIri" : "https://w3id.org/cterm",
-    "range" : "14",
+    "range" : "12",
     "label" : {
       "IRI-based" : "hasCategory",
       "undefined" : "hasCategory"
     },
-    "domain" : "13",
+    "domain" : "11",
     "attributes" : [ "external", "object" ],
-    "id" : "12"
+    "id" : "10"
   }, {
     "range" : "7",
     "domain" : "16",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "15"
   }, {
     "range" : "7",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "17"
   }, {
     "range" : "7",
     "domain" : "21",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "20"
   }, {
     "range" : "7",
     "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "22"
   }, {
     "iri" : "https://w3id.org/cterm#hasPerformanceParameter",
@@ -7927,14 +8005,14 @@
   }, {
     "iri" : "https://w3id.org/cterm#hasDimensionParameter",
     "baseIri" : "https://w3id.org/cterm",
-    "range" : "40",
+    "range" : "38",
     "label" : {
       "IRI-based" : "hasDimensionParameter",
       "undefined" : "hasDimensionParameter"
     },
-    "domain" : "39",
+    "domain" : "37",
     "attributes" : [ "external", "object" ],
-    "id" : "38"
+    "id" : "36"
   }, {
     "iri" : "https://w3id.org/cterm#hasType",
     "baseIri" : "https://w3id.org/cterm",
@@ -7949,58 +8027,58 @@
   }, {
     "iri" : "https://w3id.org/cterm#hasFurnishing",
     "baseIri" : "https://w3id.org/cterm",
-    "range" : "52",
+    "range" : "51",
     "label" : {
       "IRI-based" : "hasFurnishing",
       "undefined" : "hasFurnishing"
     },
-    "domain" : "51",
+    "domain" : "50",
     "attributes" : [ "external", "object" ],
-    "id" : "50"
+    "id" : "49"
   }, {
     "range" : "2",
     "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "53"
   }, {
     "range" : "2",
     "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "55"
   }, {
     "range" : "47",
     "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "58"
   }, {
     "range" : "47",
     "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "60"
   }, {
     "range" : "47",
     "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "62"
   }, {
     "range" : "47",
     "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "64"
   }, {
     "range" : "68",
     "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "66"
   }, {
     "range" : "68",
     "domain" : "70",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "69"
   }, {
     "range" : "68",
     "domain" : "72",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "71"
   }, {
     "iri" : "https://w3id.org/cterm#standardNumber",
@@ -8012,17 +8090,17 @@
     },
     "maxCardinality" : "1",
     "domain" : "74",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "73"
   }, {
     "range" : "68",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "76"
   }, {
     "range" : "2",
     "domain" : "80",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "79"
   }, {
     "iri" : "https://w3id.org/cterm#hasClassification",
@@ -8060,34 +8138,23 @@
   }, {
     "range" : "47",
     "domain" : "84",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "100"
   }, {
     "range" : "47",
     "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "101"
   }, {
     "range" : "47",
     "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "102"
   }, {
     "range" : "47",
     "domain" : "85",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "103"
-  }, {
-    "iri" : "https://w3id.org/cterm#hasParameterStandard",
-    "baseIri" : "https://w3id.org/cterm",
-    "range" : "74",
-    "label" : {
-      "IRI-based" : "hasParameterStandard",
-      "undefined" : "hasParameterStandard"
-    },
-    "domain" : "37",
-    "attributes" : [ "external", "object" ],
-    "id" : "105"
   }, {
     "iri" : "https://w3id.org/cterm#parameterType",
     "baseIri" : "https://w3id.org/cterm",
@@ -8096,7 +8163,18 @@
       "IRI-based" : "parameterType",
       "undefined" : "parameter type"
     },
-    "domain" : "37",
+    "domain" : "39",
+    "attributes" : [ "external", "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://w3id.org/cterm#hasParameterStandard",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasParameterStandard",
+      "undefined" : "hasParameterStandard"
+    },
+    "domain" : "39",
     "attributes" : [ "external", "object" ],
     "id" : "106"
   }, {
@@ -8109,7 +8187,7 @@
     },
     "maxCardinality" : "1",
     "domain" : "74",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "107"
   }, {
     "iri" : "https://w3id.org/cterm#hasUnit",
@@ -8119,73 +8197,73 @@
       "IRI-based" : "hasUnit",
       "undefined" : "hasUnit"
     },
-    "domain" : "37",
+    "domain" : "39",
     "attributes" : [ "external", "object" ],
     "id" : "111"
   }, {
     "range" : "25",
-    "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "113"
   }, {
     "range" : "25",
     "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "114"
   }, {
     "range" : "25",
     "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "115"
   }, {
     "range" : "25",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "116"
   }, {
     "range" : "25",
     "domain" : "47",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "117"
   }, {
     "range" : "25",
     "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "118"
   }, {
     "range" : "25",
     "domain" : "7",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "119"
   }, {
     "range" : "25",
     "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "120"
   }, {
     "range" : "25",
     "domain" : "94",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "121"
   }, {
     "range" : "94",
     "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "122"
   }, {
     "range" : "25",
     "domain" : "68",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "124"
   }, {
     "range" : "25",
-    "domain" : "14",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "125"
   }, {
     "range" : "25",
     "domain" : "127",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "126"
   }, {
     "iri" : "https://w3id.org/cterm#hasMaterial",
@@ -8201,7 +8279,7 @@
   }, {
     "range" : "25",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "130"
   }, {
     "iri" : "https://w3id.org/cterm#standardBody",
@@ -8213,67 +8291,67 @@
     },
     "maxCardinality" : "1",
     "domain" : "74",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "131"
   }, {
     "range" : "94",
     "domain" : "136",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "135"
   }, {
     "range" : "94",
     "domain" : "112",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "137"
   }, {
     "range" : "94",
     "domain" : "93",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "138"
   }, {
     "range" : "94",
     "domain" : "140",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "139"
   }, {
     "range" : "94",
     "domain" : "142",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "141"
   }, {
-    "range" : "11",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "143"
   }, {
-    "range" : "11",
+    "range" : "14",
     "domain" : "145",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "144"
   }, {
-    "range" : "11",
+    "range" : "14",
     "domain" : "147",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "146"
   }, {
-    "range" : "11",
+    "range" : "14",
     "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "148"
   }, {
-    "range" : "11",
+    "range" : "14",
     "domain" : "150",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "149"
   }, {
-    "range" : "134",
+    "range" : "133",
     "domain" : "88",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "151"
   }, {
     "iri" : "https://w3id.org/cterm#hasFamily",
     "baseIri" : "https://w3id.org/cterm",
-    "range" : "11",
+    "range" : "14",
     "label" : {
       "IRI-based" : "hasFamily",
       "undefined" : "hasFamily"
@@ -8293,59 +8371,59 @@
     "attributes" : [ "external", "object" ],
     "id" : "154"
   }, {
-    "range" : "14",
-    "domain" : "133",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "12",
+    "domain" : "134",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "155"
   }, {
-    "range" : "14",
+    "range" : "12",
     "domain" : "157",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "156"
   }, {
-    "range" : "14",
+    "range" : "12",
     "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "158"
   }, {
-    "range" : "11",
+    "range" : "14",
     "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "159"
   }, {
-    "range" : "37",
+    "range" : "39",
     "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "160"
   }, {
-    "range" : "37",
+    "range" : "39",
     "domain" : "92",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "161"
   }, {
-    "range" : "14",
+    "range" : "12",
     "domain" : "163",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "162"
   }, {
-    "range" : "14",
+    "range" : "12",
     "domain" : "96",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "164"
   }, {
-    "range" : "14",
+    "range" : "12",
     "domain" : "166",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "165"
   }, {
-    "range" : "14",
+    "range" : "12",
     "domain" : "168",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "167"
   }, {
-    "range" : "14",
+    "range" : "12",
     "domain" : "170",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "169"
   }, {
     "iri" : "https://w3id.org/cterm#standardPart",
@@ -8357,47 +8435,47 @@
     },
     "maxCardinality" : "1",
     "domain" : "74",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "171"
   }, {
     "range" : "7",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "173"
   }, {
     "range" : "7",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "174"
   }, {
-    "range" : "37",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "39",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "175"
   }, {
-    "range" : "36",
+    "range" : "18",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "177"
   }, {
     "range" : "18",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "178"
   }, {
-    "range" : "9",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "40",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "179"
   }, {
-    "range" : "9",
+    "range" : "52",
     "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "180"
   }, {
-    "range" : "36",
+    "range" : "40",
     "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "181"
   }, {
     "iri" : "https://w3id.org/cterm#hasFinishing",
@@ -8411,34 +8489,34 @@
     "attributes" : [ "external", "object" ],
     "id" : "182"
   }, {
-    "range" : "36",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "9",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "184"
   }, {
-    "range" : "18",
+    "range" : "9",
     "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "185"
-  }, {
-    "range" : "93",
-    "domain" : "112",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "186"
   }, {
     "range" : "123",
     "domain" : "112",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "93",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "187"
   }, {
-    "range" : "49",
+    "range" : "18",
     "domain" : "23",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "188"
   }, {
     "range" : "93",
     "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "189"
   }, {
     "iri" : "https://w3id.org/cterm#parameterValue1",
@@ -8449,8 +8527,8 @@
       "undefined" : "parameterValue1"
     },
     "maxCardinality" : "1",
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
     "id" : "190"
   }, {
     "iri" : "https://w3id.org/cterm#parameterValue2",
@@ -8461,33 +8539,33 @@
       "undefined" : "parameterValue2"
     },
     "maxCardinality" : "1",
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
     "id" : "192"
-  }, {
-    "range" : "112",
-    "domain" : "140",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "194"
   }, {
     "range" : "123",
     "domain" : "140",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "112",
+    "domain" : "140",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "195"
   }, {
     "range" : "93",
     "domain" : "140",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "196"
   }, {
     "range" : "78",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "197"
   }, {
     "range" : "34",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "198"
   }, {
     "iri" : "https://w3id.org/cterm#hasAspect",
@@ -8503,45 +8581,33 @@
   }, {
     "range" : "78",
     "domain" : "150",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "202"
   }, {
     "range" : "150",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "203"
   }, {
     "range" : "166",
     "domain" : "96",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "204"
   }, {
     "range" : "92",
-    "domain" : "40",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "205"
   }, {
     "range" : "166",
     "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "206"
   }, {
     "range" : "61",
     "domain" : "85",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "207"
-  }, {
-    "iri" : "https://w3id.org/cterm#parameterSymbol2",
-    "baseIri" : "https://w3id.org/cterm",
-    "range" : "209",
-    "label" : {
-      "IRI-based" : "parameterSymbol2",
-      "undefined" : "parameterSimbol2"
-    },
-    "maxCardinality" : "1",
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "208"
   }, {
     "iri" : "https://w3id.org/cterm#hasObjectStandard",
     "baseIri" : "https://w3id.org/cterm",
@@ -8550,18 +8616,30 @@
       "IRI-based" : "hasObjectStandard",
       "undefined" : "hasObjectStandard"
     },
-    "domain" : "211",
+    "domain" : "209",
     "attributes" : [ "external", "object" ],
+    "id" : "208"
+  }, {
+    "iri" : "https://w3id.org/cterm#parameterSymbol2",
+    "baseIri" : "https://w3id.org/cterm",
+    "range" : "211",
+    "label" : {
+      "IRI-based" : "parameterSymbol2",
+      "undefined" : "parameterSimbol2"
+    },
+    "maxCardinality" : "1",
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
     "id" : "210"
   }, {
-    "range" : "63",
+    "range" : "84",
     "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "212"
   }, {
     "range" : "84",
     "domain" : "85",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "213"
   }, {
     "iri" : "https://w3id.org/cterm#parameterSymbol1",
@@ -8572,63 +8650,63 @@
       "undefined" : "parameterSimbol1"
     },
     "maxCardinality" : "1",
-    "domain" : "37",
-    "attributes" : [ "external", "datatype" ],
+    "domain" : "39",
+    "attributes" : [ "datatype", "external" ],
     "id" : "214"
-  }, {
-    "range" : "85",
-    "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "217"
   }, {
     "range" : "61",
     "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "range" : "63",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "218"
   }, {
     "range" : "63",
     "domain" : "85",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "219"
   }, {
-    "range" : "63",
+    "range" : "85",
     "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "220"
-  }, {
-    "range" : "84",
-    "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "221"
   }, {
     "range" : "61",
     "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "range" : "65",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "222"
   }, {
     "range" : "84",
     "domain" : "65",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "223"
+  }, {
+    "range" : "84",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
   }, {
     "range" : "63",
     "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "224"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
   }, {
     "range" : "85",
     "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "225"
-  }, {
-    "range" : "65",
-    "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "226"
   }, {
-    "range" : "65",
+    "range" : "63",
     "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "227"
   }, {
     "iri" : "https://w3id.org/cterm#hasOtherStandard",
@@ -8642,44 +8720,44 @@
     "attributes" : [ "external", "object" ],
     "id" : "228"
   }, {
-    "range" : "82",
-    "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "230"
-  }, {
     "range" : "84",
     "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "range" : "65",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "231"
   }, {
-    "range" : "63",
+    "range" : "82",
     "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "232"
-  }, {
-    "range" : "61",
-    "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "233"
-  }, {
-    "range" : "36",
-    "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "234"
-  }, {
-    "range" : "18",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "235"
   }, {
     "range" : "85",
     "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
+  }, {
+    "range" : "40",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "234"
+  }, {
+    "range" : "40",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "235"
+  }, {
+    "range" : "61",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "236"
   }, {
     "range" : "92",
     "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "237"
   }, {
     "iri" : "https://w3id.org/cterm#hasQualificationLevel",
@@ -8706,117 +8784,117 @@
   }, {
     "range" : "29",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "244"
   }, {
-    "range" : "30",
+    "range" : "29",
     "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "245"
   }, {
     "range" : "30",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "246"
   }, {
-    "range" : "29",
+    "range" : "30",
     "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "247"
   }, {
     "range" : "84",
     "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "249"
   }, {
-    "range" : "84",
+    "range" : "63",
     "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "250"
-  }, {
-    "range" : "28",
-    "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "251"
   }, {
     "range" : "29",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "251"
+  }, {
+    "range" : "28",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "252"
   }, {
     "range" : "41",
     "domain" : "44",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "253"
   }, {
     "range" : "41",
     "domain" : "43",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "254"
   }, {
     "range" : "47",
     "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "255"
   }, {
     "range" : "47",
     "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "256"
   }, {
     "range" : "24",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "257"
   }, {
     "range" : "41",
     "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "258"
   }, {
     "range" : "24",
     "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "259"
   }, {
     "range" : "54",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "260"
   }, {
-    "range" : "95",
+    "range" : "96",
     "domain" : "168",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "261"
   }, {
     "range" : "163",
     "domain" : "168",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "262"
   }, {
     "range" : "166",
     "domain" : "168",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "263"
   }, {
-    "range" : "96",
+    "range" : "95",
     "domain" : "168",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "264"
   }, {
     "range" : "166",
     "domain" : "163",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "265"
   }, {
     "range" : "96",
     "domain" : "163",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "267"
   }, {
     "range" : "95",
     "domain" : "163",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "268"
   }, {
     "iri" : "https://w3id.org/cterm#hasObject",
@@ -8832,12 +8910,12 @@
   }, {
     "range" : "54",
     "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "271"
   }, {
     "range" : "4",
     "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "272"
   }, {
     "iri" : "https://w3id.org/cterm#hasGender",
@@ -8853,22 +8931,22 @@
   }, {
     "range" : "24",
     "domain" : "27",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "275"
   }, {
     "range" : "24",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "276"
   }, {
     "range" : "24",
     "domain" : "29",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "277"
   }, {
     "range" : "24",
     "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "279"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
   } ]
 }
