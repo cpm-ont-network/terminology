@@ -17,133 +17,39 @@
   } ]
 }, {
   "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#ClassificationSystem"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasClassificationSystem"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#DimensionParameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#Standard"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasParameterStandard"
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://qudt.org/schema/qudt/Unit"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasUnit"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#EquipmentResource"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
   } ]
 }, {
   "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterSymbol1"
-  } ]
-}, {
-  "@id" : "_:genid15",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterSymbol2"
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterValue1"
-  } ]
-}, {
-  "@id" : "_:genid17",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterValue2"
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#PerformanceParameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#Resource"
+    } ]
   } ]
 }, {
   "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#PhysicalParameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#CostItem"
+    } ]
   } ]
 }, {
   "@id" : "_:genid2",
@@ -154,62 +60,30 @@
     "@value" : "Politecnico di Milano, Dipartimento ABC"
   } ]
 }, {
-  "@id" : "_:genid20",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#standardBody"
-  } ]
-}, {
-  "@id" : "_:genid21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#standardNumber"
-  } ]
-}, {
   "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#standardPart"
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#EquipmentResource"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
   } ]
 }, {
-  "@id" : "_:genid23",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#standardYear"
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "http://www.w3.org/2002/07/owl#cardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#Resource"
+    } ]
   } ]
 }, {
   "@id" : "_:genid3",
@@ -229,6 +103,44 @@
     "@value" : "Sigalov, Katharina"
   } ]
 }, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#EquipmentResource"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#EquipmentResource"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid4",
   "https://schema.org/identifier" : [ {
     "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/katharina_sigalov.html.en"
@@ -237,39 +149,37 @@
     "@value" : "Ruhr University Bochum"
   } ]
 }, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#Resource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#EquipmentResource"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
+  } ]
+}, {
   "@id" : "_:genid5",
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://schema.org/Person"
-  } ],
-  "https://schema.org/email" : [ {
-    "@id" : "mailto:philipp.hagedorn-n6v@rub.de"
-  } ],
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://orcid.org/0000-0002-6249-243X"
-  } ],
-  "https://schema.org/memberOf" : [ {
-    "@id" : "_:genid7"
-  }, {
-    "@id" : "_:genid6"
-  } ],
-  "https://schema.org/name" : [ {
-    "@value" : "Hagedorn, Philipp"
-  } ]
-}, {
-  "@id" : "_:genid6",
-  "https://schema.org/identifier" : [ {
-    "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"
-  } ],
-  "https://schema.org/name" : [ {
-    "@value" : "Ruhr University Bochum, Computing in Engineering"
-  } ]
-}, {
-  "@id" : "_:genid7",
-  "https://schema.org/name" : [ {
-    "@value" : "Politecnico di Milano"
-  } ]
-}, {
-  "@id" : "_:genid8",
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://schema.org/Person"
   } ],
@@ -280,13 +190,29 @@
     "@id" : "https://orcid.org/0000-0002-1487-8178"
   } ],
   "https://schema.org/memberOf" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid6"
   } ],
   "https://schema.org/name" : [ {
     "@value" : "Cassandro, Jacopo"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#EquipmentResource"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
   "https://schema.org/identifier" : [ {
     "@id" : "https://www.dabc.polimi.it/persona/jacopo-cassandro/"
   } ],
@@ -294,8 +220,284 @@
     "@value" : "Politecnico di Milano"
   } ]
 }, {
-  "@id" : "http://org.semanticweb.owlapi/error#Error1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#EquipmentResource"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#EquipmentResource"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#CostComponent"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#Resource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://schema.org/Person"
+  } ],
+  "https://schema.org/email" : [ {
+    "@id" : "mailto:philipp.hagedorn-n6v@rub.de"
+  } ],
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://orcid.org/0000-0002-6249-243X"
+  } ],
+  "https://schema.org/memberOf" : [ {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid8"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Hagedorn, Philipp"
+  } ]
+}, {
+  "@id" : "_:genid74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/ci#Activity"
+    }, {
+      "@id" : "https://w3id.org/ci#Work"
+    }, {
+      "@id" : "https://w3id.org/cr#EquipmentResource"
+    }, {
+      "@id" : "https://w3id.org/cr#MaterialResource"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#code"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "https://schema.org/identifier" : [ {
+    "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"
+  } ],
+  "https://schema.org/name" : [ {
+    "@value" : "Ruhr University Bochum, Computing in Engineering"
+  } ]
+}, {
+  "@id" : "_:genid80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#ClassificationSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasClassificationSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#DimensionParameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#Standard"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasParameterStandard"
+  } ]
+}, {
+  "@id" : "_:genid83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasUnit"
+  } ]
+}, {
+  "@id" : "_:genid84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterSymbol1"
+  } ]
+}, {
+  "@id" : "_:genid85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterSymbol2"
+  } ]
+}, {
+  "@id" : "_:genid86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterValue1"
+  } ]
+}, {
+  "@id" : "_:genid87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterValue2"
+  } ]
+}, {
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#PerformanceParameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#PhysicalParameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "https://schema.org/name" : [ {
+    "@value" : "Politecnico di Milano"
+  } ]
+}, {
+  "@id" : "_:genid90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#standardBody"
+  } ]
+}, {
+  "@id" : "_:genid91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#standardNumber"
+  } ]
+}, {
+  "@id" : "_:genid92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#standardPart"
+  } ]
+}, {
+  "@id" : "_:genid93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#standardYear"
+  } ]
 }, {
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -350,7 +552,7 @@
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "_:genid5"
   }, {
-    "@id" : "_:genid8"
+    "@id" : "_:genid7"
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -361,7 +563,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-01-13"
+    "@value" : "2025-04-07"
   } ],
   "http://purl.org/dc/terms/rights" : [ {
     "@value" : "Copyright 2025 by DABC, PoliMi"
@@ -376,39 +578,24 @@
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@id" : "http://w3id.org/cterm#"
   } ],
-  "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://w3id.org/ci"
-  }, {
-    "@id" : "http://w3id.org/cr"
-  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.1"
+    "@value" : "0.2"
   } ],
-  "https://schema.org/schema:codeRepository" : [ {
+  "https://schema.org/codeRepository" : [ {
     "@id" : "https://github.com/cpm-ont-network/terminology"
   } ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
-  "@id" : "http://www.w3.org/2002/07/owl#cardinality",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://schema.org/ConstrutcionSite",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FamilyOfWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Construtcion site"
-  }, {
-    "@language" : "it",
-    "@value" : "Ergotecnica"
-  } ]
+  "@id" : "http://www.w3.org/2001/XMLSchema#string",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://schema.org/Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://schema.org/email",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -422,13 +609,13 @@
   "@id" : "https://schema.org/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://schema.org/schema:codeRepository",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "https://w3id.org/ci#Activity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/ci#CostComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/ci#CostItem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/ci#Work",
@@ -438,9 +625,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cr#LabourResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/cr#Material",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cr#MaterialResource",
@@ -828,7 +1012,7 @@
   "@id" : "https://w3id.org/cterm#Bags",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FurnishingOfMaterial"
+    "@id" : "https://w3id.org/cterm#Furnishing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1159,7 +1343,7 @@
   "@id" : "https://w3id.org/cterm#Breathable",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -1385,10 +1569,9 @@
     "@id" : "https://w3id.org/cterm#Category"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
-  } ],
-  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductWork"
+  }, {
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductWork",
@@ -1614,11 +1797,11 @@
     "@value" : "Classification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://org.semanticweb.owlapi/error#Error1"
-  }, {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
-    "@id" : "_:genid10"
+    "@id" : "_:genid79"
+  }, {
+    "@id" : "_:genid80"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#ClassificationSystem",
@@ -1649,7 +1832,7 @@
   "@id" : "https://w3id.org/cterm#Closure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1776,7 +1959,7 @@
   "@id" : "https://w3id.org/cterm#Coating",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1987,7 +2170,7 @@
   "@id" : "https://w3id.org/cterm#ConcreteMixerTruck",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FurnishingOfMaterial"
+    "@id" : "https://w3id.org/cterm#Furnishing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2200,6 +2383,19 @@
   }, {
     "@language" : "it",
     "@value" : "Edilizia"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cterm#ConstructionSite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/cterm#FamilyOfWork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Construction site"
+  }, {
+    "@language" : "it",
+    "@value" : "Ergotecnica"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#ConstructionSiteFences",
@@ -2484,7 +2680,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Parameter"
   }, {
-    "@id" : "_:genid11"
+    "@id" : "_:genid81"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/cterm#PerformanceParameter"
@@ -2805,17 +3001,20 @@
     "@value" : "Umgebung"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#Ergonomics",
+  "@id" : "https://w3id.org/cterm#Ergotechnique",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/cterm#FamilyOfCostComponent"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Ergonomics"
-  }, {
     "@language" : "de",
     "@value" : "Ergotechnik"
   }, {
+    "@language" : "en",
+    "@value" : "Ergotechnique"
+  }, {
     "@language" : "it",
-    "@value" : "ergotecnica"
+    "@value" : "Ergotecnica"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Excavation",
@@ -3269,7 +3468,7 @@
   "@id" : "https://w3id.org/cterm#Finish",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3416,7 +3615,7 @@
   "@id" : "https://w3id.org/cterm#Fireproof",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -3949,7 +4148,7 @@
   "@id" : "https://w3id.org/cterm#FrontClosure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -4012,9 +4211,6 @@
     "@id" : "https://w3id.org/cterm#Function"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "https://w3id.org/cterm#FunctionOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -4067,9 +4263,6 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Terminology"
   } ]
-}, {
-  "@id" : "https://w3id.org/cterm#FurnishingOfMaterial",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cterm#Furniture",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -5120,7 +5313,7 @@
   "@id" : "https://w3id.org/cterm#Insulation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   }, {
     "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
   }, {
@@ -6156,7 +6349,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#AspectOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -6501,17 +6694,17 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
-    "@id" : "_:genid12"
+    "@id" : "_:genid82"
   }, {
-    "@id" : "_:genid13"
+    "@id" : "_:genid83"
   }, {
-    "@id" : "_:genid14"
+    "@id" : "_:genid84"
   }, {
-    "@id" : "_:genid15"
+    "@id" : "_:genid85"
   }, {
-    "@id" : "_:genid16"
+    "@id" : "_:genid86"
   }, {
-    "@id" : "_:genid17"
+    "@id" : "_:genid87"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#ParameterType",
@@ -6574,7 +6767,7 @@
   "@id" : "https://w3id.org/cterm#Partition",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -6675,7 +6868,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Parameter"
   }, {
-    "@id" : "_:genid18"
+    "@id" : "_:genid88"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/cterm#PhysicalParameter"
@@ -6727,7 +6920,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Parameter"
   }, {
-    "@id" : "_:genid19"
+    "@id" : "_:genid89"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#PhysicalParameterType",
@@ -6928,7 +7121,7 @@
     "@value" : "Plastic-Coated"
   }, {
     "@language" : "it",
-    "@value" : "plastificata"
+    "@value" : "Plastificata"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#PlasticCoating",
@@ -6944,7 +7137,7 @@
     "@value" : "Plastic Coating"
   }, {
     "@language" : "it",
-    "@value" : "rivestimento plastico"
+    "@value" : "Rivestimento Plastico"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#PlasticFilm",
@@ -7352,7 +7545,7 @@
   "@id" : "https://w3id.org/cterm#Protection",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   }, {
     "@id" : "https://w3id.org/cterm#ObjectOfActivity"
   } ],
@@ -7524,6 +7717,16 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#ObjectOfMaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Barra"
+  }, {
+    "@language" : "de",
+    "@value" : "Bewehrung"
+  }, {
+    "@language" : "en",
+    "@value" : "Rebar"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#RebatedEdgePanels",
@@ -7799,12 +8002,6 @@
     "@value" : "ferri d'armatura"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#Reinforcment",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfMaterial"
-  } ]
-}, {
   "@id" : "https://w3id.org/cterm#Removal",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -7952,8 +8149,6 @@
   }, {
     "@language" : "it",
     "@value" : "nervata"
-  }, {
-    "@value" : "Ribbed"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#RibbedBars",
@@ -7991,7 +8186,7 @@
   "@id" : "https://w3id.org/cterm#Rigid",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#spectOfMaterial"
+    "@id" : "https://w3id.org/cterm#AspectOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -8018,22 +8213,6 @@
   }, {
     "@language" : "de",
     "@value" : "Starre Platte"
-  } ]
-}, {
-  "@id" : "https://w3id.org/cterm#RigidPanels",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfMaterial"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
-    "@value" : "Pannelli Rigidi"
-  }, {
-    "@language" : "en",
-    "@value" : "Rigid Panels"
-  }, {
-    "@language" : "de",
-    "@value" : "Starre Paneele"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Rivers",
@@ -8574,7 +8753,7 @@
   "@id" : "https://w3id.org/cterm#SideClosure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -8833,7 +9012,7 @@
   "@id" : "https://w3id.org/cterm#SoundAbsorbing",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -8865,7 +9044,7 @@
   "@id" : "https://w3id.org/cterm#Soundproof",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -9076,7 +9255,7 @@
     "@id" : "https://w3id.org/cterm#ClassificationSystem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "St LB"
+    "@value" : "StLB"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#StabilizedEarthCarpets",
@@ -9199,13 +9378,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Terminology"
   }, {
-    "@id" : "_:genid20"
+    "@id" : "_:genid90"
   }, {
-    "@id" : "_:genid21"
+    "@id" : "_:genid91"
   }, {
-    "@id" : "_:genid22"
+    "@id" : "_:genid92"
   }, {
-    "@id" : "_:genid23"
+    "@id" : "_:genid93"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Stitching",
@@ -9786,7 +9965,7 @@
   "@id" : "https://w3id.org/cterm#ThermalInsulation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   }, {
     "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
   } ],
@@ -10494,7 +10673,7 @@
   "@id" : "https://w3id.org/cterm#Ventilation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfMateriaResource"
+    "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   }, {
     "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
   } ],
@@ -10677,14 +10856,14 @@
     "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pareti per Vani Scala e Ascensori"
+  }, {
     "@language" : "en",
     "@value" : "Walls for Staircases and Elevators"
   }, {
     "@language" : "de",
     "@value" : "Wände für Treppen- und Aufzugsschächte"
-  }, {
-    "@language" : "it",
-    "@value" : "pareti per vani scala e ascensori"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#WallsinElevation",
@@ -10695,14 +10874,14 @@
     "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pareti in Elevazione"
+  }, {
     "@language" : "en",
     "@value" : "Walls in Elevation"
   }, {
     "@language" : "de",
     "@value" : "Wände in Höhe"
-  }, {
-    "@language" : "it",
-    "@value" : "pareti in elevazione"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#WaterRepellent",
@@ -10746,14 +10925,14 @@
     "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Impermeabile"
+  }, {
     "@language" : "de",
     "@value" : "Wasserdicht"
   }, {
     "@language" : "en",
     "@value" : "Waterproof"
-  }, {
-    "@language" : "it",
-    "@value" : "impermeabile"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Waterproofing",
@@ -10765,11 +10944,11 @@
     "@language" : "de",
     "@value" : "Abdichtungen"
   }, {
+    "@language" : "it",
+    "@value" : "Impermeabilizzazioni"
+  }, {
     "@language" : "en",
     "@value" : "Waterproofing"
-  }, {
-    "@language" : "it",
-    "@value" : "impermeabilizzazioni"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Wavy",
@@ -10781,11 +10960,11 @@
     "@language" : "de",
     "@value" : "Gewellt"
   }, {
+    "@language" : "it",
+    "@value" : "Ondulata"
+  }, {
     "@language" : "en",
     "@value" : "Wavy"
-  }, {
-    "@language" : "it",
-    "@value" : "ondulata"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Wear-Resistant",
@@ -10794,14 +10973,14 @@
     "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Resistente All'Usura"
+  }, {
     "@language" : "de",
     "@value" : "Verschleißfest"
   }, {
     "@language" : "en",
     "@value" : "Wear-Resistant"
-  }, {
-    "@language" : "it",
-    "@value" : "resistente all'usura"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#WearingLayer",
@@ -10813,11 +10992,11 @@
     "@language" : "de",
     "@value" : "Deckschicht"
   }, {
+    "@language" : "it",
+    "@value" : "Strato Di Usura"
+  }, {
     "@language" : "en",
     "@value" : "Wearing Layer"
-  }, {
-    "@language" : "it",
-    "@value" : "strato di usura"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Weight",
@@ -10834,15 +11013,22 @@
   }, {
     "@language" : "en",
     "@value" : "Weight"
-  }, {
-    "@language" : "it",
-    "@value" : "peso"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Welded",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#TypeOfMaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Elettrosaldato"
+  }, {
+    "@language" : "de",
+    "@value" : "Geschweißt"
+  }, {
+    "@language" : "en",
+    "@value" : "Welded"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#White",
@@ -10851,14 +11037,14 @@
     "@id" : "https://w3id.org/cterm#FinishingOfMaterial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Bianco"
+  }, {
     "@language" : "de",
     "@value" : "Weiß"
   }, {
     "@language" : "en",
     "@value" : "White"
-  }, {
-    "@language" : "it",
-    "@value" : "colore bianco"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#WhiteColor",
@@ -10891,9 +11077,6 @@
   }, {
     "@language" : "en",
     "@value" : "Width"
-  }, {
-    "@language" : "it",
-    "@value" : "larghezza"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#WindowSills",
@@ -10937,11 +11120,11 @@
     "@language" : "de",
     "@value" : "Draht"
   }, {
+    "@language" : "it",
+    "@value" : "Filo"
+  }, {
     "@language" : "en",
     "@value" : "Wire"
-  }, {
-    "@language" : "it",
-    "@value" : "filo"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#WithCrane",
@@ -10950,14 +11133,14 @@
     "@id" : "https://w3id.org/cterm#TypeOfActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Con Gru"
+  }, {
     "@language" : "de",
     "@value" : "Mit Kran"
   }, {
     "@language" : "en",
     "@value" : "With Crane"
-  }, {
-    "@language" : "it",
-    "@value" : "con gru"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#WithManualEquipment",
@@ -11014,14 +11197,14 @@
     "@id" : "https://w3id.org/cterm#TypeOfActivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Con Pompa"
+  }, {
     "@language" : "de",
     "@value" : "Mit Pumpe"
   }, {
     "@language" : "en",
     "@value" : "With Pump"
-  }, {
-    "@language" : "it",
-    "@value" : "con pompa"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#WoodVegetableFiber",
@@ -11062,11 +11245,11 @@
     "@language" : "de",
     "@value" : "Holzstrukturen"
   }, {
+    "@language" : "it",
+    "@value" : "Strutture In Legno"
+  }, {
     "@language" : "en",
     "@value" : "Wooden Structures"
-  }, {
-    "@language" : "it",
-    "@value" : "strutture in legno"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Worker",
@@ -11078,30 +11261,29 @@
     "@language" : "de",
     "@value" : "Arbeiter"
   }, {
+    "@language" : "it",
+    "@value" : "Operaio"
+  }, {
     "@language" : "en",
     "@value" : "Worker"
-  }, {
-    "@language" : "it",
-    "@value" : "operaio"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#code",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/cterm#Classification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#hasAspect",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  }, {
-    "@id" : "https://w3id.org/cr#Material"
+    "@id" : "_:genid10"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasAspect"
@@ -11113,13 +11295,7 @@
   "@id" : "https://w3id.org/cterm#hasCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
-  }, {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#Resource"
+    "@id" : "_:genid14"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasCategory"
@@ -11130,6 +11306,9 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasClassification",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid19"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has classification"
   } ],
@@ -11152,11 +11331,7 @@
   "@id" : "https://w3id.org/cterm#hasDimensionParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  }, {
-    "@id" : "https://w3id.org/cr#MaterialResource"
+    "@id" : "_:genid22"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasDimensionParameter"
@@ -11168,13 +11343,7 @@
   "@id" : "https://w3id.org/cterm#hasFamily",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
-  }, {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#Resource"
+    "@id" : "_:genid26"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasFamily"
@@ -11186,9 +11355,7 @@
   "@id" : "https://w3id.org/cterm#hasFinishing",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#Material"
+    "@id" : "_:genid31"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasFinishing"
@@ -11200,13 +11367,7 @@
   "@id" : "https://w3id.org/cterm#hasFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  }, {
-    "@id" : "https://w3id.org/cr#Material"
+    "@id" : "_:genid34"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasFunction"
@@ -11218,7 +11379,7 @@
   "@id" : "https://w3id.org/cterm#hasFurnishing",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/cr#Material"
+    "@id" : "https://w3id.org/cr#MaterialResource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasFurnishing"
@@ -11227,31 +11388,10 @@
     "@id" : "https://w3id.org/cterm#Furnishing"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#hasGender",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
-  }, {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#Resource"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "hasGender"
-  } ]
-}, {
   "@id" : "https://w3id.org/cterm#hasMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  }, {
-    "@id" : "https://w3id.org/cr#Material"
+    "@id" : "_:genid39"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasMaterial"
@@ -11263,13 +11403,7 @@
   "@id" : "https://w3id.org/cterm#hasObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
-  }, {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#Resource"
+    "@id" : "_:genid44"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasObject"
@@ -11281,15 +11415,7 @@
   "@id" : "https://w3id.org/cterm#hasObjectStandard",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
-  }, {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  }, {
-    "@id" : "https://w3id.org/cr#Material"
+    "@id" : "_:genid49"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasObjectStandard"
@@ -11301,15 +11427,7 @@
   "@id" : "https://w3id.org/cterm#hasOtherStandard",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
-  }, {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  }, {
-    "@id" : "https://w3id.org/cr#Material"
+    "@id" : "_:genid55"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasOtherStandard"
@@ -11333,11 +11451,7 @@
   "@id" : "https://w3id.org/cterm#hasPerformanceParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  }, {
-    "@id" : "https://w3id.org/cr#MaterialResource"
+    "@id" : "_:genid61"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasPerformanceParameter"
@@ -11349,11 +11463,7 @@
   "@id" : "https://w3id.org/cterm#hasPhysicalParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  }, {
-    "@id" : "https://w3id.org/cr#MaterialResource"
+    "@id" : "_:genid65"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasPhysicalParameter"
@@ -11377,13 +11487,7 @@
   "@id" : "https://w3id.org/cterm#hasType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
-  }, {
-    "@id" : "https://w3id.org/ci#CostComponent"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#Resource"
+    "@id" : "_:genid69"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasType"
@@ -11407,13 +11511,7 @@
   "@id" : "https://w3id.org/cterm#hasUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/ci#Activity"
-  }, {
-    "@id" : "https://w3id.org/ci#Work"
-  }, {
-    "@id" : "https://w3id.org/cr#EquipmentResource"
-  }, {
-    "@id" : "https://w3id.org/cr#Material"
+    "@id" : "_:genid74"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasUse"
@@ -11481,9 +11579,6 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
-}, {
-  "@id" : "https://w3id.org/cterm#spectOfMaterial",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/cterm#standardBody",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],

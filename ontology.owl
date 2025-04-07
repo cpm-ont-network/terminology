@@ -7,28 +7,24 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:cterm="https://w3id.org/cterm#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="https://schema.org/"
-     xmlns:schema1="https://schema.org/schema:">
+     xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://w3id.org/cterm">
-        <owl:imports rdf:resource="http://w3id.org/ci"/>
-        <owl:imports rdf:resource="http://w3id.org/cr"/>
         <terms:bibliographicCitation></terms:bibliographicCitation>
         <terms:contributor rdf:nodeID="genid1"/>
         <terms:contributor rdf:nodeID="genid3"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-12</terms:created>
         <terms:creator rdf:nodeID="genid5"/>
-        <terms:creator rdf:nodeID="genid8"/>
+        <terms:creator rdf:nodeID="genid7"/>
         <terms:description xml:lang="en">The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-01-13</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-07</terms:modified>
         <terms:rights>Copyright 2025 by DABC, PoliMi</terms:rights>
         <terms:title xml:lang="en">The Construction Terminology (CTERM) Ontology</terms:title>
         <vann:preferredNamespacePrefix>cterm</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="http://w3id.org/cterm#"/>
-        <owl:versionInfo>0.1</owl:versionInfo>
-        <schema1:codeRepository rdf:resource="https://github.com/cpm-ont-network/terminology"/>
+        <owl:versionInfo>0.2</owl:versionInfo>
+        <schema:codeRepository rdf:resource="https://github.com/cpm-ont-network/terminology"/>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
         <rdf:type rdf:resource="https://schema.org/Person"/>
@@ -46,22 +42,22 @@
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
         <rdf:type rdf:resource="https://schema.org/Person"/>
+        <schema:email rdf:resource="mailto:jacopo.cassandro@polimi.it"/>
+        <schema:identifier rdf:resource="https://orcid.org/0000-0002-1487-8178"/>
+        <schema:memberOf rdf:nodeID="genid6"/>
+        <schema:name>Cassandro, Jacopo</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid7">
+        <rdf:type rdf:resource="https://schema.org/Person"/>
         <schema:email rdf:resource="mailto:philipp.hagedorn-n6v@rub.de"/>
         <schema:identifier rdf:resource="https://orcid.org/0000-0002-6249-243X"/>
-        <schema:memberOf rdf:nodeID="genid6"/>
+        <schema:memberOf rdf:nodeID="genid8"/>
         <schema:memberOf>
             <rdf:Description>
                 <schema:name>Politecnico di Milano</schema:name>
             </rdf:Description>
         </schema:memberOf>
         <schema:name>Hagedorn, Philipp</schema:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid8">
-        <rdf:type rdf:resource="https://schema.org/Person"/>
-        <schema:email rdf:resource="mailto:jacopo.cassandro@polimi.it"/>
-        <schema:identifier rdf:resource="https://orcid.org/0000-0002-1487-8178"/>
-        <schema:memberOf rdf:nodeID="genid9"/>
-        <schema:name>Cassandro, Jacopo</schema:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid2">
         <schema:identifier rdf:resource="https://www.dabc.polimi.it/persona/claudio-mirarchi/"/>
@@ -72,12 +68,12 @@
         <schema:name>Ruhr University Bochum</schema:name>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid6">
-        <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"/>
-        <schema:name>Ruhr University Bochum, Computing in Engineering</schema:name>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid9">
         <schema:identifier rdf:resource="https://www.dabc.polimi.it/persona/jacopo-cassandro/"/>
         <schema:name>Politecnico di Milano</schema:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <schema:identifier rdf:resource="https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"/>
+        <schema:name>Ruhr University Bochum, Computing in Engineering</schema:name>
     </rdf:Description>
     
 
@@ -171,10 +167,10 @@
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#cardinality -->
+    <!-- https://schema.org/codeRepository -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#cardinality"/>
+    <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
     
 
 
@@ -203,23 +199,6 @@
 
 
     <owl:AnnotationProperty rdf:about="https://schema.org/name"/>
-    
-
-
-    <!-- https://schema.org/schema:codeRepository -->
-
-
-    <owl:AnnotationProperty rdf:about="https://schema.org/schema:codeRepository"/>
-    
-
-
-    <!-- https://w3id.org/cterm#code -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/cterm#code">
-        <rdfs:label>code</rdfs:label>
-        <rdfs:domain rdf:resource="https://w3id.org/cterm#Classification"/>
-    </owl:AnnotationProperty>
     
 
 
@@ -254,13 +233,30 @@
     
 
 
+    <!-- https://w3id.org/cterm#code -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/cterm#code">
+        <rdfs:domain rdf:resource="https://w3id.org/cterm#Classification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>code</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/cterm#hasAspect -->
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasAspect">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#EquipmentResource"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Material"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Aspect"/>
         <rdfs:label>hasAspect</rdfs:label>
     </owl:ObjectProperty>
@@ -271,10 +267,16 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasCategory">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Resource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#Resource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Category"/>
         <rdfs:label>hasCategory</rdfs:label>
     </owl:ObjectProperty>
@@ -285,6 +287,14 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasClassification">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#CostItem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Classification"/>
         <rdfs:label>has classification</rdfs:label>
     </owl:ObjectProperty>
@@ -306,9 +316,15 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasDimensionParameter">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#EquipmentResource"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#MaterialResource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#DimensionParameter"/>
         <rdfs:label>hasDimensionParameter</rdfs:label>
     </owl:ObjectProperty>
@@ -319,10 +335,16 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasFamily">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Resource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#Resource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Family"/>
         <rdfs:label>hasFamily</rdfs:label>
     </owl:ObjectProperty>
@@ -333,8 +355,14 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasFinishing">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Material"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Finishing"/>
         <rdfs:label>hasFinishing</rdfs:label>
     </owl:ObjectProperty>
@@ -345,10 +373,16 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasFunction">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#EquipmentResource"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Material"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Function"/>
         <rdfs:label>hasFunction</rdfs:label>
     </owl:ObjectProperty>
@@ -359,22 +393,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasFurnishing">
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Material"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cr#MaterialResource"/>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Furnishing"/>
         <rdfs:label>hasFurnishing</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/cterm#hasGender -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasGender">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Resource"/>
-        <rdfs:label>hasGender</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -383,10 +404,16 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasMaterial">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#EquipmentResource"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Material"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Material"/>
         <rdfs:label>hasMaterial</rdfs:label>
     </owl:ObjectProperty>
@@ -397,10 +424,16 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasObject">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Resource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#Resource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Object"/>
         <rdfs:label>hasObject</rdfs:label>
     </owl:ObjectProperty>
@@ -411,11 +444,17 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasObjectStandard">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#EquipmentResource"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Material"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Standard"/>
         <rdfs:label>hasObjectStandard</rdfs:label>
     </owl:ObjectProperty>
@@ -426,11 +465,17 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasOtherStandard">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#EquipmentResource"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Material"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Standard"/>
         <rdfs:label>hasOtherStandard</rdfs:label>
     </owl:ObjectProperty>
@@ -452,9 +497,15 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasPerformanceParameter">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#EquipmentResource"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#MaterialResource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#PerformanceParameter"/>
         <rdfs:label>hasPerformanceParameter</rdfs:label>
     </owl:ObjectProperty>
@@ -465,9 +516,15 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasPhysicalParameter">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#EquipmentResource"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#MaterialResource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#PhysicalParameter"/>
         <rdfs:label>hasPhysicalParameter</rdfs:label>
     </owl:ObjectProperty>
@@ -489,10 +546,16 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasType">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#CostComponent"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Resource"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#Resource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Type"/>
         <rdfs:label>hasType</rdfs:label>
     </owl:ObjectProperty>
@@ -514,10 +577,16 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasUse">
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Activity"/>
-        <rdfs:domain rdf:resource="https://w3id.org/ci#Work"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#EquipmentResource"/>
-        <rdfs:domain rdf:resource="https://w3id.org/cr#Material"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
+                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
+                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Use"/>
         <rdfs:label>hasUse</rdfs:label>
     </owl:ObjectProperty>
@@ -647,13 +716,6 @@
     
 
 
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-
-    <owl:Class rdf:about="http://org.semanticweb.owlapi/error#Error1"/>
-    
-
-
     <!-- http://qudt.org/schema/qudt/Unit -->
 
 
@@ -682,6 +744,13 @@
     
 
 
+    <!-- https://w3id.org/ci#CostItem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/ci#CostItem"/>
+    
+
+
     <!-- https://w3id.org/ci#Work -->
 
 
@@ -700,13 +769,6 @@
 
 
     <owl:Class rdf:about="https://w3id.org/cr#LabourResource"/>
-    
-
-
-    <!-- https://w3id.org/cr#Material -->
-
-
-    <owl:Class rdf:about="https://w3id.org/cr#Material"/>
     
 
 
@@ -858,8 +920,8 @@
 
 
     <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfWorkOfConstructionWork">
-        <owl:equivalentClass rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfProductWork"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfProductWork"/>
         <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"/>
         <rdfs:label>Category Of Work Of ConstructionWork</rdfs:label>
     </owl:Class>
@@ -891,8 +953,14 @@
 
 
     <owl:Class rdf:about="https://w3id.org/cterm#Classification">
-        <rdfs:subClassOf rdf:resource="http://org.semanticweb.owlapi/error#Error1"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/cterm#code"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/cterm#hasClassificationSystem"/>
@@ -1100,13 +1168,6 @@
     
 
 
-    <!-- https://w3id.org/cterm#FunctionOfMateriaResource -->
-
-
-    <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfMateriaResource"/>
-    
-
-
     <!-- https://w3id.org/cterm#FunctionOfMaterial -->
 
 
@@ -1157,13 +1218,6 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
         <rdfs:label>Furnishing</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- https://w3id.org/cterm#FurnishingOfMaterial -->
-
-
-    <owl:Class rdf:about="https://w3id.org/cterm#FurnishingOfMaterial"/>
     
 
 
@@ -1659,13 +1713,6 @@
     
 
 
-    <!-- https://w3id.org/cterm#spectOfMaterial -->
-
-
-    <owl:Class rdf:about="https://w3id.org/cterm#spectOfMaterial"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1675,17 +1722,6 @@
      -->
 
 
-    
-
-
-    <!-- https://schema.org/ConstrutcionSite -->
-
-
-    <owl:NamedIndividual rdf:about="https://schema.org/ConstrutcionSite">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfWork"/>
-        <rdfs:label xml:lang="en">Construtcion site</rdfs:label>
-        <rdfs:label xml:lang="it">Ergotecnica</rdfs:label>
-    </owl:NamedIndividual>
     
 
 
@@ -1925,7 +1961,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Bags">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FurnishingOfMaterial"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#Furnishing"/>
         <rdfs:label xml:lang="en">Bags</rdfs:label>
         <rdfs:label xml:lang="de">Säcke</rdfs:label>
         <rdfs:label xml:lang="it">sacchi</rdfs:label>
@@ -2176,7 +2212,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Breathable">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="de">Atmungsaktiv</rdfs:label>
         <rdfs:label xml:lang="en">Breathable</rdfs:label>
         <rdfs:label xml:lang="it">Traspirante</rdfs:label>
@@ -2444,7 +2480,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Closure">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="it">Chiusura</rdfs:label>
         <rdfs:label xml:lang="en">Closure</rdfs:label>
         <rdfs:label xml:lang="de">Verschluss</rdfs:label>
@@ -2540,7 +2576,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Coating">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="en">Coating</rdfs:label>
         <rdfs:label xml:lang="it">Rivestimento</rdfs:label>
         <rdfs:label xml:lang="de">Verkleidung</rdfs:label>
@@ -2697,7 +2733,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ConcreteMixerTruck">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FurnishingOfMaterial"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#Furnishing"/>
         <rdfs:label xml:lang="en">Concrete Mixer Truck</rdfs:label>
         <rdfs:label xml:lang="de">Fahrmischer</rdfs:label>
         <rdfs:label xml:lang="it">autobetoniera</rdfs:label>
@@ -2849,6 +2885,17 @@
         <rdfs:label xml:lang="en">Construction</rdfs:label>
         <rdfs:label xml:lang="it">Costruzioni</rdfs:label>
         <rdfs:label xml:lang="it">Edilizia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/cterm#ConstructionSite -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ConstructionSite">
+        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfWork"/>
+        <rdfs:label xml:lang="en">Construction site</rdfs:label>
+        <rdfs:label xml:lang="it">Ergotecnica</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3287,13 +3334,14 @@
     
 
 
-    <!-- https://w3id.org/cterm#Ergonomics -->
+    <!-- https://w3id.org/cterm#Ergotechnique -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Ergonomics">
-        <rdfs:label xml:lang="en">Ergonomics</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Ergotechnique">
+        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfCostComponent"/>
         <rdfs:label xml:lang="de">Ergotechnik</rdfs:label>
-        <rdfs:label xml:lang="it">ergotecnica</rdfs:label>
+        <rdfs:label xml:lang="en">Ergotechnique</rdfs:label>
+        <rdfs:label xml:lang="it">Ergotecnica</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3588,7 +3636,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Finish">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="en">Finish</rdfs:label>
         <rdfs:label xml:lang="it">Finitura</rdfs:label>
         <rdfs:label xml:lang="de">Oberfläche</rdfs:label>
@@ -3662,7 +3710,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Fireproof">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="it">Antincendio</rdfs:label>
         <rdfs:label xml:lang="de">Brandschutz</rdfs:label>
         <rdfs:label xml:lang="en">Fireproof</rdfs:label>
@@ -4048,7 +4096,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FrontClosure">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="it">Chiusura Frontale</rdfs:label>
         <rdfs:label xml:lang="en">Front Closure</rdfs:label>
         <rdfs:label xml:lang="de">Frontverschluss</rdfs:label>
@@ -4849,7 +4897,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Insulation">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfMaterial"/>
         <rdfs:label xml:lang="it">Coibentazione</rdfs:label>
@@ -5621,7 +5669,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Non-Combustible">
         <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="it">Incombustibile</rdfs:label>
         <rdfs:label xml:lang="de">Nicht brennbar</rdfs:label>
         <rdfs:label xml:lang="en">Non-Combustible</rdfs:label>
@@ -5836,7 +5884,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Partition">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="it">Divisoria</rdfs:label>
         <rdfs:label xml:lang="en">Partition</rdfs:label>
         <rdfs:label xml:lang="de">Trennwand</rdfs:label>
@@ -6066,7 +6114,7 @@
         <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfMaterial"/>
         <rdfs:label xml:lang="de">Kunststoffbeschichtet</rdfs:label>
         <rdfs:label xml:lang="en">Plastic-Coated</rdfs:label>
-        <rdfs:label xml:lang="it">plastificata</rdfs:label>
+        <rdfs:label xml:lang="it">Plastificata</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6078,7 +6126,7 @@
         <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfMaterial"/>
         <rdfs:label xml:lang="de">Kunststoffbeschichtung</rdfs:label>
         <rdfs:label xml:lang="en">Plastic Coating</rdfs:label>
-        <rdfs:label xml:lang="it">rivestimento plastico</rdfs:label>
+        <rdfs:label xml:lang="it">Rivestimento Plastico</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6389,7 +6437,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Protection">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfActivity"/>
         <rdfs:label xml:lang="en">Protection</rdfs:label>
         <rdfs:label xml:lang="it">Protezione</rdfs:label>
@@ -6511,6 +6559,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Rebar">
         <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfMaterial"/>
+        <rdfs:label xml:lang="it">Barra</rdfs:label>
+        <rdfs:label xml:lang="de">Bewehrung</rdfs:label>
+        <rdfs:label xml:lang="en">Rebar</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6720,15 +6771,6 @@
     
 
 
-    <!-- https://w3id.org/cterm#Reinforcment -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Reinforcment">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfMaterial"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/cterm#Removal -->
 
 
@@ -6835,7 +6877,6 @@
         <rdfs:label xml:lang="de">Gerippt</rdfs:label>
         <rdfs:label xml:lang="en">Ribbed</rdfs:label>
         <rdfs:label xml:lang="it">nervata</rdfs:label>
-        <rdfs:label>Ribbed</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6868,7 +6909,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Rigid">
-        <rdf:type rdf:resource="https://w3id.org/cterm#spectOfMaterial"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfMaterial"/>
         <rdfs:label xml:lang="en">Rigid</rdfs:label>
         <rdfs:label xml:lang="it">Rigido</rdfs:label>
         <rdfs:label xml:lang="de">Starr</rdfs:label>
@@ -6884,18 +6925,6 @@
         <rdfs:label xml:lang="it">Pannello Rigido</rdfs:label>
         <rdfs:label xml:lang="en">Rigid Panel</rdfs:label>
         <rdfs:label xml:lang="de">Starre Platte</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/cterm#RigidPanels -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/cterm#RigidPanels">
-        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfMaterial"/>
-        <rdfs:label xml:lang="it">Pannelli Rigidi</rdfs:label>
-        <rdfs:label xml:lang="en">Rigid Panels</rdfs:label>
-        <rdfs:label xml:lang="de">Starre Paneele</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7303,7 +7332,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#SideClosure">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="it">Chiusura Laterale</rdfs:label>
         <rdfs:label xml:lang="de">Seitenverschluss</rdfs:label>
         <rdfs:label xml:lang="en">Side Closure</rdfs:label>
@@ -7497,7 +7526,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#SoundAbsorbing">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="it">Fonoassorbente</rdfs:label>
         <rdfs:label xml:lang="de">Schalldämpfend</rdfs:label>
         <rdfs:label xml:lang="en">Sound Absorbing</rdfs:label>
@@ -7521,7 +7550,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Soundproof">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdfs:label xml:lang="it">Fonoisolante</rdfs:label>
         <rdfs:label xml:lang="de">Schallisolierend</rdfs:label>
         <rdfs:label xml:lang="en">Soundproof</rdfs:label>
@@ -7678,7 +7707,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#StLB">
         <rdf:type rdf:resource="https://w3id.org/cterm#ClassificationSystem"/>
-        <rdfs:label>St LB</rdfs:label>
+        <rdfs:label>StLB</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8193,7 +8222,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ThermalInsulation">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
         <rdfs:label xml:lang="it">Isolamento Termico</rdfs:label>
         <rdfs:label xml:lang="it">Termoisolante</rdfs:label>
@@ -8562,7 +8591,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Ventilation">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMateriaResource"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
         <rdfs:label xml:lang="de">Belüftung</rdfs:label>
         <rdfs:label xml:lang="en">Ventilation</rdfs:label>
@@ -8697,9 +8726,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WallsforStaircasesandElevators">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdfs:label xml:lang="it">Pareti per Vani Scala e Ascensori</rdfs:label>
         <rdfs:label xml:lang="en">Walls for Staircases and Elevators</rdfs:label>
         <rdfs:label xml:lang="de">Wände für Treppen- und Aufzugsschächte</rdfs:label>
-        <rdfs:label xml:lang="it">pareti per vani scala e ascensori</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8710,9 +8739,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WallsinElevation">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdfs:label xml:lang="it">Pareti in Elevazione</rdfs:label>
         <rdfs:label xml:lang="en">Walls in Elevation</rdfs:label>
         <rdfs:label xml:lang="de">Wände in Höhe</rdfs:label>
-        <rdfs:label xml:lang="it">pareti in elevazione</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8747,9 +8776,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Waterproof">
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
+        <rdfs:label xml:lang="it">Impermeabile</rdfs:label>
         <rdfs:label xml:lang="de">Wasserdicht</rdfs:label>
         <rdfs:label xml:lang="en">Waterproof</rdfs:label>
-        <rdfs:label xml:lang="it">impermeabile</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8760,8 +8789,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Waterproofing">
         <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfMaterial"/>
         <rdfs:label xml:lang="de">Abdichtungen</rdfs:label>
+        <rdfs:label xml:lang="it">Impermeabilizzazioni</rdfs:label>
         <rdfs:label xml:lang="en">Waterproofing</rdfs:label>
-        <rdfs:label xml:lang="it">impermeabilizzazioni</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8772,8 +8801,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Wavy">
         <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfMaterial"/>
         <rdfs:label xml:lang="de">Gewellt</rdfs:label>
+        <rdfs:label xml:lang="it">Ondulata</rdfs:label>
         <rdfs:label xml:lang="en">Wavy</rdfs:label>
-        <rdfs:label xml:lang="it">ondulata</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8783,9 +8812,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Wear-Resistant">
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
+        <rdfs:label xml:lang="it">Resistente All&apos;Usura</rdfs:label>
         <rdfs:label xml:lang="de">Verschleißfest</rdfs:label>
         <rdfs:label xml:lang="en">Wear-Resistant</rdfs:label>
-        <rdfs:label xml:lang="it">resistente all&apos;usura</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8796,8 +8825,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WearingLayer">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfMaterial"/>
         <rdfs:label xml:lang="de">Deckschicht</rdfs:label>
+        <rdfs:label xml:lang="it">Strato Di Usura</rdfs:label>
         <rdfs:label xml:lang="en">Wearing Layer</rdfs:label>
-        <rdfs:label xml:lang="it">strato di usura</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8810,7 +8839,6 @@
         <rdfs:label xml:lang="de">Gewicht</rdfs:label>
         <rdfs:label xml:lang="it">Peso</rdfs:label>
         <rdfs:label xml:lang="en">Weight</rdfs:label>
-        <rdfs:label xml:lang="it">peso</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8820,6 +8848,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Welded">
         <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfMaterial"/>
+        <rdfs:label xml:lang="it">Elettrosaldato</rdfs:label>
+        <rdfs:label xml:lang="de">Geschweißt</rdfs:label>
+        <rdfs:label xml:lang="en">Welded</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8829,9 +8860,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#White">
         <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfMaterial"/>
+        <rdfs:label xml:lang="it">Bianco</rdfs:label>
         <rdfs:label xml:lang="de">Weiß</rdfs:label>
         <rdfs:label xml:lang="en">White</rdfs:label>
-        <rdfs:label xml:lang="it">colore bianco</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8856,7 +8887,6 @@
         <rdfs:label xml:lang="de">Breite</rdfs:label>
         <rdfs:label xml:lang="it">Larghezza</rdfs:label>
         <rdfs:label xml:lang="en">Width</rdfs:label>
-        <rdfs:label xml:lang="it">larghezza</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8891,8 +8921,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Wire">
         <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfMaterial"/>
         <rdfs:label xml:lang="de">Draht</rdfs:label>
+        <rdfs:label xml:lang="it">Filo</rdfs:label>
         <rdfs:label xml:lang="en">Wire</rdfs:label>
-        <rdfs:label xml:lang="it">filo</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8902,9 +8932,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WithCrane">
         <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfActivity"/>
+        <rdfs:label xml:lang="it">Con Gru</rdfs:label>
         <rdfs:label xml:lang="de">Mit Kran</rdfs:label>
         <rdfs:label xml:lang="en">With Crane</rdfs:label>
-        <rdfs:label xml:lang="it">con gru</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8950,9 +8980,9 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WithPump">
         <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfActivity"/>
+        <rdfs:label xml:lang="it">Con Pompa</rdfs:label>
         <rdfs:label xml:lang="de">Mit Pumpe</rdfs:label>
         <rdfs:label xml:lang="en">With Pump</rdfs:label>
-        <rdfs:label xml:lang="it">con pompa</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8986,8 +9016,8 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WoodenStructures">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
         <rdfs:label xml:lang="de">Holzstrukturen</rdfs:label>
+        <rdfs:label xml:lang="it">Strutture In Legno</rdfs:label>
         <rdfs:label xml:lang="en">Wooden Structures</rdfs:label>
-        <rdfs:label xml:lang="it">strutture in legno</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -8998,12 +9028,9 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Worker">
         <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfLabour"/>
         <rdfs:label xml:lang="de">Arbeiter</rdfs:label>
+        <rdfs:label xml:lang="it">Operaio</rdfs:label>
         <rdfs:label xml:lang="en">Worker</rdfs:label>
-        <rdfs:label xml:lang="it">operaio</rdfs:label>
     </owl:NamedIndividual>
-    <rdf:Description>
-        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-    </rdf:Description>
 </rdf:RDF>
 
 

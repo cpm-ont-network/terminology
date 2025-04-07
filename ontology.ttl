@@ -7,23 +7,21 @@
 @base <http://w3id.org/cterm#> .
 
 <http://w3id.org/cterm> rdf:type owl:Ontology ;
-                         owl:imports <http://w3id.org/ci> ,
-                                     <http://w3id.org/cr> ;
                          <http://purl.org/dc/terms/bibliographicCitation> "" ;
                          <http://purl.org/dc/terms/contributor> _:genid1 ,
                                                                 _:genid3 ;
                          <http://purl.org/dc/terms/created> "2024-10-12"^^xsd:date ;
                          <http://purl.org/dc/terms/creator> _:genid5 ,
-                                                            _:genid8 ;
+                                                            _:genid7 ;
                          <http://purl.org/dc/terms/description> "The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management."@en ;
                          <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
-                         <http://purl.org/dc/terms/modified> "2025-01-13"^^xsd:date ;
+                         <http://purl.org/dc/terms/modified> "2025-04-07"^^xsd:date ;
                          <http://purl.org/dc/terms/rights> "Copyright 2025 by DABC, PoliMi" ;
                          <http://purl.org/dc/terms/title> "The Construction Terminology (CTERM) Ontology"@en ;
                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "cterm" ;
                          <http://purl.org/vocab/vann/preferredNamespaceUri> : ;
-                         owl:versionInfo "0.1" ;
-                         <https://schema.org/schema:codeRepository> <https://github.com/cpm-ont-network/terminology> .
+                         owl:versionInfo "0.2" ;
+                         <https://schema.org/codeRepository> <https://github.com/cpm-ont-network/terminology> .
 
 _:genid1 rdf:type <https://schema.org/Person> ;
           <https://schema.org/email> <mailto:claudio.mirarchi@polimi.it> ;
@@ -38,18 +36,18 @@ _:genid3 rdf:type <https://schema.org/Person> ;
           <https://schema.org/name> "Sigalov, Katharina" .
 
 _:genid5 rdf:type <https://schema.org/Person> ;
+          <https://schema.org/email> <mailto:jacopo.cassandro@polimi.it> ;
+          <https://schema.org/identifier> <https://orcid.org/0000-0002-1487-8178> ;
+          <https://schema.org/memberOf> _:genid6 ;
+          <https://schema.org/name> "Cassandro, Jacopo" .
+
+_:genid7 rdf:type <https://schema.org/Person> ;
           <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> ;
           <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> ;
-          <https://schema.org/memberOf> _:genid6 ,
+          <https://schema.org/memberOf> _:genid8 ,
                                         [ <https://schema.org/name> "Politecnico di Milano"
                                         ] ;
           <https://schema.org/name> "Hagedorn, Philipp" .
-
-_:genid8 rdf:type <https://schema.org/Person> ;
-          <https://schema.org/email> <mailto:jacopo.cassandro@polimi.it> ;
-          <https://schema.org/identifier> <https://orcid.org/0000-0002-1487-8178> ;
-          <https://schema.org/memberOf> _:genid9 ;
-          <https://schema.org/name> "Cassandro, Jacopo" .
 
 _:genid2 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/claudio-mirarchi/> ;
           <https://schema.org/name> "Politecnico di Milano, Dipartimento ABC" .
@@ -57,11 +55,11 @@ _:genid2 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/cla
 _:genid4 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/katharina_sigalov.html.en> ;
           <https://schema.org/name> "Ruhr University Bochum" .
 
-_:genid6 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
-          <https://schema.org/name> "Ruhr University Bochum, Computing in Engineering" .
-
-_:genid9 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/jacopo-cassandro/> ;
+_:genid6 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/jacopo-cassandro/> ;
           <https://schema.org/name> "Politecnico di Milano" .
+
+_:genid8 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> ;
+          <https://schema.org/name> "Ruhr University Bochum, Computing in Engineering" .
 
 #################################################################
 #    Annotation properties
@@ -111,8 +109,8 @@ _:genid9 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/jac
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2002/07/owl#cardinality
-owl:cardinality rdf:type owl:AnnotationProperty .
+###  https://schema.org/codeRepository
+<https://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
 
 
 ###  https://schema.org/email
@@ -131,16 +129,6 @@ owl:cardinality rdf:type owl:AnnotationProperty .
 <https://schema.org/name> rdf:type owl:AnnotationProperty .
 
 
-###  https://schema.org/schema:codeRepository
-<https://schema.org/schema:codeRepository> rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/cterm#code
-<https://w3id.org/cterm#code> rdfs:label "code" ;
-                              rdf:type owl:AnnotationProperty ;
-                              rdfs:domain <https://w3id.org/cterm#Classification> .
-
-
 #################################################################
 #    Datatypes
 #################################################################
@@ -153,27 +141,45 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  https://w3id.org/cterm#code
+<https://w3id.org/cterm#code> rdf:type owl:ObjectProperty ;
+                              rdfs:domain <https://w3id.org/cterm#Classification> ;
+                              rdfs:range xsd:string ;
+                              rdfs:label "code" .
+
+
 ###  https://w3id.org/cterm#hasAspect
 <https://w3id.org/cterm#hasAspect> rdf:type owl:ObjectProperty ;
-                                   rdfs:domain <https://w3id.org/ci#Work> ,
-                                               <https://w3id.org/cr#EquipmentResource> ,
-                                               <https://w3id.org/cr#Material> ;
+                                   rdfs:domain [ rdf:type owl:Class ;
+                                                 owl:unionOf ( <https://w3id.org/ci#Work>
+                                                               <https://w3id.org/cr#EquipmentResource>
+                                                               <https://w3id.org/cr#MaterialResource>
+                                                             )
+                                               ] ;
                                    rdfs:range <https://w3id.org/cterm#Aspect> ;
                                    rdfs:label "hasAspect" .
 
 
 ###  https://w3id.org/cterm#hasCategory
 <https://w3id.org/cterm#hasCategory> rdf:type owl:ObjectProperty ;
-                                     rdfs:domain <https://w3id.org/ci#Activity> ,
-                                                 <https://w3id.org/ci#CostComponent> ,
-                                                 <https://w3id.org/ci#Work> ,
-                                                 <https://w3id.org/cr#Resource> ;
+                                     rdfs:domain [ rdf:type owl:Class ;
+                                                   owl:unionOf ( <https://w3id.org/ci#Activity>
+                                                                 <https://w3id.org/ci#CostComponent>
+                                                                 <https://w3id.org/ci#Work>
+                                                                 <https://w3id.org/cr#Resource>
+                                                               )
+                                                 ] ;
                                      rdfs:range <https://w3id.org/cterm#Category> ;
                                      rdfs:label "hasCategory" .
 
 
 ###  https://w3id.org/cterm#hasClassification
 <https://w3id.org/cterm#hasClassification> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain [ rdf:type owl:Class ;
+                                                         owl:unionOf ( <https://w3id.org/ci#CostComponent>
+                                                                       <https://w3id.org/ci#CostItem>
+                                                                     )
+                                                       ] ;
                                            rdfs:range <https://w3id.org/cterm#Classification> ;
                                            rdfs:label "has classification" .
 
@@ -187,95 +193,110 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#hasDimensionParameter
 <https://w3id.org/cterm#hasDimensionParameter> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain <https://w3id.org/ci#Work> ,
-                                                           <https://w3id.org/cr#EquipmentResource> ,
-                                                           <https://w3id.org/cr#MaterialResource> ;
+                                               rdfs:domain [ rdf:type owl:Class ;
+                                                             owl:unionOf ( <https://w3id.org/ci#Work>
+                                                                           <https://w3id.org/cr#EquipmentResource>
+                                                                           <https://w3id.org/cr#MaterialResource>
+                                                                         )
+                                                           ] ;
                                                rdfs:range <https://w3id.org/cterm#DimensionParameter> ;
                                                rdfs:label "hasDimensionParameter" .
 
 
 ###  https://w3id.org/cterm#hasFamily
 <https://w3id.org/cterm#hasFamily> rdf:type owl:ObjectProperty ;
-                                   rdfs:domain <https://w3id.org/ci#Activity> ,
-                                               <https://w3id.org/ci#CostComponent> ,
-                                               <https://w3id.org/ci#Work> ,
-                                               <https://w3id.org/cr#Resource> ;
+                                   rdfs:domain [ rdf:type owl:Class ;
+                                                 owl:unionOf ( <https://w3id.org/ci#Activity>
+                                                               <https://w3id.org/ci#CostComponent>
+                                                               <https://w3id.org/ci#Work>
+                                                               <https://w3id.org/cr#Resource>
+                                                             )
+                                               ] ;
                                    rdfs:range <https://w3id.org/cterm#Family> ;
                                    rdfs:label "hasFamily" .
 
 
 ###  https://w3id.org/cterm#hasFinishing
 <https://w3id.org/cterm#hasFinishing> rdf:type owl:ObjectProperty ;
-                                      rdfs:domain <https://w3id.org/ci#Work> ,
-                                                  <https://w3id.org/cr#Material> ;
+                                      rdfs:domain [ rdf:type owl:Class ;
+                                                    owl:unionOf ( <https://w3id.org/ci#Work>
+                                                                  <https://w3id.org/cr#MaterialResource>
+                                                                )
+                                                  ] ;
                                       rdfs:range <https://w3id.org/cterm#Finishing> ;
                                       rdfs:label "hasFinishing" .
 
 
 ###  https://w3id.org/cterm#hasFunction
 <https://w3id.org/cterm#hasFunction> rdf:type owl:ObjectProperty ;
-                                     rdfs:domain <https://w3id.org/ci#Activity> ,
-                                                 <https://w3id.org/ci#Work> ,
-                                                 <https://w3id.org/cr#EquipmentResource> ,
-                                                 <https://w3id.org/cr#Material> ;
+                                     rdfs:domain [ rdf:type owl:Class ;
+                                                   owl:unionOf ( <https://w3id.org/ci#Activity>
+                                                                 <https://w3id.org/ci#Work>
+                                                                 <https://w3id.org/cr#EquipmentResource>
+                                                                 <https://w3id.org/cr#MaterialResource>
+                                                               )
+                                                 ] ;
                                      rdfs:range <https://w3id.org/cterm#Function> ;
                                      rdfs:label "hasFunction" .
 
 
 ###  https://w3id.org/cterm#hasFurnishing
 <https://w3id.org/cterm#hasFurnishing> rdf:type owl:ObjectProperty ;
-                                       rdfs:domain <https://w3id.org/cr#Material> ;
+                                       rdfs:domain <https://w3id.org/cr#MaterialResource> ;
                                        rdfs:range <https://w3id.org/cterm#Furnishing> ;
                                        rdfs:label "hasFurnishing" .
 
 
-###  https://w3id.org/cterm#hasGender
-<https://w3id.org/cterm#hasGender> rdf:type owl:ObjectProperty ;
-                                   rdfs:domain <https://w3id.org/ci#Activity> ,
-                                               <https://w3id.org/ci#CostComponent> ,
-                                               <https://w3id.org/ci#Work> ,
-                                               <https://w3id.org/cr#Resource> ;
-                                   rdfs:label "hasGender" .
-
-
 ###  https://w3id.org/cterm#hasMaterial
 <https://w3id.org/cterm#hasMaterial> rdf:type owl:ObjectProperty ;
-                                     rdfs:domain <https://w3id.org/ci#CostComponent> ,
-                                                 <https://w3id.org/ci#Work> ,
-                                                 <https://w3id.org/cr#EquipmentResource> ,
-                                                 <https://w3id.org/cr#Material> ;
+                                     rdfs:domain [ rdf:type owl:Class ;
+                                                   owl:unionOf ( <https://w3id.org/ci#CostComponent>
+                                                                 <https://w3id.org/ci#Work>
+                                                                 <https://w3id.org/cr#EquipmentResource>
+                                                                 <https://w3id.org/cr#MaterialResource>
+                                                               )
+                                                 ] ;
                                      rdfs:range <https://w3id.org/cterm#Material> ;
                                      rdfs:label "hasMaterial" .
 
 
 ###  https://w3id.org/cterm#hasObject
 <https://w3id.org/cterm#hasObject> rdf:type owl:ObjectProperty ;
-                                   rdfs:domain <https://w3id.org/ci#Activity> ,
-                                               <https://w3id.org/ci#CostComponent> ,
-                                               <https://w3id.org/ci#Work> ,
-                                               <https://w3id.org/cr#Resource> ;
+                                   rdfs:domain [ rdf:type owl:Class ;
+                                                 owl:unionOf ( <https://w3id.org/ci#Activity>
+                                                               <https://w3id.org/ci#CostComponent>
+                                                               <https://w3id.org/ci#Work>
+                                                               <https://w3id.org/cr#Resource>
+                                                             )
+                                               ] ;
                                    rdfs:range <https://w3id.org/cterm#Object> ;
                                    rdfs:label "hasObject" .
 
 
 ###  https://w3id.org/cterm#hasObjectStandard
 <https://w3id.org/cterm#hasObjectStandard> rdf:type owl:ObjectProperty ;
-                                           rdfs:domain <https://w3id.org/ci#Activity> ,
-                                                       <https://w3id.org/ci#CostComponent> ,
-                                                       <https://w3id.org/ci#Work> ,
-                                                       <https://w3id.org/cr#EquipmentResource> ,
-                                                       <https://w3id.org/cr#Material> ;
+                                           rdfs:domain [ rdf:type owl:Class ;
+                                                         owl:unionOf ( <https://w3id.org/ci#Activity>
+                                                                       <https://w3id.org/ci#CostComponent>
+                                                                       <https://w3id.org/ci#Work>
+                                                                       <https://w3id.org/cr#EquipmentResource>
+                                                                       <https://w3id.org/cr#MaterialResource>
+                                                                     )
+                                                       ] ;
                                            rdfs:range <https://w3id.org/cterm#Standard> ;
                                            rdfs:label "hasObjectStandard" .
 
 
 ###  https://w3id.org/cterm#hasOtherStandard
 <https://w3id.org/cterm#hasOtherStandard> rdf:type owl:ObjectProperty ;
-                                          rdfs:domain <https://w3id.org/ci#Activity> ,
-                                                      <https://w3id.org/ci#CostComponent> ,
-                                                      <https://w3id.org/ci#Work> ,
-                                                      <https://w3id.org/cr#EquipmentResource> ,
-                                                      <https://w3id.org/cr#Material> ;
+                                          rdfs:domain [ rdf:type owl:Class ;
+                                                        owl:unionOf ( <https://w3id.org/ci#Activity>
+                                                                      <https://w3id.org/ci#CostComponent>
+                                                                      <https://w3id.org/ci#Work>
+                                                                      <https://w3id.org/cr#EquipmentResource>
+                                                                      <https://w3id.org/cr#MaterialResource>
+                                                                    )
+                                                      ] ;
                                           rdfs:range <https://w3id.org/cterm#Standard> ;
                                           rdfs:label "hasOtherStandard" .
 
@@ -289,18 +310,24 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#hasPerformanceParameter
 <https://w3id.org/cterm#hasPerformanceParameter> rdf:type owl:ObjectProperty ;
-                                                 rdfs:domain <https://w3id.org/ci#Work> ,
-                                                             <https://w3id.org/cr#EquipmentResource> ,
-                                                             <https://w3id.org/cr#MaterialResource> ;
+                                                 rdfs:domain [ rdf:type owl:Class ;
+                                                               owl:unionOf ( <https://w3id.org/ci#Work>
+                                                                             <https://w3id.org/cr#EquipmentResource>
+                                                                             <https://w3id.org/cr#MaterialResource>
+                                                                           )
+                                                             ] ;
                                                  rdfs:range <https://w3id.org/cterm#PerformanceParameter> ;
                                                  rdfs:label "hasPerformanceParameter" .
 
 
 ###  https://w3id.org/cterm#hasPhysicalParameter
 <https://w3id.org/cterm#hasPhysicalParameter> rdf:type owl:ObjectProperty ;
-                                              rdfs:domain <https://w3id.org/ci#Work> ,
-                                                          <https://w3id.org/cr#EquipmentResource> ,
-                                                          <https://w3id.org/cr#MaterialResource> ;
+                                              rdfs:domain [ rdf:type owl:Class ;
+                                                            owl:unionOf ( <https://w3id.org/ci#Work>
+                                                                          <https://w3id.org/cr#EquipmentResource>
+                                                                          <https://w3id.org/cr#MaterialResource>
+                                                                        )
+                                                          ] ;
                                               rdfs:range <https://w3id.org/cterm#PhysicalParameter> ;
                                               rdfs:label "hasPhysicalParameter" .
 
@@ -314,10 +341,13 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#hasType
 <https://w3id.org/cterm#hasType> rdf:type owl:ObjectProperty ;
-                                 rdfs:domain <https://w3id.org/ci#Activity> ,
-                                             <https://w3id.org/ci#CostComponent> ,
-                                             <https://w3id.org/ci#Work> ,
-                                             <https://w3id.org/cr#Resource> ;
+                                 rdfs:domain [ rdf:type owl:Class ;
+                                               owl:unionOf ( <https://w3id.org/ci#Activity>
+                                                             <https://w3id.org/ci#CostComponent>
+                                                             <https://w3id.org/ci#Work>
+                                                             <https://w3id.org/cr#Resource>
+                                                           )
+                                             ] ;
                                  rdfs:range <https://w3id.org/cterm#Type> ;
                                  rdfs:label "hasType" .
 
@@ -331,10 +361,13 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#hasUse
 <https://w3id.org/cterm#hasUse> rdf:type owl:ObjectProperty ;
-                                rdfs:domain <https://w3id.org/ci#Activity> ,
-                                            <https://w3id.org/ci#Work> ,
-                                            <https://w3id.org/cr#EquipmentResource> ,
-                                            <https://w3id.org/cr#Material> ;
+                                rdfs:domain [ rdf:type owl:Class ;
+                                              owl:unionOf ( <https://w3id.org/ci#Activity>
+                                                            <https://w3id.org/ci#Work>
+                                                            <https://w3id.org/cr#EquipmentResource>
+                                                            <https://w3id.org/cr#MaterialResource>
+                                                          )
+                                            ] ;
                                 rdfs:range <https://w3id.org/cterm#Use> ;
                                 rdfs:label "hasUse" .
 
@@ -410,10 +443,6 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> rdf:type owl:Class .
-
-
 ###  http://qudt.org/schema/qudt/Unit
 <http://qudt.org/schema/qudt/Unit> rdf:type owl:Class .
 
@@ -430,6 +459,10 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/ci#CostComponent> rdf:type owl:Class .
 
 
+###  https://w3id.org/ci#CostItem
+<https://w3id.org/ci#CostItem> rdf:type owl:Class .
+
+
 ###  https://w3id.org/ci#Work
 <https://w3id.org/ci#Work> rdf:type owl:Class .
 
@@ -440,10 +473,6 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cr#LabourResource
 <https://w3id.org/cr#LabourResource> rdf:type owl:Class .
-
-
-###  https://w3id.org/cr#Material
-<https://w3id.org/cr#Material> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cr#MaterialResource
@@ -538,9 +567,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#CategoryOfWorkOfConstructionWork
 <https://w3id.org/cterm#CategoryOfWorkOfConstructionWork> rdf:type owl:Class ;
-                                                          owl:equivalentClass <https://w3id.org/cterm#CategoryOfWorkOfProductWork> ;
                                                           rdfs:subClassOf <https://w3id.org/cterm#Category> ;
-                                                          owl:disjointWith <https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork> ;
+                                                          owl:disjointWith <https://w3id.org/cterm#CategoryOfWorkOfProductWork> ,
+                                                                           <https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork> ;
                                                           rdfs:label "Category Of Work Of ConstructionWork" .
 
 
@@ -559,8 +588,12 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Classification
 <https://w3id.org/cterm#Classification> rdf:type owl:Class ;
-                                        rdfs:subClassOf <http://org.semanticweb.owlapi/error#Error1> ,
-                                                        owl:Thing ,
+                                        rdfs:subClassOf owl:Thing ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <https://w3id.org/cterm#code> ;
+                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                          owl:onClass xsd:string
+                                                        ] ,
                                                         [ rdf:type owl:Restriction ;
                                                           owl:onProperty <https://w3id.org/cterm#hasClassificationSystem> ;
                                                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
@@ -690,10 +723,6 @@ xsd:date rdf:type rdfs:Datatype .
                                              rdfs:label "Function of equipment" .
 
 
-###  https://w3id.org/cterm#FunctionOfMateriaResource
-<https://w3id.org/cterm#FunctionOfMateriaResource> rdf:type owl:Class .
-
-
 ###  https://w3id.org/cterm#FunctionOfMaterial
 <https://w3id.org/cterm#FunctionOfMaterial> rdf:type owl:Class ;
                                             rdfs:subClassOf <https://w3id.org/cterm#Function> ;
@@ -725,10 +754,6 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cterm#Furnishing> rdf:type owl:Class ;
                                     rdfs:subClassOf <https://w3id.org/cterm#Terminology> ;
                                     rdfs:label "Furnishing" .
-
-
-###  https://w3id.org/cterm#FurnishingOfMaterial
-<https://w3id.org/cterm#FurnishingOfMaterial> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cterm#Material
@@ -1051,20 +1076,9 @@ xsd:date rdf:type rdfs:Datatype .
                                                   rdfs:label "Use Of Work Of TemporaryWork" .
 
 
-###  https://w3id.org/cterm#spectOfMaterial
-<https://w3id.org/cterm#spectOfMaterial> rdf:type owl:Class .
-
-
 #################################################################
 #    Individuals
 #################################################################
-
-###  https://schema.org/ConstrutcionSite
-<https://schema.org/ConstrutcionSite> rdf:type owl:NamedIndividual ,
-                                               <https://w3id.org/cterm#FamilyOfWork> ;
-                                      rdfs:label "Construtcion site"@en ,
-                                                 "Ergotecnica"@it .
-
 
 ###  https://w3id.org/cterm#AboveGround
 <https://w3id.org/cterm#AboveGround> rdf:type owl:NamedIndividual ,
@@ -1224,7 +1238,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Bags
 <https://w3id.org/cterm#Bags> rdf:type owl:NamedIndividual ,
-                                       <https://w3id.org/cterm#FurnishingOfMaterial> ;
+                                       <https://w3id.org/cterm#Furnishing> ;
                               rdfs:label "Bags"@en ,
                                          "Säcke"@de ,
                                          "sacchi"@it .
@@ -1391,7 +1405,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Breathable
 <https://w3id.org/cterm#Breathable> rdf:type owl:NamedIndividual ,
-                                             <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                             <https://w3id.org/cterm#FunctionOfMaterial> ;
                                     rdfs:label "Atmungsaktiv"@de ,
                                                "Breathable"@en ,
                                                "Traspirante"@it .
@@ -1571,7 +1585,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Closure
 <https://w3id.org/cterm#Closure> rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                          <https://w3id.org/cterm#FunctionOfMaterial> ;
                                  rdfs:label "Chiusura"@it ,
                                             "Closure"@en ,
                                             "Verschluss"@de .
@@ -1635,7 +1649,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Coating
 <https://w3id.org/cterm#Coating> rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                          <https://w3id.org/cterm#FunctionOfMaterial> ;
                                  rdfs:label "Coating"@en ,
                                             "Rivestimento"@it ,
                                             "Verkleidung"@de .
@@ -1740,7 +1754,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#ConcreteMixerTruck
 <https://w3id.org/cterm#ConcreteMixerTruck> rdf:type owl:NamedIndividual ,
-                                                     <https://w3id.org/cterm#FurnishingOfMaterial> ;
+                                                     <https://w3id.org/cterm#Furnishing> ;
                                             rdfs:label "Concrete Mixer Truck"@en ,
                                                        "Fahrmischer"@de ,
                                                        "autobetoniera"@it .
@@ -1844,6 +1858,13 @@ xsd:date rdf:type rdfs:Datatype .
                                                  "Construction"@en ,
                                                  "Costruzioni"@it ,
                                                  "Edilizia"@it .
+
+
+###  https://w3id.org/cterm#ConstructionSite
+<https://w3id.org/cterm#ConstructionSite> rdf:type owl:NamedIndividual ,
+                                                   <https://w3id.org/cterm#FamilyOfWork> ;
+                                          rdfs:label "Construction site"@en ,
+                                                     "Ergotecnica"@it .
 
 
 ###  https://w3id.org/cterm#ConstructionSiteFences
@@ -2136,11 +2157,12 @@ xsd:date rdf:type rdfs:Datatype .
                                                 "Umgebung"@de .
 
 
-###  https://w3id.org/cterm#Ergonomics
-<https://w3id.org/cterm#Ergonomics> rdf:type owl:NamedIndividual ;
-                                    rdfs:label "Ergonomics"@en ,
-                                               "Ergotechnik"@de ,
-                                               "ergotecnica"@it .
+###  https://w3id.org/cterm#Ergotechnique
+<https://w3id.org/cterm#Ergotechnique> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/cterm#FamilyOfCostComponent> ;
+                                       rdfs:label "Ergotechnik"@de ,
+                                                  "Ergotechnique"@en ,
+                                                  "Ergotecnica"@it .
 
 
 ###  https://w3id.org/cterm#Excavation
@@ -2335,7 +2357,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Finish
 <https://w3id.org/cterm#Finish> rdf:type owl:NamedIndividual ,
-                                         <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                         <https://w3id.org/cterm#FunctionOfMaterial> ;
                                 rdfs:label "Finish"@en ,
                                            "Finitura"@it ,
                                            "Oberfläche"@de .
@@ -2385,7 +2407,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Fireproof
 <https://w3id.org/cterm#Fireproof> rdf:type owl:NamedIndividual ,
-                                            <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                            <https://w3id.org/cterm#FunctionOfMaterial> ;
                                    rdfs:label "Antincendio"@it ,
                                               "Brandschutz"@de ,
                                               "Fireproof"@en .
@@ -2647,7 +2669,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#FrontClosure
 <https://w3id.org/cterm#FrontClosure> rdf:type owl:NamedIndividual ,
-                                               <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                               <https://w3id.org/cterm#FunctionOfMaterial> ;
                                       rdfs:label "Chiusura Frontale"@it ,
                                                  "Front Closure"@en ,
                                                  "Frontverschluss"@de .
@@ -3184,7 +3206,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Insulation
 <https://w3id.org/cterm#Insulation> rdf:type owl:NamedIndividual ,
-                                             <https://w3id.org/cterm#FunctionOfMateriaResource> ,
+                                             <https://w3id.org/cterm#FunctionOfMaterial> ,
                                              <https://w3id.org/cterm#FunctionOfWorkOfConstructionWork> ,
                                              <https://w3id.org/cterm#TypeOfMaterial> ;
                                     rdfs:label "Coibentazione"@it ,
@@ -3700,7 +3722,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cterm#Non-Combustible
 <https://w3id.org/cterm#Non-Combustible> rdf:type owl:NamedIndividual ,
                                                   <https://w3id.org/cterm#AspectOfMaterial> ,
-                                                  <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                                  <https://w3id.org/cterm#FunctionOfMaterial> ;
                                          rdfs:label "Incombustibile"@it ,
                                                     "Nicht brennbar"@de ,
                                                     "Non-Combustible"@en ,
@@ -3843,7 +3865,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Partition
 <https://w3id.org/cterm#Partition> rdf:type owl:NamedIndividual ,
-                                            <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                            <https://w3id.org/cterm#FunctionOfMaterial> ;
                                    rdfs:label "Divisoria"@it ,
                                               "Partition"@en ,
                                               "Trennwand"@de .
@@ -3997,7 +4019,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                  <https://w3id.org/cterm#FinishingOfMaterial> ;
                                         rdfs:label "Kunststoffbeschichtet"@de ,
                                                    "Plastic-Coated"@en ,
-                                                   "plastificata"@it .
+                                                   "Plastificata"@it .
 
 
 ###  https://w3id.org/cterm#PlasticCoating
@@ -4005,7 +4027,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                  <https://w3id.org/cterm#FinishingOfMaterial> ;
                                         rdfs:label "Kunststoffbeschichtung"@de ,
                                                    "Plastic Coating"@en ,
-                                                   "rivestimento plastico"@it .
+                                                   "Rivestimento Plastico"@it .
 
 
 ###  https://w3id.org/cterm#PlasticFilm
@@ -4212,7 +4234,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Protection
 <https://w3id.org/cterm#Protection> rdf:type owl:NamedIndividual ,
-                                             <https://w3id.org/cterm#FunctionOfMateriaResource> ,
+                                             <https://w3id.org/cterm#FunctionOfMaterial> ,
                                              <https://w3id.org/cterm#ObjectOfActivity> ;
                                     rdfs:label "Protection"@en ,
                                                "Protezione"@it ,
@@ -4293,7 +4315,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Rebar
 <https://w3id.org/cterm#Rebar> rdf:type owl:NamedIndividual ,
-                                        <https://w3id.org/cterm#ObjectOfMaterial> .
+                                        <https://w3id.org/cterm#ObjectOfMaterial> ;
+                               rdfs:label "Barra"@it ,
+                                          "Bewehrung"@de ,
+                                          "Rebar"@en .
 
 
 ###  https://w3id.org/cterm#RebatedEdgePanels
@@ -4433,11 +4458,6 @@ xsd:date rdf:type rdfs:Datatype .
                                                     "ferri d'armatura"@it .
 
 
-###  https://w3id.org/cterm#Reinforcment
-<https://w3id.org/cterm#Reinforcment> rdf:type owl:NamedIndividual ,
-                                               <https://w3id.org/cterm#UseOfMaterial> .
-
-
 ###  https://w3id.org/cterm#Removal
 <https://w3id.org/cterm#Removal> rdf:type owl:NamedIndividual ,
                                           <https://w3id.org/cterm#ObjectOfActivity> ;
@@ -4509,8 +4529,7 @@ xsd:date rdf:type rdfs:Datatype .
                                          <https://w3id.org/cterm#TypeOfMaterial> ;
                                 rdfs:label "Gerippt"@de ,
                                            "Ribbed"@en ,
-                                           "nervata"@it ,
-                                           "Ribbed" .
+                                           "nervata"@it .
 
 
 ###  https://w3id.org/cterm#RibbedBars
@@ -4531,7 +4550,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Rigid
 <https://w3id.org/cterm#Rigid> rdf:type owl:NamedIndividual ,
-                                        <https://w3id.org/cterm#spectOfMaterial> ;
+                                        <https://w3id.org/cterm#AspectOfMaterial> ;
                                rdfs:label "Rigid"@en ,
                                           "Rigido"@it ,
                                           "Starr"@de .
@@ -4543,14 +4562,6 @@ xsd:date rdf:type rdfs:Datatype .
                                     rdfs:label "Pannello Rigido"@it ,
                                                "Rigid Panel"@en ,
                                                "Starre Platte"@de .
-
-
-###  https://w3id.org/cterm#RigidPanels
-<https://w3id.org/cterm#RigidPanels> rdf:type owl:NamedIndividual ,
-                                              <https://w3id.org/cterm#AspectOfMaterial> ;
-                                     rdfs:label "Pannelli Rigidi"@it ,
-                                                "Rigid Panels"@en ,
-                                                "Starre Paneele"@de .
 
 
 ###  https://w3id.org/cterm#Rivers
@@ -4822,7 +4833,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#SideClosure
 <https://w3id.org/cterm#SideClosure> rdf:type owl:NamedIndividual ,
-                                              <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                              <https://w3id.org/cterm#FunctionOfMaterial> ;
                                      rdfs:label "Chiusura Laterale"@it ,
                                                 "Seitenverschluss"@de ,
                                                 "Side Closure"@en .
@@ -4952,7 +4963,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#SoundAbsorbing
 <https://w3id.org/cterm#SoundAbsorbing> rdf:type owl:NamedIndividual ,
-                                                 <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                                 <https://w3id.org/cterm#FunctionOfMaterial> ;
                                         rdfs:label "Fonoassorbente"@it ,
                                                    "Schalldämpfend"@de ,
                                                    "Sound Absorbing"@en .
@@ -4968,7 +4979,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Soundproof
 <https://w3id.org/cterm#Soundproof> rdf:type owl:NamedIndividual ,
-                                             <https://w3id.org/cterm#FunctionOfMateriaResource> ;
+                                             <https://w3id.org/cterm#FunctionOfMaterial> ;
                                     rdfs:label "Fonoisolante"@it ,
                                                "Schallisolierend"@de ,
                                                "Soundproof"@en .
@@ -5073,7 +5084,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cterm#StLB
 <https://w3id.org/cterm#StLB> rdf:type owl:NamedIndividual ,
                                        <https://w3id.org/cterm#ClassificationSystem> ;
-                              rdfs:label "St LB" .
+                              rdfs:label "StLB" .
 
 
 ###  https://w3id.org/cterm#StabilizedEarthCarpets
@@ -5416,7 +5427,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#ThermalInsulation
 <https://w3id.org/cterm#ThermalInsulation> rdf:type owl:NamedIndividual ,
-                                                    <https://w3id.org/cterm#FunctionOfMateriaResource> ,
+                                                    <https://w3id.org/cterm#FunctionOfMaterial> ,
                                                     <https://w3id.org/cterm#FunctionOfWorkOfConstructionWork> ;
                                            rdfs:label "Isolamento Termico"@it ,
                                                       "Termoisolante"@it ,
@@ -5661,7 +5672,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Ventilation
 <https://w3id.org/cterm#Ventilation> rdf:type owl:NamedIndividual ,
-                                              <https://w3id.org/cterm#FunctionOfMateriaResource> ,
+                                              <https://w3id.org/cterm#FunctionOfMaterial> ,
                                               <https://w3id.org/cterm#FunctionOfWorkOfConstructionWork> ;
                                      rdfs:label "Belüftung"@de ,
                                                 "Ventilation"@en ,
@@ -5752,18 +5763,18 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cterm#WallsforStaircasesandElevators> rdf:type owl:NamedIndividual ,
                                                                  <https://w3id.org/cterm#UseOfEquipment> ,
                                                                  <https://w3id.org/cterm#UseOfWorkOfTemporaryWork> ;
-                                                        rdfs:label "Walls for Staircases and Elevators"@en ,
-                                                                   "Wände für Treppen- und Aufzugsschächte"@de ,
-                                                                   "pareti per vani scala e ascensori"@it .
+                                                        rdfs:label "Pareti per Vani Scala e Ascensori"@it ,
+                                                                   "Walls for Staircases and Elevators"@en ,
+                                                                   "Wände für Treppen- und Aufzugsschächte"@de .
 
 
 ###  https://w3id.org/cterm#WallsinElevation
 <https://w3id.org/cterm#WallsinElevation> rdf:type owl:NamedIndividual ,
                                                    <https://w3id.org/cterm#UseOfEquipment> ,
                                                    <https://w3id.org/cterm#UseOfWorkOfTemporaryWork> ;
-                                          rdfs:label "Walls in Elevation"@en ,
-                                                     "Wände in Höhe"@de ,
-                                                     "pareti in elevazione"@it .
+                                          rdfs:label "Pareti in Elevazione"@it ,
+                                                     "Walls in Elevation"@en ,
+                                                     "Wände in Höhe"@de .
 
 
 ###  https://w3id.org/cterm#WaterRepellent
@@ -5786,41 +5797,41 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cterm#Waterproof
 <https://w3id.org/cterm#Waterproof> rdf:type owl:NamedIndividual ,
                                              <https://w3id.org/cterm#FunctionOfMaterial> ;
-                                    rdfs:label "Wasserdicht"@de ,
-                                               "Waterproof"@en ,
-                                               "impermeabile"@it .
+                                    rdfs:label "Impermeabile"@it ,
+                                               "Wasserdicht"@de ,
+                                               "Waterproof"@en .
 
 
 ###  https://w3id.org/cterm#Waterproofing
 <https://w3id.org/cterm#Waterproofing> rdf:type owl:NamedIndividual ,
                                                 <https://w3id.org/cterm#FamilyOfMaterial> ;
                                        rdfs:label "Abdichtungen"@de ,
-                                                  "Waterproofing"@en ,
-                                                  "impermeabilizzazioni"@it .
+                                                  "Impermeabilizzazioni"@it ,
+                                                  "Waterproofing"@en .
 
 
 ###  https://w3id.org/cterm#Wavy
 <https://w3id.org/cterm#Wavy> rdf:type owl:NamedIndividual ,
                                        <https://w3id.org/cterm#AspectOfMaterial> ;
                               rdfs:label "Gewellt"@de ,
-                                         "Wavy"@en ,
-                                         "ondulata"@it .
+                                         "Ondulata"@it ,
+                                         "Wavy"@en .
 
 
 ###  https://w3id.org/cterm#Wear-Resistant
 <https://w3id.org/cterm#Wear-Resistant> rdf:type owl:NamedIndividual ,
                                                  <https://w3id.org/cterm#FunctionOfMaterial> ;
-                                        rdfs:label "Verschleißfest"@de ,
-                                                   "Wear-Resistant"@en ,
-                                                   "resistente all'usura"@it .
+                                        rdfs:label "Resistente All'Usura"@it ,
+                                                   "Verschleißfest"@de ,
+                                                   "Wear-Resistant"@en .
 
 
 ###  https://w3id.org/cterm#WearingLayer
 <https://w3id.org/cterm#WearingLayer> rdf:type owl:NamedIndividual ,
                                                <https://w3id.org/cterm#UseOfMaterial> ;
                                       rdfs:label "Deckschicht"@de ,
-                                                 "Wearing Layer"@en ,
-                                                 "strato di usura"@it .
+                                                 "Strato Di Usura"@it ,
+                                                 "Wearing Layer"@en .
 
 
 ###  https://w3id.org/cterm#Weight
@@ -5828,21 +5839,23 @@ xsd:date rdf:type rdfs:Datatype .
                                          <https://w3id.org/cterm#PhysicalParameterType> ;
                                 rdfs:label "Gewicht"@de ,
                                            "Peso"@it ,
-                                           "Weight"@en ,
-                                           "peso"@it .
+                                           "Weight"@en .
 
 
 ###  https://w3id.org/cterm#Welded
 <https://w3id.org/cterm#Welded> rdf:type owl:NamedIndividual ,
-                                         <https://w3id.org/cterm#TypeOfMaterial> .
+                                         <https://w3id.org/cterm#TypeOfMaterial> ;
+                                rdfs:label "Elettrosaldato"@it ,
+                                           "Geschweißt"@de ,
+                                           "Welded"@en .
 
 
 ###  https://w3id.org/cterm#White
 <https://w3id.org/cterm#White> rdf:type owl:NamedIndividual ,
                                         <https://w3id.org/cterm#FinishingOfMaterial> ;
-                               rdfs:label "Weiß"@de ,
-                                          "White"@en ,
-                                          "colore bianco"@it .
+                               rdfs:label "Bianco"@it ,
+                                          "Weiß"@de ,
+                                          "White"@en .
 
 
 ###  https://w3id.org/cterm#WhiteColor
@@ -5858,8 +5871,7 @@ xsd:date rdf:type rdfs:Datatype .
                                         <https://w3id.org/cterm#DimensionParameterType> ;
                                rdfs:label "Breite"@de ,
                                           "Larghezza"@it ,
-                                          "Width"@en ,
-                                          "larghezza"@it .
+                                          "Width"@en .
 
 
 ###  https://w3id.org/cterm#WindowSills
@@ -5882,16 +5894,16 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cterm#Wire> rdf:type owl:NamedIndividual ,
                                        <https://w3id.org/cterm#TypeOfMaterial> ;
                               rdfs:label "Draht"@de ,
-                                         "Wire"@en ,
-                                         "filo"@it .
+                                         "Filo"@it ,
+                                         "Wire"@en .
 
 
 ###  https://w3id.org/cterm#WithCrane
 <https://w3id.org/cterm#WithCrane> rdf:type owl:NamedIndividual ,
                                             <https://w3id.org/cterm#TypeOfActivity> ;
-                                   rdfs:label "Mit Kran"@de ,
-                                              "With Crane"@en ,
-                                              "con gru"@it .
+                                   rdfs:label "Con Gru"@it ,
+                                              "Mit Kran"@de ,
+                                              "With Crane"@en .
 
 
 ###  https://w3id.org/cterm#WithManualEquipment
@@ -5921,9 +5933,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cterm#WithPump
 <https://w3id.org/cterm#WithPump> rdf:type owl:NamedIndividual ,
                                            <https://w3id.org/cterm#TypeOfActivity> ;
-                                  rdfs:label "Mit Pumpe"@de ,
-                                             "With Pump"@en ,
-                                             "con pompa"@it .
+                                  rdfs:label "Con Pompa"@it ,
+                                             "Mit Pumpe"@de ,
+                                             "With Pump"@en .
 
 
 ###  https://w3id.org/cterm#WoodVegetableFiber
@@ -5945,19 +5957,16 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cterm#WoodenStructures> rdf:type owl:NamedIndividual ,
                                                    <https://w3id.org/cterm#UseOfWorkOfConstructionWork> ;
                                           rdfs:label "Holzstrukturen"@de ,
-                                                     "Wooden Structures"@en ,
-                                                     "strutture in legno"@it .
+                                                     "Strutture In Legno"@it ,
+                                                     "Wooden Structures"@en .
 
 
 ###  https://w3id.org/cterm#Worker
 <https://w3id.org/cterm#Worker> rdf:type owl:NamedIndividual ,
                                          <https://w3id.org/cterm#ObjectOfLabour> ;
                                 rdfs:label "Arbeiter"@de ,
-                                           "Worker"@en ,
-                                           "operaio"@it .
+                                           "Operaio"@it ,
+                                           "Worker"@en .
 
-
-[ owl:cardinality "1"^^xsd:nonNegativeInteger
-] .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

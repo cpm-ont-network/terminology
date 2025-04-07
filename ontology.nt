@@ -1,6 +1,4 @@
 <http://w3id.org/cterm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://w3id.org/cterm> <http://www.w3.org/2002/07/owl#imports> <http://w3id.org/ci> .
-<http://w3id.org/cterm> <http://www.w3.org/2002/07/owl#imports> <http://w3id.org/cr> .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/bibliographicCitation> "" .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/contributor> _:genid1 .
 _:genid1 <https://schema.org/name> "Mirarchi, Claudio" .
@@ -21,32 +19,32 @@ _:genid3 <https://schema.org/email> <mailto:katharina.sigalov@rub.de> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/created> "2024-10-12"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/creator> _:genid5 .
-_:genid5 <https://schema.org/name> "Hagedorn, Philipp" .
-_:genid5 <https://schema.org/memberOf> _:genid7 .
-_:genid7 <https://schema.org/name> "Politecnico di Milano" .
+_:genid5 <https://schema.org/name> "Cassandro, Jacopo" .
 _:genid5 <https://schema.org/memberOf> _:genid6 .
-_:genid6 <https://schema.org/name> "Ruhr University Bochum, Computing in Engineering" .
-_:genid6 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> .
-_:genid5 <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> .
-_:genid5 <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> .
+_:genid6 <https://schema.org/name> "Politecnico di Milano" .
+_:genid6 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/jacopo-cassandro/> .
+_:genid5 <https://schema.org/identifier> <https://orcid.org/0000-0002-1487-8178> .
+_:genid5 <https://schema.org/email> <mailto:jacopo.cassandro@polimi.it> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
-<http://w3id.org/cterm> <http://purl.org/dc/terms/creator> _:genid8 .
-_:genid8 <https://schema.org/name> "Cassandro, Jacopo" .
-_:genid8 <https://schema.org/memberOf> _:genid9 .
+<http://w3id.org/cterm> <http://purl.org/dc/terms/creator> _:genid7 .
+_:genid7 <https://schema.org/name> "Hagedorn, Philipp" .
+_:genid7 <https://schema.org/memberOf> _:genid9 .
 _:genid9 <https://schema.org/name> "Politecnico di Milano" .
-_:genid9 <https://schema.org/identifier> <https://www.dabc.polimi.it/persona/jacopo-cassandro/> .
-_:genid8 <https://schema.org/identifier> <https://orcid.org/0000-0002-1487-8178> .
-_:genid8 <https://schema.org/email> <mailto:jacopo.cassandro@polimi.it> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
+_:genid7 <https://schema.org/memberOf> _:genid8 .
+_:genid8 <https://schema.org/name> "Ruhr University Bochum, Computing in Engineering" .
+_:genid8 <https://schema.org/identifier> <https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en> .
+_:genid7 <https://schema.org/identifier> <https://orcid.org/0000-0002-6249-243X> .
+_:genid7 <https://schema.org/email> <mailto:philipp.hagedorn-n6v@rub.de> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Person> .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/description> "The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management."@en .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<http://w3id.org/cterm> <http://purl.org/dc/terms/modified> "2025-01-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://w3id.org/cterm> <http://purl.org/dc/terms/modified> "2025-04-07"^^<http://www.w3.org/2001/XMLSchema#date> .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/rights> "Copyright 2025 by DABC, PoliMi" .
 <http://w3id.org/cterm> <http://purl.org/dc/terms/title> "The Construction Terminology (CTERM) Ontology"@en .
 <http://w3id.org/cterm> <http://purl.org/vocab/vann/preferredNamespacePrefix> "cterm" .
 <http://w3id.org/cterm> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://w3id.org/cterm#> .
-<http://w3id.org/cterm> <http://www.w3.org/2002/07/owl#versionInfo> "0.1" .
-<http://w3id.org/cterm> <https://schema.org/schema:codeRepository> <https://github.com/cpm-ont-network/terminology> .
+<http://w3id.org/cterm> <http://www.w3.org/2002/07/owl#versionInfo> "0.2" .
+<http://w3id.org/cterm> <https://schema.org/codeRepository> <https://github.com/cpm-ont-network/terminology> .
 # 
 # 
 # #################################################################
@@ -89,8 +87,8 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # http://purl.org/vocab/vann/preferredNamespaceUri
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://www.w3.org/2002/07/owl#cardinality
-<http://www.w3.org/2002/07/owl#cardinality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://schema.org/email
 <https://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -103,14 +101,6 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://schema.org/name
 <https://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://schema.org/schema:codeRepository
-<https://schema.org/schema:codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/cterm#code
-<https://w3id.org/cterm#code> <http://www.w3.org/2000/01/rdf-schema#label> "code" .
-<https://w3id.org/cterm#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/cterm#code> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cterm#Classification> .
 # 
 # 
 # 
@@ -133,31 +123,68 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # #################################################################
 # 
 # 
+# https://w3id.org/cterm#code
+<https://w3id.org/cterm#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cterm#code> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cterm#Classification> .
+<https://w3id.org/cterm#code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2001/XMLSchema#string> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cterm#code> <http://www.w3.org/2000/01/rdf-schema#label> "code" .
+# 
 # https://w3id.org/cterm#hasAspect
 <https://w3id.org/cterm#hasAspect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasAspect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/ci#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cterm#hasAspect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#EquipmentResource> .
+<https://w3id.org/cterm#hasAspect> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+<https://w3id.org/cr#MaterialResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#EquipmentResource> .
 <https://w3id.org/cr#EquipmentResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cterm#hasAspect> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Material> .
-<https://w3id.org/cr#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+<https://w3id.org/ci#Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasAspect> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Aspect> .
 <https://w3id.org/cterm#hasAspect> <http://www.w3.org/2000/01/rdf-schema#label> "hasAspect" .
 # 
 # https://w3id.org/cterm#hasCategory
 <https://w3id.org/cterm#hasCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Activity> .
-<https://w3id.org/ci#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cterm#hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#CostComponent> .
-<https://w3id.org/ci#CostComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cterm#hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Resource> .
+<https://w3id.org/cterm#hasCategory> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#Resource> .
 <https://w3id.org/cr#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#CostComponent> .
+<https://w3id.org/ci#CostComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Activity> .
+<https://w3id.org/ci#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasCategory> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Category> .
 <https://w3id.org/cterm#hasCategory> <http://www.w3.org/2000/01/rdf-schema#label> "hasCategory" .
 # 
 # https://w3id.org/cterm#hasClassification
 <https://w3id.org/cterm#hasClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/cterm#hasClassification> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#unionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#CostItem> .
+<https://w3id.org/ci#CostItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#CostComponent> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasClassification> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Classification> .
 <https://w3id.org/cterm#hasClassification> <http://www.w3.org/2000/01/rdf-schema#label> "has classification" .
 # 
@@ -169,87 +196,164 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://w3id.org/cterm#hasDimensionParameter
 <https://w3id.org/cterm#hasDimensionParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasDimensionParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasDimensionParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#EquipmentResource> .
-<https://w3id.org/cterm#hasDimensionParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#MaterialResource> .
-<https://w3id.org/cr#MaterialResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/cterm#hasDimensionParameter> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#EquipmentResource> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasDimensionParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#DimensionParameter> .
 <https://w3id.org/cterm#hasDimensionParameter> <http://www.w3.org/2000/01/rdf-schema#label> "hasDimensionParameter" .
 # 
 # https://w3id.org/cterm#hasFamily
 <https://w3id.org/cterm#hasFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Activity> .
-<https://w3id.org/cterm#hasFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#CostComponent> .
-<https://w3id.org/cterm#hasFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Resource> .
+<https://w3id.org/cterm#hasFamily> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#Resource> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#CostComponent> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Activity> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasFamily> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Family> .
 <https://w3id.org/cterm#hasFamily> <http://www.w3.org/2000/01/rdf-schema#label> "hasFamily" .
 # 
 # https://w3id.org/cterm#hasFinishing
 <https://w3id.org/cterm#hasFinishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasFinishing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasFinishing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Material> .
+<https://w3id.org/cterm#hasFinishing> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#unionOf> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasFinishing> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Finishing> .
 <https://w3id.org/cterm#hasFinishing> <http://www.w3.org/2000/01/rdf-schema#label> "hasFinishing" .
 # 
 # https://w3id.org/cterm#hasFunction
 <https://w3id.org/cterm#hasFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Activity> .
-<https://w3id.org/cterm#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#EquipmentResource> .
-<https://w3id.org/cterm#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Material> .
+<https://w3id.org/cterm#hasFunction> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#unionOf> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#EquipmentResource> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Activity> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasFunction> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Function> .
 <https://w3id.org/cterm#hasFunction> <http://www.w3.org/2000/01/rdf-schema#label> "hasFunction" .
 # 
 # https://w3id.org/cterm#hasFurnishing
 <https://w3id.org/cterm#hasFurnishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasFurnishing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Material> .
+<https://w3id.org/cterm#hasFurnishing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#MaterialResource> .
 <https://w3id.org/cterm#hasFurnishing> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Furnishing> .
 <https://w3id.org/cterm#hasFurnishing> <http://www.w3.org/2000/01/rdf-schema#label> "hasFurnishing" .
 # 
-# https://w3id.org/cterm#hasGender
-<https://w3id.org/cterm#hasGender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasGender> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Activity> .
-<https://w3id.org/cterm#hasGender> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#CostComponent> .
-<https://w3id.org/cterm#hasGender> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasGender> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Resource> .
-<https://w3id.org/cterm#hasGender> <http://www.w3.org/2000/01/rdf-schema#label> "hasGender" .
-# 
 # https://w3id.org/cterm#hasMaterial
 <https://w3id.org/cterm#hasMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#CostComponent> .
-<https://w3id.org/cterm#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#EquipmentResource> .
-<https://w3id.org/cterm#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Material> .
+<https://w3id.org/cterm#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#unionOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#EquipmentResource> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#CostComponent> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Material> .
 <https://w3id.org/cterm#hasMaterial> <http://www.w3.org/2000/01/rdf-schema#label> "hasMaterial" .
 # 
 # https://w3id.org/cterm#hasObject
 <https://w3id.org/cterm#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Activity> .
-<https://w3id.org/cterm#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#CostComponent> .
-<https://w3id.org/cterm#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Resource> .
+<https://w3id.org/cterm#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#unionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#Resource> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#CostComponent> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Activity> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Object> .
 <https://w3id.org/cterm#hasObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasObject" .
 # 
 # https://w3id.org/cterm#hasObjectStandard
 <https://w3id.org/cterm#hasObjectStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasObjectStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Activity> .
-<https://w3id.org/cterm#hasObjectStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#CostComponent> .
-<https://w3id.org/cterm#hasObjectStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasObjectStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#EquipmentResource> .
-<https://w3id.org/cterm#hasObjectStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Material> .
+<https://w3id.org/cterm#hasObjectStandard> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#unionOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#EquipmentResource> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#CostComponent> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Activity> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasObjectStandard> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Standard> .
 <https://w3id.org/cterm#hasObjectStandard> <http://www.w3.org/2000/01/rdf-schema#label> "hasObjectStandard" .
 # 
 # https://w3id.org/cterm#hasOtherStandard
 <https://w3id.org/cterm#hasOtherStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasOtherStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Activity> .
-<https://w3id.org/cterm#hasOtherStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#CostComponent> .
-<https://w3id.org/cterm#hasOtherStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasOtherStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#EquipmentResource> .
-<https://w3id.org/cterm#hasOtherStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Material> .
+<https://w3id.org/cterm#hasOtherStandard> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#unionOf> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#EquipmentResource> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#CostComponent> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Activity> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasOtherStandard> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Standard> .
 <https://w3id.org/cterm#hasOtherStandard> <http://www.w3.org/2000/01/rdf-schema#label> "hasOtherStandard" .
 # 
@@ -261,17 +365,35 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://w3id.org/cterm#hasPerformanceParameter
 <https://w3id.org/cterm#hasPerformanceParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasPerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasPerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#EquipmentResource> .
-<https://w3id.org/cterm#hasPerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#MaterialResource> .
+<https://w3id.org/cterm#hasPerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#unionOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#EquipmentResource> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasPerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#PerformanceParameter> .
 <https://w3id.org/cterm#hasPerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#label> "hasPerformanceParameter" .
 # 
 # https://w3id.org/cterm#hasPhysicalParameter
 <https://w3id.org/cterm#hasPhysicalParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasPhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasPhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#EquipmentResource> .
-<https://w3id.org/cterm#hasPhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#MaterialResource> .
+<https://w3id.org/cterm#hasPhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#unionOf> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#EquipmentResource> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasPhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#PhysicalParameter> .
 <https://w3id.org/cterm#hasPhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#label> "hasPhysicalParameter" .
 # 
@@ -284,10 +406,21 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://w3id.org/cterm#hasType
 <https://w3id.org/cterm#hasType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Activity> .
-<https://w3id.org/cterm#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#CostComponent> .
-<https://w3id.org/cterm#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Resource> .
+<https://w3id.org/cterm#hasType> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#unionOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#Resource> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#CostComponent> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Activity> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasType> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Type> .
 <https://w3id.org/cterm#hasType> <http://www.w3.org/2000/01/rdf-schema#label> "hasType" .
 # 
@@ -300,10 +433,21 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://w3id.org/cterm#hasUse
 <https://w3id.org/cterm#hasUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/cterm#hasUse> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Activity> .
-<https://w3id.org/cterm#hasUse> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/ci#Work> .
-<https://w3id.org/cterm#hasUse> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#EquipmentResource> .
-<https://w3id.org/cterm#hasUse> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/cr#Material> .
+<https://w3id.org/cterm#hasUse> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#unionOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#MaterialResource> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/cr#EquipmentResource> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Work> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/ci#Activity> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#hasUse> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/cterm#Use> .
 <https://w3id.org/cterm#hasUse> <http://www.w3.org/2000/01/rdf-schema#label> "hasUse" .
 # 
@@ -379,9 +523,6 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # #################################################################
 # 
 # 
-# http://org.semanticweb.owlapi/error#Error1
-<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://qudt.org/schema/qudt/Unit
 # 
 # https://schema.org/Person
@@ -390,13 +531,13 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://w3id.org/ci#CostComponent
 # 
+# https://w3id.org/ci#CostItem
+# 
 # https://w3id.org/ci#Work
 # 
 # https://w3id.org/cr#EquipmentResource
 # 
 # https://w3id.org/cr#LabourResource
-# 
-# https://w3id.org/cr#Material
 # 
 # https://w3id.org/cr#MaterialResource
 # 
@@ -474,8 +615,8 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://w3id.org/cterm#CategoryOfWorkOfConstructionWork
 <https://w3id.org/cterm#CategoryOfWorkOfConstructionWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cterm#CategoryOfWorkOfConstructionWork> <http://www.w3.org/2002/07/owl#equivalentClass> <https://w3id.org/cterm#CategoryOfWorkOfProductWork> .
 <https://w3id.org/cterm#CategoryOfWorkOfConstructionWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Category> .
+<https://w3id.org/cterm#CategoryOfWorkOfConstructionWork> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/cterm#CategoryOfWorkOfProductWork> .
 <https://w3id.org/cterm#CategoryOfWorkOfConstructionWork> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork> .
 <https://w3id.org/cterm#CategoryOfWorkOfConstructionWork> <http://www.w3.org/2000/01/rdf-schema#label> "Category Of Work Of ConstructionWork" .
 # 
@@ -492,13 +633,17 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/P
 # 
 # https://w3id.org/cterm#Classification
 <https://w3id.org/cterm#Classification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://org.semanticweb.owlapi/error#Error1> .
 <https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
-_:genid10 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#ClassificationSystem> .
-_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#hasClassificationSystem> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid79 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#code> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#ClassificationSystem> .
+_:genid80 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#hasClassificationSystem> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/cterm#Classification> <http://www.w3.org/2000/01/rdf-schema#label> "Classification" .
 # 
 # https://w3id.org/cterm#ClassificationSystem
@@ -509,11 +654,11 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#DimensionParameter
 <https://w3id.org/cterm#DimensionParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#DimensionParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Parameter> .
-<https://w3id.org/cterm#DimensionParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
-_:genid11 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#DimensionParameterType> .
-_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterType> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#DimensionParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#DimensionParameterType> .
+_:genid81 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterType> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/cterm#DimensionParameter> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/cterm#PerformanceParameter> .
 <https://w3id.org/cterm#DimensionParameter> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/cterm#PhysicalParameter> .
 <https://w3id.org/cterm#DimensionParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension Parameter" .
@@ -604,9 +749,6 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#FunctionOfEquipment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Function> .
 <https://w3id.org/cterm#FunctionOfEquipment> <http://www.w3.org/2000/01/rdf-schema#label> "Function of equipment" .
 # 
-# https://w3id.org/cterm#FunctionOfMateriaResource
-<https://w3id.org/cterm#FunctionOfMateriaResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # https://w3id.org/cterm#FunctionOfMaterial
 <https://w3id.org/cterm#FunctionOfMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#FunctionOfMaterial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Function> .
@@ -634,9 +776,6 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Furnishing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#Furnishing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Terminology> .
 <https://w3id.org/cterm#Furnishing> <http://www.w3.org/2000/01/rdf-schema#label> "Furnishing" .
-# 
-# https://w3id.org/cterm#FurnishingOfMaterial
-<https://w3id.org/cterm#FurnishingOfMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/cterm#Material
 <https://w3id.org/cterm#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -701,36 +840,36 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#Parameter
 <https://w3id.org/cterm#Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
-_:genid12 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#Standard> .
-_:genid12 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#hasParameterStandard> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://qudt.org/schema/qudt/Unit> .
-_:genid13 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#hasUnit> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid14 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterSymbol1> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid15 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterSymbol2> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid16 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterValue1> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
-_:genid17 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid17 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterValue2> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#Standard> .
+_:genid82 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#hasParameterStandard> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#onClass> <http://qudt.org/schema/qudt/Unit> .
+_:genid83 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#hasUnit> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid84 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterSymbol1> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+_:genid85 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid85 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterSymbol2> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid86 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterValue1> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid87 .
+_:genid87 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid87 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterValue2> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/cterm#Parameter> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter" .
 # 
 # https://w3id.org/cterm#ParameterType
@@ -741,11 +880,11 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#PerformanceParameter
 <https://w3id.org/cterm#PerformanceParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#PerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Parameter> .
-<https://w3id.org/cterm#PerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
-_:genid18 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#PerformanceParameterType> .
-_:genid18 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterType> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#PerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid88 .
+_:genid88 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#PerformanceParameterType> .
+_:genid88 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterType> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/cterm#PerformanceParameter> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/cterm#PhysicalParameter> .
 <https://w3id.org/cterm#PerformanceParameter> <http://www.w3.org/2000/01/rdf-schema#label> "Performance Parameter" .
 # 
@@ -757,11 +896,11 @@ _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#PhysicalParameter
 <https://w3id.org/cterm#PhysicalParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#PhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Parameter> .
-<https://w3id.org/cterm#PhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#PhysicalParameterType> .
-_:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterType> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#PhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/cterm#PhysicalParameterType> .
+_:genid89 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#parameterType> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/cterm#PhysicalParameter> <http://www.w3.org/2000/01/rdf-schema#label> "PhysicalParameter" .
 # 
 # https://w3id.org/cterm#PhysicalParameterType
@@ -777,26 +916,26 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#Standard
 <https://w3id.org/cterm#Standard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Terminology> .
-<https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid20 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#standardBody> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
-_:genid21 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid21 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#standardNumber> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid22 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#standardPart> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
-_:genid23 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
-_:genid23 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#standardYear> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid90 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#standardBody> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid91 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#standardNumber> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid92 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#standardPart> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+_:genid93 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid93 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/cterm#standardYear> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://w3id.org/cterm#Standard> <http://www.w3.org/2000/01/rdf-schema#label> "Standard" .
 # 
 # https://w3id.org/cterm#Terminology
@@ -921,9 +1060,6 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#UseOfWorkOfTemporaryWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/cterm#Use> .
 <https://w3id.org/cterm#UseOfWorkOfTemporaryWork> <http://www.w3.org/2000/01/rdf-schema#label> "Use Of Work Of TemporaryWork" .
 # 
-# https://w3id.org/cterm#spectOfMaterial
-<https://w3id.org/cterm#spectOfMaterial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # 
 # 
 # #################################################################
@@ -932,12 +1068,6 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #
 # #################################################################
 # 
-# 
-# https://schema.org/ConstrutcionSite
-<https://schema.org/ConstrutcionSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://schema.org/ConstrutcionSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FamilyOfWork> .
-<https://schema.org/ConstrutcionSite> <http://www.w3.org/2000/01/rdf-schema#label> "Construtcion site"@en .
-<https://schema.org/ConstrutcionSite> <http://www.w3.org/2000/01/rdf-schema#label> "Ergotecnica"@it .
 # 
 # https://w3id.org/cterm#AboveGround
 <https://w3id.org/cterm#AboveGround> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1078,7 +1208,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Bags
 <https://w3id.org/cterm#Bags> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Bags> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FurnishingOfMaterial> .
+<https://w3id.org/cterm#Bags> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#Furnishing> .
 <https://w3id.org/cterm#Bags> <http://www.w3.org/2000/01/rdf-schema#label> "Bags"@en .
 <https://w3id.org/cterm#Bags> <http://www.w3.org/2000/01/rdf-schema#label> "Säcke"@de .
 <https://w3id.org/cterm#Bags> <http://www.w3.org/2000/01/rdf-schema#label> "sacchi"@it .
@@ -1224,7 +1354,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Breathable
 <https://w3id.org/cterm#Breathable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Breathable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Breathable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Breathable> <http://www.w3.org/2000/01/rdf-schema#label> "Atmungsaktiv"@de .
 <https://w3id.org/cterm#Breathable> <http://www.w3.org/2000/01/rdf-schema#label> "Breathable"@en .
 <https://w3id.org/cterm#Breathable> <http://www.w3.org/2000/01/rdf-schema#label> "Traspirante"@it .
@@ -1382,7 +1512,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Closure
 <https://w3id.org/cterm#Closure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Closure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Closure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Closure> <http://www.w3.org/2000/01/rdf-schema#label> "Chiusura"@it .
 <https://w3id.org/cterm#Closure> <http://www.w3.org/2000/01/rdf-schema#label> "Closure"@en .
 <https://w3id.org/cterm#Closure> <http://www.w3.org/2000/01/rdf-schema#label> "Verschluss"@de .
@@ -1438,7 +1568,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Coating
 <https://w3id.org/cterm#Coating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Coating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Coating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Coating> <http://www.w3.org/2000/01/rdf-schema#label> "Coating"@en .
 <https://w3id.org/cterm#Coating> <http://www.w3.org/2000/01/rdf-schema#label> "Rivestimento"@it .
 <https://w3id.org/cterm#Coating> <http://www.w3.org/2000/01/rdf-schema#label> "Verkleidung"@de .
@@ -1530,7 +1660,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#ConcreteMixerTruck
 <https://w3id.org/cterm#ConcreteMixerTruck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#ConcreteMixerTruck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FurnishingOfMaterial> .
+<https://w3id.org/cterm#ConcreteMixerTruck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#Furnishing> .
 <https://w3id.org/cterm#ConcreteMixerTruck> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete Mixer Truck"@en .
 <https://w3id.org/cterm#ConcreteMixerTruck> <http://www.w3.org/2000/01/rdf-schema#label> "Fahrmischer"@de .
 <https://w3id.org/cterm#ConcreteMixerTruck> <http://www.w3.org/2000/01/rdf-schema#label> "autobetoniera"@it .
@@ -1622,6 +1752,12 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Construction> <http://www.w3.org/2000/01/rdf-schema#label> "Construction"@en .
 <https://w3id.org/cterm#Construction> <http://www.w3.org/2000/01/rdf-schema#label> "Costruzioni"@it .
 <https://w3id.org/cterm#Construction> <http://www.w3.org/2000/01/rdf-schema#label> "Edilizia"@it .
+# 
+# https://w3id.org/cterm#ConstructionSite
+<https://w3id.org/cterm#ConstructionSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#ConstructionSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FamilyOfWork> .
+<https://w3id.org/cterm#ConstructionSite> <http://www.w3.org/2000/01/rdf-schema#label> "Construction site"@en .
+<https://w3id.org/cterm#ConstructionSite> <http://www.w3.org/2000/01/rdf-schema#label> "Ergotecnica"@it .
 # 
 # https://w3id.org/cterm#ConstructionSiteFences
 <https://w3id.org/cterm#ConstructionSiteFences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1877,11 +2013,12 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Environment> <http://www.w3.org/2000/01/rdf-schema#label> "Environment"@en .
 <https://w3id.org/cterm#Environment> <http://www.w3.org/2000/01/rdf-schema#label> "Umgebung"@de .
 # 
-# https://w3id.org/cterm#Ergonomics
-<https://w3id.org/cterm#Ergonomics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Ergonomics> <http://www.w3.org/2000/01/rdf-schema#label> "Ergonomics"@en .
-<https://w3id.org/cterm#Ergonomics> <http://www.w3.org/2000/01/rdf-schema#label> "Ergotechnik"@de .
-<https://w3id.org/cterm#Ergonomics> <http://www.w3.org/2000/01/rdf-schema#label> "ergotecnica"@it .
+# https://w3id.org/cterm#Ergotechnique
+<https://w3id.org/cterm#Ergotechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/cterm#Ergotechnique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FamilyOfCostComponent> .
+<https://w3id.org/cterm#Ergotechnique> <http://www.w3.org/2000/01/rdf-schema#label> "Ergotechnik"@de .
+<https://w3id.org/cterm#Ergotechnique> <http://www.w3.org/2000/01/rdf-schema#label> "Ergotechnique"@en .
+<https://w3id.org/cterm#Ergotechnique> <http://www.w3.org/2000/01/rdf-schema#label> "Ergotecnica"@it .
 # 
 # https://w3id.org/cterm#Excavation
 <https://w3id.org/cterm#Excavation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -2051,7 +2188,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Finish
 <https://w3id.org/cterm#Finish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Finish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Finish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Finish> <http://www.w3.org/2000/01/rdf-schema#label> "Finish"@en .
 <https://w3id.org/cterm#Finish> <http://www.w3.org/2000/01/rdf-schema#label> "Finitura"@it .
 <https://w3id.org/cterm#Finish> <http://www.w3.org/2000/01/rdf-schema#label> "Oberfläche"@de .
@@ -2095,7 +2232,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Fireproof
 <https://w3id.org/cterm#Fireproof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Fireproof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Fireproof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Fireproof> <http://www.w3.org/2000/01/rdf-schema#label> "Antincendio"@it .
 <https://w3id.org/cterm#Fireproof> <http://www.w3.org/2000/01/rdf-schema#label> "Brandschutz"@de .
 <https://w3id.org/cterm#Fireproof> <http://www.w3.org/2000/01/rdf-schema#label> "Fireproof"@en .
@@ -2326,7 +2463,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#FrontClosure
 <https://w3id.org/cterm#FrontClosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#FrontClosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#FrontClosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#FrontClosure> <http://www.w3.org/2000/01/rdf-schema#label> "Chiusura Frontale"@it .
 <https://w3id.org/cterm#FrontClosure> <http://www.w3.org/2000/01/rdf-schema#label> "Front Closure"@en .
 <https://w3id.org/cterm#FrontClosure> <http://www.w3.org/2000/01/rdf-schema#label> "Frontverschluss"@de .
@@ -2797,7 +2934,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Insulation
 <https://w3id.org/cterm#Insulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Insulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Insulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Insulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfWorkOfConstructionWork> .
 <https://w3id.org/cterm#Insulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfMaterial> .
 <https://w3id.org/cterm#Insulation> <http://www.w3.org/2000/01/rdf-schema#label> "Coibentazione"@it .
@@ -3249,7 +3386,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#Non-Combustible
 <https://w3id.org/cterm#Non-Combustible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Non-Combustible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#AspectOfMaterial> .
-<https://w3id.org/cterm#Non-Combustible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Non-Combustible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Non-Combustible> <http://www.w3.org/2000/01/rdf-schema#label> "Incombustibile"@it .
 <https://w3id.org/cterm#Non-Combustible> <http://www.w3.org/2000/01/rdf-schema#label> "Nicht brennbar"@de .
 <https://w3id.org/cterm#Non-Combustible> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Combustible"@en .
@@ -3374,7 +3511,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Partition
 <https://w3id.org/cterm#Partition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Partition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Partition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Partition> <http://www.w3.org/2000/01/rdf-schema#label> "Divisoria"@it .
 <https://w3id.org/cterm#Partition> <http://www.w3.org/2000/01/rdf-schema#label> "Partition"@en .
 <https://w3id.org/cterm#Partition> <http://www.w3.org/2000/01/rdf-schema#label> "Trennwand"@de .
@@ -3509,14 +3646,14 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Plastic-Coated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FinishingOfMaterial> .
 <https://w3id.org/cterm#Plastic-Coated> <http://www.w3.org/2000/01/rdf-schema#label> "Kunststoffbeschichtet"@de .
 <https://w3id.org/cterm#Plastic-Coated> <http://www.w3.org/2000/01/rdf-schema#label> "Plastic-Coated"@en .
-<https://w3id.org/cterm#Plastic-Coated> <http://www.w3.org/2000/01/rdf-schema#label> "plastificata"@it .
+<https://w3id.org/cterm#Plastic-Coated> <http://www.w3.org/2000/01/rdf-schema#label> "Plastificata"@it .
 # 
 # https://w3id.org/cterm#PlasticCoating
 <https://w3id.org/cterm#PlasticCoating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#PlasticCoating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FinishingOfMaterial> .
 <https://w3id.org/cterm#PlasticCoating> <http://www.w3.org/2000/01/rdf-schema#label> "Kunststoffbeschichtung"@de .
 <https://w3id.org/cterm#PlasticCoating> <http://www.w3.org/2000/01/rdf-schema#label> "Plastic Coating"@en .
-<https://w3id.org/cterm#PlasticCoating> <http://www.w3.org/2000/01/rdf-schema#label> "rivestimento plastico"@it .
+<https://w3id.org/cterm#PlasticCoating> <http://www.w3.org/2000/01/rdf-schema#label> "Rivestimento Plastico"@it .
 # 
 # https://w3id.org/cterm#PlasticFilm
 <https://w3id.org/cterm#PlasticFilm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3697,7 +3834,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Protection
 <https://w3id.org/cterm#Protection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Protection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Protection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Protection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ObjectOfActivity> .
 <https://w3id.org/cterm#Protection> <http://www.w3.org/2000/01/rdf-schema#label> "Protection"@en .
 <https://w3id.org/cterm#Protection> <http://www.w3.org/2000/01/rdf-schema#label> "Protezione"@it .
@@ -3769,6 +3906,9 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#Rebar
 <https://w3id.org/cterm#Rebar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Rebar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ObjectOfMaterial> .
+<https://w3id.org/cterm#Rebar> <http://www.w3.org/2000/01/rdf-schema#label> "Barra"@it .
+<https://w3id.org/cterm#Rebar> <http://www.w3.org/2000/01/rdf-schema#label> "Bewehrung"@de .
+<https://w3id.org/cterm#Rebar> <http://www.w3.org/2000/01/rdf-schema#label> "Rebar"@en .
 # 
 # https://w3id.org/cterm#RebatedEdgePanels
 <https://w3id.org/cterm#RebatedEdgePanels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3890,10 +4030,6 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#ReinforcingBars> <http://www.w3.org/2000/01/rdf-schema#label> "Reinforcing Bars"@en .
 <https://w3id.org/cterm#ReinforcingBars> <http://www.w3.org/2000/01/rdf-schema#label> "ferri d'armatura"@it .
 # 
-# https://w3id.org/cterm#Reinforcment
-<https://w3id.org/cterm#Reinforcment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Reinforcment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#UseOfMaterial> .
-# 
 # https://w3id.org/cterm#Removal
 <https://w3id.org/cterm#Removal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Removal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ObjectOfActivity> .
@@ -3958,7 +4094,6 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Ribbed> <http://www.w3.org/2000/01/rdf-schema#label> "Gerippt"@de .
 <https://w3id.org/cterm#Ribbed> <http://www.w3.org/2000/01/rdf-schema#label> "Ribbed"@en .
 <https://w3id.org/cterm#Ribbed> <http://www.w3.org/2000/01/rdf-schema#label> "nervata"@it .
-<https://w3id.org/cterm#Ribbed> <http://www.w3.org/2000/01/rdf-schema#label> "Ribbed" .
 # 
 # https://w3id.org/cterm#RibbedBars
 <https://w3id.org/cterm#RibbedBars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3976,7 +4111,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Rigid
 <https://w3id.org/cterm#Rigid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Rigid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#spectOfMaterial> .
+<https://w3id.org/cterm#Rigid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#AspectOfMaterial> .
 <https://w3id.org/cterm#Rigid> <http://www.w3.org/2000/01/rdf-schema#label> "Rigid"@en .
 <https://w3id.org/cterm#Rigid> <http://www.w3.org/2000/01/rdf-schema#label> "Rigido"@it .
 <https://w3id.org/cterm#Rigid> <http://www.w3.org/2000/01/rdf-schema#label> "Starr"@de .
@@ -3987,13 +4122,6 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#RigidPanel> <http://www.w3.org/2000/01/rdf-schema#label> "Pannello Rigido"@it .
 <https://w3id.org/cterm#RigidPanel> <http://www.w3.org/2000/01/rdf-schema#label> "Rigid Panel"@en .
 <https://w3id.org/cterm#RigidPanel> <http://www.w3.org/2000/01/rdf-schema#label> "Starre Platte"@de .
-# 
-# https://w3id.org/cterm#RigidPanels
-<https://w3id.org/cterm#RigidPanels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#RigidPanels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#AspectOfMaterial> .
-<https://w3id.org/cterm#RigidPanels> <http://www.w3.org/2000/01/rdf-schema#label> "Pannelli Rigidi"@it .
-<https://w3id.org/cterm#RigidPanels> <http://www.w3.org/2000/01/rdf-schema#label> "Rigid Panels"@en .
-<https://w3id.org/cterm#RigidPanels> <http://www.w3.org/2000/01/rdf-schema#label> "Starre Paneele"@de .
 # 
 # https://w3id.org/cterm#Rivers
 <https://w3id.org/cterm#Rivers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -4231,7 +4359,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#SideClosure
 <https://w3id.org/cterm#SideClosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#SideClosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#SideClosure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#SideClosure> <http://www.w3.org/2000/01/rdf-schema#label> "Chiusura Laterale"@it .
 <https://w3id.org/cterm#SideClosure> <http://www.w3.org/2000/01/rdf-schema#label> "Seitenverschluss"@de .
 <https://w3id.org/cterm#SideClosure> <http://www.w3.org/2000/01/rdf-schema#label> "Side Closure"@en .
@@ -4345,7 +4473,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#SoundAbsorbing
 <https://w3id.org/cterm#SoundAbsorbing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#SoundAbsorbing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#SoundAbsorbing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#SoundAbsorbing> <http://www.w3.org/2000/01/rdf-schema#label> "Fonoassorbente"@it .
 <https://w3id.org/cterm#SoundAbsorbing> <http://www.w3.org/2000/01/rdf-schema#label> "Schalldämpfend"@de .
 <https://w3id.org/cterm#SoundAbsorbing> <http://www.w3.org/2000/01/rdf-schema#label> "Sound Absorbing"@en .
@@ -4359,7 +4487,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Soundproof
 <https://w3id.org/cterm#Soundproof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Soundproof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Soundproof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Soundproof> <http://www.w3.org/2000/01/rdf-schema#label> "Fonoisolante"@it .
 <https://w3id.org/cterm#Soundproof> <http://www.w3.org/2000/01/rdf-schema#label> "Schallisolierend"@de .
 <https://w3id.org/cterm#Soundproof> <http://www.w3.org/2000/01/rdf-schema#label> "Soundproof"@en .
@@ -4451,7 +4579,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#StLB
 <https://w3id.org/cterm#StLB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#StLB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ClassificationSystem> .
-<https://w3id.org/cterm#StLB> <http://www.w3.org/2000/01/rdf-schema#label> "St LB" .
+<https://w3id.org/cterm#StLB> <http://www.w3.org/2000/01/rdf-schema#label> "StLB" .
 # 
 # https://w3id.org/cterm#StabilizedEarthCarpets
 <https://w3id.org/cterm#StabilizedEarthCarpets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -4751,7 +4879,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#ThermalInsulation
 <https://w3id.org/cterm#ThermalInsulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#ThermalInsulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#ThermalInsulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#ThermalInsulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfWorkOfConstructionWork> .
 <https://w3id.org/cterm#ThermalInsulation> <http://www.w3.org/2000/01/rdf-schema#label> "Isolamento Termico"@it .
 <https://w3id.org/cterm#ThermalInsulation> <http://www.w3.org/2000/01/rdf-schema#label> "Termoisolante"@it .
@@ -4965,7 +5093,7 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/cterm#Ventilation
 <https://w3id.org/cterm#Ventilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/cterm#Ventilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMateriaResource> .
+<https://w3id.org/cterm#Ventilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
 <https://w3id.org/cterm#Ventilation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfWorkOfConstructionWork> .
 <https://w3id.org/cterm#Ventilation> <http://www.w3.org/2000/01/rdf-schema#label> "Belüftung"@de .
 <https://w3id.org/cterm#Ventilation> <http://www.w3.org/2000/01/rdf-schema#label> "Ventilation"@en .
@@ -5045,17 +5173,17 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#WallsforStaircasesandElevators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#WallsforStaircasesandElevators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#UseOfEquipment> .
 <https://w3id.org/cterm#WallsforStaircasesandElevators> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#UseOfWorkOfTemporaryWork> .
+<https://w3id.org/cterm#WallsforStaircasesandElevators> <http://www.w3.org/2000/01/rdf-schema#label> "Pareti per Vani Scala e Ascensori"@it .
 <https://w3id.org/cterm#WallsforStaircasesandElevators> <http://www.w3.org/2000/01/rdf-schema#label> "Walls for Staircases and Elevators"@en .
 <https://w3id.org/cterm#WallsforStaircasesandElevators> <http://www.w3.org/2000/01/rdf-schema#label> "Wände für Treppen- und Aufzugsschächte"@de .
-<https://w3id.org/cterm#WallsforStaircasesandElevators> <http://www.w3.org/2000/01/rdf-schema#label> "pareti per vani scala e ascensori"@it .
 # 
 # https://w3id.org/cterm#WallsinElevation
 <https://w3id.org/cterm#WallsinElevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#WallsinElevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#UseOfEquipment> .
 <https://w3id.org/cterm#WallsinElevation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#UseOfWorkOfTemporaryWork> .
+<https://w3id.org/cterm#WallsinElevation> <http://www.w3.org/2000/01/rdf-schema#label> "Pareti in Elevazione"@it .
 <https://w3id.org/cterm#WallsinElevation> <http://www.w3.org/2000/01/rdf-schema#label> "Walls in Elevation"@en .
 <https://w3id.org/cterm#WallsinElevation> <http://www.w3.org/2000/01/rdf-schema#label> "Wände in Höhe"@de .
-<https://w3id.org/cterm#WallsinElevation> <http://www.w3.org/2000/01/rdf-schema#label> "pareti in elevazione"@it .
 # 
 # https://w3id.org/cterm#WaterRepellent
 <https://w3id.org/cterm#WaterRepellent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5075,37 +5203,37 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#Waterproof
 <https://w3id.org/cterm#Waterproof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Waterproof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
+<https://w3id.org/cterm#Waterproof> <http://www.w3.org/2000/01/rdf-schema#label> "Impermeabile"@it .
 <https://w3id.org/cterm#Waterproof> <http://www.w3.org/2000/01/rdf-schema#label> "Wasserdicht"@de .
 <https://w3id.org/cterm#Waterproof> <http://www.w3.org/2000/01/rdf-schema#label> "Waterproof"@en .
-<https://w3id.org/cterm#Waterproof> <http://www.w3.org/2000/01/rdf-schema#label> "impermeabile"@it .
 # 
 # https://w3id.org/cterm#Waterproofing
 <https://w3id.org/cterm#Waterproofing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Waterproofing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FamilyOfMaterial> .
 <https://w3id.org/cterm#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#label> "Abdichtungen"@de .
+<https://w3id.org/cterm#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#label> "Impermeabilizzazioni"@it .
 <https://w3id.org/cterm#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#label> "Waterproofing"@en .
-<https://w3id.org/cterm#Waterproofing> <http://www.w3.org/2000/01/rdf-schema#label> "impermeabilizzazioni"@it .
 # 
 # https://w3id.org/cterm#Wavy
 <https://w3id.org/cterm#Wavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Wavy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#AspectOfMaterial> .
 <https://w3id.org/cterm#Wavy> <http://www.w3.org/2000/01/rdf-schema#label> "Gewellt"@de .
+<https://w3id.org/cterm#Wavy> <http://www.w3.org/2000/01/rdf-schema#label> "Ondulata"@it .
 <https://w3id.org/cterm#Wavy> <http://www.w3.org/2000/01/rdf-schema#label> "Wavy"@en .
-<https://w3id.org/cterm#Wavy> <http://www.w3.org/2000/01/rdf-schema#label> "ondulata"@it .
 # 
 # https://w3id.org/cterm#Wear-Resistant
 <https://w3id.org/cterm#Wear-Resistant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Wear-Resistant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FunctionOfMaterial> .
+<https://w3id.org/cterm#Wear-Resistant> <http://www.w3.org/2000/01/rdf-schema#label> "Resistente All'Usura"@it .
 <https://w3id.org/cterm#Wear-Resistant> <http://www.w3.org/2000/01/rdf-schema#label> "Verschleißfest"@de .
 <https://w3id.org/cterm#Wear-Resistant> <http://www.w3.org/2000/01/rdf-schema#label> "Wear-Resistant"@en .
-<https://w3id.org/cterm#Wear-Resistant> <http://www.w3.org/2000/01/rdf-schema#label> "resistente all'usura"@it .
 # 
 # https://w3id.org/cterm#WearingLayer
 <https://w3id.org/cterm#WearingLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#WearingLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#UseOfMaterial> .
 <https://w3id.org/cterm#WearingLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Deckschicht"@de .
+<https://w3id.org/cterm#WearingLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Strato Di Usura"@it .
 <https://w3id.org/cterm#WearingLayer> <http://www.w3.org/2000/01/rdf-schema#label> "Wearing Layer"@en .
-<https://w3id.org/cterm#WearingLayer> <http://www.w3.org/2000/01/rdf-schema#label> "strato di usura"@it .
 # 
 # https://w3id.org/cterm#Weight
 <https://w3id.org/cterm#Weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5113,18 +5241,20 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Gewicht"@de .
 <https://w3id.org/cterm#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Peso"@it .
 <https://w3id.org/cterm#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "Weight"@en .
-<https://w3id.org/cterm#Weight> <http://www.w3.org/2000/01/rdf-schema#label> "peso"@it .
 # 
 # https://w3id.org/cterm#Welded
 <https://w3id.org/cterm#Welded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Welded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfMaterial> .
+<https://w3id.org/cterm#Welded> <http://www.w3.org/2000/01/rdf-schema#label> "Elettrosaldato"@it .
+<https://w3id.org/cterm#Welded> <http://www.w3.org/2000/01/rdf-schema#label> "Geschweißt"@de .
+<https://w3id.org/cterm#Welded> <http://www.w3.org/2000/01/rdf-schema#label> "Welded"@en .
 # 
 # https://w3id.org/cterm#White
 <https://w3id.org/cterm#White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#White> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#FinishingOfMaterial> .
+<https://w3id.org/cterm#White> <http://www.w3.org/2000/01/rdf-schema#label> "Bianco"@it .
 <https://w3id.org/cterm#White> <http://www.w3.org/2000/01/rdf-schema#label> "Weiß"@de .
 <https://w3id.org/cterm#White> <http://www.w3.org/2000/01/rdf-schema#label> "White"@en .
-<https://w3id.org/cterm#White> <http://www.w3.org/2000/01/rdf-schema#label> "colore bianco"@it .
 # 
 # https://w3id.org/cterm#WhiteColor
 <https://w3id.org/cterm#WhiteColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5139,7 +5269,6 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Width> <http://www.w3.org/2000/01/rdf-schema#label> "Breite"@de .
 <https://w3id.org/cterm#Width> <http://www.w3.org/2000/01/rdf-schema#label> "Larghezza"@it .
 <https://w3id.org/cterm#Width> <http://www.w3.org/2000/01/rdf-schema#label> "Width"@en .
-<https://w3id.org/cterm#Width> <http://www.w3.org/2000/01/rdf-schema#label> "larghezza"@it .
 # 
 # https://w3id.org/cterm#WindowSills
 <https://w3id.org/cterm#WindowSills> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5159,15 +5288,15 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#Wire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Wire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfMaterial> .
 <https://w3id.org/cterm#Wire> <http://www.w3.org/2000/01/rdf-schema#label> "Draht"@de .
+<https://w3id.org/cterm#Wire> <http://www.w3.org/2000/01/rdf-schema#label> "Filo"@it .
 <https://w3id.org/cterm#Wire> <http://www.w3.org/2000/01/rdf-schema#label> "Wire"@en .
-<https://w3id.org/cterm#Wire> <http://www.w3.org/2000/01/rdf-schema#label> "filo"@it .
 # 
 # https://w3id.org/cterm#WithCrane
 <https://w3id.org/cterm#WithCrane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#WithCrane> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfActivity> .
+<https://w3id.org/cterm#WithCrane> <http://www.w3.org/2000/01/rdf-schema#label> "Con Gru"@it .
 <https://w3id.org/cterm#WithCrane> <http://www.w3.org/2000/01/rdf-schema#label> "Mit Kran"@de .
 <https://w3id.org/cterm#WithCrane> <http://www.w3.org/2000/01/rdf-schema#label> "With Crane"@en .
-<https://w3id.org/cterm#WithCrane> <http://www.w3.org/2000/01/rdf-schema#label> "con gru"@it .
 # 
 # https://w3id.org/cterm#WithManualEquipment
 <https://w3id.org/cterm#WithManualEquipment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5193,9 +5322,9 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://w3id.org/cterm#WithPump
 <https://w3id.org/cterm#WithPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#WithPump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#TypeOfActivity> .
+<https://w3id.org/cterm#WithPump> <http://www.w3.org/2000/01/rdf-schema#label> "Con Pompa"@it .
 <https://w3id.org/cterm#WithPump> <http://www.w3.org/2000/01/rdf-schema#label> "Mit Pumpe"@de .
 <https://w3id.org/cterm#WithPump> <http://www.w3.org/2000/01/rdf-schema#label> "With Pump"@en .
-<https://w3id.org/cterm#WithPump> <http://www.w3.org/2000/01/rdf-schema#label> "con pompa"@it .
 # 
 # https://w3id.org/cterm#WoodVegetableFiber
 <https://w3id.org/cterm#WoodVegetableFiber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5214,15 +5343,14 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://w3id.org/cterm#WoodenStructures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#WoodenStructures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#UseOfWorkOfConstructionWork> .
 <https://w3id.org/cterm#WoodenStructures> <http://www.w3.org/2000/01/rdf-schema#label> "Holzstrukturen"@de .
+<https://w3id.org/cterm#WoodenStructures> <http://www.w3.org/2000/01/rdf-schema#label> "Strutture In Legno"@it .
 <https://w3id.org/cterm#WoodenStructures> <http://www.w3.org/2000/01/rdf-schema#label> "Wooden Structures"@en .
-<https://w3id.org/cterm#WoodenStructures> <http://www.w3.org/2000/01/rdf-schema#label> "strutture in legno"@it .
 # 
 # https://w3id.org/cterm#Worker
 <https://w3id.org/cterm#Worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/cterm#Worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/cterm#ObjectOfLabour> .
 <https://w3id.org/cterm#Worker> <http://www.w3.org/2000/01/rdf-schema#label> "Arbeiter"@de .
+<https://w3id.org/cterm#Worker> <http://www.w3.org/2000/01/rdf-schema#label> "Operaio"@it .
 <https://w3id.org/cterm#Worker> <http://www.w3.org/2000/01/rdf-schema#label> "Worker"@en .
-<https://w3id.org/cterm#Worker> <http://www.w3.org/2000/01/rdf-schema#label> "operaio"@it .
 # 
-_:genid24 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
