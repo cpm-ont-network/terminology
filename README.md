@@ -22,17 +22,16 @@ Markdown documentation created by [pyLODE](http://github.com/rdflib/pyLODE) 2.4
 * **Created**
   * 2024-10-12
 * **Modified**
-  * 2025-01-13
+  * 2025-04-07
 * **Version Information**
-  * 0.1
-* **Imports**
-  * [http://w3id.org/ci](http://w3id.org/ci)
-  * [http://w3id.org/cr](http://w3id.org/cr)
+  * 0.2
 * **License &amp; Rights**
   * [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
   * &copy; 2025 by DABC, PoliMi
 * **Ontology RDF**
   * RDF ([terminology.ttl](turtle))
+* **Code Repository**
+  * [https://github.com/cpm-ont-network/terminology](https://github.com/cpm-ont-network/terminology)
 ### Description
 <p>The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management.</p>
 
@@ -131,7 +130,7 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Aspect`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Sub-classes |[cterm:AspectOfWorkOfTemporaryWork](https://w3id.org/cterm#AspectOfWorkOfTemporaryWork) (c)<br />[cterm:AspectOfEquipment](https://w3id.org/cterm#AspectOfEquipment) (c)<br />[cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial) (c)<br />[cterm:AspectOfWorkOfConstructionWork](https://w3id.org/cterm#AspectOfWorkOfConstructionWork) (c)<br />[cterm:AspectOfWorkOfProductWork](https://w3id.org/cterm#AspectOfWorkOfProductWork) (c)<br />
+Sub-classes |[cterm:AspectOfWorkOfTemporaryWork](https://w3id.org/cterm#AspectOfWorkOfTemporaryWork) (c)<br />[cterm:AspectOfWorkOfConstructionWork](https://w3id.org/cterm#AspectOfWorkOfConstructionWork) (c)<br />[cterm:AspectOfEquipment](https://w3id.org/cterm#AspectOfEquipment) (c)<br />[cterm:AspectOfWorkOfProductWork](https://w3id.org/cterm#AspectOfWorkOfProductWork) (c)<br />[cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial) (c)<br />
 In range of |[cterm:hasAspect](https://w3id.org/cterm#hasAspect) (op)<br />
 ### Aspect Of Equipment
 Property | Value
@@ -163,7 +162,7 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Category`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Sub-classes |[cterm:CategoryOfWorkOfProductWork](https://w3id.org/cterm#CategoryOfWorkOfProductWork) (c)<br />[cterm:CategoryOfActivity](https://w3id.org/cterm#CategoryOfActivity) (c)<br />[cterm:CategoryOfMaterial](https://w3id.org/cterm#CategoryOfMaterial) (c)<br />[cterm:CategoryOfLabour](https://w3id.org/cterm#CategoryOfLabour) (c)<br />[cterm:CategoryOfCostComponent](https://w3id.org/cterm#CategoryOfCostComponent) (c)<br />[cterm:CategoryOfEquipment](https://w3id.org/cterm#CategoryOfEquipment) (c)<br />[cterm:CategoryOfWorkOfConstructionWork](https://w3id.org/cterm#CategoryOfWorkOfConstructionWork) (c)<br />[cterm:CategoryOfWorkOfTemporaryWork](https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork) (c)<br />
+Sub-classes |[cterm:CategoryOfLabour](https://w3id.org/cterm#CategoryOfLabour) (c)<br />[cterm:CategoryOfWorkOfTemporaryWork](https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork) (c)<br />[cterm:CategoryOfEquipment](https://w3id.org/cterm#CategoryOfEquipment) (c)<br />[cterm:CategoryOfCostComponent](https://w3id.org/cterm#CategoryOfCostComponent) (c)<br />[cterm:CategoryOfActivity](https://w3id.org/cterm#CategoryOfActivity) (c)<br />[cterm:CategoryOfMaterial](https://w3id.org/cterm#CategoryOfMaterial) (c)<br />[cterm:CategoryOfWorkOfProductWork](https://w3id.org/cterm#CategoryOfWorkOfProductWork) (c)<br />[cterm:CategoryOfWorkOfConstructionWork](https://w3id.org/cterm#CategoryOfWorkOfConstructionWork) (c)<br />
 In range of |[cterm:hasCategory](https://w3id.org/cterm#hasCategory) (op)<br />
 ### Category Of Activity
 Property | Value
@@ -210,7 +209,7 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Classification`
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[cterm:hasClassificationSystem](https://w3id.org/cterm#hasClassificationSystem) (op) **exactly** 1 [cterm:ClassificationSystem](https://w3id.org/cterm#ClassificationSystem) (c)<br />[cterm:code](https://w3id.org/cterm#code) **exactly** 1<br />
+Restrictions |[cterm:code](https://w3id.org/cterm#code) **exactly** 1 [xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />[cterm:hasClassificationSystem](https://w3id.org/cterm#hasClassificationSystem) (op) **exactly** 1 [cterm:ClassificationSystem](https://w3id.org/cterm#ClassificationSystem) (c)<br />
 In domain of |[cterm:code](https://w3id.org/cterm#code)<br />[cterm:hasClassificationSystem](https://w3id.org/cterm#hasClassificationSystem) (op)<br />
 In range of |[cterm:hasClassification](https://w3id.org/cterm#hasClassification) (op)<br />
 ### Classification system
@@ -236,7 +235,7 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Family`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Sub-classes |[cterm:FamilyOfLabour](https://w3id.org/cterm#FamilyOfLabour) (c)<br />[cterm:FamilyOfCostComponent](https://w3id.org/cterm#FamilyOfCostComponent) (c)<br />[cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial) (c)<br />[cterm:FamilyOfEquipment](https://w3id.org/cterm#FamilyOfEquipment) (c)<br />[cterm:FamilyOfActivity](https://w3id.org/cterm#FamilyOfActivity) (c)<br />[cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork) (c)<br />
+Sub-classes |[cterm:FamilyOfActivity](https://w3id.org/cterm#FamilyOfActivity) (c)<br />[cterm:FamilyOfLabour](https://w3id.org/cterm#FamilyOfLabour) (c)<br />[cterm:FamilyOfEquipment](https://w3id.org/cterm#FamilyOfEquipment) (c)<br />[cterm:FamilyOfCostComponent](https://w3id.org/cterm#FamilyOfCostComponent) (c)<br />[cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial) (c)<br />[cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork) (c)<br />
 In range of |[cterm:hasFamily](https://w3id.org/cterm#hasFamily) (op)<br />
 ### Family of Activity
 Property | Value
@@ -273,7 +272,7 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Finishing`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Sub-classes |[cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork) (c)<br />[cterm:FinishingOfWorkOfTemporaryWork](https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork) (c)<br />[cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial) (c)<br />[cterm:FinishingOfWorkOfProductWork](https://w3id.org/cterm#FinishingOfWorkOfProductWork) (c)<br />
+Sub-classes |[cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial) (c)<br />[cterm:FinishingOfWorkOfTemporaryWork](https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork) (c)<br />[cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork) (c)<br />[cterm:FinishingOfWorkOfProductWork](https://w3id.org/cterm#FinishingOfWorkOfProductWork) (c)<br />
 In range of |[cterm:hasFinishing](https://w3id.org/cterm#hasFinishing) (op)<br />
 ### Finishing of material
 Property | Value
@@ -300,7 +299,7 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Function`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Sub-classes |[cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial) (c)<br />[cterm:FunctionOfWorkOfTemporaryWork](https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork) (c)<br />[cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork) (c)<br />[cterm:FunctionOfWorkOfProductWork](https://w3id.org/cterm#FunctionOfWorkOfProductWork) (c)<br />[cterm:FunctionOfEquipment](https://w3id.org/cterm#FunctionOfEquipment) (c)<br />[cterm:FunctionOfActivity](https://w3id.org/cterm#FunctionOfActivity) (c)<br />
+Sub-classes |[cterm:FunctionOfActivity](https://w3id.org/cterm#FunctionOfActivity) (c)<br />[cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork) (c)<br />[cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial) (c)<br />[cterm:FunctionOfEquipment](https://w3id.org/cterm#FunctionOfEquipment) (c)<br />[cterm:FunctionOfWorkOfProductWork](https://w3id.org/cterm#FunctionOfWorkOfProductWork) (c)<br />[cterm:FunctionOfWorkOfTemporaryWork](https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork) (c)<br />
 In range of |[cterm:hasFunction](https://w3id.org/cterm#hasFunction) (op)<br />
 ### FunctionOfActivity
 Property | Value
@@ -349,7 +348,7 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Object`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Sub-classes |[cterm:ObjectOfLabour](https://w3id.org/cterm#ObjectOfLabour) (c)<br />[cterm:ObjectOfMaterial](https://w3id.org/cterm#ObjectOfMaterial) (c)<br />[cterm:ObjectOfWorkOfTemporaryWork](https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork) (c)<br />[cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent) (c)<br />[cterm:ObjectOfEquipment](https://w3id.org/cterm#ObjectOfEquipment) (c)<br />[cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity) (c)<br />[cterm:ObjectOfWorkOfConstructionWork](https://w3id.org/cterm#ObjectOfWorkOfConstructionWork) (c)<br />[cterm:ObjectOfWorkOfProductWork](https://w3id.org/cterm#ObjectOfWorkOfProductWork) (c)<br />
+Sub-classes |[cterm:ObjectOfEquipment](https://w3id.org/cterm#ObjectOfEquipment) (c)<br />[cterm:ObjectOfMaterial](https://w3id.org/cterm#ObjectOfMaterial) (c)<br />[cterm:ObjectOfWorkOfTemporaryWork](https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork) (c)<br />[cterm:ObjectOfWorkOfConstructionWork](https://w3id.org/cterm#ObjectOfWorkOfConstructionWork) (c)<br />[cterm:ObjectOfWorkOfProductWork](https://w3id.org/cterm#ObjectOfWorkOfProductWork) (c)<br />[cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity) (c)<br />[cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent) (c)<br />[cterm:ObjectOfLabour](https://w3id.org/cterm#ObjectOfLabour) (c)<br />
 In range of |[cterm:hasObject](https://w3id.org/cterm#hasObject) (op)<br />
 ### ObjectOfActivity
 Property | Value
@@ -396,15 +395,15 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Parameter`
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Restrictions |[cterm:hasParameterStandard](https://w3id.org/cterm#hasParameterStandard) (op) **max** 1 [cterm:Standard](https://w3id.org/cterm#Standard) (c)<br />[cterm:parameterSymbol1](https://w3id.org/cterm#parameterSymbol1) (dp) **max** 1<br />[cterm:parameterSymbol2](https://w3id.org/cterm#parameterSymbol2) (dp) **max** 1<br />[cterm:parameterValue2](https://w3id.org/cterm#parameterValue2) (dp) **max** 1<br />[cterm:hasUnit](https://w3id.org/cterm#hasUnit) (op) **max** 1 [qudt:Unit](http://qudt.org/schema/qudt/Unit) (c)<br />[cterm:parameterValue1](https://w3id.org/cterm#parameterValue1) (dp) **max** 1<br />
-Sub-classes |[cterm:PerformanceParameter](https://w3id.org/cterm#PerformanceParameter) (c)<br />[cterm:PhysicalParameter](https://w3id.org/cterm#PhysicalParameter) (c)<br />[cterm:DimensionParameter](https://w3id.org/cterm#DimensionParameter) (c)<br />
-In domain of |[cterm:parameterSymbol1](https://w3id.org/cterm#parameterSymbol1) (dp)<br />[cterm:hasUnit](https://w3id.org/cterm#hasUnit) (op)<br />[cterm:hasParameterStandard](https://w3id.org/cterm#hasParameterStandard) (op)<br />[cterm:parameterType](https://w3id.org/cterm#parameterType) (op)<br />[cterm:parameterSymbol2](https://w3id.org/cterm#parameterSymbol2) (dp)<br />[cterm:parameterValue1](https://w3id.org/cterm#parameterValue1) (dp)<br />[cterm:parameterValue2](https://w3id.org/cterm#parameterValue2) (dp)<br />
+Restrictions |[cterm:parameterValue2](https://w3id.org/cterm#parameterValue2) (dp) **max** 1<br />[cterm:hasUnit](https://w3id.org/cterm#hasUnit) (op) **max** 1 [qudt:Unit](http://qudt.org/schema/qudt/Unit) (c)<br />[cterm:parameterSymbol1](https://w3id.org/cterm#parameterSymbol1) (dp) **max** 1<br />[cterm:parameterSymbol2](https://w3id.org/cterm#parameterSymbol2) (dp) **max** 1<br />[cterm:hasParameterStandard](https://w3id.org/cterm#hasParameterStandard) (op) **max** 1 [cterm:Standard](https://w3id.org/cterm#Standard) (c)<br />[cterm:parameterValue1](https://w3id.org/cterm#parameterValue1) (dp) **max** 1<br />
+Sub-classes |[cterm:PerformanceParameter](https://w3id.org/cterm#PerformanceParameter) (c)<br />[cterm:DimensionParameter](https://w3id.org/cterm#DimensionParameter) (c)<br />[cterm:PhysicalParameter](https://w3id.org/cterm#PhysicalParameter) (c)<br />
+In domain of |[cterm:hasParameterStandard](https://w3id.org/cterm#hasParameterStandard) (op)<br />[cterm:parameterSymbol2](https://w3id.org/cterm#parameterSymbol2) (dp)<br />[cterm:parameterValue1](https://w3id.org/cterm#parameterValue1) (dp)<br />[cterm:parameterSymbol1](https://w3id.org/cterm#parameterSymbol1) (dp)<br />[cterm:hasUnit](https://w3id.org/cterm#hasUnit) (op)<br />[cterm:parameterType](https://w3id.org/cterm#parameterType) (op)<br />[cterm:parameterValue2](https://w3id.org/cterm#parameterValue2) (dp)<br />
 ### Parameter type
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ParameterType`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Sub-classes |[cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType) (c)<br />[cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType) (c)<br />[cterm:PhysicalParameterType](https://w3id.org/cterm#PhysicalParameterType) (c)<br />
+Sub-classes |[cterm:PhysicalParameterType](https://w3id.org/cterm#PhysicalParameterType) (c)<br />[cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType) (c)<br />[cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType) (c)<br />
 In range of |[cterm:parameterType](https://w3id.org/cterm#parameterType) (op)<br />
 ### Performance Parameter
 Property | Value
@@ -441,21 +440,21 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Standard`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Restrictions |[cterm:standardBody](https://w3id.org/cterm#standardBody) (dp) **max** 1<br />[cterm:standardYear](https://w3id.org/cterm#standardYear) (dp) **max** 1<br />[cterm:standardPart](https://w3id.org/cterm#standardPart) (dp) **max** 1<br />[cterm:standardYear](https://w3id.org/cterm#standardYear) (dp) **max** 1<br />[cterm:standardNumber](https://w3id.org/cterm#standardNumber) (dp) **max** 1<br />[cterm:standardPart](https://w3id.org/cterm#standardPart) (dp) **max** 1<br />[cterm:standardBody](https://w3id.org/cterm#standardBody) (dp) **max** 1<br />[cterm:standardNumber](https://w3id.org/cterm#standardNumber) (dp) **max** 1<br />
-In domain of |[cterm:standardPart](https://w3id.org/cterm#standardPart) (dp)<br />[cterm:standardYear](https://w3id.org/cterm#standardYear) (dp)<br />[cterm:standardNumber](https://w3id.org/cterm#standardNumber) (dp)<br />[cterm:standardBody](https://w3id.org/cterm#standardBody) (dp)<br />
-In range of |[cterm:hasOtherStandard](https://w3id.org/cterm#hasOtherStandard) (op)<br />[cterm:hasObjectStandard](https://w3id.org/cterm#hasObjectStandard) (op)<br />[cterm:hasParameterStandard](https://w3id.org/cterm#hasParameterStandard) (op)<br />
+Restrictions |[cterm:standardNumber](https://w3id.org/cterm#standardNumber) (dp) **max** 1<br />[cterm:standardBody](https://w3id.org/cterm#standardBody) (dp) **max** 1<br />[cterm:standardPart](https://w3id.org/cterm#standardPart) (dp) **max** 1<br />[cterm:standardYear](https://w3id.org/cterm#standardYear) (dp) **max** 1<br />[cterm:standardPart](https://w3id.org/cterm#standardPart) (dp) **max** 1<br />[cterm:standardNumber](https://w3id.org/cterm#standardNumber) (dp) **max** 1<br />[cterm:standardYear](https://w3id.org/cterm#standardYear) (dp) **max** 1<br />[cterm:standardBody](https://w3id.org/cterm#standardBody) (dp) **max** 1<br />
+In domain of |[cterm:standardNumber](https://w3id.org/cterm#standardNumber) (dp)<br />[cterm:standardBody](https://w3id.org/cterm#standardBody) (dp)<br />[cterm:standardPart](https://w3id.org/cterm#standardPart) (dp)<br />[cterm:standardYear](https://w3id.org/cterm#standardYear) (dp)<br />
+In range of |[cterm:hasObjectStandard](https://w3id.org/cterm#hasObjectStandard) (op)<br />[cterm:hasParameterStandard](https://w3id.org/cterm#hasParameterStandard) (op)<br />[cterm:hasOtherStandard](https://w3id.org/cterm#hasOtherStandard) (op)<br />
 ### Terminology
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Terminology`
 Super-classes |[owl:Thing](http://www.w3.org/2002/07/owl#Thing) (c)<br />
-Sub-classes |[cterm:Function](https://w3id.org/cterm#Function) (c)<br />[cterm:Use](https://w3id.org/cterm#Use) (c)<br />[cterm:Family](https://w3id.org/cterm#Family) (c)<br />[cterm:Aspect](https://w3id.org/cterm#Aspect) (c)<br />[cterm:Finishing](https://w3id.org/cterm#Finishing) (c)<br />[cterm:Furnishing](https://w3id.org/cterm#Furnishing) (c)<br />[cterm:Material](https://w3id.org/cterm#Material) (c)<br />[cterm:Category](https://w3id.org/cterm#Category) (c)<br />[cterm:Object](https://w3id.org/cterm#Object) (c)<br />[cterm:ParameterType](https://w3id.org/cterm#ParameterType) (c)<br />[cterm:Standard](https://w3id.org/cterm#Standard) (c)<br />[cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel) (c)<br />[cterm:Type](https://w3id.org/cterm#Type) (c)<br />
+Sub-classes |[cterm:Category](https://w3id.org/cterm#Category) (c)<br />[cterm:Type](https://w3id.org/cterm#Type) (c)<br />[cterm:Function](https://w3id.org/cterm#Function) (c)<br />[cterm:Furnishing](https://w3id.org/cterm#Furnishing) (c)<br />[cterm:Family](https://w3id.org/cterm#Family) (c)<br />[cterm:Use](https://w3id.org/cterm#Use) (c)<br />[cterm:Material](https://w3id.org/cterm#Material) (c)<br />[cterm:Object](https://w3id.org/cterm#Object) (c)<br />[cterm:Aspect](https://w3id.org/cterm#Aspect) (c)<br />[cterm:Standard](https://w3id.org/cterm#Standard) (c)<br />[cterm:ParameterType](https://w3id.org/cterm#ParameterType) (c)<br />[cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel) (c)<br />[cterm:Finishing](https://w3id.org/cterm#Finishing) (c)<br />
 ### Type
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Type`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Sub-classes |[cterm:TypeOfProductWork](https://w3id.org/cterm#TypeOfProductWork) (c)<br />[cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity) (c)<br />[cterm:TypeOfConstructionWork](https://w3id.org/cterm#TypeOfConstructionWork) (c)<br />[cterm:TypeOfWorkOfProductWork](https://w3id.org/cterm#TypeOfWorkOfProductWork) (c)<br />[cterm:TypeOfEquipment](https://w3id.org/cterm#TypeOfEquipment) (c)<br />[cterm:TypeOfLabour](https://w3id.org/cterm#TypeOfLabour) (c)<br />[cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork) (c)<br />[cterm:TypeOfWorkOfTemporaryWork](https://w3id.org/cterm#TypeOfWorkOfTemporaryWork) (c)<br />[cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial) (c)<br />[cterm:TypeOfTemporaryWork](https://w3id.org/cterm#TypeOfTemporaryWork) (c)<br />
+Sub-classes |[cterm:TypeOfWorkOfProductWork](https://w3id.org/cterm#TypeOfWorkOfProductWork) (c)<br />[cterm:TypeOfWorkOfTemporaryWork](https://w3id.org/cterm#TypeOfWorkOfTemporaryWork) (c)<br />[cterm:TypeOfConstructionWork](https://w3id.org/cterm#TypeOfConstructionWork) (c)<br />[cterm:TypeOfLabour](https://w3id.org/cterm#TypeOfLabour) (c)<br />[cterm:TypeOfEquipment](https://w3id.org/cterm#TypeOfEquipment) (c)<br />[cterm:TypeOfTemporaryWork](https://w3id.org/cterm#TypeOfTemporaryWork) (c)<br />[cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork) (c)<br />[cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity) (c)<br />[cterm:TypeOfProductWork](https://w3id.org/cterm#TypeOfProductWork) (c)<br />[cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial) (c)<br />
 In range of |[cterm:hasType](https://w3id.org/cterm#hasType) (op)<br />
 ### TypeOfActivity
 Property | Value
@@ -512,7 +511,7 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Use`
 Super-classes |[cterm:Terminology](https://w3id.org/cterm#Terminology) (c)<br />
-Sub-classes |[cterm:UseOfWorkOfProductWork](https://w3id.org/cterm#UseOfWorkOfProductWork) (c)<br />[cterm:UseOfWorkOfTemporaryWork](https://w3id.org/cterm#UseOfWorkOfTemporaryWork) (c)<br />[cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork) (c)<br />[cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment) (c)<br />[cterm:UseOfActivity](https://w3id.org/cterm#UseOfActivity) (c)<br />[cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial) (c)<br />
+Sub-classes |[cterm:UseOfActivity](https://w3id.org/cterm#UseOfActivity) (c)<br />[cterm:UseOfWorkOfTemporaryWork](https://w3id.org/cterm#UseOfWorkOfTemporaryWork) (c)<br />[cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment) (c)<br />[cterm:UseOfWorkOfProductWork](https://w3id.org/cterm#UseOfWorkOfProductWork) (c)<br />[cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork) (c)<br />[cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial) (c)<br />
 In range of |[cterm:hasUse](https://w3id.org/cterm#hasUse) (op)<br />
 ### Use Of Activity
 Property | Value
@@ -555,7 +554,6 @@ Super-classes |[cterm:Use](https://w3id.org/cterm#Use) (c)<br />
 [hasFinishing](#hasFinishing),
 [hasFunction](#hasFunction),
 [hasFurnishing](#hasFurnishing),
-[hasGender](#hasGender),
 [hasMaterial](#hasMaterial),
 [hasObject](#hasObject),
 [hasObjectStandard](#hasObjectStandard),
@@ -573,20 +571,21 @@ Super-classes |[cterm:Use](https://w3id.org/cterm#Use) (c)<br />
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasAspect`
-Domain(s) |[cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c)<br />[ci:Work](https://w3id.org/ci#Work) (c)<br />[cr:Material](https://w3id.org/cr#Material) (c)<br />
+Domain(s) |([ci:Work](https://w3id.org/ci#Work) (c) or [cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:Aspect](https://w3id.org/cterm#Aspect) (c)<br />
 [](hasCategory)
 ### hasCategory
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasCategory`
-Domain(s) |[ci:CostComponent](https://w3id.org/ci#CostComponent) (c)<br />[ci:Activity](https://w3id.org/ci#Activity) (c)<br />[cr:Resource](https://w3id.org/cr#Resource) (c)<br />[ci:Work](https://w3id.org/ci#Work) (c)<br />
+Domain(s) |([ci:CostComponent](https://w3id.org/ci#CostComponent) (c) or [ci:Work](https://w3id.org/ci#Work) (c) or [ci:Activity](https://w3id.org/ci#Activity) (c) or [cr:Resource](https://w3id.org/cr#Resource) (c))<br />
 Range(s) |[cterm:Category](https://w3id.org/cterm#Category) (c)<br />
 [](hasclassification)
 ### has classification
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasClassification`
+Domain(s) |([ci:CostComponent](https://w3id.org/ci#CostComponent) (c) or [ci:CostItem](https://w3id.org/ci#CostItem) (c))<br />
 Range(s) |[cterm:Classification](https://w3id.org/cterm#Classification) (c)<br />
 [](hasclassificationsystem)
 ### has classification system
@@ -600,69 +599,63 @@ Range(s) |[cterm:ClassificationSystem](https://w3id.org/cterm#ClassificationSyst
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasDimensionParameter`
-Domain(s) |[cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c)<br />[ci:Work](https://w3id.org/ci#Work) (c)<br />[cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c)<br />
+Domain(s) |([ci:Work](https://w3id.org/ci#Work) (c) or [cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:DimensionParameter](https://w3id.org/cterm#DimensionParameter) (c)<br />
 [](hasFamily)
 ### hasFamily
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasFamily`
-Domain(s) |[ci:Work](https://w3id.org/ci#Work) (c)<br />[cr:Resource](https://w3id.org/cr#Resource) (c)<br />[ci:CostComponent](https://w3id.org/ci#CostComponent) (c)<br />[ci:Activity](https://w3id.org/ci#Activity) (c)<br />
+Domain(s) |([ci:CostComponent](https://w3id.org/ci#CostComponent) (c) or [ci:Work](https://w3id.org/ci#Work) (c) or [ci:Activity](https://w3id.org/ci#Activity) (c) or [cr:Resource](https://w3id.org/cr#Resource) (c))<br />
 Range(s) |[cterm:Family](https://w3id.org/cterm#Family) (c)<br />
 [](hasFinishing)
 ### hasFinishing
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasFinishing`
-Domain(s) |[ci:Work](https://w3id.org/ci#Work) (c)<br />[cr:Material](https://w3id.org/cr#Material) (c)<br />
+Domain(s) |([ci:Work](https://w3id.org/ci#Work) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:Finishing](https://w3id.org/cterm#Finishing) (c)<br />
 [](hasFunction)
 ### hasFunction
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasFunction`
-Domain(s) |[cr:Material](https://w3id.org/cr#Material) (c)<br />[ci:Activity](https://w3id.org/ci#Activity) (c)<br />[cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c)<br />[ci:Work](https://w3id.org/ci#Work) (c)<br />
+Domain(s) |([ci:Work](https://w3id.org/ci#Work) (c) or [ci:Activity](https://w3id.org/ci#Activity) (c) or [cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:Function](https://w3id.org/cterm#Function) (c)<br />
 [](hasFurnishing)
 ### hasFurnishing
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasFurnishing`
-Domain(s) |[cr:Material](https://w3id.org/cr#Material) (c)<br />
+Domain(s) |[cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c)<br />
 Range(s) |[cterm:Furnishing](https://w3id.org/cterm#Furnishing) (c)<br />
-[](hasGender)
-### hasGender
-Property | Value
---- | ---
-IRI | `https://w3id.org/cterm#hasGender`
-Domain(s) |[cr:Resource](https://w3id.org/cr#Resource) (c)<br />[ci:Work](https://w3id.org/ci#Work) (c)<br />[ci:CostComponent](https://w3id.org/ci#CostComponent) (c)<br />[ci:Activity](https://w3id.org/ci#Activity) (c)<br />
 [](hasMaterial)
 ### hasMaterial
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasMaterial`
-Domain(s) |[ci:CostComponent](https://w3id.org/ci#CostComponent) (c)<br />[ci:Work](https://w3id.org/ci#Work) (c)<br />[cr:Material](https://w3id.org/cr#Material) (c)<br />[cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c)<br />
+Domain(s) |([ci:CostComponent](https://w3id.org/ci#CostComponent) (c) or [ci:Work](https://w3id.org/ci#Work) (c) or [cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:Material](https://w3id.org/cterm#Material) (c)<br />
 [](hasObject)
 ### hasObject
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasObject`
-Domain(s) |[ci:Work](https://w3id.org/ci#Work) (c)<br />[ci:CostComponent](https://w3id.org/ci#CostComponent) (c)<br />[cr:Resource](https://w3id.org/cr#Resource) (c)<br />[ci:Activity](https://w3id.org/ci#Activity) (c)<br />
+Domain(s) |([ci:CostComponent](https://w3id.org/ci#CostComponent) (c) or [ci:Work](https://w3id.org/ci#Work) (c) or [ci:Activity](https://w3id.org/ci#Activity) (c) or [cr:Resource](https://w3id.org/cr#Resource) (c))<br />
 Range(s) |[cterm:Object](https://w3id.org/cterm#Object) (c)<br />
 [](hasObjectStandard)
 ### hasObjectStandard
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasObjectStandard`
-Domain(s) |[ci:Work](https://w3id.org/ci#Work) (c)<br />[cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c)<br />[cr:Material](https://w3id.org/cr#Material) (c)<br />[ci:CostComponent](https://w3id.org/ci#CostComponent) (c)<br />[ci:Activity](https://w3id.org/ci#Activity) (c)<br />
+Domain(s) |([ci:CostComponent](https://w3id.org/ci#CostComponent) (c) or [ci:Work](https://w3id.org/ci#Work) (c) or [ci:Activity](https://w3id.org/ci#Activity) (c) or [cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:Standard](https://w3id.org/cterm#Standard) (c)<br />
 [](hasOtherStandard)
 ### hasOtherStandard
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasOtherStandard`
-Domain(s) |[cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c)<br />[cr:Material](https://w3id.org/cr#Material) (c)<br />[ci:CostComponent](https://w3id.org/ci#CostComponent) (c)<br />[ci:Activity](https://w3id.org/ci#Activity) (c)<br />[ci:Work](https://w3id.org/ci#Work) (c)<br />
+Domain(s) |([ci:CostComponent](https://w3id.org/ci#CostComponent) (c) or [ci:Work](https://w3id.org/ci#Work) (c) or [ci:Activity](https://w3id.org/ci#Activity) (c) or [cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:Standard](https://w3id.org/cterm#Standard) (c)<br />
 [](hasParameterStandard)
 ### hasParameterStandard
@@ -676,14 +669,14 @@ Range(s) |[cterm:Standard](https://w3id.org/cterm#Standard) (c)<br />
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasPerformanceParameter`
-Domain(s) |[cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c)<br />[ci:Work](https://w3id.org/ci#Work) (c)<br />[cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c)<br />
+Domain(s) |([ci:Work](https://w3id.org/ci#Work) (c) or [cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:PerformanceParameter](https://w3id.org/cterm#PerformanceParameter) (c)<br />
 [](hasPhysicalParameter)
 ### hasPhysicalParameter
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasPhysicalParameter`
-Domain(s) |[cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c)<br />[cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c)<br />[ci:Work](https://w3id.org/ci#Work) (c)<br />
+Domain(s) |([ci:Work](https://w3id.org/ci#Work) (c) or [cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:PhysicalParameter](https://w3id.org/cterm#PhysicalParameter) (c)<br />
 [](hasQualificationLevel)
 ### hasQualificationLevel
@@ -697,7 +690,7 @@ Range(s) |[cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel) 
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasType`
-Domain(s) |[ci:Work](https://w3id.org/ci#Work) (c)<br />[ci:Activity](https://w3id.org/ci#Activity) (c)<br />[ci:CostComponent](https://w3id.org/ci#CostComponent) (c)<br />[cr:Resource](https://w3id.org/cr#Resource) (c)<br />
+Domain(s) |([ci:CostComponent](https://w3id.org/ci#CostComponent) (c) or [ci:Work](https://w3id.org/ci#Work) (c) or [ci:Activity](https://w3id.org/ci#Activity) (c) or [cr:Resource](https://w3id.org/cr#Resource) (c))<br />
 Range(s) |[cterm:Type](https://w3id.org/cterm#Type) (c)<br />
 [](hasUnit)
 ### hasUnit
@@ -711,7 +704,7 @@ Range(s) |[qudt:Unit](http://qudt.org/schema/qudt/Unit) (c)<br />
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#hasUse`
-Domain(s) |[ci:Work](https://w3id.org/ci#Work) (c)<br />[ci:Activity](https://w3id.org/ci#Activity) (c)<br />[cr:Material](https://w3id.org/cr#Material) (c)<br />[cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c)<br />
+Domain(s) |([ci:Work](https://w3id.org/ci#Work) (c) or [ci:Activity](https://w3id.org/ci#Activity) (c) or [cr:EquipmentResource](https://w3id.org/cr#EquipmentResource) (c) or [cr:MaterialResource](https://w3id.org/cr#MaterialResource) (c))<br />
 Range(s) |[cterm:Use](https://w3id.org/cterm#Use) (c)<br />
 [](parametertype)
 ### parameter type
@@ -795,604 +788,609 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#code`
 Domain(s) |[cterm:Classification](https://w3id.org/cterm#Classification) (c)<br />
+Range(s) |[xsd:string](http://www.w3.org/2001/XMLSchema#string) (c)<br />
 
 ## Named Individuals
-[5 Holes](#5Holes),
+[5 Löcher](#5Lcher),
 [6 Strands](#6Strands),
-[A Freddo](#AFreddo),
 [A Mano](#AMano),
-[A Pennello](#APennello),
-[A Spruzzo](#ASpruzzo),
 [Abdichtungen](#Abdichtungen),
 [Abgehängte Decken](#AbgehngteDecken),
-[Abspannung](#Abspannung),
-[Accessories](#Accessories),
+[Abriss](#Abriss),
+[Accessori](#Accessori),
 [Aggregate](#Aggregate),
-[Agro Forestale](#AgroForestale),
+[Agro Forestry](#AgroForestry),
 [Akustik](#Akustik),
-[Allgemein](#Allgemein),
-[Allgemeines Material](#AllgemeinesMaterial),
-[Allgemeines Metall](#AllgemeinesMetall),
+[Allgemeine Eisenlegierung](#AllgemeineEisenlegierung),
+[Allgemeine Eisenlegierung](#GenericFerrousAlloySteel),
+[Allgemeiner Gummi](#AllgemeinerGummi),
+[Allgemeiner Naturstein](#AllgemeinerNaturstein),
+[Allgemeines Bitumen](#AllgemeinesBitumen),
 [Allgemeines Naturholz](#AllgemeinesNaturholz),
-[Allgemeines, nicht relevantes Material](#Allgemeines,nichtrelevantesMaterial),
 [Aluminum Foil](#AluminumFoil),
-[Antincendio](#Antincendio),
+[Anti-Corrosive](#Anti-Corrosive),
 [Application](#Application),
 [Apprestamenti](#Apprestamenti),
-[Architettura](#Architettura),
-[Argilla Espansa](#ArgillaEspansa),
-[Arm](#Arm),
+[Architecture](#Architecture),
+[Architravi](#Architravi),
 [Arredo](#Arredo),
-[Attic](#Attic),
+[Asphaltgemisch](#Asphaltgemisch),
+[Auf Glas geglättet](#AufGlasgeglttet),
+[Aus Halbvollen Blöcken](#AusHalbvollenBlcken),
+[Aus Wabenblöcken](#AusWabenblcken),
+[Ausbildung](#Ausbildung),
+[Ausführung](#Ausfhrung),
 [Aushub](#Aushub),
 [Ausleger](#Ausleger),
-[Außenflächen](#Auenflchen),
-[Bagni](#Bagni),
-[Basement Flooring](#BasementFlooring),
-[Bathrooms-Kitchens](#Bathrooms-Kitchens),
-[Bauarbeiter](#Bauarbeiter),
+[Autocarro con gru](#Autocarrocongru),
+[Autoklavierter Porenbeton](#AutoklavierterPorenbeton),
+[Badezimmer](#Badezimmer),
+[Balken](#Balken),
+[Bau](#Bau),
 [Bauingenieurwesen](#Bauingenieurwesen),
 [Baustellenzäune](#Baustellenzune),
-[Belüftetes Pultdach](#BelftetesPultdach),
-[Belüftung](#Belftung),
+[Bauwerk](#Bauwerk),
+[Beam Edges and Curbs](#BeamEdgesandCurbs),
+[Bedachungen](#Bedachungen),
 [Betonstruktur](#Betonstruktur),
+[Bewehrungen und Verstärkungen](#BewehrungenundVerstrkungen),
+[Bianco](#Bianco),
+[Bike Paths](#BikePaths),
 [Binder](#Binder),
+[Bird Repellent](#BirdRepellent),
 [Bitume](#Bitume),
-[Bitume Generico](#BitumeGenerico),
-[Bitumen Layer](#BitumenLayer),
-[Bituminized Feltboard](#BituminizedFeltboard),
-[Bodenbelag](#Bodenbelag),
+[Bodenbeläge](#Bodenbelge),
+[Bodenhelfer für Hubschrauber](#BodenhelferfrHubschrauber),
 [Bodenplatten](#Bodenplatten),
 [Bordi Battentati/Incastro](#BordiBattentati/Incastro),
 [Brandschutz](#Brandschutz),
 [Brandschutztrennwand](#Brandschutztrennwand),
-[Breathable](#Breathable),
+[Breite](#Breite),
+[Brush](#Brush),
+[Bulk](#Bulk),
+[Buried Walls](#BuriedWalls),
 [Bush-Hammered](#Bush-Hammered),
-[Böden über unbeheizten Bereichen](#BdenberunbeheiztenBereichen),
-[Canali](#Canali),
-[Carta Kraft Politenata](#CartaKraftPolitenata),
+[Bäder-Küchen](#Bder-Kchen),
+[Carta Kraft](#CartaKraft),
+[Cartonfeltro Bitumato](#CartonfeltroBitumato),
+[Casseri Per Strutture In Conglomerato Cementizio](#CasseriPerStruttureInConglomeratoCementizio),
 [Cavities](#Cavities),
-[Ceilings](#Ceilings),
+[Cellular Glass](#CellularGlass),
 [Cementitious Compound](#CementitiousCompound),
 [Cemetery](#Cemetery),
-[Ceramic Terracotta-Brick](#CeramicTerracotta-Brick),
-[Chemiearbeiter](#Chemiearbeiter),
+[Characteristic Strength](#CharacteristicStrength),
+[Chemical Workers](#ChemicalWorkers),
 [Chiusura](#Chiusura),
 [Chiusura Frontale](#ChiusuraFrontale),
-[Circular Columns](#CircularColumns),
-[Classic-Rustic](#Classic-Rustic),
-[Coastal/River](#Coastal/River),
-[Coated With Special Cardboard](#CoatedWithSpecialCardboard),
-[Coated with Special Cardboard](#CoatedwithSpecialCardboard),
-[Coating Layer](#CoatingLayer),
-[Colore Bianco](#ColoreBianco),
+[Chiusura Laterale](#ChiusuraLaterale),
+[Cleaning](#Cleaning),
+[Coated with Fireproof Mortar](#CoatedwithFireproofMortar),
+[Coated with Refractory Ceramic Layer](#CoatedwithRefractoryCeramicLayer),
+[Coatings](#Coatings),
+[Colore Giallo Dorata](#ColoreGialloDorata),
+[Colore Grigio Oliva](#ColoreGrigioOliva),
 [Colore Nero](#ColoreNero),
-[Colore Rosa](#ColoreRosa),
-[Colture/Agricoltura](#Colture/Agricoltura),
-[Columns](#Columns),
-[Complete](#Complete),
-[Con Mezzo Meccanico E Manuale](#ConMezzoMeccanicoEManuale),
+[Complementary](#Complementary),
+[Complementary Systems](#ComplementarySystems),
+[Compression Strength](#CompressionStrength),
+[Con Mezzo Meccanico](#ConMezzoMeccanico),
 [Concrete Mixer Truck](#ConcreteMixerTruck),
 [Concrete Pours in Vertical Formwork](#ConcretePoursinVerticalFormwork),
-[Condotte/Fogna/Acquedotto](#Condotte/Fogna/Acquedotto),
-[Conducibilità Termica](#ConducibilitTermica),
-[Connecting Beams](#ConnectingBeams),
-[Connections](#Connections),
-[Consolidamento](#Consolidamento),
-[Contropareti Con Struttura Metallica](#ControparetiConStrutturaMetallica),
-[Copertura A Falde](#CoperturaAFalde),
-[Coperture](#Coperture),
-[Coperture A Falde](#CopertureAFalde),
-[Coperture A Falde Con Tegole](#CopertureAFaldeConTegole),
-[Cork Vegetable Fiber](#CorkVegetableFiber),
-[Costruzioni](#Costruzioni),
+[Concrete Structures](#ConcreteStructures),
+[Conglomerate](#Conglomerate),
+[Consistency](#Consistency),
+[Continuous Foundations](#ContinuousFoundations),
+[Controsoffitti](#Controsoffitti),
+[Copertura Piana Carrabile](#CoperturaPianaCarrabile),
+[Copertura Piana Con Pavimentazione Pedonabile](#CoperturaPianaConPavimentazionePedonabile),
+[Copertura Ventilata A Falde](#CoperturaVentilataAFalde),
+[Crack Repair](#CrackRepair),
 [Curved-Oblique](#Curved-Oblique),
+[Dachboden](#Dachboden),
+[Dachschalung](#Dachschalung),
 [Davanzali](#Davanzali),
+[Deckschichten](#Deckschichten),
 [Decontaminazione](#Decontaminazione),
-[Demolition](#Demolition),
-[Density](#Density),
-[Diaphragmen](#Diaphragmen),
-[Drainierende/Schallabsorbierende Deckschicht](#Drainierende/SchallabsorbierendeDeckschicht),
-[Dreidimensionales Geflechtseil](#DreidimensionalesGeflechtseil),
-[Driveable Flat Roof](#DriveableFlatRoof),
-[Due Mani](#DueMani),
-[Due Riprese](#DueRiprese),
+[Densità](#Densit),
+[Diaphragms](#Diaphragms),
+[Differentiated Mesh](#DifferentiatedMesh),
+[Dismantling](#Dismantling),
+[Diwdag (Construction Technique)](#Diwdag(ConstructionTechnique)),
+[Draining Synthetic Layer](#DrainingSyntheticLayer),
+[Draining-Noise Absorbing Wearing Layer](#Draining-NoiseAbsorbingWearingLayer),
+[Druck](#Druck),
+[Drywall](#Drywall),
+[Durchgangsbreite](#Durchgangsbreite),
+[Durchmesser](#Durchmesser),
+[Durchstoßfestigkeit](#Durchstofestigkeit),
 [Dämmstoffe](#Dmmstoffe),
-[Dämmsysteme](#Dmmsysteme),
-[Edelstahllegierung](#Edelstahllegierung),
-[Edelstahllegierung AISI 304](#EdelstahllegierungAISI304),
+[Edifici](#Edifici),
+[Ein Anstrich](#EinAnstrich),
+[Einfache Betonstruktur](#EinfacheBetonstruktur),
+[Einrichtung](#Einrichtung),
+[Eisenlegierung Stahl B450A](#EisenlegierungStahlB450A),
+[Eisenmetall](#Eisenmetall),
+[Elastic Coating](#ElasticCoating),
 [Elastic Modulus](#ElasticModulus),
 [Electro-Welded Mesh](#Electro-WeldedMesh),
 [Elektroingenieurwesen](#Elektroingenieurwesen),
 [Elektroschmiedegitter](#Elektroschmiedegitter),
-[Elevation-Foundation](#Elevation-Foundation),
-[Environment](#Environment),
-[Ergänzend](#Ergnzend),
-[Erster Anstrich](#ErsterAnstrich),
-[Esecuzione](#Esecuzione),
-[Estrich](#Estrich),
-[Exposition](#Exposition),
-[Exposure Class](#ExposureClass),
-[Exterior](#Exterior),
-[External Walls](#ExternalWalls),
+[Elettrosaldato](#Elettrosaldato),
+[Ergotechnique](#Ergotechnique),
+[Ersatz](#Ersatz),
+[Excavation Systems](#ExcavationSystems),
+[Expanded Clay](#ExpandedClay),
+[Expanded Polyethylene Plastic](#ExpandedPolyethylenePlastic),
+[Expanded Polystyrene Plastic (EPS)](#ExpandedPolystyrenePlastic(EPS)),
+[Expandierter Korkpflanzenfaser](#ExpandierterKorkpflanzenfaser),
+[Expositionsklasse](#Expositionsklasse),
+[Exposure](#Exposure),
+[External Surfaces](#ExternalSurfaces),
 [Facciata Ventilata](#FacciataVentilata),
-[Facharbeiter](#Facharbeiter),
-[Fachwerk](#Fachwerk),
+[Fahrmischer](#Fahrmischer),
+[Fallhöhen](#Fallhhen),
 [Fastenings](#Fastenings),
-[Fences](#Fences),
 [Fenster und Türen](#FensterundTren),
-[Ferrous Alloy Steel B450A](#FerrousAlloySteelB450A),
 [Ferrous Alloy Steel B450C](#FerrousAlloySteelB450C),
-[Fertigteile für Betonstrukturen](#FertigteilefrBetonstrukturen),
-[Feste Kräne](#FesteKrne),
-[Fibra Minerale Lana Di Roccia Vulcanizzata](#FibraMineraleLanaDiRocciaVulcanizzata),
-[Fibra Vegetale Canapa](#FibraVegetaleCanapa),
-[Fibra Vegetale Sughero Biondo Naturale](#FibraVegetaleSugheroBiondoNaturale),
-[Fibra Vegetale Sughero Espanso](#FibraVegetaleSugheroEspanso),
-[Filling](#Filling),
-[Finitura](#Finitura),
-[Fire Reaction](#FireReaction),
-[Fire Resistance](#FireResistance),
+[Feuerwiderstand](#Feuerwiderstand),
+[Fibra Minerale Lana Di Abete](#FibraMineraleLanaDiAbete),
+[Fibra Minerale Lana Di Roccia Ad Alta Densità](#FibraMineraleLanaDiRocciaAdAltaDensit),
+[Fibra Minerale Lana Di Vetro](#FibraMineraleLanaDiVetro),
+[Fibra Vegetale Sughero](#FibraVegetaleSughero),
+[Filo](#Filo),
+[Filtering Geotextile](#FilteringGeotextile),
+[Fire Protection Systems](#FireProtectionSystems),
+[Fire Safety](#FireSafety),
+[Fireproof Partition Wall](#FireproofPartitionWall),
+[First Coat](#FirstCoat),
 [Fixed Cranes](#FixedCranes),
-[Flachdach](#Flachdach),
-[Flachdach mit begehbarem Belag](#FlachdachmitbegehbaremBelag),
-[Flat Head](#FlatHead),
+[Fixed Cranes](#TowerCranes),
+[Fixed Goal](#FixedGoal),
+[Flat Roof](#FlatRoof),
 [Flat Roofs](#FlatRoofs),
 [Floor Slab](#FloorSlab),
 [Floors](#Floors),
-[Formazione Vespai Aerati](#FormazioneVespaiAerati),
-[Forming](#Forming),
-[Formwork For Reinforced Concrete Structures](#FormworkForReinforcedConcreteStructures),
-[Forstwirtschaft](#Forstwirtschaft),
-[Foundation Systems](#FoundationSystems),
-[Frontale Con Porta](#FrontaleConPorta),
-[Fundament](#Fundament),
-[Fundamente-Umgekehrte Balken-Platten](#Fundamente-UmgekehrteBalken-Platten),
+[Floors Over Unheated Areas](#FloorsOverUnheatedAreas),
+[Flüsse](#Flsse),
+[Fonoassorbente](#Fonoassorbente),
+[Footings-Inverted Beams-Slabs](#Footings-InvertedBeams-Slabs),
+[For Dam Construction](#ForDamConstruction),
+[Formwork For Thermal Bridges](#FormworkForThermalBridges),
+[Front mit Tür](#FrontmitTr),
 [Fußboden](#Fuboden),
-[Für Fußball](#FrFuball),
-[Galvanized](#Galvanized),
-[Gebäude](#Gebude),
+[Fußbodenunterlage](#Fubodenunterlage),
+[Fußböden im Untergeschoss](#FubdenimUntergeschoss),
+[Gas Impermeable Multilayer](#GasImpermeableMultilayer),
 [Gebäudeausrüstung](#Gebudeausrstung),
-[Gehwege](#Gehwege),
-[Generic Ferrous Alloy Steel](#GenericFerrousAlloySteel),
+[Gefärbt](#Gefrbt),
+[Gelände](#Gelnde),
+[Gelände/Hänge](#Gelnde/Hnge),
+[Geländer für geradlinige Balkone aus Stahlbeton](#GelnderfrgeradlinigeBalkoneausStahlbeton),
+[Generic](#Generic),
+[Generic Cement](#GenericCement),
+[Generic Engineered Wood](#GenericEngineeredWood),
 [Generic Mineral Fiber](#GenericMineralFiber),
-[Generic Natural Rock](#GenericNaturalRock),
-[Generic Plaster](#GenericPlaster),
-[Generic Rubber](#GenericRubber),
 [Generic Structures](#GenericStructures),
-[Generico](#Generico),
-[Geotessile Filtrante](#GeotessileFiltrante),
+[Gerade Treppenabsätze und Rampen](#GeradeTreppenabstzeundRampen),
+[Gerade-Gebogene Achse](#Gerade-GebogeneAchse),
 [Geschliffen](#Geschliffen),
-[Gewellt](#Gewellt),
-[Gewicht](#Gewicht),
 [Gewindet](#Gewindet),
 [Glass Fiber](#GlassFiber),
-[Glatt](#Glatt),
-[Goldgelbe Farbe](#GoldgelbeFarbe),
 [Gomma Vulcanizzata](#GommaVulcanizzata),
-[Granular](#Granular),
 [Graphite Expanded Polystyrene Plastic (EPS)](#GraphiteExpandedPolystyrenePlastic(EPS)),
-[Gray Color](#GrayColor),
-[Green](#Green),
-[Green/Forest](#Green/Forest),
-[Grout](#Grout),
+[Graue Farbe](#GraueFarbe),
 [Grünanlagen und Landschaftsbau](#GrnanlagenundLandschaftsbau),
-[Gummibodenbelag](#Gummibodenbelag),
 [Guss](#Guss),
-[Halbsteife Platte](#HalbsteifePlatte),
-[Height](#Height),
-[Helicopter Ground Assistant](#HelicopterGroundAssistant),
-[Hexagonal](#Hexagonal),
-[High Density Rock Wool](#HighDensityRockWool),
-[Hinterland](#Hinterland),
-[Holzstrukturen](#Holzstrukturen),
-[Horizontal Surfaces](#HorizontalSurfaces),
+[Gün/Wald](#Gn/Wald),
+[Heat Reflective](#HeatReflective),
+[Hemp Vegetable Fiber](#HempVegetableFiber),
+[Holzpflanzenfaser](#Holzpflanzenfaser),
+[Hook Height](#HookHeight),
 [HorizontalStructures](#HorizontalStructures),
+[Horizontale Flächen](#HorizontaleFlchen),
 [Housing Structural Elements](#HousingStructuralElements),
-[Hydraulic](#Hydraulic),
-[Höhe unter Haken](#HheunterHaken),
-[Impianti Antincendio](#ImpiantiAntincendio),
-[In Bricks](#InBricks),
-[In Honeycomb Blocks](#InHoneycombBlocks),
-[In Modular Panels](#InModularPanels),
-[In Multi-Hole Blocks](#InMulti-HoleBlocks),
-[In Opera](#InOpera),
-[In Slabs](#InSlabs),
-[In Solid Blocks](#InSolidBlocks),
+[Hubschrauberpilot](#Hubschrauberpilot),
+[Höhe](#Hhe),
+[ICT-Spezialist](#ICT-Spezialist),
+[Idraulica](#Idraulica),
+[Idrorepellente](#Idrorepellente),
+[In Blocks](#InBlocks),
+[In Hollow Blocks](#InHollowBlocks),
+[In Perforated Bricks](#InPerforatedBricks),
+[In Platten](#InPlatten),
+[In Swiss-Type Blocks](#InSwiss-TypeBlocks),
+[Incollaggio](#Incollaggio),
 [Infrastrutture](#Infrastrutture),
-[Injektion](#Injektion),
-[Innenflächen](#Innenflchen),
-[Installation](#Installation),
-[Intercapedini Perimetrali](#IntercapediniPerimetrali),
+[Ingegneria Idraulica](#IngegneriaIdraulica),
+[Injection](#Injection),
+[Innenbereich](#Innenbereich),
+[Innenwände](#Innenwnde),
+[Installazione](#Installazione),
+[Instandhaltung](#Instandhaltung),
+[Insulation Systems](#InsulationSystems),
 [Intercapedini Perimetrali/Divisorie](#IntercapediniPerimetrali/Divisorie),
-[Interior](#Interior),
 [Intermediate Floors](#IntermediateFloors),
-[Internal Partition Walls](#InternalPartitionWalls),
-[Iron Metal](#IronMetal),
+[Internal Surfaces](#InternalSurfaces),
 [Ironware](#Ironware),
-[Isolamento Termico](#IsolamentoTermico),
-[Isolierung](#Isolierung),
 [Kalk-Silikat-Mix](#Kalk-Silikat-Mix),
+[Kalt](#Kalt),
 [Kassettierungen](#Kassettierungen),
-[Kitchens](#Kitchens),
-[Komponenten](#Komponenten),
-[Konsistenzklasse](#Konsistenzklasse),
+[Keramik, Terrakotta-Ziegel](#Keramik,Terrakotta-Ziegel),
+[Konsolidierung](#Konsolidierung),
 [Kontaminierte Standorte](#KontaminierteStandorte),
 [Korngrößenverteilung](#Korngrenverteilung),
-[Korrosionsschutz](#Korrosionsschutz),
-[Kraft Paper](#KraftPaper),
-[Kunststoff Polyurethanschaum (PIR)](#KunststoffPolyurethanschaum(PIR)),
+[Körnig](#Krnig),
+[Küchen](#Kchen),
 [Lack](#Lack),
 [Lana Di Abete](#LanaDiAbete),
-[Lana Di Legno](#LanaDiLegno),
-[Land](#Land),
-[Land/Slopes](#Land/Slopes),
+[Landschaftsbau](#Landschaftsbau),
+[Laying](#Laying),
 [Level B1](#LevelB1),
-[Level D2](#LevelD2),
+[Level C2](#LevelC2),
 [Lightweight Concrete](#LightweightConcrete),
-[Lintels](#Lintels),
 [Liscia Con Pelle](#LisciaConPelle),
-[Litze](#Litze),
-[Litzen](#Litzen),
-[Load Class](#LoadClass),
-[Loose Mesh](#LooseMesh),
-[Lose](#Lose),
+[Load-Bearing](#Load-Bearing),
 [Luftbewegung](#Luftbewegung),
 [Lunghezza](#Lunghezza),
-[Manutenzione](#Manutenzione),
+[Manuelle Steinentfernung](#ManuelleSteinentfernung),
+[Marittime/Fluviali](#Marittime/Fluviali),
 [Masonry](#Masonry),
-[Massetti Esistenti](#MassettiEsistenti),
-[Materassino Trapuntato](#MaterassinoTrapuntato),
-[Matte Bronze Color](#MatteBronzeColor),
+[Masonry Layer](#MasonryLayer),
+[Massetti](#Massetti),
+[Mattbronze Farbe](#MattbronzeFarbe),
 [Melange](#Melange),
-[Membrana Armata Con TNT Di Poliestere](#MembranaArmataConTNTDiPoliestere),
-[Membrana Armata Con Velo Vetro Ardesiata](#MembranaArmataConVeloVetroArdesiata),
+[Membrana Armata Con Velo Vetro](#MembranaArmataConVeloVetro),
 [Mesh](#Mesh),
-[Metallstütze](#Metallsttze),
-[Mineral Fiber Fir Wool](#MineralFiberFirWool),
-[Mineral Fiber Glass Wool](#MineralFiberGlassWool),
+[Metalworkers](#Metalworkers),
 [Mineral Fiber Wood Wool](#MineralFiberWoodWool),
 [Mineralfaser Steinwolle](#MineralfaserSteinwolle),
 [Mineralized FirWool](#MineralizedFirWool),
 [Mineralized Glass Fiber](#MineralizedGlassFiber),
 [Mineralized Wood Vegetable Fiber](#MineralizedWoodVegetableFiber),
 [Mineralized Wood Wool](#MineralizedWoodWool),
-[Mit Mechanischen Mitteln](#MitMechanischenMitteln),
+[Mischung](#Mischung),
+[Mit Handgerät](#MitHandgert),
+[Mit Mechanischen Und Manuellen Mitteln](#MitMechanischenUndManuellenMitteln),
+[Mit verbesserter Haftung](#MitverbesserterHaftung),
 [Mixed Slab with Deep Beams](#MixedSlabwithDeepBeams),
-[Mixed Slab with Deep Beams for Flat Structures](#MixedSlabwithDeepBeamsforFlatStructures),
-[Mixing](#Mixing),
 [Mobile Crane](#MobileCrane),
 [Modifica](#Modifica),
+[Montaggio](#Montaggio),
 [Movimentazione](#Movimentazione),
-[Multistrato Gas Impermeabile](#MultistratoGasImpermeabile),
-[Net](#Net),
-[Nominal Diameter](#NominalDiameter),
-[Non Heated Attics](#NonHeatedAttics),
-[Non-Combustible](#Non-Combustible),
-[Non-Structural](#Non-Structural),
-[Normale Farbe](#NormaleFarbe),
-[Oben drehender Turmkran](#ObendrehenderTurmkran),
+[Mörtel](#Mrtel),
+[Natural Blond Cork Vegetable Fiber](#NaturalBlondCorkVegetableFiber),
+[Nennmaß-Durchmesser](#Nennma-Durchmesser),
+[Netz](#Netz),
+[Nicht brennbar](#Nichtbrennbar),
+[Nicht strukturell](#Nichtstrukturell),
+[Non-Relevant Generic Material](#Non-RelevantGenericMaterial),
+[Normal Color](#NormalColor),
+[Nutzpflanzen/Landwirtschaft](#Nutzpflanzen/Landwirtschaft),
+[Oberfläche](#Oberflche),
 [Oberqualifiziert](#Oberqualifiziert),
-[Olivgraue Farbe](#OlivgraueFarbe),
-[One Coat](#OneCoat),
+[Omniclass](#Omniclass),
+[Ondulata](#Ondulata),
 [Openings](#Openings),
-[Orange Color](#OrangeColor),
+[Operaio](#Operaio),
+[Paneel](#Paneel),
 [Paneele mit geraden Kanten](#PaneelemitgeradenKanten),
-[Panels](#Panels),
-[Pannelli A Bordi Risegati](#PannelliABordiRisegati),
-[Pannelli Autoportanti](#PannelliAutoportanti),
-[Pannelli Preformati](#PannelliPreformati),
-[Pannello](#Pannello),
+[Pannelli](#Pannelli),
 [Pannello Rigido](#PannelloRigido),
-[Parapets for Straight Balconies in Reinforced Concrete](#ParapetsforStraightBalconiesinReinforcedConcrete),
+[Parchi/Giardini/Aree Verdi](#Parchi/Giardini/AreeVerdi),
+[Pareti](#Pareti),
+[Pareti Con Sistema A Cappotto](#ParetiConSistemaACappotto),
 [Pareti Dall Interno](#ParetiDallInterno),
-[Parks/Gardens/Green Areas](#Parks/Gardens/GreenAreas),
-[Passage Width](#PassageWidth),
-[Pellicola Polipropilenica](#PellicolaPolipropilenica),
-[Per Rimaneggiamento E Riutilizzo Per Variazione Della Conformazione Del Paraggio Idraulico](#PerRimaneggiamentoERiutilizzoPerVariazioneDellaConformazioneDelParaggioIdraulico),
-[Pitched Roofs With Tiles](#PitchedRoofsWithTiles),
+[Pareti Esterne](#ParetiEsterne),
+[Partition](#Partition),
+[Partition Walls With Metal Structure](#PartitionWallsWithMetalStructure),
+[Parzialmente Sublimante](#ParzialmenteSublimante),
+[Pastellfarbe](#Pastellfarbe),
+[Perimeter Cavities](#PerimeterCavities),
+[Peso](#Peso),
+[Piles](#Piles),
+[Pillars](#Pillars),
+[Pink Color](#PinkColor),
+[Pitched Roof](#PitchedRoof),
+[Pitched Roofs](#PitchedRoofs),
 [Plasterboard](#Plasterboard),
+[Plastered](#Plastered),
 [Plastic Coating](#PlasticCoating),
 [Plastic Film](#PlasticFilm),
-[Plastica Polietilene Espanso](#PlasticaPolietileneEspanso),
-[Plastica Polistirene Espanso (EPS)](#PlasticaPolistireneEspanso(EPS)),
+[Plastic-Coated](#Plastic-Coated),
 [Plastica Polistirene Estruso (XPS)](#PlasticaPolistireneEstruso(XPS)),
+[Plastica Poliuretano Espanso (PIR)](#PlasticaPoliuretanoEspanso(PIR)),
 [Point Foundations](#PointFoundations),
-[Polyamide Material](#PolyamideMaterial),
-[Polyethylene Plastic (PE)](#PolyethylenePlastic(PE)),
-[Polymeric Coating](#PolymericCoating),
-[Polyolefins](#Polyolefins),
-[Posa](#Posa),
+[Poliolefine](#Poliolefine),
+[Polyethylen-Kunststoff (PE)](#Polyethylen-Kunststoff(PE)),
+[Polyethylene Coated Kraft Paper](#PolyethyleneCoatedKraftPaper),
+[Polymerbeschichtung](#Polymerbeschichtung),
+[Polypropylene Film](#PolypropyleneFilm),
+[Polypropylene Nonwoven Fabric Layer](#PolypropyleneNonwovenFabricLayer),
+[Polyurethanlack](#Polyurethanlack),
+[Pouring Walkway](#PouringWalkway),
 [Power](#Power),
-[Pre-Tensioning](#Pre-Tensioning),
-[Pressure](#Pressure),
-[Printed](#Printed),
-[Produktion](#Produktion),
+[Prefabricated](#Prefabricated),
+[Production](#Production),
+[Produkte](#Produkte),
 [Prop](#Prop),
 [Protection](#Protection),
-[Provisional Elements](#ProvisionalElements),
-[Pulizia](#Pulizia),
+[Pultdächer mit Dachziegeln](#PultdchermitDachziegeln),
+[Pultdächer mit Ziegeln](#PultdchermitZiegeln),
 [Pultruded](#Pultruded),
-[Pyramid Play Structure](#PyramidPlayStructure),
-[Quadratisches Netz](#QuadratischesNetz),
-[Radwege](#Radwege),
-[Rau ohne Beschichtung](#RauohneBeschichtung),
+[Quilted Mat](#QuiltedMat),
+[Randsteine](#Randsteine),
 [Rau-Gesandstrahlt](#Rau-Gesandstrahlt),
+[Rautenförmiges Netz](#RautenfrmigesNetz),
 [Ready Mixture](#ReadyMixture),
 [Realizzazione](#Realizzazione),
 [Rebar](#Rebar),
-[Rechteckige Pfeiler](#RechteckigePfeiler),
+[Rebated Edge Panels](#RebatedEdgePanels),
+[Rechte Winkelkanten](#RechteWinkelkanten),
+[Reconstruction](#Reconstruction),
+[Rectangular Columns](#RectangularColumns),
 [Refractory Ceramics](#RefractoryCeramics),
-[Reinforced Concrete Structures](#ReinforcedConcreteStructures),
-[Reinforced Membrane With Glass Fiber](#ReinforcedMembraneWithGlassFiber),
-[Reinforcment](#Reinforcment),
-[Removal](#Removal),
+[Regulation Goal](#RegulationGoal),
+[Reinforced Membrane With Polyester Nonwoven](#ReinforcedMembraneWithPolyesterNonwoven),
+[Reinforced Slate Glass Fiber Membrane](#ReinforcedSlateGlassFiberMembrane),
+[Reinforcing Bars](#ReinforcingBars),
 [Reparatur](#Reparatur),
-[Residences](#Residences),
+[Resistente All'Usura](#ResistenteAll'Usura),
 [Resistenza A Compressione](#ResistenzaACompressione),
-[Resistenza A Compressione](#CompressionStrength),
-[Resistenza A Trazione Perpendicolare Alle Facce](#ResistenzaATrazionePerpendicolareAlleFacce),
-[Resistenza Alla Diffusione Del Vapore Acqueo](#ResistenzaAllaDiffusioneDelVaporeAcqueo),
 [Restoration](#Restoration),
 [Retaining Walls](#RetainingWalls),
-[Rhomboid Mesh](#RhomboidMesh),
-[Ribbed](#Ribbed),
-[Ricostruzione](#Ricostruzione),
 [Rigenerazione](#Rigenerazione),
-[Rigid](#Rigid),
-[Rigid Panels](#RigidPanels),
-[Rivestimenti](#Rivestimenti),
+[Rimozione](#Rimozione),
+[Rivestito](#Rivestito),
 [Rivestito Con Strato Ceramico Refrattario](#RivestitoConStratoCeramicoRefrattario),
-[Road Safety](#RoadSafety),
-[Roads](#Roads),
+[Rivestito Di Cartone Speciale](#RivestitoDiCartoneSpeciale),
+[Road Works](#RoadWorks),
+[Roadside Green](#RoadsideGreen),
 [Roccia Naturale Perlite Espansa](#RocciaNaturalePerliteEspansa),
 [Roccia Naturale Vermiculite Espansa](#RocciaNaturaleVermiculiteEspansa),
+[Rollbar](#Rollbar),
 [Roof garden](#Roofgarden),
-[Roofs](#Roofs),
-[Rough](#Rough),
+[Roofing](#Roofing),
+[Rough Floor Height](#RoughFloorHeight),
+[Rough Without Skin](#RoughWithoutSkin),
 [Rubber Compound](#RubberCompound),
-[Rutschfest](#Rutschfest),
-[Schallabsorption](#Schallabsorption),
-[Schalldämpfend](#Schalldmpfend),
-[Schalungen](#Schalungen),
-[Schalungen für Wärmebrücken](#SchalungenfrWrmebrcken),
+[Ruvida](#Ruvida),
+[Sandblasted](#Sandblasted),
 [Scraping](#Scraping),
 [Screed Formation](#ScreedFormation),
-[Seams](#Seams),
+[Sechseckig](#Sechseckig),
 [Seconda Mano](#SecondaMano),
-[Seitenverschluss](#Seitenverschluss),
 [Self-Erecting Crane with Bottom Slewing](#Self-ErectingCranewithBottomSlewing),
-[Site Setup Systems](#SiteSetupSystems),
+[Self-Supporting Panels](#Self-SupportingPanels),
+[Semi-Rigid Panel](#Semi-RigidPanel),
+[Sewer/Water Pipes](#Sewer/WaterPipes),
+[Sidewalks](#Sidewalks),
 [Skin](#Skin),
-[Slaked Lime](#SlakedLime),
 [Sliding](#Sliding),
-[Smontaggio](#Smontaggio),
-[Smoothed on Glass](#SmoothedonGlass),
 [Soil Consolidation](#SoilConsolidation),
 [Soil Protection](#SoilProtection),
-[Solid Brick-Stone-Mixed Masonry](#SolidBrick-Stone-MixedMasonry),
-[Sostituzione](#Sostituzione),
-[Sotto Tavolati](#SottoTavolati),
-[Sottopavimenti](#Sottopavimenti),
 [Sottotetti Non Praticabili](#SottotettiNonPraticabili),
+[Sottotetti Non Riscaldati](#SottotettiNonRiscaldati),
+[Sottotetti Praticabili](#SottotettiPraticabili),
+[Sound Absorption](#SoundAbsorption),
 [Soundproof](#Soundproof),
-[Special Mortars (Rubber Granules, Polyurethane Resins, etc.)](#SpecialMortars(RubberGranules,PolyurethaneResins,etc.)),
+[Specialized](#Specialized),
+[Specialized Super](#SpecializedSuper),
 [Specialized Super-Team Leader](#SpecializedSuper-TeamLeader),
-[Spezifisches Gewicht](#SpezifischesGewicht),
+[Spessore](#Spessore),
+[Spezialmörtel (Gummigranulat, Polyurethanharze etc.)](#Spezialmrtel(Gummigranulat,Polyurethanharzeetc.)),
 [Spielgeräte](#Spielgerte),
-[Spietramento A Mano](#SpietramentoAMano),
-[Spigoli Ad Angolo Retto](#SpigoliAdAngoloRetto),
+[Sportgeräte](#Sportgerte),
+[Spray](#Spray),
+[Square Mesh](#SquareMesh),
+[StLB](#StLB),
 [Stabilisierte Bodenbeläge](#StabilisierteBodenbelge),
-[Stahlbeton](#Stahlbeton),
-[Stainless Steel Alloy AISI 304l](#StainlessSteelAlloyAISI304l),
+[Stadtgrün](#Stadtgrn),
+[Stainless](#Stainless),
+[Stainless Steel Alloy](#StainlessSteelAlloy),
 [Stainless Steel Alloy AISI 316L](#StainlessSteelAlloyAISI316L),
-[Staircase-Elevator Shaft Walls](#Staircase-ElevatorShaftWalls),
-[Standardtor](#Standardtor),
-[Stone Removal](#StoneRemoval),
+[Stampato](#Stampato),
+[Starr](#Starr),
+[Steinentfernung](#Steinentfernung),
+[Stitching](#Stitching),
 [Straight Stair Landings and Ramps in Reinforced Concrete](#StraightStairLandingsandRampsinReinforcedConcrete),
-[Straight-Curved Axis](#Straight-CurvedAxis),
-[Strato Di Muratura](#StratoDiMuratura),
-[Strato Di Tessuto Non Tessuto Polipropilenico](#StratoDiTessutoNonTessutoPolipropilenico),
-[Straßenbau](#Straenbau),
-[Straßenbegleitgrün](#Straenbegleitgrn),
-[Streifenfundamente](#Streifenfundamente),
-[Stringcourses](#Stringcourses),
-[Structural Engineering](#StructuralEngineering),
-[Struktur aus Naturhartstein](#StrukturausNaturhartstein),
+[Strands](#Strands),
+[Strato Di Bitume](#StratoDiBitume),
+[Strato Di Rivestimento](#StratoDiRivestimento),
+[Straßen](#Straen),
+[Straßensicherheit](#Straensicherheit),
+[Structural Reinforcement](#StructuralReinforcement),
 [Strukturell](#Strukturell),
-[Strukturelle Verstärkung](#StrukturelleVerstrkung),
 [Struktursystem](#Struktursystem),
-[Stuccatura](#Stuccatura),
-[Stufe 1](#Stufe1),
-[Stufe C1](#StufeC1),
-[Stufe C2](#StufeC2),
+[Stufe 2](#Stufe2),
+[Stufe 3](#Stufe3),
+[Stufe C3](#StufeC3),
+[Stufe D1](#StufeD1),
+[Subfoundation](#Subfoundation),
 [Suolo](#Suolo),
-[Synthetic Acrylic Resin](#SyntheticAcrylicResin),
-[Säulen](#Sulen),
-[T-Kopf](#T-Kopf),
+[Synthetic Compound](#SyntheticCompound),
+[Synthetischer Gummi](#SynthetischerGummi),
+[Systeme](#Systeme),
+[Säcke](#Scke),
+[T-Head](#T-Head),
 [T1 Plaster](#T1Plaster),
 [Teilweise](#Teilweise),
-[Teilweise sublimierend](#Teilweisesublimierend),
-[Terrassen](#Terrassen),
-[Thermal](#Thermal),
-[Thermal Insulating](#ThermalInsulating),
-[Thermal Insulating and Sound Absorbing Partition Wall](#ThermalInsulatingandSoundAbsorbingPartitionWall),
+[Temporäre Zäune](#TemporreZune),
+[Tensile Strength Perpendicular To Faces](#TensileStrengthPerpendicularToFaces),
+[Termico](#Termico),
+[Termoisolante](#Termoisolante),
+[Thermal Bridges](#ThermalBridges),
+[Thermal Conductivity](#ThermalConductivity),
 [Thermal/Acoustic](#Thermal/Acoustic),
 [Tischtennis](#Tischtennis),
 [Tongue And Groove Panels](#TongueAndGroovePanels),
 [Total Thickness](#TotalThickness),
-[Traditional](#Traditional),
+[Tower crane rotating at the top](#Towercranerotatingatthetop),
 [Traditionelle Holzschalung](#TraditionelleHolzschalung),
-[Tragend](#Tragend),
+[Tragwerksplanung](#Tragwerksplanung),
 [Transport](#Transport),
-[Trennwand](#Trennwand),
+[Traspirante](#Traspirante),
 [Trennwände](#Trennwnde),
-[Trockenbau](#Trockenbau),
-[Truck with Crane](#TruckwithCrane),
-[Turmdrehkran an der Oberseite](#TurmdrehkrananderOberseite),
-[Unterfangungen](#Unterfangungen),
-[Unterschiedliches Netz](#UnterschiedlichesNetz),
+[Two Layers](#TwoLayers),
+[UNI8290](#UNI8290),
+[Umgebung](#Umgebung),
+[Underpinnings](#Underpinnings),
+[Uniclass](#Uniclass),
+[Uniformat](#Uniformat),
 [Unterstützung](#Untersttzung),
-[Urban Green](#UrbanGreen),
 [Velo Vetro Bitumato](#VeloVetroBitumato),
-[Verde E Paesaggio](#VerdeEPaesaggio),
-[Verkleben](#Verkleben),
+[Ventilazione](#Ventilazione),
+[Verbindungen](#Verbindungen),
 [Verkleidung](#Verkleidung),
-[Verputzt](#Verputzt),
-[Verschiedene Strukturen](#VerschiedeneStrukturen),
-[Verschleißfest](#Verschleifest),
+[Verlegung von Hohlkörpern zur Belüftung](#VerlegungvonHohlkrpernzurBelftung),
+[Verputzen](#Verputzen),
 [Verschlüsse für Rohre](#VerschlssefrRohre),
 [Verteilung](#Verteilung),
 [Verteilungsklasse](#Verteilungsklasse),
-[Vertical Structures](#VerticalStructures),
-[Vetro Cellulare](#VetroCellulare),
+[Vertikale Strukturen](#VertikaleStrukturen),
 [Vogelabwehr-Dissuasor](#Vogelabwehr-Dissuasor),
-[Vorgefertigt](#Vorgefertigt),
-[Walkable Attics](#WalkableAttics),
-[Wall Systems](#WallSystems),
-[Walls](#Walls),
-[Walls With Insulated Plaster System](#WallsWithInsulatedPlasterSystem),
-[Wasserabweisend](#Wasserabweisend),
-[Wasserbauingenieurwesen](#Wasserbauingenieurwesen),
-[Waterproof](#Waterproof),
-[Welded](#Welded),
-[White](#White),
-[Width](#Width),
-[Wire](#Wire),
-[With Manual Equipment](#WithManualEquipment),
+[Vollbetonböden und -platten mit Balken in der Dicke](#Vollbetonbdenund-plattenmitBalkeninderDicke),
+[Vollständig](#Vollstndig),
+[Vor Ort](#VorOrt),
+[Vorgeformte Paneele](#VorgeformtePaneele),
+[Vorhandene Estriche](#VorhandeneEstriche),
+[Vorsatzschale](#Vorsatzschale),
+[Vulcanized Rock Wool](#VulcanizedRockWool),
+[Wall-Ceiling](#Wall-Ceiling),
+[Walls for Staircases and Elevators](#WallsforStaircasesandElevators),
+[Wasserdampfdiffusionswiderstand](#Wasserdampfdiffusionswiderstand),
+[Wasserdicht](#Wasserdicht),
+[Wearing Layer](#WearingLayer),
+[White Color](#WhiteColor),
+[Widerstandsklasse](#Widerstandsklasse),
+[With Crane](#WithCrane),
 [With Pump](#WithPump),
-[Wood Vegetable Fiber](#WoodVegetableFiber),
-[Worker](#Worker),
-[Wände für Treppen- und Aufzugsschächte](#WndefrTreppen-undAufzugsschchte),
-[Wände im Untergeschoss](#WndeimUntergeschoss),
-[Wärmebrücken](#Wrmebrcken),
-[Wärmereflektierend](#Wrmereflektierend),
-[Zugfestigkeit](#Zugfestigkeit),
-[Zur Realisierung von Stauwerken](#ZurRealisierungvonStauwerken),
-[Zusammenbau](#Zusammenbau),
+[Wohngebiete](#Wohngebiete),
+[Wood Wool](#WoodWool),
+[Wooden Structures](#WoodenStructures),
+[Wände in Höhe](#WndeinHhe),
+[Wärmedämmend](#Wrmedmmend),
+[Wärmewiderstand](#Wrmewiderstand),
+[Zur Umgestaltung Und Wiederverwendung Zur Änderung Der Hydraulischen Anpassung](#ZurUmgestaltungUndWiederverwendungZurnderungDerHydraulischenAnpassung),
+[Zwei Anstriche](#ZweiAnstriche),
 [a cassa vuota](#acassavuota),
 [a doppia torsione](#adoppiatorsione),
-[ad aderenza migliorata](#adaderenzamigliorata),
-[altezze di caduta](#altezzedicaduta),
-[antipiccione](#antipiccione),
+[a maglia sciolta](#amagliasciolta),
 [antiriflesso](#antiriflesso),
+[antisdrucciolo](#antisdrucciolo),
 [antitrauma](#antitrauma),
-[apprestamenti](#apprestamenti),
 [armato](#armato),
-[armature e rinforzi](#armatureerinforzi),
-[attrezzature sport](#attrezzaturesport),
-[avvolgibile](#avvolgibile),
+[armatura](#armatura),
 [barre nervate](#barrenervate),
 [barriere stradali](#barrierestradali),
-[capacità](#capacit),
+[calce grassello](#calcegrassello),
 [carico](#carico),
+[cassaforma](#cassaforma),
 [cassaforma componibile](#cassaformacomponibile),
-[cemento generico](#cementogenerico),
 [chimico](#chimico),
-[classe di resistenza](#classediresistenza),
-[colorato](#colorato),
-[colore pastello](#colorepastello),
+[classe di carico](#classedicarico),
+[classe di consistenza](#classediconsistenza),
+[classica-rustica](#classica-rustica),
+[colore arancione](#colorearancione),
 [colore rosso](#colorerosso),
+[colore verde](#coloreverde),
+[componenti](#componenti),
 [componibile](#componibile),
-[con gru](#congru),
-[conglomerato](#conglomerato),
-[conglomerato bituminoso](#conglomeratobituminoso),
-[conglomerato cementizio aerato autoclavato](#conglomeratocementizioaeratoautoclavato),
-[conglomerato sintetico](#conglomeratosintetico),
-[consistenza](#consistenza),
-[controparete](#controparete),
-[controparete antincendio](#contropareteantincendio),
-[cucitura](#cucitura),
+[comune](#comune),
+[conglomerato cementizio armato](#conglomeratocementizioarmato),
+[controparete termoisolante-fonoassorbente](#controparetetermoisolante-fonoassorbente),
+[corree](#corree),
+[cuciture](#cuciture),
+[da calcio](#dacalcio),
 [delimitazioni-protezioni](#delimitazioni-protezioni),
-[diametro](#diametro),
 [diametro testa](#diametrotesta),
-[diwdag](#diwdag),
 [drenante](#drenante),
-[edile](#edile),
+[edili](#edili),
+[elementi provvisionali](#elementiprovvisionali),
 [elettrificabile](#elettrificabile),
 [elettrosaldata](#elettrosaldata),
-[elicotterista](#elicotterista),
-[ergotecnica](#ergotecnica),
-[ferri d'armatura](#ferrid'armatura),
+[elevazione-fondazione](#elevazione-fondazione),
+[entroterra](#entroterra),
+[esterno](#esterno),
 [fissa](#fissa),
 [fissaggio](#fissaggio),
 [fluido](#fluido),
+[fondazione](#fondazione),
+[forestale](#forestale),
+[gesso generico](#gessogenerico),
+[gioco piramide](#giocopiramide),
 [gomma epdm](#gommaepdm),
-[gomma sintetica](#gommasintetica),
+[gru a torre a rotazione in alto](#gruatorrearotazioneinalto),
 [impasti](#impasti),
 [impianti idraulici terminali](#impiantiidrauliciterminali),
-[in blocchi](#inblocchi),
-[in blocchi cavi](#inblocchicavi),
-[in blocchi semipieni](#inblocchisemipieni),
-[in blocchi tipo svizzero](#inblocchitiposvizzero),
+[in blocchi multiforo](#inblocchimultiforo),
+[in blocchi pieni](#inblocchipieni),
 [in pannelli](#inpannelli),
-[in tavelle forate](#intavelleforate),
-[inox](#inox),
-[interpiano rustico](#interpianorustico),
-[lega ferrosa generico](#legaferrosagenerico),
-[legno artificiale generico](#legnoartificialegenerico),
-[livello 2°](#livello2),
-[livello 3°](#livello3),
-[livello C3](#livelloC3),
-[livello D1](#livelloD1),
-[maglia esagonale](#magliaesagonale),
-[manto sintetico drenante](#mantosinteticodrenante),
+[in pannello modulare](#inpannellomodulare),
+[in tavelle](#intavelle),
+[isolante](#isolante),
+[lega ferrosa acciaio inox AISI 304](#legaferrosaacciaioinoxAISI304),
+[lega ferrosa acciaio inox AISI 304l](#legaferrosaacciaioinoxAISI304l),
+[liscio](#liscio),
+[livello 1°](#livello1),
+[livello C1](#livelloC1),
+[livello D2](#livelloD2),
+[maglie esagonali](#maglieesagonali),
 [massa volumica](#massavolumica),
-[metalmeccanici](#metalmeccanici),
+[materiale generico](#materialegenerico),
+[materiale poliammidico](#materialepoliammidico),
+[metallo generico](#metallogenerico),
 [movimentazione meccanizzata](#movimentazionemeccanizzata),
-[pali](#pali),
+[muratura in mattoni pieni-pietrame-miste](#muraturainmattonipieni-pietrame-miste),
+[murature vani scala-ascensori](#muraturevaniscala-ascensori),
+[nervata](#nervata),
 [paramassi](#paramassi),
 [parapetti per balconi rettilinei](#parapettiperbalconirettilinei),
-[parete-soffitto](#parete-soffitto),
 [pareti curvilinee in elevazione](#pareticurvilineeinelevazione),
-[pareti in elevazione](#paretiinelevazione),
-[passerella di getto](#passerelladigetto),
+[pavimentazione in gomma](#pavimentazioneingomma),
 [pavimentazione sportiva](#pavimentazionesportiva),
-[pianerottoli e rampe scale rettilinei](#pianerottolierampescalerettilinei),
+[peso specifico](#pesospecifico),
+[pilastri](#pilastri),
 [pilastri a sezione rettangolare-quadrata](#pilastriasezionerettangolare-quadrata),
-[plastificata](#plastificata),
+[pilastri circolari](#pilastricircolari),
 [pompa autocarrata](#pompaautocarrata),
 [pompe per cls](#pompepercls),
-[porta fissa](#portafissa),
-[prodotti](#prodotti),
+[portata](#portata),
+[precompressione](#precompressione),
+[prefabbricati per strutture in cls](#prefabbricatiperstruttureincls),
+[puntello metallico](#puntellometallico),
 [quadrata](#quadrata),
 [qualificato](#qualificato),
-[recinzioni provvisorie](#recinzioniprovvisorie),
-[resistenza a punzonamento](#resistenzaapunzonamento),
-[resistenza caratteristica](#resistenzacaratteristica),
-[resistenza termica](#resistenzatermica),
-[rinforzo](#rinforzo),
-[riparazione fessure](#riparazionefessure),
-[rivestimento elastico](#rivestimentoelastico),
-[rivestito](#rivestito),
-[rivestito con malta antincendio](#rivestitoconmaltaantincendio),
-[rivestito con strato di ceramica refrattaria](#rivestitoconstratodiceramicarefrattaria),
-[sabbiato](#sabbiato),
-[sacchi](#sacchi),
+[recinzioni](#recinzioni),
+[resina sintetica acrilica](#resinasinteticaacrilica),
+[resistenza a trazione](#resistenzaatrazione),
+[resistenza al fuoco](#resistenzaalfuoco),
+[rivestito in cartone speciale](#rivestitoincartonespeciale),
 [sagomata](#sagomata),
+[sbraccio](#sbraccio),
 [semi-lavorati](#semi-lavorati),
 [semiportante](#semiportante),
-[sistemi](#sistemi),
-[sistemi complementari](#sistemicomplementari),
-[sistemi di scavo](#sistemidiscavo),
-[solai e solette piene in c.a. con travi a spessore](#solaiesolettepieneinc.a.contraviaspessore),
-[sottofondazione](#sottofondazione),
-[specializzato super](#specializzatosuper),
-[spessore](#spessore),
-[sponde di travi e cordoli](#spondeditraviecordoli),
-[strati di copertura](#stratidicopertura),
+[sistemi di apprestamento di cantiere](#sistemidiapprestamentodicantiere),
+[sistemi di fondazione](#sistemidifondazione),
+[sistemi murari](#sistemimurari),
+[solaio misto con travi in spessore per strutture piane](#solaiomistocontraviinspessoreperstrutturepiane),
 [strato di base](#stratodibase),
 [strato di binder](#stratodibinder),
-[strato di usura](#stratodiusura),
 [struttura](#struttura),
-[struttura in conglomerato cementizio semplice](#strutturainconglomeratocementiziosemplice),
+[struttura in pietra naturale dura](#strutturainpietranaturaledura),
 [struttura in solaio misto](#strutturainsolaiomisto),
-[strutture in conglomerato cementizio](#struttureinconglomeratocementizio),
+[strutture in conglomerato cementizio armato](#struttureinconglomeratocementizioarmato),
+[strutture varie](#strutturevarie),
 [superfici verticali](#superficiverticali),
-[tecnico specialistico per lavorazioni ICT](#tecnicospecialisticoperlavorazioniICT),
-[travi](#travi),
-[vernice poliuretanica](#vernicepoliuretanica),
+[tamponamento](#tamponamento),
+[terrazze](#terrazze),
+[testa piatta](#testapiatta),
+[tirantatura](#tirantatura),
+[tradizionale](#tradizionale),
+[traliccio](#traliccio),
+[trefolo](#trefolo),
+[tridimensionale a funi intrecciate](#tridimensionaleafuniintrecciate),
 [vibratore per calcestruzzo](#vibratorepercalcestruzzo),
+[zincata](#zincata),
 [Überirdisch](#berirdisch),
 ### Überirdisch <sup>c</sup>
 Property | Value
@@ -1400,7 +1398,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#AboveGround`
 * **Contributor(s)**
   * [cterm:AspectOfWorkOfConstructionWork](https://w3id.org/cterm#AspectOfWorkOfConstructionWork)
-### Accessories <sup>c</sup>
+### Accessori <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Accessories`
@@ -1424,14 +1422,14 @@ Property | Value
 IRI | `https://w3id.org/cterm#Aggregate`
 * **Contributor(s)**
   * [cterm:ObjectOfMaterial](https://w3id.org/cterm#ObjectOfMaterial)
-### Colture/Agricoltura <sup>c</sup>
+### Nutzpflanzen/Landwirtschaft <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Agriculture`
 * **Contributor(s)**
   * [cterm:FamilyOfLabour](https://w3id.org/cterm#FamilyOfLabour)
   * [cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent)
-### Agro Forestale <sup>c</sup>
+### Agro Forestry <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#AgroForestry`
@@ -1443,7 +1441,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#AluminumFoil`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Korrosionsschutz <sup>c</sup>
+### Anti-Corrosive <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Anti-Corrosive`
@@ -1455,7 +1453,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Anti-Reflective`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Rutschfest <sup>c</sup>
+### antisdrucciolo <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Anti-Slip`
@@ -1473,19 +1471,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#Application`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Architettura <sup>c</sup>
+### Architecture <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Architecture`
 * **Contributor(s)**
   * [cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork)
-### Arm <sup>c</sup>
+### sbraccio <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Arm`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### Zusammenbau <sup>c</sup>
+### Montaggio <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Assembly`
@@ -1497,69 +1495,69 @@ Property | Value
 IRI | `https://w3id.org/cterm#Assistance`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Attic <sup>c</sup>
+### Dachboden <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Attic`
 * **Contributor(s)**
-  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### conglomerato cementizio aerato autoclavato <sup>c</sup>
+  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
+### Autoklavierter Porenbeton <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#AutoclavedAeratedConcrete`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### sacchi <sup>c</sup>
+### Säcke <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Bags`
 * **Contributor(s)**
-  * [cterm:FurnishingOfMaterial](https://w3id.org/cterm#FurnishingOfMaterial)
+  * [cterm:Furnishing](https://w3id.org/cterm#Furnishing)
 ### strato di base <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#BaseLayer`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Basement Flooring <sup>c</sup>
+### Fußböden im Untergeschoss <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#BasementFlooring`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Wände im Untergeschoss <sup>c</sup>
+### Buried Walls <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#BasementWalls`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Bagni <sup>c</sup>
+### Badezimmer <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Bathrooms`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Bathrooms-Kitchens <sup>c</sup>
+### Bäder-Küchen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Bathrooms-Kitchens`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### sponde di travi e cordoli <sup>c</sup>
+### Beam Edges and Curbs <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#BeamEdgesandCurbs`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
   * [cterm:UseOfWorkOfTemporaryWork](https://w3id.org/cterm#UseOfWorkOfTemporaryWork)
-### travi <sup>c</sup>
+### Balken <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Beams`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Radwege <sup>c</sup>
+### Bike Paths <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#BikePaths`
@@ -1577,7 +1575,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#BinderLayer`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### antipiccione <sup>c</sup>
+### Bird Repellent <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#BirdRepellent`
@@ -1596,13 +1594,13 @@ IRI | `https://w3id.org/cterm#Bitumen`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Bitumen Layer <sup>c</sup>
+### Strato Di Bitume <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#BitumenLayer`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Bituminized Feltboard <sup>c</sup>
+### Cartonfeltro Bitumato <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#BituminizedFeltboard`
@@ -1614,7 +1612,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#BituminizedGlassFiber`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### conglomerato bituminoso <sup>c</sup>
+### Asphaltgemisch <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#BituminousMix`
@@ -1638,31 +1636,31 @@ Property | Value
 IRI | `https://w3id.org/cterm#Boom`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### Breathable <sup>c</sup>
+### Traspirante <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Breathable`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
-### A Pennello <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Brush <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Brush`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### edile <sup>c</sup>
+### Bau <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Building`
 * **Contributor(s)**
   * [cterm:CategoryOfLabour](https://w3id.org/cterm#CategoryOfLabour)
-### Gebäude <sup>c</sup>
+### Edifici <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Buildings`
 * **Contributor(s)**
   * [cterm:CategoryOfCostComponent](https://w3id.org/cterm#CategoryOfCostComponent)
-### Lose <sup>c</sup>
+### Bulk <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Bulk`
@@ -1674,7 +1672,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Bush-Hammered`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### capacità <sup>c</sup>
+### portata <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Capacity`
@@ -1698,13 +1696,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#Cavities`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Ceilings <sup>c</sup>
+### Controsoffitti <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Ceilings`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Vetro Cellulare <sup>c</sup>
+### Cellular Glass <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CellularGlass`
@@ -1715,21 +1713,21 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CementitiousCompound`
 * **Contributor(s)**
-  * [cterm:Material](https://w3id.org/cterm#Material)
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
+  * [cterm:Material](https://w3id.org/cterm#Material)
 ### Cemetery <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Cemetery`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Ceramic Terracotta-Brick <sup>c</sup>
+### Keramik, Terrakotta-Ziegel <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CeramicTerracotta-Brick`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### resistenza caratteristica <sup>c</sup>
+### Characteristic Strength <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CharacteristicStrength`
@@ -1741,13 +1739,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#Chemical`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Chemiearbeiter <sup>c</sup>
+### Chemical Workers <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ChemicalWorkers`
 * **Contributor(s)**
   * [cterm:CategoryOfLabour](https://w3id.org/cterm#CategoryOfLabour)
-### Circular Columns <sup>c</sup>
+### pilastri circolari <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CircularColumns`
@@ -1760,13 +1758,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#CivilEngineering`
 * **Contributor(s)**
   * [cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork)
-### Classic-Rustic <sup>c</sup>
+### classica-rustica <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Classic-Rustic`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Pulizia <sup>c</sup>
+### Cleaning <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Cleaning`
@@ -1777,14 +1775,14 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Closure`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
-### Coastal/River <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Marittime/Fluviali <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Coastal_River`
 * **Contributor(s)**
   * [cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent)
-### rivestito <sup>c</sup>
+### Rivestito <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Coated`
@@ -1797,25 +1795,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#CoatedWithRefractoryCeramicLayer`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Coated With Special Cardboard <sup>c</sup>
+### Rivestito Di Cartone Speciale <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CoatedWithSpecialCardboard`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### rivestito con malta antincendio <sup>c</sup>
+### Coated with Fireproof Mortar <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CoatedwithFireproofMortar`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### rivestito con strato di ceramica refrattaria <sup>c</sup>
+### Coated with Refractory Ceramic Layer <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CoatedwithRefractoryCeramicLayer`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Coated with Special Cardboard <sup>c</sup>
+### rivestito in cartone speciale <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CoatedwithSpecialCardboard`
@@ -1826,62 +1824,62 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Coating`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
-### Coating Layer <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Strato Di Rivestimento <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CoatingLayer`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Rivestimenti <sup>c</sup>
+### Coatings <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Coatings`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### A Freddo <sup>c</sup>
+### Kalt <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Cold`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### colorato <sup>c</sup>
+### Gefärbt <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Colored`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Columns <sup>c</sup>
+### pilastri <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Columns`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Allgemein <sup>c</sup>
+### comune <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Common`
 * **Contributor(s)**
   * [cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel)
-### Ergänzend <sup>c</sup>
+### Complementary <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Complementary`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### sistemi complementari <sup>c</sup>
+### Complementary Systems <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ComplementarySystems`
 * **Contributor(s)**
   * [cterm:CategoryOfWorkOfConstructionWork](https://w3id.org/cterm#CategoryOfWorkOfConstructionWork)
-### Complete <sup>c</sup>
+### Vollständig <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Complete`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Komponenten <sup>c</sup>
+### componenti <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Components`
@@ -1893,7 +1891,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#CompressionResistance`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Resistenza A Compressione <sup>c</sup>
+### Compression Strength <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CompressionStrength`
@@ -1904,7 +1902,7 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ConcreteMixerTruck`
 * **Contributor(s)**
-  * [cterm:FurnishingOfMaterial](https://w3id.org/cterm#FurnishingOfMaterial)
+  * [cterm:Furnishing](https://w3id.org/cterm#Furnishing)
 ### Concrete Pours in Vertical Formwork <sup>c</sup>
 Property | Value
 --- | ---
@@ -1923,7 +1921,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#ConcreteStructure`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### strutture in conglomerato cementizio <sup>c</sup>
+### Concrete Structures <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ConcreteStructures`
@@ -1935,57 +1933,57 @@ Property | Value
 IRI | `https://w3id.org/cterm#ConcreteVibrator`
 * **Contributor(s)**
   * [cterm:ObjectOfEquipment](https://w3id.org/cterm#ObjectOfEquipment)
-### conglomerato <sup>c</sup>
+### Conglomerate <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Conglomerate`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Connecting Beams <sup>c</sup>
+### corree <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ConnectingBeams`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Connections <sup>c</sup>
+### Verbindungen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Connections`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### consistenza <sup>c</sup>
+### Consistency <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Consistency`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Konsistenzklasse <sup>c</sup>
+### classe di consistenza <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ConsistencyClass`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Consolidamento <sup>c</sup>
+### Konsolidierung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Consolidation`
 * **Contributor(s)**
-  * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Costruzioni <sup>c</sup>
+  * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
+### Bauwerk <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Construction`
 * **Contributor(s)**
-  * [cterm:FamilyOfLabour](https://w3id.org/cterm#FamilyOfLabour)
   * [cterm:FamilyOfCostComponent](https://w3id.org/cterm#FamilyOfCostComponent)
+  * [cterm:FamilyOfLabour](https://w3id.org/cterm#FamilyOfLabour)
 ### Baustellenzäune <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ConstructionSiteFences`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Bauarbeiter <sup>c</sup>
+### edili <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ConstructionWorkers`
@@ -1997,26 +1995,26 @@ Property | Value
 IRI | `https://w3id.org/cterm#ContaminatedSites`
 * **Contributor(s)**
   * [cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent)
-### Streifenfundamente <sup>c</sup>
+### Continuous Foundations <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ContinuousFoundations`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
   * [cterm:UseOfWorkOfTemporaryWork](https://w3id.org/cterm#UseOfWorkOfTemporaryWork)
-### Cork Vegetable Fiber <sup>c</sup>
+### Fibra Vegetale Sughero <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CorkVegetableFiber`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### strati di copertura <sup>c</sup>
+### Deckschichten <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CoveringLayers`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### riparazione fessure <sup>c</sup>
+### Crack Repair <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#CrackRepair`
@@ -2047,38 +2045,38 @@ Property | Value
 IRI | `https://w3id.org/cterm#Delimitations-Protections`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Demolition <sup>c</sup>
+### Abriss <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Demolition`
 * **Contributor(s)**
-  * [cterm:CategoryOfActivity](https://w3id.org/cterm#CategoryOfActivity)
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Density <sup>c</sup>
+  * [cterm:CategoryOfActivity](https://w3id.org/cterm#CategoryOfActivity)
+### Densità <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Density`
 * **Contributor(s)**
   * [cterm:PhysicalParameterType](https://w3id.org/cterm#PhysicalParameterType)
-### diametro <sup>c</sup>
+### Durchmesser <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Diameter`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### Diaphragmen <sup>c</sup>
+### Diaphragms <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Diaphragms`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Unterschiedliches Netz <sup>c</sup>
+### Differentiated Mesh <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#DifferentiatedMesh`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Smontaggio <sup>c</sup>
+### Dismantling <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Dismantling`
@@ -2090,7 +2088,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Distribution`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### diwdag <sup>c</sup>
+### Diwdag (Construction Technique) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Diwdag`
@@ -2108,25 +2106,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#Draining`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Drainierende/Schallabsorbierende Deckschicht <sup>c</sup>
+### Draining-Noise Absorbing Wearing Layer <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Draining-NoiseAbsorbingWearingLayer`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### manto sintetico drenante <sup>c</sup>
+### Draining Synthetic Layer <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#DrainingSyntheticLayer`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Driveable Flat Roof <sup>c</sup>
+### Copertura Piana Carrabile <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#DriveableFlatRoof`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Trockenbau <sup>c</sup>
+### Drywall <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Drywall`
@@ -2138,7 +2136,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#EPDMRubber`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### rivestimento elastico <sup>c</sup>
+### Elastic Coating <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ElasticCoating`
@@ -2180,53 +2178,55 @@ Property | Value
 IRI | `https://w3id.org/cterm#Electroforged`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Elevation-Foundation <sup>c</sup>
+### elevazione-fondazione <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Elevation-Foundation`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Environment <sup>c</sup>
+### Umgebung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Environment`
 * **Contributor(s)**
   * [cterm:FamilyOfCostComponent](https://w3id.org/cterm#FamilyOfCostComponent)
-### ergotecnica <sup>c</sup>
+### Ergotechnique <sup>c</sup>
 Property | Value
 --- | ---
-IRI | `https://w3id.org/cterm#Ergonomics`
+IRI | `https://w3id.org/cterm#Ergotechnique`
+* **Contributor(s)**
+  * [cterm:FamilyOfCostComponent](https://w3id.org/cterm#FamilyOfCostComponent)
 ### Aushub <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Excavation`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### sistemi di scavo <sup>c</sup>
+### Excavation Systems <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ExcavationSystems`
 * **Contributor(s)**
   * [cterm:CategoryOfWorkOfTemporaryWork](https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork)
-### Esecuzione <sup>c</sup>
+### Ausführung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Execution`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Massetti Esistenti <sup>c</sup>
+### Vorhandene Estriche <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ExistingScreeds`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Argilla Espansa <sup>c</sup>
+### Expanded Clay <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ExpandedClay`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Fibra Vegetale Sughero Espanso <sup>c</sup>
+### Expandierter Korkpflanzenfaser <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ExpandedCorkVegetableFiber`
@@ -2244,43 +2244,43 @@ Property | Value
 IRI | `https://w3id.org/cterm#ExpandedNaturalRockVermiculite`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Plastica Polietilene Espanso <sup>c</sup>
+### Expanded Polyethylene Plastic <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ExpandedPolyethylenePlastic`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Plastica Polistirene Espanso (EPS) <sup>c</sup>
+### Expanded Polystyrene Plastic (EPS) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ExpandedPolystyrenePlastic`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Exposition <sup>c</sup>
+### Exposure <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Exposure`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Exposure Class <sup>c</sup>
+### Expositionsklasse <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ExposureClass`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Exterior <sup>c</sup>
+### esterno <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Exterior`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Außenflächen <sup>c</sup>
+### External Surfaces <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ExternalSurfaces`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### External Walls <sup>c</sup>
+### Pareti Esterne <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ExternalWalls`
@@ -2292,7 +2292,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#ExtrudedPolystyrenePlastic`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### altezze di caduta <sup>c</sup>
+### Fallhöhen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FallHeights`
@@ -2303,21 +2303,21 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Fastening`
 * **Contributor(s)**
-  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
 ### Fastenings <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Fastenings`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Fences <sup>c</sup>
+### recinzioni <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Fences`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Ferrous Alloy Steel B450A <sup>c</sup>
+### Eisenlegierung Stahl B450A <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FerrousAlloySteelB450A`
@@ -2329,79 +2329,79 @@ Property | Value
 IRI | `https://w3id.org/cterm#FerrousAlloySteelB450C`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Filling <sup>c</sup>
+### tamponamento <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Filling`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Geotessile Filtrante <sup>c</sup>
+### Filtering Geotextile <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FilteringGeotextile`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Finitura <sup>c</sup>
+### Oberfläche <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Finish`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
 ### Lana Di Abete <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FirWool`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Impianti Antincendio <sup>c</sup>
+### Fire Protection Systems <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FireProtectionSystems`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Fire Reaction <sup>c</sup>
+### Feuerwiderstand <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FireReaction`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Fire Resistance <sup>c</sup>
+### resistenza al fuoco <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FireResistance`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Brandschutz <sup>c</sup>
+### Fire Safety <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FireSafety`
 * **Contributor(s)**
   * [cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork)
-### Antincendio <sup>c</sup>
+### Brandschutz <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Fireproof`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
 ### Brandschutztrennwand <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FireproofPartition`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### controparete antincendio <sup>c</sup>
+### Fireproof Partition Wall <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FireproofPartitionWall`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Erster Anstrich <sup>c</sup>
+### First Coat <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FirstCoat`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### 5 Holes <sup>c</sup>
+### 5 Löcher <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FiveHoles`
@@ -2413,31 +2413,31 @@ Property | Value
 IRI | `https://w3id.org/cterm#Fixed`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Feste Kräne <sup>c</sup>
+### Fixed Cranes <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FixedCranes`
 * **Contributor(s)**
   * [cterm:ObjectOfEquipment](https://w3id.org/cterm#ObjectOfEquipment)
-### porta fissa <sup>c</sup>
+### Fixed Goal <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FixedGoal`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Flat Head <sup>c</sup>
+### testa piatta <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FlatHead`
 * **Contributor(s)**
   * [cterm:AspectOfEquipment](https://w3id.org/cterm#AspectOfEquipment)
-### Flachdach <sup>c</sup>
+### Flat Roof <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FlatRoof`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Flachdach mit begehbarem Belag <sup>c</sup>
+### Copertura Piana Con Pavimentazione Pedonabile <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FlatRoofWithWalkableSurface`
@@ -2460,22 +2460,22 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FloorSlab`
 * **Contributor(s)**
+  * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-  * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
 ### Bodenplatten <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FloorSlabs`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Sottopavimenti <sup>c</sup>
+### Fußbodenunterlage <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FloorUnderlay`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Bodenbelag <sup>c</sup>
+### Bodenbeläge <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Flooring`
@@ -2488,81 +2488,81 @@ Property | Value
 IRI | `https://w3id.org/cterm#Floors`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Böden über unbeheizten Bereichen <sup>c</sup>
+### Floors Over Unheated Areas <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FloorsOverUnheatedAreas`
 * **Contributor(s)**
-  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
+  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
 ### fluido <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Fluid`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Fundamente-Umgekehrte Balken-Platten <sup>c</sup>
+### Footings-Inverted Beams-Slabs <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Footings-InvertedBeams-Slabs`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Zur Realisierung von Stauwerken <sup>c</sup>
+### For Dam Construction <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ForDamConstruction`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Für Fußball <sup>c</sup>
+### da calcio <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ForFootball`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Per Rimaneggiamento E Riutilizzo Per Variazione Della Conformazione Del Paraggio Idraulico <sup>c</sup>
+### Zur Umgestaltung Und Wiederverwendung Zur Änderung Der Hydraulischen Anpassung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ForRemanipulationAndReuseForHydraulicAdjustment`
 * **Contributor(s)**
   * [cterm:FunctionOfActivity](https://w3id.org/cterm#FunctionOfActivity)
-### Forstwirtschaft <sup>c</sup>
+### forestale <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Forestry`
 * **Contributor(s)**
   * [cterm:CategoryOfLabour](https://w3id.org/cterm#CategoryOfLabour)
-### Forming <sup>c</sup>
+### Ausbildung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Forming`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Schalungen <sup>c</sup>
+### cassaforma <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Formwork`
 * **Contributor(s)**
-  * [cterm:ObjectOfWorkOfTemporaryWork](https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork)
   * [cterm:ObjectOfEquipment](https://w3id.org/cterm#ObjectOfEquipment)
-### Formwork For Reinforced Concrete Structures <sup>c</sup>
+  * [cterm:ObjectOfWorkOfTemporaryWork](https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork)
+### Casseri Per Strutture In Conglomerato Cementizio <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FormworkForReinforcedConcreteStructures`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Schalungen für Wärmebrücken <sup>c</sup>
+### Formwork For Thermal Bridges <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FormworkForThermalBridges`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Fundament <sup>c</sup>
+### fondazione <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Foundation`
 * **Contributor(s)**
   * [cterm:ObjectOfWorkOfConstructionWork](https://w3id.org/cterm#ObjectOfWorkOfConstructionWork)
-### Foundation Systems <sup>c</sup>
+### sistemi di fondazione <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FoundationSystems`
@@ -2573,8 +2573,8 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FrontClosure`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
-### Frontale Con Porta <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Front mit Tür <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#FrontWithDoor`
@@ -2586,62 +2586,62 @@ Property | Value
 IRI | `https://w3id.org/cterm#Furniture`
 * **Contributor(s)**
   * [cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork)
-### Galvanized <sup>c</sup>
+### zincata <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Galvanized`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Multistrato Gas Impermeabile <sup>c</sup>
+### Gas Impermeable Multilayer <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GasImpermeableMultilayer`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Generico <sup>c</sup>
+### Generic <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Generic`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### Bitume Generico <sup>c</sup>
+### Allgemeines Bitumen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericBitumen`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
   * [cterm:Material](https://w3id.org/cterm#Material)
-### cemento generico <sup>c</sup>
+### Generic Cement <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericCement`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### legno artificiale generico <sup>c</sup>
+### Generic Engineered Wood <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericEngineeredWood`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### lega ferrosa generico <sup>c</sup>
+### Allgemeine Eisenlegierung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericFerrousAlloy`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Generic Ferrous Alloy Steel <sup>c</sup>
+### Allgemeine Eisenlegierung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericFerrousAlloySteel`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Allgemeines Material <sup>c</sup>
+### materiale generico <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericMaterial`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Allgemeines Metall <sup>c</sup>
+### metallo generico <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericMetal`
@@ -2653,7 +2653,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#GenericMineralFiber`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Generic Natural Rock <sup>c</sup>
+### Allgemeiner Naturstein <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericNaturalRock`
@@ -2665,13 +2665,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#GenericNaturalWood`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Generic Plaster <sup>c</sup>
+### gesso generico <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericPlaster`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Generic Rubber <sup>c</sup>
+### Allgemeiner Gummi <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GenericRubber`
@@ -2689,19 +2689,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#GlassFiber`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Verkleben <sup>c</sup>
+### Incollaggio <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Gluing`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Goldgelbe Farbe <sup>c</sup>
+### Colore Giallo Dorata <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GoldenYellowColor`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Granular <sup>c</sup>
+### Körnig <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Granular`
@@ -2719,26 +2719,26 @@ Property | Value
 IRI | `https://w3id.org/cterm#GraphiteExpandedPolystyrenePlastic`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Gray Color <sup>c</sup>
+### Graue Farbe <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GrayColor`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Green <sup>c</sup>
+### colore verde <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Green`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Parks/Gardens/Green Areas <sup>c</sup>
+### Parchi/Giardini/Aree Verdi <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#GreenAreas`
 * **Contributor(s)**
   * [cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent)
-### Green/Forest <sup>c</sup>
+### Gün/Wald <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Green_Forest`
@@ -2750,7 +2750,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#GreeneryandLandscaping`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Grout <sup>c</sup>
+### Mörtel <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Grout`
@@ -2763,7 +2763,7 @@ IRI | `https://w3id.org/cterm#Handling`
 * **Contributor(s)**
   * [cterm:FamilyOfEquipment](https://w3id.org/cterm#FamilyOfEquipment)
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Struktur aus Naturhartstein <sup>c</sup>
+### struttura in pietra naturale dura <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HardNaturalStoneStructure`
@@ -2775,49 +2775,49 @@ Property | Value
 IRI | `https://w3id.org/cterm#HeadDiameter`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### Wärmereflektierend <sup>c</sup>
+### Heat Reflective <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HeatReflective`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Height <sup>c</sup>
+### Höhe <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Height`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### Helicopter Ground Assistant <sup>c</sup>
+### Bodenhelfer für Hubschrauber <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HelicopterGroundAssistant`
 * **Contributor(s)**
   * [cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel)
-### elicotterista <sup>c</sup>
+### Hubschrauberpilot <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HelicopterPilot`
 * **Contributor(s)**
   * [cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel)
-### Fibra Vegetale Canapa <sup>c</sup>
+### Hemp Vegetable Fiber <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HempVegetableFiber`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Hexagonal <sup>c</sup>
+### Sechseckig <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Hexagonal`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### maglia esagonale <sup>c</sup>
+### maglie esagonali <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HexagonalMesh`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### High Density Rock Wool <sup>c</sup>
+### Fibra Minerale Lana Di Roccia Ad Alta Densità <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HighDensityRockWool`
@@ -2829,7 +2829,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#HollowBox`
 * **Contributor(s)**
   * [cterm:AspectOfWorkOfConstructionWork](https://w3id.org/cterm#AspectOfWorkOfConstructionWork)
-### Höhe unter Haken <sup>c</sup>
+### Hook Height <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HookHeight`
@@ -2841,7 +2841,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#HorizontalStructures`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Horizontal Surfaces <sup>c</sup>
+### Horizontale Flächen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HorizontalSurfaces`
@@ -2853,56 +2853,56 @@ Property | Value
 IRI | `https://w3id.org/cterm#HousingStructuralElements`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Hydraulic <sup>c</sup>
+### Idraulica <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Hydraulic`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
   * [cterm:CategoryOfCostComponent](https://w3id.org/cterm#CategoryOfCostComponent)
-### Wasserbauingenieurwesen <sup>c</sup>
+### Ingegneria Idraulica <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#HydraulicEngineering`
 * **Contributor(s)**
   * [cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork)
-### ad aderenza migliorata <sup>c</sup>
+### Mit verbesserter Haftung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ImprovedAdhesion`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### in blocchi <sup>c</sup>
+### In Blocks <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InBlocks`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### In Bricks <sup>c</sup>
+### in tavelle <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InBricks`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### in blocchi cavi <sup>c</sup>
+### In Hollow Blocks <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InHollowBlocks`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### In Honeycomb Blocks <sup>c</sup>
+### Aus Wabenblöcken <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InHoneycombBlocks`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### In Modular Panels <sup>c</sup>
+### in pannello modulare <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InModularPanels`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### In Multi-Hole Blocks <sup>c</sup>
+### in blocchi multiforo <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InMulti-HoleBlocks`
@@ -2915,31 +2915,31 @@ IRI | `https://w3id.org/cterm#InPanels`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### in tavelle forate <sup>c</sup>
+### In Perforated Bricks <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InPerforatedBricks`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### in blocchi semipieni <sup>c</sup>
+### Aus Halbvollen Blöcken <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InSemi-SolidBlocks`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### In Slabs <sup>c</sup>
+### In Platten <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InSlabs`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### In Solid Blocks <sup>c</sup>
+### in blocchi pieni <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InSolidBlocks`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### in blocchi tipo svizzero <sup>c</sup>
+### In Swiss-Type Blocks <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InSwiss-TypeBlocks`
@@ -2951,33 +2951,33 @@ Property | Value
 IRI | `https://w3id.org/cterm#Infrastructure`
 * **Contributor(s)**
   * [cterm:FamilyOfCostComponent](https://w3id.org/cterm#FamilyOfCostComponent)
-### Injektion <sup>c</sup>
+### Injection <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Injection`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Hinterland <sup>c</sup>
+### entroterra <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Inland`
 * **Contributor(s)**
   * [cterm:AspectOfWorkOfConstructionWork](https://w3id.org/cterm#AspectOfWorkOfConstructionWork)
-### Installation <sup>c</sup>
+### Installazione <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Installation`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Isolierung <sup>c</sup>
+### isolante <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Insulation`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Dämmsysteme <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Insulation Systems <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InsulationSystems`
@@ -2989,7 +2989,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Insulations`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Interior <sup>c</sup>
+### Innenbereich <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Interior`
@@ -3000,15 +3000,15 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#IntermediateFloors`
 * **Contributor(s)**
-  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Internal Partition Walls <sup>c</sup>
+  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
+### Innenwände <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InternalPartitionWalls`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Innenflächen <sup>c</sup>
+### Internal Surfaces <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#InternalSurfaces`
@@ -3020,7 +3020,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#InternalWalls`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Iron Metal <sup>c</sup>
+### Eisenmetall <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#IronMetal`
@@ -3032,37 +3032,37 @@ Property | Value
 IRI | `https://w3id.org/cterm#Ironware`
 * **Contributor(s)**
   * [cterm:ObjectOfMaterial](https://w3id.org/cterm#ObjectOfMaterial)
-### Kitchens <sup>c</sup>
+### Küchen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Kitchens`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Kraft Paper <sup>c</sup>
+### Carta Kraft <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#KraftPaper`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Land <sup>c</sup>
+### Gelände <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Land`
 * **Contributor(s)**
   * [cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent)
-### Land/Slopes <sup>c</sup>
+### Gelände/Hänge <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#LandSlopes`
 * **Contributor(s)**
   * [cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent)
-### Verde E Paesaggio <sup>c</sup>
+### Landschaftsbau <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Landscaping`
 * **Contributor(s)**
   * [cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork)
-### Posa <sup>c</sup>
+### Laying <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Laying`
@@ -3074,19 +3074,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#Length`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### Stufe 1 <sup>c</sup>
+### livello 1° <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Level1`
 * **Contributor(s)**
   * [cterm:TypeOfLabour](https://w3id.org/cterm#TypeOfLabour)
-### livello 2° <sup>c</sup>
+### Stufe 2 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Level2`
 * **Contributor(s)**
   * [cterm:TypeOfLabour](https://w3id.org/cterm#TypeOfLabour)
-### livello 3° <sup>c</sup>
+### Stufe 3 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Level3`
@@ -3098,31 +3098,31 @@ Property | Value
 IRI | `https://w3id.org/cterm#LevelB1`
 * **Contributor(s)**
   * [cterm:TypeOfLabour](https://w3id.org/cterm#TypeOfLabour)
-### Stufe C1 <sup>c</sup>
+### livello C1 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#LevelC1`
 * **Contributor(s)**
   * [cterm:TypeOfLabour](https://w3id.org/cterm#TypeOfLabour)
-### Stufe C2 <sup>c</sup>
+### Level C2 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#LevelC2`
 * **Contributor(s)**
   * [cterm:TypeOfLabour](https://w3id.org/cterm#TypeOfLabour)
-### livello C3 <sup>c</sup>
+### Stufe C3 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#LevelC3`
 * **Contributor(s)**
   * [cterm:TypeOfLabour](https://w3id.org/cterm#TypeOfLabour)
-### livello D1 <sup>c</sup>
+### Stufe D1 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#LevelD1`
 * **Contributor(s)**
   * [cterm:TypeOfLabour](https://w3id.org/cterm#TypeOfLabour)
-### Level D2 <sup>c</sup>
+### livello D2 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#LevelD2`
@@ -3140,7 +3140,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Lime-SilicaMixMaterial`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Lintels <sup>c</sup>
+### Architravi <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Lintels`
@@ -3152,25 +3152,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#Load`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Tragend <sup>c</sup>
+### Load-Bearing <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Load-Bearing`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Load Class <sup>c</sup>
+### classe di carico <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#LoadClass`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Loose Mesh <sup>c</sup>
+### a maglia sciolta <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#LooseMesh`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Manutenzione <sup>c</sup>
+### Instandhaltung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Maintenance`
@@ -3182,7 +3182,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Manual`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Spietramento A Mano <sup>c</sup>
+### Manuelle Steinentfernung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ManualStoneRemoval`
@@ -3195,14 +3195,14 @@ IRI | `https://w3id.org/cterm#Masonry`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Strato Di Muratura <sup>c</sup>
+### Masonry Layer <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#MasonryLayer`
 * **Contributor(s)**
-  * [cterm:ObjectOfWorkOfConstructionWork](https://w3id.org/cterm#ObjectOfWorkOfConstructionWork)
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Matte Bronze Color <sup>c</sup>
+  * [cterm:ObjectOfWorkOfConstructionWork](https://w3id.org/cterm#ObjectOfWorkOfConstructionWork)
+### Mattbronze Farbe <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#MatteBronzeColor`
@@ -3226,25 +3226,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#Mesh`
 * **Contributor(s)**
   * [cterm:ObjectOfMaterial](https://w3id.org/cterm#ObjectOfMaterial)
-### Metallstütze <sup>c</sup>
+### puntello metallico <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#MetalProp`
 * **Contributor(s)**
   * [cterm:TypeOfEquipment](https://w3id.org/cterm#TypeOfEquipment)
-### metalmeccanici <sup>c</sup>
+### Metalworkers <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Metalworkers`
 * **Contributor(s)**
   * [cterm:CategoryOfLabour](https://w3id.org/cterm#CategoryOfLabour)
-### Mineral Fiber Fir Wool <sup>c</sup>
+### Fibra Minerale Lana Di Abete <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#MineralFiberFirWool`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Mineral Fiber Glass Wool <sup>c</sup>
+### Fibra Minerale Lana Di Vetro <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#MineralFiberGlassWool`
@@ -3299,14 +3299,14 @@ IRI | `https://w3id.org/cterm#MixedSlabwithDeepBeams`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
   * [cterm:UseOfWorkOfTemporaryWork](https://w3id.org/cterm#UseOfWorkOfTemporaryWork)
-### Mixed Slab with Deep Beams for Flat Structures <sup>c</sup>
+### solaio misto con travi in spessore per strutture piane <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#MixedSlabwithDeepBeamsforFlatStructures`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
   * [cterm:UseOfWorkOfTemporaryWork](https://w3id.org/cterm#UseOfWorkOfTemporaryWork)
-### Mixing <sup>c</sup>
+### Mischung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Mixing`
@@ -3342,44 +3342,44 @@ Property | Value
 IRI | `https://w3id.org/cterm#ModularFormwork`
 * **Contributor(s)**
   * [cterm:TypeOfEquipment](https://w3id.org/cterm#TypeOfEquipment)
-### Fibra Vegetale Sughero Biondo Naturale <sup>c</sup>
+### Natural Blond Cork Vegetable Fiber <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#NaturalBlondCorkVegetableFiber`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Net <sup>c</sup>
+### Netz <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Net`
 * **Contributor(s)**
   * [cterm:ObjectOfMaterial](https://w3id.org/cterm#ObjectOfMaterial)
-### Nominal Diameter <sup>c</sup>
+### Nennmaß-Durchmesser <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#NominalDiameter`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### Non-Combustible <sup>c</sup>
+### Nicht brennbar <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Non-Combustible`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
-### Allgemeines, nicht relevantes Material <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Non-Relevant Generic Material <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Non-RelevantGenericMaterial`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Non-Structural <sup>c</sup>
+### Nicht strukturell <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Non-Structural`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Non Heated Attics <sup>c</sup>
+### Sottotetti Non Riscaldati <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#NonHeatedAttics`
@@ -3391,25 +3391,31 @@ Property | Value
 IRI | `https://w3id.org/cterm#NonWalkableAttics`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Normale Farbe <sup>c</sup>
+### Normal Color <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#NormalColor`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Olivgraue Farbe <sup>c</sup>
+### Colore Grigio Oliva <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#OliveGrayColor`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### In Opera <sup>c</sup>
+### Omniclass <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cterm#Omniclass`
+* **Contributor(s)**
+  * [cterm:ClassificationSystem](https://w3id.org/cterm#ClassificationSystem)
+### Vor Ort <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#OnSite`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### One Coat <sup>c</sup>
+### Ein Anstrich <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#OneCoat`
@@ -3421,7 +3427,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Openings`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Orange Color <sup>c</sup>
+### colore arancione <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#OrangeColor`
@@ -3433,20 +3439,20 @@ Property | Value
 IRI | `https://w3id.org/cterm#Paint`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Pannello <sup>c</sup>
+### Paneel <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Panel`
 * **Contributor(s)**
   * [cterm:ObjectOfMaterial](https://w3id.org/cterm#ObjectOfMaterial)
-### Panels <sup>c</sup>
+### Pannelli <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Panels`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
   * [cterm:AspectOfWorkOfConstructionWork](https://w3id.org/cterm#AspectOfWorkOfConstructionWork)
-### Parapets for Straight Balconies in Reinforced Concrete <sup>c</sup>
+### Geländer für geradlinige Balkone aus Stahlbeton <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ParapetsforStraightBalconiesinReinforcedConcrete`
@@ -3458,19 +3464,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#Partial`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Teilweise sublimierend <sup>c</sup>
+### Parzialmente Sublimante <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PartiallySubliming`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Trennwand <sup>c</sup>
+### Partition <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Partition`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
-### controparete <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Vorsatzschale <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PartitionWall`
@@ -3482,25 +3488,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#PartitionWalls`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Contropareti Con Struttura Metallica <sup>c</sup>
+### Partition Walls With Metal Structure <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PartitionWallsWithMetalStructure`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Passage Width <sup>c</sup>
+### Durchgangsbreite <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PassageWidth`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### colore pastello <sup>c</sup>
+### Pastellfarbe <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PastelColor`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Intercapedini Perimetrali <sup>c</sup>
+### Perimeter Cavities <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PerimeterCavities`
@@ -3512,19 +3518,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#Perimeter_PartitionCavities`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### pali <sup>c</sup>
+### Piles <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Piles`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Säulen <sup>c</sup>
+### Pillars <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Pillars`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Colore Rosa <sup>c</sup>
+### Pink Color <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PinkColor`
@@ -3536,25 +3542,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#PipeClosures`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Copertura A Falde <sup>c</sup>
+### Pitched Roof <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PitchedRoof`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Coperture A Falde <sup>c</sup>
+### Pitched Roofs <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PitchedRoofs`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Coperture A Falde Con Tegole <sup>c</sup>
+### Pultdächer mit Dachziegeln <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PitchedRoofsWithShingles`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Pitched Roofs With Tiles <sup>c</sup>
+### Pultdächer mit Ziegeln <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PitchedRoofsWithTiles`
@@ -3566,19 +3572,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#Plasterboard`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Verputzt <sup>c</sup>
+### Plastered <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Plastered`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Stuccatura <sup>c</sup>
+### Verputzen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Plastering`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### plastificata <sup>c</sup>
+### Plastic-Coated <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Plastic-Coated`
@@ -3616,61 +3622,61 @@ Property | Value
 IRI | `https://w3id.org/cterm#Polished`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Polyamide Material <sup>c</sup>
+### materiale poliammidico <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PolyamideMaterial`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Carta Kraft Politenata <sup>c</sup>
+### Polyethylene Coated Kraft Paper <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PolyethyleneCoatedKraftPaper`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Polyethylene Plastic (PE) <sup>c</sup>
+### Polyethylen-Kunststoff (PE) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PolyethylenePlastic`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Polymeric Coating <sup>c</sup>
+### Polymerbeschichtung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PolymericCoating`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Polyolefins <sup>c</sup>
+### Poliolefine <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Polyolefins`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Pellicola Polipropilenica <sup>c</sup>
+### Polypropylene Film <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PolypropyleneFilm`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Strato Di Tessuto Non Tessuto Polipropilenico <sup>c</sup>
+### Polypropylene Nonwoven Fabric Layer <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PolypropyleneNonwovenFabricLayer`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Kunststoff Polyurethanschaum (PIR) <sup>c</sup>
+### Plastica Poliuretano Espanso (PIR) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PolyurethaneFoamPlastic`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### vernice poliuretanica <sup>c</sup>
+### Polyurethanlack <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PolyurethanePaint`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### passerella di getto <sup>c</sup>
+### Pouring Walkway <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PouringWalkway`
@@ -3682,27 +3688,27 @@ Property | Value
 IRI | `https://w3id.org/cterm#Power`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Pre-Tensioning <sup>c</sup>
+### precompressione <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Pre-Tensioning`
 * **Contributor(s)**
-  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Vorgefertigt <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Prefabricated <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Prefabricated`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Fertigteile für Betonstrukturen <sup>c</sup>
+### prefabbricati per strutture in cls <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PrefabricatedStructuresInConcrete`
 * **Contributor(s)**
   * [cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork)
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Pannelli Preformati <sup>c</sup>
+### Vorgeformte Paneele <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PreformedPanels`
@@ -3714,25 +3720,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#Preparations`
 * **Contributor(s)**
   * [cterm:FamilyOfEquipment](https://w3id.org/cterm#FamilyOfEquipment)
-### Pressure <sup>c</sup>
+### Druck <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Pressure`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Printed <sup>c</sup>
+### Stampato <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Printed`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Produktion <sup>c</sup>
+### Production <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Production`
 * **Contributor(s)**
   * [cterm:FamilyOfActivity](https://w3id.org/cterm#FamilyOfActivity)
-### prodotti <sup>c</sup>
+### Produkte <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Products`
@@ -3749,9 +3755,9 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Protection`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Provisional Elements <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### elementi provvisionali <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ProvisionalElements`
@@ -3763,13 +3769,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#Pultruded`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### resistenza a punzonamento <sup>c</sup>
+### Durchstoßfestigkeit <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PunchingResistance`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Pyramid Play Structure <sup>c</sup>
+### gioco piramide <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#PyramidPlayStructure`
@@ -3787,7 +3793,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#QualifiedSuper`
 * **Contributor(s)**
   * [cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel)
-### Materassino Trapuntato <sup>c</sup>
+### Quilted Mat <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#QuiltedMat`
@@ -3811,13 +3817,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#Rebar`
 * **Contributor(s)**
   * [cterm:ObjectOfMaterial](https://w3id.org/cterm#ObjectOfMaterial)
-### Pannelli A Bordi Risegati <sup>c</sup>
+### Rebated Edge Panels <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RebatedEdgePanels`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Ricostruzione <sup>c</sup>
+### Reconstruction <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Reconstruction`
@@ -3829,7 +3835,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Rectangular-SquareColumns`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
-### Rechteckige Pfeiler <sup>c</sup>
+### Rectangular Columns <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RectangularColumns`
@@ -3853,7 +3859,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Regeneration`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Standardtor <sup>c</sup>
+### Regulation Goal <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RegulationGoal`
@@ -3865,63 +3871,57 @@ Property | Value
 IRI | `https://w3id.org/cterm#Reinforced`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### Stahlbeton <sup>c</sup>
+### conglomerato cementizio armato <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ReinforcedConcrete`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Reinforced Concrete Structures <sup>c</sup>
+### strutture in conglomerato cementizio armato <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ReinforcedConcreteStructures`
 * **Contributor(s)**
-  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Reinforced Membrane With Glass Fiber <sup>c</sup>
+  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
+### Membrana Armata Con Velo Vetro <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ReinforcedMembraneWithGlassFiber`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Membrana Armata Con TNT Di Poliestere <sup>c</sup>
+### Reinforced Membrane With Polyester Nonwoven <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ReinforcedMembraneWithPolyesterNonwoven`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Membrana Armata Con Velo Vetro Ardesiata <sup>c</sup>
+### Reinforced Slate Glass Fiber Membrane <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ReinforcedSlateGlassFiberMembrane`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### rinforzo <sup>c</sup>
+### armatura <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Reinforcement`
 * **Contributor(s)**
   * [cterm:ObjectOfWorkOfConstructionWork](https://w3id.org/cterm#ObjectOfWorkOfConstructionWork)
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### armature e rinforzi <sup>c</sup>
+### Bewehrungen und Verstärkungen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ReinforcementsandStrengthening`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### ferri d'armatura <sup>c</sup>
+### Reinforcing Bars <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ReinforcingBars`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Reinforcment <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://w3id.org/cterm#Reinforcment`
-* **Contributor(s)**
-  * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Removal <sup>c</sup>
+### Rimozione <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Removal`
@@ -3933,19 +3933,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#Repair`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Sostituzione <sup>c</sup>
+### Ersatz <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Replacement`
 * **Contributor(s)**
   * [cterm:ObjectOfActivity](https://w3id.org/cterm#ObjectOfActivity)
-### Residences <sup>c</sup>
+### Wohngebiete <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Residences`
 * **Contributor(s)**
   * [cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent)
-### classe di resistenza <sup>c</sup>
+### Widerstandsklasse <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ResistanceClass`
@@ -3963,13 +3963,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#RetainingWalls`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Rhomboid Mesh <sup>c</sup>
+### Rautenförmiges Netz <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RhomboidMesh`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Ribbed <sup>c</sup>
+### nervata <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Ribbed`
@@ -3982,31 +3982,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#RibbedBars`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### Spigoli Ad Angolo Retto <sup>c</sup>
+### Rechte Winkelkanten <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RightAngleCorners`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Rigid <sup>c</sup>
+### Starr <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Rigid`
 * **Contributor(s)**
-  * [cterm:spectOfMaterial](https://w3id.org/cterm#spectOfMaterial)
+  * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
 ### Pannello Rigido <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RigidPanel`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Rigid Panels <sup>c</sup>
-Property | Value
---- | ---
-IRI | `https://w3id.org/cterm#RigidPanels`
-* **Contributor(s)**
-  * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Canali <sup>c</sup>
+### Flüsse <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Rivers`
@@ -4018,25 +4012,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#RoadBarriers`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Road Safety <sup>c</sup>
+### Straßensicherheit <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RoadSafety`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Straßenbau <sup>c</sup>
+### Road Works <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RoadWorks`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Roads <sup>c</sup>
+### Straßen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Roads`
 * **Contributor(s)**
   * [cterm:ObjectOfCostComponent](https://w3id.org/cterm#ObjectOfCostComponent)
-### Straßenbegleitgrün <sup>c</sup>
+### Roadside Green <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RoadsideGreen`
@@ -4048,7 +4042,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#RockfallBarriers`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### avvolgibile <sup>c</sup>
+### Rollbar <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Rolling`
@@ -4060,26 +4054,26 @@ Property | Value
 IRI | `https://w3id.org/cterm#RoofGarden`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Sotto Tavolati <sup>c</sup>
+### Dachschalung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RoofPanelling`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Coperture <sup>c</sup>
+### Roofing <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Roofing`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Roofs <sup>c</sup>
+### Bedachungen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Roofs`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Rough <sup>c</sup>
+### Ruvida <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Rough`
@@ -4092,13 +4086,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#Rough-Sandblasted`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### interpiano rustico <sup>c</sup>
+### Rough Floor Height <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RoughFloorHeight`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### Rau ohne Beschichtung <sup>c</sup>
+### Rough Without Skin <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RoughWithoutSkin`
@@ -4110,13 +4104,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#RubberCompound`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Gummibodenbelag <sup>c</sup>
+### pavimentazione in gomma <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#RubberFlooring`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### sabbiato <sup>c</sup>
+### Sandblasted <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Sandblasted`
@@ -4134,13 +4128,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#ScreedFormation`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Estrich <sup>c</sup>
+### Massetti <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Screeds`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Seams <sup>c</sup>
+### cuciture <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Seams`
@@ -4158,7 +4152,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Self-ErectingCranewithBottomSlewing`
 * **Contributor(s)**
   * [cterm:TypeOfEquipment](https://w3id.org/cterm#TypeOfEquipment)
-### Pannelli Autoportanti <sup>c</sup>
+### Self-Supporting Panels <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Self-SupportingPanels`
@@ -4176,19 +4170,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#Semi-Load-Bearing`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Halbsteife Platte <sup>c</sup>
+### Semi-Rigid Panel <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Semi-RigidPanel`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### apprestamenti <sup>c</sup>
+### Einrichtung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Setups`
 * **Contributor(s)**
   * [cterm:FamilyOfEquipment](https://w3id.org/cterm#FamilyOfEquipment)
-### Condotte/Fogna/Acquedotto <sup>c</sup>
+### Sewer/Water Pipes <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SewerWaterPipes`
@@ -4200,25 +4194,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#Shaped`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Seitenverschluss <sup>c</sup>
+### Chiusura Laterale <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SideClosure`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
-### Gehwege <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Sidewalks <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Sidewalks`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### struttura in conglomerato cementizio semplice <sup>c</sup>
+### Einfache Betonstruktur <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SimpleConcreteStructure`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Site Setup Systems <sup>c</sup>
+### sistemi di apprestamento di cantiere <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SitePreparationSystems`
@@ -4236,7 +4230,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Skin`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Slaked Lime <sup>c</sup>
+### calce grassello <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SlakedLime`
@@ -4248,7 +4242,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Sliding`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Glatt <sup>c</sup>
+### liscio <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Smooth`
@@ -4260,7 +4254,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#SmoothWithSkin`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Smoothed on Glass <sup>c</sup>
+### Auf Glas geglättet <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SmoothedonGlass`
@@ -4271,8 +4265,8 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Soil`
 * **Contributor(s)**
-  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
   * [cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork)
+  * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
 ### Soil Consolidation <sup>c</sup>
 Property | Value
@@ -4286,26 +4280,26 @@ Property | Value
 IRI | `https://w3id.org/cterm#SoilProtection`
 * **Contributor(s)**
   * [cterm:CategoryOfCostComponent](https://w3id.org/cterm#CategoryOfCostComponent)
-### Solid Brick-Stone-Mixed Masonry <sup>c</sup>
+### muratura in mattoni pieni-pietrame-miste <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SolidBrick-Stone-MixedMasonry`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### solai e solette piene in c.a. con travi a spessore <sup>c</sup>
+### Vollbetonböden und -platten mit Balken in der Dicke <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SolidSlabsandFloorsinReinforcedConcretewithDeepBeams`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
   * [cterm:UseOfWorkOfTemporaryWork](https://w3id.org/cterm#UseOfWorkOfTemporaryWork)
-### Schalldämpfend <sup>c</sup>
+### Fonoassorbente <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SoundAbsorbing`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
-### Schallabsorption <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Sound Absorption <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SoundAbsorption`
@@ -4316,20 +4310,20 @@ Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Soundproof`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
-### Special Mortars (Rubber Granules, Polyurethane Resins, etc.) <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Spezialmörtel (Gummigranulat, Polyurethanharze etc.) <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SpecialMortars`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
-### Facharbeiter <sup>c</sup>
+### Specialized <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Specialized`
 * **Contributor(s)**
   * [cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel)
-### specializzato super <sup>c</sup>
+### Specialized Super <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SpecializedSuper`
@@ -4341,19 +4335,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#SpecializedSuper-TeamLeader`
 * **Contributor(s)**
   * [cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel)
-### tecnico specialistico per lavorazioni ICT <sup>c</sup>
+### ICT-Spezialist <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SpecializedTechnicianforICTWork`
 * **Contributor(s)**
   * [cterm:QualificationLevel](https://w3id.org/cterm#QualificationLevel)
-### Spezifisches Gewicht <sup>c</sup>
+### peso specifico <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SpecificWeight`
 * **Contributor(s)**
   * [cterm:PhysicalParameterType](https://w3id.org/cterm#PhysicalParameterType)
-### attrezzature sport <sup>c</sup>
+### Sportgeräte <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SportsEquipment`
@@ -4365,7 +4359,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#SportsFlooring`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### A Spruzzo <sup>c</sup>
+### Spray <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Spray`
@@ -4383,37 +4377,43 @@ Property | Value
 IRI | `https://w3id.org/cterm#Square`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Quadratisches Netz <sup>c</sup>
+### Square Mesh <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SquareMesh`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
+### StLB <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cterm#StLB`
+* **Contributor(s)**
+  * [cterm:ClassificationSystem](https://w3id.org/cterm#ClassificationSystem)
 ### Stabilisierte Bodenbeläge <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#StabilizedEarthCarpets`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### inox <sup>c</sup>
+### Stainless <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Stainless`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Edelstahllegierung <sup>c</sup>
+### Stainless Steel Alloy <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#StainlessSteelAlloy`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Edelstahllegierung AISI 304 <sup>c</sup>
+### lega ferrosa acciaio inox AISI 304 <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#StainlessSteelAlloyAISI304`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Stainless Steel Alloy AISI 304l <sup>c</sup>
+### lega ferrosa acciaio inox AISI 304l <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#StainlessSteelAlloyAISI304l`
@@ -4425,25 +4425,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#StainlessSteelAlloyAISI316L`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Staircase-Elevator Shaft Walls <sup>c</sup>
+### murature vani scala-ascensori <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Staircase-ElevatorShaftWalls`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### cucitura <sup>c</sup>
+### Stitching <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Stitching`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Stone Removal <sup>c</sup>
+### Steinentfernung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#StoneRemoval`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Straight-Curved Axis <sup>c</sup>
+### Gerade-Gebogene Achse <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Straight-CurvedAxis`
@@ -4461,7 +4461,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#StraightEdgePanels`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### pianerottoli e rampe scale rettilinei <sup>c</sup>
+### Gerade Treppenabsätze und Rampen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#StraightStairLandingsandRamps`
@@ -4473,19 +4473,19 @@ Property | Value
 IRI | `https://w3id.org/cterm#StraightStairLandingsandRampsinReinforcedConcrete`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
-### Litze <sup>c</sup>
+### trefolo <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Strand`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Litzen <sup>c</sup>
+### Strands <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Strands`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### Stringcourses <sup>c</sup>
+### Randsteine <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Stringcourses`
@@ -4497,13 +4497,13 @@ Property | Value
 IRI | `https://w3id.org/cterm#Structural`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Structural Engineering <sup>c</sup>
+### Tragwerksplanung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#StructuralEngineering`
 * **Contributor(s)**
   * [cterm:FamilyOfWork](https://w3id.org/cterm#FamilyOfWork)
-### Strukturelle Verstärkung <sup>c</sup>
+### Structural Reinforcement <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#StructuralReinforcement`
@@ -4521,7 +4521,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Structure`
 * **Contributor(s)**
   * [cterm:ObjectOfWorkOfConstructionWork](https://w3id.org/cterm#ObjectOfWorkOfConstructionWork)
-### sottofondazione <sup>c</sup>
+### Subfoundation <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Subfoundation`
@@ -4533,31 +4533,31 @@ Property | Value
 IRI | `https://w3id.org/cterm#SuspendedCeilings`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Synthetic Acrylic Resin <sup>c</sup>
+### resina sintetica acrilica <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SyntheticAcrylicResin`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### conglomerato sintetico <sup>c</sup>
+### Synthetic Compound <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SyntheticCompound`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### gomma sintetica <sup>c</sup>
+### Synthetischer Gummi <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#SyntheticRubber`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### sistemi <sup>c</sup>
+### Systeme <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Systems`
 * **Contributor(s)**
   * [cterm:CategoryOfMaterial](https://w3id.org/cterm#CategoryOfMaterial)
-### T-Kopf <sup>c</sup>
+### T-Head <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#T-Head`
@@ -4575,25 +4575,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#TableTennis`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### recinzioni provvisorie <sup>c</sup>
+### Temporäre Zäune <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#TemporaryFences`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Zugfestigkeit <sup>c</sup>
+### resistenza a trazione <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#TensileStrength`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Resistenza A Trazione Perpendicolare Alle Facce <sup>c</sup>
+### Tensile Strength Perpendicular To Faces <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#TensileStrengthPerpendicularToFaces`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Abspannung <sup>c</sup>
+### tirantatura <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Tensioning`
@@ -4605,50 +4605,50 @@ Property | Value
 IRI | `https://w3id.org/cterm#TerminalHydraulicSystems`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Terrassen <sup>c</sup>
+### terrazze <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Terraces`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Thermal <sup>c</sup>
+### Termico <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Thermal`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### Wärmebrücken <sup>c</sup>
+### Thermal Bridges <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ThermalBridges`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Conducibilità Termica <sup>c</sup>
+### Thermal Conductivity <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ThermalConductivity`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Thermal Insulating <sup>c</sup>
+### Wärmedämmend <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ThermalInsulating`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### Thermal Insulating and Sound Absorbing Partition Wall <sup>c</sup>
+### controparete termoisolante-fonoassorbente <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ThermalInsulatingandSoundAbsorbingPartitionWall`
 * **Contributor(s)**
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Isolamento Termico <sup>c</sup>
+### Termoisolante <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ThermalInsulation`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### resistenza termica <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Wärmewiderstand <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ThermalResistance`
@@ -4660,7 +4660,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Thermal_Acoustic`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### spessore <sup>c</sup>
+### Spessore <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Thickness`
@@ -4672,7 +4672,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#Threaded`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### Dreidimensionales Geflechtseil <sup>c</sup>
+### tridimensionale a funi intrecciate <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#ThreeDimensionalBraidedRope`
@@ -4690,7 +4690,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#TongueAndGroovePanels`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Oben drehender Turmkran <sup>c</sup>
+### gru a torre a rotazione in alto <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Top-SlewingTowerCrane`
@@ -4702,7 +4702,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#TotalThickness`
 * **Contributor(s)**
   * [cterm:DimensionParameterType](https://w3id.org/cterm#DimensionParameterType)
-### Turmdrehkran an der Oberseite <sup>c</sup>
+### Tower crane rotating at the top <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#TowerCraneRotatingAtTheTop`
@@ -4714,7 +4714,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#TowerCranes`
 * **Contributor(s)**
   * [cterm:ObjectOfEquipment](https://w3id.org/cterm#ObjectOfEquipment)
-### Traditional <sup>c</sup>
+### tradizionale <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Traditional`
@@ -4738,49 +4738,73 @@ Property | Value
 IRI | `https://w3id.org/cterm#Truck-MountedPump`
 * **Contributor(s)**
   * [cterm:TypeOfEquipment](https://w3id.org/cterm#TypeOfEquipment)
-### Truck with Crane <sup>c</sup>
+### Fahrmischer <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cterm#TruckMixer`
+* **Contributor(s)**
+  * [cterm:Furnishing](https://w3id.org/cterm#Furnishing)
+### Autocarro con gru <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#TruckwithCrane`
 * **Contributor(s)**
   * [cterm:TypeOfEquipment](https://w3id.org/cterm#TypeOfEquipment)
-### Fachwerk <sup>c</sup>
+### traliccio <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Truss`
 * **Contributor(s)**
   * [cterm:TypeOfWorkOfConstructionWork](https://w3id.org/cterm#TypeOfWorkOfConstructionWork)
-### Due Mani <sup>c</sup>
+### Zwei Anstriche <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#TwoCoats`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Due Riprese <sup>c</sup>
+### Two Layers <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#TwoLayers`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Unterfangungen <sup>c</sup>
+### UNI8290 <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cterm#UNI8290`
+* **Contributor(s)**
+  * [cterm:ClassificationSystem](https://w3id.org/cterm#ClassificationSystem)
+### Underpinnings <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Underpinnings`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Urban Green <sup>c</sup>
+### Uniclass <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cterm#Uniclass`
+* **Contributor(s)**
+  * [cterm:ClassificationSystem](https://w3id.org/cterm#ClassificationSystem)
+### Uniformat <sup>c</sup>
+Property | Value
+--- | ---
+IRI | `https://w3id.org/cterm#Uniformat`
+* **Contributor(s)**
+  * [cterm:ClassificationSystem](https://w3id.org/cterm#ClassificationSystem)
+### Stadtgrün <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#UrbanGreen`
 * **Contributor(s)**
   * [cterm:CategoryOfCostComponent](https://w3id.org/cterm#CategoryOfCostComponent)
-### Verschiedene Strukturen <sup>c</sup>
+### strutture varie <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#VariousStructures`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Formazione Vespai Aerati <sup>c</sup>
+### Verlegung von Hohlkörpern zur Belüftung <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#VentilatedCrawlSpaceFormation`
@@ -4792,20 +4816,20 @@ Property | Value
 IRI | `https://w3id.org/cterm#VentilatedFacade`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Belüftetes Pultdach <sup>c</sup>
+### Copertura Ventilata A Falde <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#VentilatedPitchedRoof`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Belüftung <sup>c</sup>
+### Ventilazione <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Ventilation`
 * **Contributor(s)**
-  * [cterm:FunctionOfMateriaResource](https://w3id.org/cterm#FunctionOfMateriaResource)
   * [cterm:FunctionOfWorkOfConstructionWork](https://w3id.org/cterm#FunctionOfWorkOfConstructionWork)
-### Vertical Structures <sup>c</sup>
+  * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
+### Vertikale Strukturen <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#VerticalStructures`
@@ -4823,7 +4847,7 @@ Property | Value
 IRI | `https://w3id.org/cterm#VolumetricMass`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Fibra Minerale Lana Di Roccia Vulcanizzata <sup>c</sup>
+### Vulcanized Rock Wool <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#VulcanizedRockWool`
@@ -4835,63 +4859,63 @@ Property | Value
 IRI | `https://w3id.org/cterm#VulcanizedRubber`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Walkable Attics <sup>c</sup>
+### Sottotetti Praticabili <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WalkableAttics`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### parete-soffitto <sup>c</sup>
+### Wall-Ceiling <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Wall-Ceiling`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Wall Systems <sup>c</sup>
+### sistemi murari <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WallSystems`
 * **Contributor(s)**
   * [cterm:CategoryOfWorkOfTemporaryWork](https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork)
-### Walls <sup>c</sup>
+### Pareti <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Walls`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Walls With Insulated Plaster System <sup>c</sup>
+### Pareti Con Sistema A Cappotto <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WallsWithInsulatedPlasterSystem`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Wände für Treppen- und Aufzugsschächte <sup>c</sup>
+### Walls for Staircases and Elevators <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WallsforStaircasesandElevators`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
   * [cterm:UseOfWorkOfTemporaryWork](https://w3id.org/cterm#UseOfWorkOfTemporaryWork)
-### pareti in elevazione <sup>c</sup>
+### Wände in Höhe <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WallsinElevation`
 * **Contributor(s)**
   * [cterm:UseOfEquipment](https://w3id.org/cterm#UseOfEquipment)
   * [cterm:UseOfWorkOfTemporaryWork](https://w3id.org/cterm#UseOfWorkOfTemporaryWork)
-### Wasserabweisend <sup>c</sup>
+### Idrorepellente <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WaterRepellent`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Resistenza Alla Diffusione Del Vapore Acqueo <sup>c</sup>
+### Wasserdampfdiffusionswiderstand <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WaterVaporDiffusionResistance`
 * **Contributor(s)**
   * [cterm:PerformanceParameterType](https://w3id.org/cterm#PerformanceParameterType)
-### Waterproof <sup>c</sup>
+### Wasserdicht <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Waterproof`
@@ -4903,49 +4927,49 @@ Property | Value
 IRI | `https://w3id.org/cterm#Waterproofing`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Gewellt <sup>c</sup>
+### Ondulata <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Wavy`
 * **Contributor(s)**
   * [cterm:AspectOfMaterial](https://w3id.org/cterm#AspectOfMaterial)
-### Verschleißfest <sup>c</sup>
+### Resistente All'Usura <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Wear-Resistant`
 * **Contributor(s)**
   * [cterm:FunctionOfMaterial](https://w3id.org/cterm#FunctionOfMaterial)
-### strato di usura <sup>c</sup>
+### Wearing Layer <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WearingLayer`
 * **Contributor(s)**
   * [cterm:UseOfMaterial](https://w3id.org/cterm#UseOfMaterial)
-### Gewicht <sup>c</sup>
+### Peso <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Weight`
 * **Contributor(s)**
   * [cterm:PhysicalParameterType](https://w3id.org/cterm#PhysicalParameterType)
-### Welded <sup>c</sup>
+### Elettrosaldato <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Welded`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### White <sup>c</sup>
+### Bianco <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#White`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Colore Bianco <sup>c</sup>
+### White Color <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WhiteColor`
 * **Contributor(s)**
   * [cterm:FinishingOfMaterial](https://w3id.org/cterm#FinishingOfMaterial)
-### Width <sup>c</sup>
+### Breite <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Width`
@@ -4963,31 +4987,31 @@ Property | Value
 IRI | `https://w3id.org/cterm#WindowsAndDoors`
 * **Contributor(s)**
   * [cterm:FamilyOfMaterial](https://w3id.org/cterm#FamilyOfMaterial)
-### Wire <sup>c</sup>
+### Filo <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Wire`
 * **Contributor(s)**
   * [cterm:TypeOfMaterial](https://w3id.org/cterm#TypeOfMaterial)
-### con gru <sup>c</sup>
+### With Crane <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WithCrane`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### With Manual Equipment <sup>c</sup>
+### Mit Handgerät <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WithManualEquipment`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Con Mezzo Meccanico E Manuale <sup>c</sup>
+### Mit Mechanischen Und Manuellen Mitteln <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WithMechanicalAndManualMeans`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Mit Mechanischen Mitteln <sup>c</sup>
+### Con Mezzo Meccanico <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WithMechanicalMeans`
@@ -4999,25 +5023,25 @@ Property | Value
 IRI | `https://w3id.org/cterm#WithPump`
 * **Contributor(s)**
   * [cterm:TypeOfActivity](https://w3id.org/cterm#TypeOfActivity)
-### Wood Vegetable Fiber <sup>c</sup>
+### Holzpflanzenfaser <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WoodVegetableFiber`
 * **Contributor(s)**
   * [cterm:Material](https://w3id.org/cterm#Material)
-### Lana Di Legno <sup>c</sup>
+### Wood Wool <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WoodWool`
 * **Contributor(s)**
   * [cterm:FinishingOfWorkOfConstructionWork](https://w3id.org/cterm#FinishingOfWorkOfConstructionWork)
-### Holzstrukturen <sup>c</sup>
+### Wooden Structures <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#WoodenStructures`
 * **Contributor(s)**
   * [cterm:UseOfWorkOfConstructionWork](https://w3id.org/cterm#UseOfWorkOfConstructionWork)
-### Worker <sup>c</sup>
+### Operaio <sup>c</sup>
 Property | Value
 --- | ---
 IRI | `https://w3id.org/cterm#Worker`
