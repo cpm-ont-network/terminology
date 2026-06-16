@@ -447,7 +447,7 @@
       "iri" : "https://w3id.org/cterm#Modification",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Änderung",
+        "de" : "ï¿½nderung",
         "IRI-based" : "Modification",
         "en" : "Modification",
         "it" : "Modifica"
@@ -562,7 +562,7 @@
       "iri" : "https://w3id.org/cterm#TwoLayers",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Zwei Durchgänge",
+        "de" : "Zwei Durchgï¿½nge",
         "IRI-based" : "TwoLayers",
         "en" : "Two Layers",
         "it" : "Due Riprese"
@@ -571,7 +571,7 @@
       "iri" : "https://w3id.org/cterm#Complete",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Vollständig",
+        "de" : "Vollstï¿½ndig",
         "IRI-based" : "Complete",
         "en" : "Complete",
         "it" : "Totale"
@@ -607,7 +607,7 @@
       "iri" : "https://w3id.org/cterm#FrontWithDoor",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Front mit Tür",
+        "de" : "Front mit Tï¿½r",
         "IRI-based" : "FrontWithDoor",
         "en" : "Front With Door",
         "it" : "Frontale Con Porta"
@@ -661,7 +661,7 @@
       "iri" : "https://w3id.org/cterm#WithManualEquipment",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Mit Handgerät",
+        "de" : "Mit Handgerï¿½t",
         "IRI-based" : "WithManualEquipment",
         "en" : "With Manual Equipment",
         "it" : "Con Attrezzatura Manuale"
@@ -724,7 +724,7 @@
       "iri" : "https://w3id.org/cterm#Spray",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gesprüht",
+        "de" : "Gesprï¿½ht",
         "IRI-based" : "Spray",
         "en" : "Spray",
         "it" : "A Spruzzo"
@@ -754,7 +754,7 @@
       "iri" : "https://w3id.org/cterm#Fluid",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Flüssig",
+        "de" : "Flï¿½ssig",
         "IRI-based" : "Fluid",
         "en" : "Fluid",
         "it" : "fluido"
@@ -817,7 +817,7 @@
       "iri" : "https://w3id.org/cterm#FiveHoles",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "5 Löcher",
+        "de" : "5 Lï¿½cher",
         "IRI-based" : "FiveHoles",
         "en" : "5 Holes",
         "it" : "5 fori"
@@ -970,7 +970,7 @@
       "iri" : "https://w3id.org/cterm#RhomboidMesh",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Rautenförmiges Netz",
+        "de" : "Rautenfï¿½rmiges Netz",
         "IRI-based" : "RhomboidMesh",
         "en" : "Rhomboid Mesh",
         "it" : "maglie romboidali"
@@ -1027,7 +1027,7 @@
       "iri" : "https://w3id.org/cterm#Roads",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Straßen",
+        "de" : "Straï¿½en",
         "IRI-based" : "Roads",
         "en" : "Roads",
         "it" : "Strade"
@@ -1045,7 +1045,7 @@
       "iri" : "https://w3id.org/cterm#LandSlopes",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gelände/Hänge",
+        "de" : "Gelï¿½nde/Hï¿½nge",
         "IRI-based" : "LandSlopes",
         "en" : "Land/Slopes",
         "it" : "Terreno/Versanti"
@@ -1063,7 +1063,7 @@
       "iri" : "https://w3id.org/cterm#Land",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gelände",
+        "de" : "Gelï¿½nde",
         "IRI-based" : "Land",
         "en" : "Land",
         "it" : "Terreno"
@@ -1099,7 +1099,7 @@
       "iri" : "https://w3id.org/cterm#RoadsideGreen",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Straßenbegleitgrün",
+        "de" : "Straï¿½enbegleitgrï¿½n",
         "IRI-based" : "RoadsideGreen",
         "en" : "Roadside Green",
         "it" : "Verde Stradale"
@@ -1108,7 +1108,7 @@
       "iri" : "https://w3id.org/cterm#GreenAreas",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Parks/Gärten/Grünflächen",
+        "de" : "Parks/Gï¿½rten/Grï¿½nflï¿½chen",
         "IRI-based" : "GreenAreas",
         "en" : "Parks/Gardens/Green Areas",
         "it" : "Parchi/Giardini/Aree Verdi"
@@ -1117,7 +1117,7 @@
       "iri" : "https://w3id.org/cterm#Rivers",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Flüsse",
+        "de" : "Flï¿½sse",
         "IRI-based" : "Rivers",
         "en" : "Rivers",
         "it" : "Canali"
@@ -1126,7 +1126,7 @@
       "iri" : "https://w3id.org/cterm#Green_Forest",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gün/Wald",
+        "de" : "Gï¿½n/Wald",
         "IRI-based" : "Green_Forest",
         "en" : "Green/Forest",
         "it" : "Verde Boschivo/Forestale"
@@ -1136,12 +1136,12 @@
     "id" : "23",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/cterm#FamilyOfLabour",
+    "iri" : "https://w3id.org/cterm#FamilyOfLabor",
     "baseIri" : "https://w3id.org/cterm",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "FamilyOfLabour",
-      "undefined" : "Family of labour"
+      "IRI-based" : "FamilyOfLabor",
+      "undefined" : "Family of labor"
     },
     "individuals" : [ {
       "iri" : "https://w3id.org/cterm#Agriculture",
@@ -1204,7 +1204,7 @@
       "iri" : "https://w3id.org/cterm#Furniture",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Möbel",
+        "de" : "Mï¿½bel",
         "IRI-based" : "Furniture",
         "en" : "Furniture",
         "it" : "Arredo"
@@ -1213,7 +1213,7 @@
       "iri" : "https://w3id.org/cterm#MechanicalEngineering",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gebäudeausrüstung",
+        "de" : "Gebï¿½udeausrï¿½stung",
         "IRI-based" : "MechanicalEngineering",
         "en" : "Mechanical Engineering",
         "it" : "Ingegneria Meccanica"
@@ -1240,7 +1240,7 @@
       "iri" : "https://w3id.org/cterm#PrefabricatedStructuresInConcrete",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Fertigteile für Betonstrukturen",
+        "de" : "Fertigteile fï¿½r Betonstrukturen",
         "IRI-based" : "PrefabricatedStructuresInConcrete",
         "en" : "Prefabricated Structures in Concrete",
         "it" : "prefabbricati per strutture in cls"
@@ -1317,7 +1317,7 @@
       "iri" : "https://w3id.org/cterm#Bags",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Säcke",
+        "de" : "Sï¿½cke",
         "IRI-based" : "Bags",
         "en" : "Bags",
         "it" : "sacchi"
@@ -1387,7 +1387,7 @@
       "iri" : "https://w3id.org/cterm#SolidSlabsandFloorsinReinforcedConcretewithDeepBeams",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Vollbetonböden und -platten mit Balken in der Dicke",
+        "de" : "Vollbetonbï¿½den und -platten mit Balken in der Dicke",
         "IRI-based" : "SolidSlabsandFloorsinReinforcedConcretewithDeepBeams",
         "en" : "Solid Slabs and Floors in Reinforced Concrete with Deep Beams",
         "it" : "solai e solette piene in c.a. con travi a spessore"
@@ -1423,7 +1423,7 @@
       "iri" : "https://w3id.org/cterm#WallsforStaircasesandElevators",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wände für Treppen- und Aufzugsschächte",
+        "de" : "Wï¿½nde fï¿½r Treppen- und Aufzugsschï¿½chte",
         "IRI-based" : "WallsforStaircasesandElevators",
         "en" : "Walls for Staircases and Elevators",
         "it" : "Pareti per Vani Scala e Ascensori"
@@ -1432,7 +1432,7 @@
       "iri" : "https://w3id.org/cterm#StraightStairLandingsandRampsinReinforcedConcrete",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gerade Treppenabsätze und Rampen in Stahlbeton",
+        "de" : "Gerade Treppenabsï¿½tze und Rampen in Stahlbeton",
         "IRI-based" : "StraightStairLandingsandRampsinReinforcedConcrete",
         "en" : "Straight Stair Landings and Ramps in Reinforced Concrete",
         "it" : "pianerottoli e rampe scale rettilinei in c.a."
@@ -1441,7 +1441,7 @@
       "iri" : "https://w3id.org/cterm#MixedSlabwithDeepBeamsforFlatStructures",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Mischdecke mit Balken in der Dicke für flache Strukturen",
+        "de" : "Mischdecke mit Balken in der Dicke fï¿½r flache Strukturen",
         "IRI-based" : "MixedSlabwithDeepBeamsforFlatStructures",
         "en" : "Mixed Slab with Deep Beams for Flat Structures",
         "it" : "solaio misto con travi in spessore per strutture piane"
@@ -1477,7 +1477,7 @@
       "iri" : "https://w3id.org/cterm#SpecialMortars",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Spezialmörtel (Gummigranulat, Polyurethanharze etc.)",
+        "de" : "Spezialmï¿½rtel (Gummigranulat, Polyurethanharze etc.)",
         "IRI-based" : "SpecialMortars",
         "en" : "Special Mortars (Rubber Granules, Polyurethane Resins, etc.)",
         "it" : "malte speciali (granuli di gomma, resine poliuretaiche e simili)"
@@ -1486,7 +1486,7 @@
       "iri" : "https://w3id.org/cterm#ParapetsforStraightBalconiesinReinforcedConcrete",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Geländer für geradlinige Balkone aus Stahlbeton",
+        "de" : "Gelï¿½nder fï¿½r geradlinige Balkone aus Stahlbeton",
         "IRI-based" : "ParapetsforStraightBalconiesinReinforcedConcrete",
         "en" : "Parapets for Straight Balconies in Reinforced Concrete",
         "it" : "parapetti per balconi rettilinei in conglomerato cementizio armato"
@@ -1504,7 +1504,7 @@
       "iri" : "https://w3id.org/cterm#CurvedWallsinElevation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Geschwungene Wände in Höhe",
+        "de" : "Geschwungene Wï¿½nde in Hï¿½he",
         "IRI-based" : "CurvedWallsinElevation",
         "en" : "Curved Walls in Elevation",
         "it" : "pareti curvilinee in elevazione"
@@ -1513,7 +1513,7 @@
       "iri" : "https://w3id.org/cterm#WallsinElevation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wände in Höhe",
+        "de" : "Wï¿½nde in Hï¿½he",
         "IRI-based" : "WallsinElevation",
         "en" : "Walls in Elevation",
         "it" : "Pareti in Elevazione"
@@ -1523,12 +1523,12 @@
     "id" : "31",
     "superClasses" : [ "24" ]
   }, {
-    "iri" : "https://w3id.org/cterm#ObjectOfLabour",
+    "iri" : "https://w3id.org/cterm#ObjectOfLabor",
     "baseIri" : "https://w3id.org/cterm",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "ObjectOfLabour",
-      "undefined" : "Object of labour"
+      "IRI-based" : "ObjectOfLabor",
+      "undefined" : "Object of labor"
     },
     "individuals" : [ {
       "iri" : "https://w3id.org/cterm#Worker",
@@ -1700,7 +1700,7 @@
       "iri" : "https://w3id.org/cterm#SmoothedonGlass",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Auf Glas geglättet",
+        "de" : "Auf Glas geglï¿½ttet",
         "IRI-based" : "SmoothedonGlass",
         "en" : "Smoothed on Glass",
         "it" : "rasato su vetro"
@@ -1751,7 +1751,7 @@
       "iri" : "https://w3id.org/cterm#CoatedwithFireproofMortar",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Mit Brandschutzmörtel beschichtet",
+        "de" : "Mit Brandschutzmï¿½rtel beschichtet",
         "IRI-based" : "CoatedwithFireproofMortar",
         "en" : "Coated with Fireproof Mortar",
         "it" : "rivestito con malta antincendio"
@@ -1803,7 +1803,7 @@
       "iri" : "https://w3id.org/cterm#Colored",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gefärbt",
+        "de" : "Gefï¿½rbt",
         "IRI-based" : "Colored",
         "en" : "Colored",
         "it" : "colorato"
@@ -2207,7 +2207,7 @@
       "iri" : "https://w3id.org/cterm#NaturalBlondCorkVegetableFiber",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Natürliche blonde Korkpflanzenfaser",
+        "de" : "Natï¿½rliche blonde Korkpflanzenfaser",
         "IRI-based" : "NaturalBlondCorkVegetableFiber",
         "en" : "Natural Blond Cork Vegetable Fiber",
         "it" : "Fibra Vegetale Sughero Biondo Naturale"
@@ -2366,7 +2366,7 @@
       "iri" : "https://w3id.org/cterm#SlakedLime",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Löschkalk",
+        "de" : "Lï¿½schkalk",
         "IRI-based" : "SlakedLime",
         "en" : "Slaked Lime",
         "it" : "calce grassello"
@@ -2386,7 +2386,7 @@
       "labels" : {
         "IRI-based" : "HighDensityRockWool",
         "en" : "High Density Rock Wool",
-        "it" : "Fibra Minerale Lana Di Roccia Ad Alta Densità"
+        "it" : "Fibra Minerale Lana Di Roccia Ad Alta Densitï¿½"
       }
     }, {
       "iri" : "https://w3id.org/cterm#Lime-SilicaMixMaterial",
@@ -2555,7 +2555,7 @@
       "iri" : "https://w3id.org/cterm#Insulation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Dämmstoff",
+        "de" : "Dï¿½mmstoff",
         "IRI-based" : "Insulation",
         "en" : "Insulation",
         "it" : "Coibentazione"
@@ -2573,7 +2573,7 @@
       "iri" : "https://w3id.org/cterm#ThermalInsulatingandSoundAbsorbingPartitionWall",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wärmedämmende und schallabsorbierende Vorsatzschale",
+        "de" : "Wï¿½rmedï¿½mmende und schallabsorbierende Vorsatzschale",
         "IRI-based" : "ThermalInsulatingandSoundAbsorbingPartitionWall",
         "en" : "Thermal Insulating and Sound Absorbing Partition Wall",
         "it" : "controparete termoisolante-fonoassorbente"
@@ -2600,7 +2600,7 @@
       "iri" : "https://w3id.org/cterm#Ventilation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Belüftung",
+        "de" : "Belï¿½ftung",
         "IRI-based" : "Ventilation",
         "en" : "Ventilation",
         "it" : "Ventilazione"
@@ -2609,7 +2609,7 @@
       "iri" : "https://w3id.org/cterm#Filling",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Verfüllung",
+        "de" : "Verfï¿½llung",
         "IRI-based" : "Filling",
         "en" : "Filling",
         "it" : "tamponamento"
@@ -2627,7 +2627,7 @@
       "iri" : "https://w3id.org/cterm#ThermalInsulation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wärmedämmung",
+        "de" : "Wï¿½rmedï¿½mmung",
         "IRI-based" : "ThermalInsulation",
         "en" : "Thermal Insulation",
         "it" : "Termoisolante"
@@ -2672,7 +2672,7 @@
       "iri" : "https://w3id.org/cterm#VentilatedCrawlSpaceFormation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Verlegung von Hohlkörpern zur Belüftung",
+        "de" : "Verlegung von Hohlkï¿½rpern zur Belï¿½ftung",
         "IRI-based" : "VentilatedCrawlSpaceFormation",
         "en" : "Ventilated Hollow Space Formation",
         "it" : "Formazione Vespai Aerati"
@@ -2681,7 +2681,7 @@
       "iri" : "https://w3id.org/cterm#PipeClosures",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Verschlüsse für Rohre",
+        "de" : "Verschlï¿½sse fï¿½r Rohre",
         "IRI-based" : "PipeClosures",
         "en" : "Pipe Closures",
         "it" : "chiusure canne"
@@ -2708,7 +2708,7 @@
       "iri" : "https://w3id.org/cterm#Seams",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Nähte",
+        "de" : "Nï¿½hte",
         "IRI-based" : "Seams",
         "en" : "Seams",
         "it" : "cuciture"
@@ -2756,12 +2756,12 @@
     "id" : "16",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/cterm#TypeOfLabour",
+    "iri" : "https://w3id.org/cterm#TypeOfLabor",
     "baseIri" : "https://w3id.org/cterm",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "TypeOfLabour",
-      "undefined" : "Type of labour"
+      "IRI-based" : "TypeOfLabor",
+      "undefined" : "Type of labor"
     },
     "individuals" : [ {
       "iri" : "https://w3id.org/cterm#Level3",
@@ -2770,7 +2770,7 @@
         "de" : "Stufe 3",
         "IRI-based" : "Level3",
         "en" : "Level 3",
-        "it" : "livello 3°"
+        "it" : "livello 3ï¿½"
       }
     }, {
       "iri" : "https://w3id.org/cterm#LevelD2",
@@ -2815,7 +2815,7 @@
         "de" : "Stufe 1",
         "IRI-based" : "Level1",
         "en" : "Level 1",
-        "it" : "livello 1°"
+        "it" : "livello 1ï¿½"
       }
     }, {
       "iri" : "https://w3id.org/cterm#LevelB1",
@@ -2842,7 +2842,7 @@
         "de" : "Stufe 2",
         "IRI-based" : "Level2",
         "en" : "Level 2",
-        "it" : "livello 2°"
+        "it" : "livello 2ï¿½"
       }
     } ],
     "attributes" : [ "external" ],
@@ -2882,7 +2882,7 @@
       "iri" : "https://w3id.org/cterm#RetainingWalls",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Stützwände",
+        "de" : "Stï¿½tzwï¿½nde",
         "IRI-based" : "RetainingWalls",
         "en" : "Retaining Walls",
         "it" : "Pareti Controterra"
@@ -2891,7 +2891,7 @@
       "iri" : "https://w3id.org/cterm#Floor",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Fußboden",
+        "de" : "Fuï¿½boden",
         "IRI-based" : "Floor",
         "en" : "Floor",
         "it" : "Pavimento"
@@ -2900,7 +2900,7 @@
       "iri" : "https://w3id.org/cterm#VerticalSurfaces",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Vertikale Flächen",
+        "de" : "Vertikale Flï¿½chen",
         "IRI-based" : "VerticalSurfaces",
         "en" : "Vertical Surfaces",
         "it" : "superfici verticali"
@@ -2927,7 +2927,7 @@
       "iri" : "https://w3id.org/cterm#ExternalWalls",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Außenwände",
+        "de" : "Auï¿½enwï¿½nde",
         "IRI-based" : "ExternalWalls",
         "en" : "External Walls",
         "it" : "Pareti Esterne"
@@ -2936,7 +2936,7 @@
       "iri" : "https://w3id.org/cterm#PitchedRoofsWithTiles",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Pultdächer mit Ziegeln",
+        "de" : "Pultdï¿½cher mit Ziegeln",
         "IRI-based" : "PitchedRoofsWithTiles",
         "en" : "Pitched Roofs With Tiles",
         "it" : "Coperture A Falde Con Coppi"
@@ -2954,7 +2954,7 @@
       "iri" : "https://w3id.org/cterm#Kitchens",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Küchen",
+        "de" : "Kï¿½chen",
         "IRI-based" : "Kitchens",
         "en" : "Kitchens",
         "it" : "Cucine"
@@ -2963,7 +2963,7 @@
       "iri" : "https://w3id.org/cterm#ExternalSurfaces",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Außenflächen",
+        "de" : "Auï¿½enflï¿½chen",
         "IRI-based" : "ExternalSurfaces",
         "en" : "External Surfaces",
         "it" : "superfici esterne"
@@ -2990,7 +2990,7 @@
       "iri" : "https://w3id.org/cterm#PitchedRoofsWithShingles",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Pultdächer mit Dachziegeln",
+        "de" : "Pultdï¿½cher mit Dachziegeln",
         "IRI-based" : "PitchedRoofsWithShingles",
         "en" : "Pitched Roofs With Shingles",
         "it" : "Coperture A Falde Con Tegole"
@@ -3026,7 +3026,7 @@
       "iri" : "https://w3id.org/cterm#FormworkForThermalBridges",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Schalungen für Wärmebrücken",
+        "de" : "Schalungen fï¿½r Wï¿½rmebrï¿½cken",
         "IRI-based" : "FormworkForThermalBridges",
         "en" : "Formwork For Thermal Bridges",
         "it" : "Casseri Per Ponti Termici"
@@ -3062,7 +3062,7 @@
       "iri" : "https://w3id.org/cterm#Grout",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Mörtel",
+        "de" : "Mï¿½rtel",
         "IRI-based" : "Grout",
         "en" : "Grout",
         "it" : "boiacche"
@@ -3080,7 +3080,7 @@
       "iri" : "https://w3id.org/cterm#HorizontalSurfaces",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Horizontale Flächen",
+        "de" : "Horizontale Flï¿½chen",
         "IRI-based" : "HorizontalSurfaces",
         "en" : "Horizontal Surfaces",
         "it" : "superfici orizzontali"
@@ -3098,7 +3098,7 @@
       "iri" : "https://w3id.org/cterm#FlatRoofs",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Flachdächer",
+        "de" : "Flachdï¿½cher",
         "IRI-based" : "FlatRoofs",
         "en" : "Flat Roofs",
         "it" : "Coperture Piane"
@@ -3125,7 +3125,7 @@
       "iri" : "https://w3id.org/cterm#WindowSills",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Fensterbänke",
+        "de" : "Fensterbï¿½nke",
         "IRI-based" : "WindowSills",
         "en" : "Window Sills",
         "it" : "Davanzali"
@@ -3143,7 +3143,7 @@
       "iri" : "https://w3id.org/cterm#RoadWorks",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Straßenbau",
+        "de" : "Straï¿½enbau",
         "IRI-based" : "RoadWorks",
         "en" : "Road Works",
         "it" : "opere stradali"
@@ -3161,7 +3161,7 @@
       "iri" : "https://w3id.org/cterm#FloorsOverUnheatedAreas",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Decken über unbeheizten Bereichen",
+        "de" : "Decken ï¿½ber unbeheizten Bereichen",
         "IRI-based" : "FloorsOverUnheatedAreas",
         "en" : "Floors Over Unheated Areas",
         "it" : "Solai Su Zone Non Riscaldate"
@@ -3170,7 +3170,7 @@
       "iri" : "https://w3id.org/cterm#InternalSurfaces",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Innenflächen",
+        "de" : "Innenflï¿½chen",
         "IRI-based" : "InternalSurfaces",
         "en" : "Internal Surfaces",
         "it" : "superfici interne"
@@ -3179,7 +3179,7 @@
       "iri" : "https://w3id.org/cterm#ThermalBridges",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wärmebrücken",
+        "de" : "Wï¿½rmebrï¿½cken",
         "IRI-based" : "ThermalBridges",
         "en" : "Thermal Bridges",
         "it" : "Ponti Termici"
@@ -3215,7 +3215,7 @@
       "iri" : "https://w3id.org/cterm#WallsWithInsulatedPlasterSystem",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wände mit Wärmedämmverbundsystem",
+        "de" : "Wï¿½nde mit Wï¿½rmedï¿½mmverbundsystem",
         "IRI-based" : "WallsWithInsulatedPlasterSystem",
         "en" : "Walls With Insulated Plaster System",
         "it" : "Pareti Con Sistema A Cappotto"
@@ -3242,7 +3242,7 @@
       "iri" : "https://w3id.org/cterm#RoadBarriers",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Straßenbarrieren",
+        "de" : "Straï¿½enbarrieren",
         "IRI-based" : "RoadBarriers",
         "en" : "Road Barriers",
         "it" : "barriere stradali"
@@ -3269,7 +3269,7 @@
       "iri" : "https://w3id.org/cterm#Exterior",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Außenbereich",
+        "de" : "Auï¿½enbereich",
         "IRI-based" : "Exterior",
         "en" : "Exterior",
         "it" : "esterno"
@@ -3296,7 +3296,7 @@
       "iri" : "https://w3id.org/cterm#PartitionWalls",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Trennwände",
+        "de" : "Trennwï¿½nde",
         "IRI-based" : "PartitionWalls",
         "en" : "Partition Walls",
         "it" : "Contropareti"
@@ -3305,7 +3305,7 @@
       "iri" : "https://w3id.org/cterm#PartitionWallsWithMetalStructure",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Trennwände mit Metallstruktur",
+        "de" : "Trennwï¿½nde mit Metallstruktur",
         "IRI-based" : "PartitionWallsWithMetalStructure",
         "en" : "Partition Walls With Metal Structure",
         "it" : "Contropareti Con Struttura Metallica"
@@ -3323,7 +3323,7 @@
       "iri" : "https://w3id.org/cterm#FormworkForReinforcedConcreteStructures",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Schalungen für Betonstrukturen",
+        "de" : "Schalungen fï¿½r Betonstrukturen",
         "IRI-based" : "FormworkForReinforcedConcreteStructures",
         "en" : "Formwork For Reinforced Concrete Structures",
         "it" : "Casseri Per Strutture In Conglomerato Cementizio"
@@ -3341,7 +3341,7 @@
       "iri" : "https://w3id.org/cterm#Perimeter_PartitionCavities",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Perimeter-/Trennwände",
+        "de" : "Perimeter-/Trennwï¿½nde",
         "IRI-based" : "Perimeter_PartitionCavities",
         "en" : "Perimeter/Partition Cavities",
         "it" : "Intercapedini Perimetrali/Divisorie"
@@ -3350,7 +3350,7 @@
       "iri" : "https://w3id.org/cterm#InternalPartitionWalls",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Innenwände",
+        "de" : "Innenwï¿½nde",
         "IRI-based" : "InternalPartitionWalls",
         "en" : "Internal Partition Walls",
         "it" : "Pareti Divisorie Interne"
@@ -3386,7 +3386,7 @@
       "iri" : "https://w3id.org/cterm#Flooring",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Bodenbeläge",
+        "de" : "Bodenbelï¿½ge",
         "IRI-based" : "Flooring",
         "en" : "Flooring",
         "it" : "Pavimentazioni"
@@ -3404,7 +3404,7 @@
       "iri" : "https://w3id.org/cterm#StabilizedEarthCarpets",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Stabilisierte Bodenbeläge",
+        "de" : "Stabilisierte Bodenbelï¿½ge",
         "IRI-based" : "StabilizedEarthCarpets",
         "en" : "Stabilized Earth Carpets",
         "it" : "tappeti in terra stabilizzata"
@@ -3431,7 +3431,7 @@
       "iri" : "https://w3id.org/cterm#PitchedRoofs",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Pultdächer",
+        "de" : "Pultdï¿½cher",
         "IRI-based" : "PitchedRoofs",
         "en" : "Pitched Roofs",
         "it" : "Coperture A Falde"
@@ -3502,7 +3502,7 @@
       "iri" : "https://w3id.org/cterm#Electro-WeldedMesh",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Geschweißtes Netz",
+        "de" : "Geschweiï¿½tes Netz",
         "IRI-based" : "Electro-WeldedMesh",
         "en" : "Electro-Welded Mesh",
         "it" : "rete elettrosaldata"
@@ -3574,7 +3574,7 @@
       "iri" : "https://w3id.org/cterm#InSolidBlocks",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Aus Vollblöcken",
+        "de" : "Aus Vollblï¿½cken",
         "IRI-based" : "InSolidBlocks",
         "en" : "In Solid Blocks",
         "it" : "in blocchi pieni"
@@ -3592,7 +3592,7 @@
       "iri" : "https://w3id.org/cterm#InSemi-SolidBlocks",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Aus Halbvollen Blöcken",
+        "de" : "Aus Halbvollen Blï¿½cken",
         "IRI-based" : "InSemi-SolidBlocks",
         "en" : "In Semi-Solid Blocks",
         "it" : "in blocchi semipieni"
@@ -3601,7 +3601,7 @@
       "iri" : "https://w3id.org/cterm#InMulti-HoleBlocks",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Aus Mehrlochblöcken",
+        "de" : "Aus Mehrlochblï¿½cken",
         "IRI-based" : "InMulti-HoleBlocks",
         "en" : "In Multi-Hole Blocks",
         "it" : "in blocchi multiforo"
@@ -3610,7 +3610,7 @@
       "iri" : "https://w3id.org/cterm#InHollowBlocks",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Aus Hohlblöcken",
+        "de" : "Aus Hohlblï¿½cken",
         "IRI-based" : "InHollowBlocks",
         "en" : "In Hollow Blocks",
         "it" : "in blocchi cavi"
@@ -3619,7 +3619,7 @@
       "iri" : "https://w3id.org/cterm#RibbedBars",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gerippte Stäbe",
+        "de" : "Gerippte Stï¿½be",
         "IRI-based" : "RibbedBars",
         "en" : "Ribbed Bars",
         "it" : "barre nervate"
@@ -3646,7 +3646,7 @@
       "iri" : "https://w3id.org/cterm#InSwiss-TypeBlocks",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Aus Schweizer Typ-Blöcken",
+        "de" : "Aus Schweizer Typ-Blï¿½cken",
         "IRI-based" : "InSwiss-TypeBlocks",
         "en" : "In Swiss-Type Blocks",
         "it" : "in blocchi tipo svizzero"
@@ -3655,7 +3655,7 @@
       "iri" : "https://w3id.org/cterm#InHoneycombBlocks",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Aus Wabenblöcken",
+        "de" : "Aus Wabenblï¿½cken",
         "IRI-based" : "InHoneycombBlocks",
         "en" : "In Honeycomb Blocks",
         "it" : "in blocchi alveolati"
@@ -3673,7 +3673,7 @@
       "iri" : "https://w3id.org/cterm#InBlocks",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Aus Blöcken",
+        "de" : "Aus Blï¿½cken",
         "IRI-based" : "InBlocks",
         "en" : "In Blocks",
         "it" : "in blocchi"
@@ -3762,7 +3762,7 @@
       "iri" : "https://w3id.org/cterm#MetalProp",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Metallstütze",
+        "de" : "Metallstï¿½tze",
         "IRI-based" : "MetalProp",
         "en" : "Metal Prop",
         "it" : "puntello metallico"
@@ -3819,7 +3819,7 @@
         "de" : "Autokran",
         "IRI-based" : "MobileCrane",
         "en" : "Mobile Crane",
-        "it" : "autogrù"
+        "it" : "autogrï¿½"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ModularFormwork",
@@ -3957,7 +3957,7 @@
       "iri" : "https://w3id.org/cterm#White",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Weiß",
+        "de" : "Weiï¿½",
         "IRI-based" : "White",
         "en" : "White",
         "it" : "Bianco"
@@ -4056,7 +4056,7 @@
       "iri" : "https://w3id.org/cterm#Green",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Grün",
+        "de" : "Grï¿½n",
         "IRI-based" : "Green",
         "en" : "Green",
         "it" : "colore verde"
@@ -4074,7 +4074,7 @@
       "iri" : "https://w3id.org/cterm#Granular",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Körnig",
+        "de" : "Kï¿½rnig",
         "IRI-based" : "Granular",
         "en" : "Granular",
         "it" : "Granulata"
@@ -4128,7 +4128,7 @@
       "iri" : "https://w3id.org/cterm#WhiteColor",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Weiße Farbe",
+        "de" : "Weiï¿½e Farbe",
         "IRI-based" : "WhiteColor",
         "en" : "White Color",
         "it" : "Colore Bianco"
@@ -4302,7 +4302,7 @@
       "iri" : "https://w3id.org/cterm#Electro-Welded",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Elektroschweißgitter",
+        "de" : "Elektroschweiï¿½gitter",
         "IRI-based" : "Electro-Welded",
         "en" : "Electro-Welded",
         "it" : "elettrosaldata"
@@ -4320,7 +4320,7 @@
       "iri" : "https://w3id.org/cterm#Insulation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Dämmstoff",
+        "de" : "Dï¿½mmstoff",
         "IRI-based" : "Insulation",
         "en" : "Insulation",
         "it" : "Coibentazione"
@@ -4329,7 +4329,7 @@
       "iri" : "https://w3id.org/cterm#ForFootball",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Für Fußball",
+        "de" : "Fï¿½r Fuï¿½ball",
         "IRI-based" : "ForFootball",
         "en" : "For Football",
         "it" : "da calcio"
@@ -4419,7 +4419,7 @@
       "iri" : "https://w3id.org/cterm#Welded",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Geschweißt",
+        "de" : "Geschweiï¿½t",
         "IRI-based" : "Welded",
         "en" : "Welded",
         "it" : "Elettrosaldato"
@@ -4587,7 +4587,7 @@
       "iri" : "https://w3id.org/cterm#TowerCranes",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Feste Kräne",
+        "de" : "Feste Krï¿½ne",
         "IRI-based" : "TowerCranes",
         "en" : "Fixed Cranes",
         "it" : "gru fisse"
@@ -4614,7 +4614,7 @@
       "iri" : "https://w3id.org/cterm#FixedCranes",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Feste Kräne",
+        "de" : "Feste Krï¿½ne",
         "IRI-based" : "FixedCranes",
         "en" : "Fixed Cranes",
         "it" : "gru fisse"
@@ -4704,7 +4704,7 @@
         "de" : "Dichte",
         "IRI-based" : "Density",
         "en" : "Density",
-        "it" : "Densità"
+        "it" : "Densitï¿½"
       }
     } ],
     "attributes" : [ "external" ],
@@ -4755,7 +4755,7 @@
       "iri" : "https://w3id.org/cterm#HookHeight",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Höhe unter Haken",
+        "de" : "Hï¿½he unter Haken",
         "IRI-based" : "HookHeight",
         "en" : "Hook Height",
         "it" : "altezza sotto gancio"
@@ -4764,7 +4764,7 @@
       "iri" : "https://w3id.org/cterm#Arm",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Auslegerlänge",
+        "de" : "Auslegerlï¿½nge",
         "IRI-based" : "Arm",
         "en" : "Arm",
         "it" : "sbraccio"
@@ -4773,7 +4773,7 @@
       "iri" : "https://w3id.org/cterm#NominalDiameter",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Nennmaß-Durchmesser",
+        "de" : "Nennmaï¿½-Durchmesser",
         "IRI-based" : "NominalDiameter",
         "en" : "Nominal Diameter",
         "it" : "diametro nominale"
@@ -4782,7 +4782,7 @@
       "iri" : "https://w3id.org/cterm#Granulometry",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Korngrößenverteilung",
+        "de" : "Korngrï¿½ï¿½enverteilung",
         "IRI-based" : "Granulometry",
         "en" : "Granulometry",
         "it" : "Granulometria"
@@ -4809,7 +4809,7 @@
       "iri" : "https://w3id.org/cterm#Height",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Höhe",
+        "de" : "Hï¿½he",
         "IRI-based" : "Height",
         "en" : "Height",
         "it" : "Altezza"
@@ -4836,7 +4836,7 @@
       "iri" : "https://w3id.org/cterm#RoughFloorHeight",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Rohe Deckenhöhe",
+        "de" : "Rohe Deckenhï¿½he",
         "IRI-based" : "RoughFloorHeight",
         "en" : "Rough Floor Height",
         "it" : "interpiano rustico"
@@ -4854,7 +4854,7 @@
       "iri" : "https://w3id.org/cterm#Length",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Länge",
+        "de" : "Lï¿½nge",
         "IRI-based" : "Length",
         "en" : "Length",
         "it" : "lunghezza"
@@ -5016,7 +5016,7 @@
       "iri" : "https://w3id.org/cterm#Buildings",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gebäude",
+        "de" : "Gebï¿½ude",
         "IRI-based" : "Buildings",
         "en" : "Buildings",
         "it" : "Edifici"
@@ -5043,7 +5043,7 @@
       "iri" : "https://w3id.org/cterm#UrbanGreen",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Stadtgrün",
+        "de" : "Stadtgrï¿½n",
         "IRI-based" : "UrbanGreen",
         "en" : "Urban Green",
         "it" : "Verde Urbano"
@@ -5075,7 +5075,7 @@
       "labels" : {
         "IRI-based" : "InsulationSystems",
         "en" : "Insulation Systems",
-        "it" : "Dämmsysteme"
+        "it" : "Dï¿½mmsysteme"
       }
     }, {
       "iri" : "https://w3id.org/cterm#FoundationSystems",
@@ -5090,7 +5090,7 @@
       "iri" : "https://w3id.org/cterm#ComplementarySystems",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Ergänzende Systeme",
+        "de" : "Ergï¿½nzende Systeme",
         "IRI-based" : "ComplementarySystems",
         "en" : "Complementary Systems",
         "it" : "sistemi complementari"
@@ -5138,7 +5138,7 @@
       "iri" : "https://w3id.org/cterm#AboveGround",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Überirdisch",
+        "de" : "ï¿½berirdisch",
         "IRI-based" : "AboveGround",
         "en" : "Above Ground",
         "it" : "fuori terra"
@@ -5177,7 +5177,7 @@
       "iri" : "https://w3id.org/cterm#ForRemanipulationAndReuseForHydraulicAdjustment",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Zur Umgestaltung Und Wiederverwendung Zur Änderung Der Hydraulischen Anpassung",
+        "de" : "Zur Umgestaltung Und Wiederverwendung Zur ï¿½nderung Der Hydraulischen Anpassung",
         "IRI-based" : "ForRemanipulationAndReuseForHydraulicAdjustment",
         "en" : "For Remanipulation And Reuse For Hydraulic Adjustment",
         "it" : "Per Rimaneggiamento E Riutilizzo Per Variazione Della Conformazione Del Paraggio Idraulico"
@@ -5198,7 +5198,7 @@
       "iri" : "https://w3id.org/cterm#SolidSlabsandFloorsinReinforcedConcretewithDeepBeams",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Vollbetonböden und -platten mit Balken in der Dicke",
+        "de" : "Vollbetonbï¿½den und -platten mit Balken in der Dicke",
         "IRI-based" : "SolidSlabsandFloorsinReinforcedConcretewithDeepBeams",
         "en" : "Solid Slabs and Floors in Reinforced Concrete with Deep Beams",
         "it" : "solai e solette piene in c.a. con travi a spessore"
@@ -5225,7 +5225,7 @@
       "iri" : "https://w3id.org/cterm#WallsforStaircasesandElevators",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wände für Treppen- und Aufzugsschächte",
+        "de" : "Wï¿½nde fï¿½r Treppen- und Aufzugsschï¿½chte",
         "IRI-based" : "WallsforStaircasesandElevators",
         "en" : "Walls for Staircases and Elevators",
         "it" : "Pareti per Vani Scala e Ascensori"
@@ -5234,7 +5234,7 @@
       "iri" : "https://w3id.org/cterm#StraightBalconyParapets",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Geländer für gerade Balkone",
+        "de" : "Gelï¿½nder fï¿½r gerade Balkone",
         "IRI-based" : "StraightBalconyParapets",
         "en" : "Straight Balcony Parapets",
         "it" : "parapetti per balconi rettilinei"
@@ -5243,7 +5243,7 @@
       "iri" : "https://w3id.org/cterm#MixedSlabwithDeepBeamsforFlatStructures",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Mischdecke mit Balken in der Dicke für flache Strukturen",
+        "de" : "Mischdecke mit Balken in der Dicke fï¿½r flache Strukturen",
         "IRI-based" : "MixedSlabwithDeepBeamsforFlatStructures",
         "en" : "Mixed Slab with Deep Beams for Flat Structures",
         "it" : "solaio misto con travi in spessore per strutture piane"
@@ -5288,7 +5288,7 @@
       "iri" : "https://w3id.org/cterm#StraightStairLandingsandRamps",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Gerade Treppenabsätze und Rampen",
+        "de" : "Gerade Treppenabsï¿½tze und Rampen",
         "IRI-based" : "StraightStairLandingsandRamps",
         "en" : "Straight Stair Landings and Ramps",
         "it" : "pianerottoli e rampe scale rettilinei"
@@ -5297,7 +5297,7 @@
       "iri" : "https://w3id.org/cterm#CurvedWallsinElevation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Geschwungene Wände in Höhe",
+        "de" : "Geschwungene Wï¿½nde in Hï¿½he",
         "IRI-based" : "CurvedWallsinElevation",
         "en" : "Curved Walls in Elevation",
         "it" : "pareti curvilinee in elevazione"
@@ -5306,7 +5306,7 @@
       "iri" : "https://w3id.org/cterm#WallsinElevation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wände in Höhe",
+        "de" : "Wï¿½nde in Hï¿½he",
         "IRI-based" : "WallsinElevation",
         "en" : "Walls in Elevation",
         "it" : "Pareti in Elevazione"
@@ -5400,7 +5400,7 @@
       "iri" : "https://w3id.org/cterm#Accessories",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Zubehör",
+        "de" : "Zubehï¿½r",
         "IRI-based" : "Accessories",
         "en" : "Accessories",
         "it" : "Accessori"
@@ -5606,7 +5606,7 @@
       "iri" : "https://w3id.org/cterm#Execution",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Ausführung",
+        "de" : "Ausfï¿½hrung",
         "IRI-based" : "Execution",
         "en" : "Execution",
         "it" : "Esecuzione"
@@ -5624,7 +5624,7 @@
       "iri" : "https://w3id.org/cterm#Assistance",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Unterstützung",
+        "de" : "Unterstï¿½tzung",
         "IRI-based" : "Assistance",
         "en" : "Assistance",
         "it" : "Assistenza"
@@ -5670,12 +5670,12 @@
     "id" : "21",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/cterm#CategoryOfLabour",
+    "iri" : "https://w3id.org/cterm#CategoryOfLabor",
     "baseIri" : "https://w3id.org/cterm",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "CategoryOfLabour",
-      "undefined" : "Category of labour"
+      "IRI-based" : "CategoryOfLabor",
+      "undefined" : "Category of labor"
     },
     "individuals" : [ {
       "iri" : "https://w3id.org/cterm#Building",
@@ -5858,7 +5858,7 @@
       "iri" : "https://w3id.org/cterm#HelicopterGroundAssistant",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Bodenhelfer für Hubschrauber",
+        "de" : "Bodenhelfer fï¿½r Hubschrauber",
         "IRI-based" : "HelicopterGroundAssistant",
         "en" : "Helicopter Ground Assistant",
         "it" : "assistente a terra di elicotterista"
@@ -5922,7 +5922,7 @@
       "iri" : "https://w3id.org/cterm#Insulations",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Dämmstoffe",
+        "de" : "Dï¿½mmstoffe",
         "IRI-based" : "Insulations",
         "en" : "Insulations",
         "it" : "Isolamenti"
@@ -5940,7 +5940,7 @@
       "iri" : "https://w3id.org/cterm#WindowsAndDoors",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Fenster und Türen",
+        "de" : "Fenster und Tï¿½ren",
         "IRI-based" : "WindowsAndDoors",
         "en" : "Windows And Doors",
         "it" : "Serramenti"
@@ -5958,7 +5958,7 @@
       "iri" : "https://w3id.org/cterm#SportsEquipment",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Sportgeräte",
+        "de" : "Sportgerï¿½te",
         "IRI-based" : "SportsEquipment",
         "en" : "Sports Equipment",
         "it" : "attrezzature sport"
@@ -5967,7 +5967,7 @@
       "iri" : "https://w3id.org/cterm#SuspendedCeilings",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Abgehängte Decken",
+        "de" : "Abgehï¿½ngte Decken",
         "IRI-based" : "SuspendedCeilings",
         "en" : "Suspended Ceilings",
         "it" : "Controsoffitti"
@@ -6003,7 +6003,7 @@
       "iri" : "https://w3id.org/cterm#Flooring",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Bodenbeläge",
+        "de" : "Bodenbelï¿½ge",
         "IRI-based" : "Flooring",
         "en" : "Flooring",
         "it" : "Pavimentazioni"
@@ -6021,7 +6021,7 @@
       "iri" : "https://w3id.org/cterm#GreeneryandLandscaping",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Grünanlagen und Landschaftsbau",
+        "de" : "Grï¿½nanlagen und Landschaftsbau",
         "IRI-based" : "GreeneryandLandscaping",
         "en" : "Greenery and Landscaping",
         "it" : "verde e paesaggio"
@@ -6030,7 +6030,7 @@
       "iri" : "https://w3id.org/cterm#TerminalHydraulicSystems",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Endinstallationen für Hydraulikanlagen",
+        "de" : "Endinstallationen fï¿½r Hydraulikanlagen",
         "IRI-based" : "TerminalHydraulicSystems",
         "en" : "Terminal Hydraulic Systems",
         "it" : "impianti idraulici terminali"
@@ -6075,7 +6075,7 @@
       "iri" : "https://w3id.org/cterm#Complementary",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Ergänzend",
+        "de" : "Ergï¿½nzend",
         "IRI-based" : "Complementary",
         "en" : "Complementary",
         "it" : "Complementari"
@@ -6084,7 +6084,7 @@
       "iri" : "https://w3id.org/cterm#RoadSafety",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Straßensicherheit",
+        "de" : "Straï¿½ensicherheit",
         "IRI-based" : "RoadSafety",
         "en" : "Road Safety",
         "it" : "sicurezza stradale"
@@ -6093,7 +6093,7 @@
       "iri" : "https://w3id.org/cterm#PrefabricatedStructuresInConcrete",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Fertigteile für Betonstrukturen",
+        "de" : "Fertigteile fï¿½r Betonstrukturen",
         "IRI-based" : "PrefabricatedStructuresInConcrete",
         "en" : "Prefabricated Structures in Concrete",
         "it" : "prefabbricati per strutture in cls"
@@ -6102,7 +6102,7 @@
       "iri" : "https://w3id.org/cterm#ReinforcementsandStrengthening",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Bewehrungen und Verstärkungen",
+        "de" : "Bewehrungen und Verstï¿½rkungen",
         "IRI-based" : "ReinforcementsandStrengthening",
         "en" : "Reinforcements and Strengthening",
         "it" : "armature e rinforzi"
@@ -6129,7 +6129,7 @@
       "iri" : "https://w3id.org/cterm#PlayEquipment",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Spielgeräte",
+        "de" : "Spielgerï¿½te",
         "IRI-based" : "PlayEquipment",
         "en" : "Play Equipment",
         "it" : "attrezzature giochi"
@@ -6150,11 +6150,11 @@
     "id" : "81",
     "superClasses" : [ "47" ]
   }, {
-    "iri" : "https://w3id.org/cr#LabourResource",
+    "iri" : "https://w3id.org/cr#LaborResource",
     "baseIri" : "https://w3id.org/cr",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "LabourResource"
+      "IRI-based" : "LaborResource"
     },
     "attributes" : [ "external" ],
     "id" : "234"
@@ -6206,7 +6206,7 @@
       "iri" : "https://w3id.org/cterm#VentilatedFacade",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Belüftete Fassade",
+        "de" : "Belï¿½ftete Fassade",
         "IRI-based" : "VentilatedFacade",
         "en" : "Ventilated Facade",
         "it" : "Facciata Ventilata"
@@ -6233,7 +6233,7 @@
       "iri" : "https://w3id.org/cterm#Walls",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wände",
+        "de" : "Wï¿½nde",
         "IRI-based" : "Walls",
         "en" : "Walls",
         "it" : "Pareti"
@@ -6242,7 +6242,7 @@
       "iri" : "https://w3id.org/cterm#Piles",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Pfähle",
+        "de" : "Pfï¿½hle",
         "IRI-based" : "Piles",
         "en" : "Piles",
         "it" : "pali"
@@ -6251,7 +6251,7 @@
       "iri" : "https://w3id.org/cterm#Staircase-ElevatorShaftWalls",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wände für Treppen- und Aufzugsschächte",
+        "de" : "Wï¿½nde fï¿½r Treppen- und Aufzugsschï¿½chte",
         "IRI-based" : "Staircase-ElevatorShaftWalls",
         "en" : "Staircase-Elevator Shaft Walls",
         "it" : "murature vani scala-ascensori"
@@ -6303,7 +6303,7 @@
       "iri" : "https://w3id.org/cterm#BasementFlooring",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Fußböden im Untergeschoss",
+        "de" : "Fuï¿½bï¿½den im Untergeschoss",
         "IRI-based" : "BasementFlooring",
         "en" : "Basement Flooring",
         "it" : "Pavimenti Piano Cantina"
@@ -6312,7 +6312,7 @@
       "iri" : "https://w3id.org/cterm#FloorUnderlay",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Fußbodenunterlage",
+        "de" : "Fuï¿½bodenunterlage",
         "IRI-based" : "FloorUnderlay",
         "en" : "Floor Underlay",
         "it" : "Sottopavimenti"
@@ -6330,7 +6330,7 @@
       "iri" : "https://w3id.org/cterm#BasementWalls",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wände im Untergeschoss",
+        "de" : "Wï¿½nde im Untergeschoss",
         "IRI-based" : "BasementWalls",
         "en" : "Buried Walls",
         "it" : "Pareti Interrate"
@@ -6339,7 +6339,7 @@
       "iri" : "https://w3id.org/cterm#Elevation-Foundation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Erhöhung-Fundament",
+        "de" : "Erhï¿½hung-Fundament",
         "IRI-based" : "Elevation-Foundation",
         "en" : "Elevation-Foundation",
         "it" : "elevazione-fondazione"
@@ -6375,7 +6375,7 @@
       "iri" : "https://w3id.org/cterm#Bathrooms-Kitchens",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Bäder-Küchen",
+        "de" : "Bï¿½der-Kï¿½chen",
         "IRI-based" : "Bathrooms-Kitchens",
         "en" : "Bathrooms-Kitchens",
         "it" : "bagni-cucine"
@@ -6411,7 +6411,7 @@
       "iri" : "https://w3id.org/cterm#Openings",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Öffnungen",
+        "de" : "ï¿½ffnungen",
         "IRI-based" : "Openings",
         "en" : "Openings",
         "it" : "aperture"
@@ -6420,7 +6420,7 @@
       "iri" : "https://w3id.org/cterm#Cavities",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Zwischenräume",
+        "de" : "Zwischenrï¿½ume",
         "IRI-based" : "Cavities",
         "en" : "Cavities",
         "it" : "Intercapedini"
@@ -6429,7 +6429,7 @@
       "iri" : "https://w3id.org/cterm#Floors",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Bodenbeläge",
+        "de" : "Bodenbelï¿½ge",
         "IRI-based" : "Floors",
         "en" : "Floors",
         "it" : "Pavimenti"
@@ -6438,7 +6438,7 @@
       "iri" : "https://w3id.org/cterm#NonWalkableAttics",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Nicht begehbare Dachböden",
+        "de" : "Nicht begehbare Dachbï¿½den",
         "IRI-based" : "NonWalkableAttics",
         "en" : "Non Walkable Attics",
         "it" : "Sottotetti Non Praticabili"
@@ -6465,7 +6465,7 @@
       "iri" : "https://w3id.org/cterm#FloorsOverUnheatedAreas",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Decken über unbeheizten Bereichen",
+        "de" : "Decken ï¿½ber unbeheizten Bereichen",
         "IRI-based" : "FloorsOverUnheatedAreas",
         "en" : "Floors Over Unheated Areas",
         "it" : "Solai Su Zone Non Riscaldate"
@@ -6536,7 +6536,7 @@
       "iri" : "https://w3id.org/cterm#WalkableAttics",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Begehbare Dachböden",
+        "de" : "Begehbare Dachbï¿½den",
         "IRI-based" : "WalkableAttics",
         "en" : "Walkable Attics",
         "it" : "Sottotetti Praticabili"
@@ -6555,7 +6555,7 @@
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
         "IRI-based" : "Pillars",
-        "en" : "Säulen",
+        "en" : "Sï¿½ulen",
         "it" : "Pilastri"
       }
     }, {
@@ -6607,7 +6607,7 @@
       "iri" : "https://w3id.org/cterm#VentilatedPitchedRoof",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Belüftetes Pultdach",
+        "de" : "Belï¿½ftetes Pultdach",
         "IRI-based" : "VentilatedPitchedRoof",
         "en" : "Ventilated Pitched Roof",
         "it" : "Copertura Ventilata A Falde"
@@ -6754,7 +6754,7 @@
       "iri" : "https://w3id.org/cterm#ElasticModulus",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Elastizitätsmodul",
+        "de" : "Elastizitï¿½tsmodul",
         "IRI-based" : "ElasticModulus",
         "en" : "Elastic Modulus",
         "it" : "modulo elastico"
@@ -6763,7 +6763,7 @@
       "iri" : "https://w3id.org/cterm#PunchingResistance",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Durchstoßfestigkeit",
+        "de" : "Durchstoï¿½festigkeit",
         "IRI-based" : "PunchingResistance",
         "en" : "Punching Resistance",
         "it" : "resistenza a punzonamento"
@@ -6781,10 +6781,10 @@
       "iri" : "https://w3id.org/cterm#Capacity",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Kapazität",
+        "de" : "Kapazitï¿½t",
         "IRI-based" : "Capacity",
         "en" : "Capacity",
-        "it" : "capacità"
+        "it" : "capacitï¿½"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ExposureClass",
@@ -6853,16 +6853,16 @@
       "iri" : "https://w3id.org/cterm#ThermalConductivity",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wärmeleitfähigkeit",
+        "de" : "Wï¿½rmeleitfï¿½higkeit",
         "IRI-based" : "ThermalConductivity",
         "en" : "Thermal Conductivity",
-        "it" : "conducibilità termica"
+        "it" : "conducibilitï¿½ termica"
       }
     }, {
       "iri" : "https://w3id.org/cterm#ThermalResistance",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wärmewiderstand",
+        "de" : "Wï¿½rmewiderstand",
         "IRI-based" : "ThermalResistance",
         "en" : "Thermal Resistance",
         "it" : "resistenza termica"
@@ -6880,7 +6880,7 @@
       "iri" : "https://w3id.org/cterm#TensileStrengthPerpendicularToFaces",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Zugfestigkeit rechtwinklig zu den Seitenflächen",
+        "de" : "Zugfestigkeit rechtwinklig zu den Seitenflï¿½chen",
         "IRI-based" : "TensileStrengthPerpendicularToFaces",
         "en" : "Tensile Strength Perpendicular To Faces",
         "it" : "Resistenza A Trazione Perpendicolare Alle Facce"
@@ -6898,7 +6898,7 @@
       "iri" : "https://w3id.org/cterm#FallHeights",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Fallhöhen",
+        "de" : "Fallhï¿½hen",
         "IRI-based" : "FallHeights",
         "en" : "Fall Heights",
         "it" : "altezze di caduta"
@@ -6916,7 +6916,7 @@
       "iri" : "https://w3id.org/cterm#FireResistance",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Feuerbeständigkeit",
+        "de" : "Feuerbestï¿½ndigkeit",
         "IRI-based" : "FireResistance",
         "en" : "Fire Resistance",
         "it" : "Resistenza Al Fuoco"
@@ -7010,7 +7010,7 @@
       "iri" : "https://w3id.org/cterm#Insulation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Dämmstoff",
+        "de" : "Dï¿½mmstoff",
         "IRI-based" : "Insulation",
         "en" : "Insulation",
         "it" : "Coibentazione"
@@ -7019,7 +7019,7 @@
       "iri" : "https://w3id.org/cterm#StructuralReinforcement",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Strukturelle Verstärkung",
+        "de" : "Strukturelle Verstï¿½rkung",
         "IRI-based" : "StructuralReinforcement",
         "en" : "Structural Reinforcement",
         "it" : "rinforzo strutturale"
@@ -7028,7 +7028,7 @@
       "iri" : "https://w3id.org/cterm#TemporaryFences",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Temporäre Zäune",
+        "de" : "Temporï¿½re Zï¿½une",
         "IRI-based" : "TemporaryFences",
         "en" : "Temporary Fences",
         "it" : "recinzioni provvisorie"
@@ -7082,7 +7082,7 @@
       "iri" : "https://w3id.org/cterm#SoundAbsorbing",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Schalldämpfend",
+        "de" : "Schalldï¿½mpfend",
         "IRI-based" : "SoundAbsorbing",
         "en" : "Sound Absorbing",
         "it" : "Fonoassorbente"
@@ -7100,7 +7100,7 @@
       "iri" : "https://w3id.org/cterm#Fences",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Zäune",
+        "de" : "Zï¿½une",
         "IRI-based" : "Fences",
         "en" : "Fences",
         "it" : "recinzioni"
@@ -7127,7 +7127,7 @@
       "iri" : "https://w3id.org/cterm#ThermalInsulating",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wärmedämmend",
+        "de" : "Wï¿½rmedï¿½mmend",
         "IRI-based" : "ThermalInsulating",
         "en" : "Thermal Insulating",
         "it" : "termoisolante"
@@ -7163,7 +7163,7 @@
       "iri" : "https://w3id.org/cterm#Wear-Resistant",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Verschleißfest",
+        "de" : "Verschleiï¿½fest",
         "IRI-based" : "Wear-Resistant",
         "en" : "Wear-Resistant",
         "it" : "Resistente All'Usura"
@@ -7190,7 +7190,7 @@
       "iri" : "https://w3id.org/cterm#Finish",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Oberfläche",
+        "de" : "Oberflï¿½che",
         "IRI-based" : "Finish",
         "en" : "Finish",
         "it" : "Finitura"
@@ -7217,7 +7217,7 @@
       "iri" : "https://w3id.org/cterm#ConstructionSiteFences",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Baustellenzäune",
+        "de" : "Baustellenzï¿½une",
         "IRI-based" : "ConstructionSiteFences",
         "en" : "Construction Site Fences",
         "it" : "recinzioni cantieri"
@@ -7226,7 +7226,7 @@
       "iri" : "https://w3id.org/cterm#Ventilation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Belüftung",
+        "de" : "Belï¿½ftung",
         "IRI-based" : "Ventilation",
         "en" : "Ventilation",
         "it" : "Ventilazione"
@@ -7235,7 +7235,7 @@
       "iri" : "https://w3id.org/cterm#ThermalInsulation",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wärmedämmung",
+        "de" : "Wï¿½rmedï¿½mmung",
         "IRI-based" : "ThermalInsulation",
         "en" : "Thermal Insulation",
         "it" : "Termoisolante"
@@ -7280,7 +7280,7 @@
       "iri" : "https://w3id.org/cterm#HeatReflective",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Wärmereflektierend",
+        "de" : "Wï¿½rmereflektierend",
         "IRI-based" : "HeatReflective",
         "en" : "Heat Reflective",
         "it" : "termoriflettente"
@@ -7289,7 +7289,7 @@
       "iri" : "https://w3id.org/cterm#Anti-Trauma",
       "baseIri" : "https://w3id.org/cterm",
       "labels" : {
-        "de" : "Stoßsicher",
+        "de" : "Stoï¿½sicher",
         "IRI-based" : "Anti-Trauma",
         "en" : "Anti-Trauma",
         "it" : "antitrauma"

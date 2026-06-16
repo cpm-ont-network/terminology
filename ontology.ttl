@@ -334,7 +334,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#hasQualificationLevel
 <https://w3id.org/cterm#hasQualificationLevel> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain <https://w3id.org/cr#LabourResource> ;
+                                               rdfs:domain <https://w3id.org/cr#LaborResource> ;
                                                rdfs:range <https://w3id.org/cterm#QualificationLevel> ;
                                                rdfs:label "hasQualificationLevel" .
 
@@ -471,8 +471,8 @@ xsd:date rdf:type rdfs:Datatype .
 <https://w3id.org/cr#EquipmentResource> rdf:type owl:Class .
 
 
-###  https://w3id.org/cr#LabourResource
-<https://w3id.org/cr#LabourResource> rdf:type owl:Class .
+###  https://w3id.org/cr#LaborResource
+<https://w3id.org/cr#LaborResource> rdf:type owl:Class .
 
 
 ###  https://w3id.org/cr#MaterialResource
@@ -553,10 +553,10 @@ xsd:date rdf:type rdfs:Datatype .
                                              rdfs:label "Category of equipment" .
 
 
-###  https://w3id.org/cterm#CategoryOfLabour
-<https://w3id.org/cterm#CategoryOfLabour> rdf:type owl:Class ;
+###  https://w3id.org/cterm#CategoryOfLabor
+<https://w3id.org/cterm#CategoryOfLabor> rdf:type owl:Class ;
                                           rdfs:subClassOf <https://w3id.org/cterm#Category> ;
-                                          rdfs:label "Category of labour" .
+                                          rdfs:label "Category of labor" .
 
 
 ###  https://w3id.org/cterm#CategoryOfMaterial
@@ -654,10 +654,10 @@ xsd:date rdf:type rdfs:Datatype .
                                            rdfs:label "Family of equipment" .
 
 
-###  https://w3id.org/cterm#FamilyOfLabour
-<https://w3id.org/cterm#FamilyOfLabour> rdf:type owl:Class ;
+###  https://w3id.org/cterm#FamilyOfLabor
+<https://w3id.org/cterm#FamilyOfLabor> rdf:type owl:Class ;
                                         rdfs:subClassOf <https://w3id.org/cterm#Family> ;
-                                        rdfs:label "Family of labour" .
+                                        rdfs:label "Family of labor" .
 
 
 ###  https://w3id.org/cterm#FamilyOfMaterial
@@ -793,10 +793,10 @@ xsd:date rdf:type rdfs:Datatype .
                                            rdfs:label "Object of equipment" .
 
 
-###  https://w3id.org/cterm#ObjectOfLabour
-<https://w3id.org/cterm#ObjectOfLabour> rdf:type owl:Class ;
+###  https://w3id.org/cterm#ObjectOfLabor
+<https://w3id.org/cterm#ObjectOfLabor> rdf:type owl:Class ;
                                         rdfs:subClassOf <https://w3id.org/cterm#Object> ;
-                                        rdfs:label "Object of labour" .
+                                        rdfs:label "Object of labor" .
 
 
 ###  https://w3id.org/cterm#ObjectOfMaterial
@@ -976,10 +976,10 @@ xsd:date rdf:type rdfs:Datatype .
                                          rdfs:label "Type of equipment" .
 
 
-###  https://w3id.org/cterm#TypeOfLabour
-<https://w3id.org/cterm#TypeOfLabour> rdf:type owl:Class ;
+###  https://w3id.org/cterm#TypeOfLabor
+<https://w3id.org/cterm#TypeOfLabor> rdf:type owl:Class ;
                                       rdfs:subClassOf <https://w3id.org/cterm#Type> ;
-                                      rdfs:label "Type of labour" .
+                                      rdfs:label "Type of labor" .
 
 
 ###  https://w3id.org/cterm#TypeOfMaterial
@@ -1122,7 +1122,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Agriculture
 <https://w3id.org/cterm#Agriculture> rdf:type owl:NamedIndividual ,
-                                              <https://w3id.org/cterm#FamilyOfLabour> ,
+                                              <https://w3id.org/cterm#FamilyOfLabor> ,
                                               <https://w3id.org/cterm#ObjectOfCostComponent> ;
                                      rdfs:label "Agriculture"@en ,
                                                 "Colture/Agricoltura"@it ,
@@ -1421,7 +1421,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Building
 <https://w3id.org/cterm#Building> rdf:type owl:NamedIndividual ,
-                                           <https://w3id.org/cterm#CategoryOfLabour> ;
+                                           <https://w3id.org/cterm#CategoryOfLabor> ;
                                   rdfs:label "Bau"@de ,
                                              "Building"@en ,
                                              "edile"@it .
@@ -1544,7 +1544,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#ChemicalWorkers
 <https://w3id.org/cterm#ChemicalWorkers> rdf:type owl:NamedIndividual ,
-                                                  <https://w3id.org/cterm#CategoryOfLabour> ;
+                                                  <https://w3id.org/cterm#CategoryOfLabor> ;
                                          rdfs:label "Chemical Workers"@en ,
                                                     "Chemiearbeiter"@de ,
                                                     "chimici"@it .
@@ -1853,7 +1853,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/cterm#Construction
 <https://w3id.org/cterm#Construction> rdf:type owl:NamedIndividual ,
                                                <https://w3id.org/cterm#FamilyOfCostComponent> ,
-                                               <https://w3id.org/cterm#FamilyOfLabour> ;
+                                               <https://w3id.org/cterm#FamilyOfLabor> ;
                                       rdfs:label "Bauwerk"@de ,
                                                  "Construction"@en ,
                                                  "Costruzioni"@it ,
@@ -1877,7 +1877,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#ConstructionWorkers
 <https://w3id.org/cterm#ConstructionWorkers> rdf:type owl:NamedIndividual ,
-                                                      <https://w3id.org/cterm#CategoryOfLabour> ;
+                                                      <https://w3id.org/cterm#CategoryOfLabor> ;
                                              rdfs:label "Bauarbeiter"@de ,
                                                         "Construction Workers"@en ,
                                                         "edili"@it .
@@ -2610,7 +2610,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Forestry
 <https://w3id.org/cterm#Forestry> rdf:type owl:NamedIndividual ,
-                                           <https://w3id.org/cterm#CategoryOfLabour> ;
+                                           <https://w3id.org/cterm#CategoryOfLabor> ;
                                   rdfs:label "Forestry"@en ,
                                              "Forstwirtschaft"@de ,
                                              "forestale"@it .
@@ -3348,7 +3348,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Level1
 <https://w3id.org/cterm#Level1> rdf:type owl:NamedIndividual ,
-                                         <https://w3id.org/cterm#TypeOfLabour> ;
+                                         <https://w3id.org/cterm#TypeOfLabor> ;
                                 rdfs:label "Level 1"@en ,
                                            "Stufe 1"@de ,
                                            "livello 1°"@it .
@@ -3356,7 +3356,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Level2
 <https://w3id.org/cterm#Level2> rdf:type owl:NamedIndividual ,
-                                         <https://w3id.org/cterm#TypeOfLabour> ;
+                                         <https://w3id.org/cterm#TypeOfLabor> ;
                                 rdfs:label "Level 2"@en ,
                                            "Stufe 2"@de ,
                                            "livello 2°"@it .
@@ -3364,7 +3364,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Level3
 <https://w3id.org/cterm#Level3> rdf:type owl:NamedIndividual ,
-                                         <https://w3id.org/cterm#TypeOfLabour> ;
+                                         <https://w3id.org/cterm#TypeOfLabor> ;
                                 rdfs:label "Level 3"@en ,
                                            "Stufe 3"@de ,
                                            "livello 3°"@it .
@@ -3372,7 +3372,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#LevelB1
 <https://w3id.org/cterm#LevelB1> rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/cterm#TypeOfLabour> ;
+                                          <https://w3id.org/cterm#TypeOfLabor> ;
                                  rdfs:label "Level B1"@en ,
                                             "Stufe B1"@de ,
                                             "livello B1"@it .
@@ -3380,7 +3380,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#LevelC1
 <https://w3id.org/cterm#LevelC1> rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/cterm#TypeOfLabour> ;
+                                          <https://w3id.org/cterm#TypeOfLabor> ;
                                  rdfs:label "Level C1"@en ,
                                             "Stufe C1"@de ,
                                             "livello C1"@it .
@@ -3388,7 +3388,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#LevelC2
 <https://w3id.org/cterm#LevelC2> rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/cterm#TypeOfLabour> ;
+                                          <https://w3id.org/cterm#TypeOfLabor> ;
                                  rdfs:label "Level C2"@en ,
                                             "Stufe C2"@de ,
                                             "livello C2"@it .
@@ -3396,7 +3396,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#LevelC3
 <https://w3id.org/cterm#LevelC3> rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/cterm#TypeOfLabour> ;
+                                          <https://w3id.org/cterm#TypeOfLabor> ;
                                  rdfs:label "Level C3"@en ,
                                             "Stufe C3"@de ,
                                             "livello C3"@it .
@@ -3404,7 +3404,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#LevelD1
 <https://w3id.org/cterm#LevelD1> rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/cterm#TypeOfLabour> ;
+                                          <https://w3id.org/cterm#TypeOfLabor> ;
                                  rdfs:label "Level D1"@en ,
                                             "Stufe D1"@de ,
                                             "livello D1"@it .
@@ -3412,7 +3412,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#LevelD2
 <https://w3id.org/cterm#LevelD2> rdf:type owl:NamedIndividual ,
-                                          <https://w3id.org/cterm#TypeOfLabour> ;
+                                          <https://w3id.org/cterm#TypeOfLabor> ;
                                  rdfs:label "Level D2"@en ,
                                             "Stufe D2"@de ,
                                             "livello D2"@it .
@@ -3555,7 +3555,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Metalworkers
 <https://w3id.org/cterm#Metalworkers> rdf:type owl:NamedIndividual ,
-                                               <https://w3id.org/cterm#CategoryOfLabour> ;
+                                               <https://w3id.org/cterm#CategoryOfLabor> ;
                                       rdfs:label "Metallarbeiter"@de ,
                                                  "Metalworkers"@en ,
                                                  "metalmeccanici"@it .
@@ -5963,7 +5963,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/cterm#Worker
 <https://w3id.org/cterm#Worker> rdf:type owl:NamedIndividual ,
-                                         <https://w3id.org/cterm#ObjectOfLabour> ;
+                                         <https://w3id.org/cterm#ObjectOfLabor> ;
                                 rdfs:label "Arbeiter"@de ,
                                            "Operaio"@it ,
                                            "Worker"@en .

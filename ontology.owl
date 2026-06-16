@@ -535,7 +535,7 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasQualificationLevel">
-        <rdfs:domain rdf:resource="https://w3id.org/cr#LabourResource"/>
+        <rdfs:domain rdf:resource="https://w3id.org/cr#LaborResource"/>
         <rdfs:range rdf:resource="https://w3id.org/cterm#QualificationLevel"/>
         <rdfs:label>hasQualificationLevel</rdfs:label>
     </owl:ObjectProperty>
@@ -765,10 +765,10 @@
     
 
 
-    <!-- https://w3id.org/cr#LabourResource -->
+    <!-- https://w3id.org/cr#LaborResource -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cr#LabourResource"/>
+    <owl:Class rdf:about="https://w3id.org/cr#LaborResource"/>
     
 
 
@@ -896,12 +896,12 @@
     
 
 
-    <!-- https://w3id.org/cterm#CategoryOfLabour -->
+    <!-- https://w3id.org/cterm#CategoryOfLabor -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfLabour">
+    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfLabor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
-        <rdfs:label>Category of labour</rdfs:label>
+        <rdfs:label>Category of labor</rdfs:label>
     </owl:Class>
     
 
@@ -1055,12 +1055,12 @@
     
 
 
-    <!-- https://w3id.org/cterm#FamilyOfLabour -->
+    <!-- https://w3id.org/cterm#FamilyOfLabor -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#FamilyOfLabour">
+    <owl:Class rdf:about="https://w3id.org/cterm#FamilyOfLabor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Family"/>
-        <rdfs:label>Family of labour</rdfs:label>
+        <rdfs:label>Family of labor</rdfs:label>
     </owl:Class>
     
 
@@ -1278,12 +1278,12 @@
     
 
 
-    <!-- https://w3id.org/cterm#ObjectOfLabour -->
+    <!-- https://w3id.org/cterm#ObjectOfLabor -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfLabour">
+    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfLabor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Object"/>
-        <rdfs:label>Object of labour</rdfs:label>
+        <rdfs:label>Object of labor</rdfs:label>
     </owl:Class>
     
 
@@ -1557,12 +1557,12 @@
     
 
 
-    <!-- https://w3id.org/cterm#TypeOfLabour -->
+    <!-- https://w3id.org/cterm#TypeOfLabor -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfLabour">
+    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfLabor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
-        <rdfs:label>Type of labour</rdfs:label>
+        <rdfs:label>Type of labor</rdfs:label>
     </owl:Class>
     
 
@@ -1789,7 +1789,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Agriculture">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfLabor"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfCostComponent"/>
         <rdfs:label xml:lang="en">Agriculture</rdfs:label>
         <rdfs:label xml:lang="it">Colture/Agricoltura</rdfs:label>
@@ -2236,7 +2236,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Building">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
         <rdfs:label xml:lang="de">Bau</rdfs:label>
         <rdfs:label xml:lang="en">Building</rdfs:label>
         <rdfs:label xml:lang="it">edile</rdfs:label>
@@ -2419,7 +2419,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ChemicalWorkers">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
         <rdfs:label xml:lang="en">Chemical Workers</rdfs:label>
         <rdfs:label xml:lang="de">Chemiearbeiter</rdfs:label>
         <rdfs:label xml:lang="it">chimici</rdfs:label>
@@ -2880,7 +2880,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Construction">
         <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfCostComponent"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfLabor"/>
         <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
         <rdfs:label xml:lang="en">Construction</rdfs:label>
         <rdfs:label xml:lang="it">Costruzioni</rdfs:label>
@@ -2916,7 +2916,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ConstructionWorkers">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
         <rdfs:label xml:lang="de">Bauarbeiter</rdfs:label>
         <rdfs:label xml:lang="en">Construction Workers</rdfs:label>
         <rdfs:label xml:lang="it">edili</rdfs:label>
@@ -4009,7 +4009,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Forestry">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
         <rdfs:label xml:lang="en">Forestry</rdfs:label>
         <rdfs:label xml:lang="de">Forstwirtschaft</rdfs:label>
         <rdfs:label xml:lang="it">forestale</rdfs:label>
@@ -5107,7 +5107,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Level1">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
         <rdfs:label xml:lang="en">Level 1</rdfs:label>
         <rdfs:label xml:lang="de">Stufe 1</rdfs:label>
         <rdfs:label xml:lang="it">livello 1°</rdfs:label>
@@ -5119,7 +5119,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Level2">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
         <rdfs:label xml:lang="en">Level 2</rdfs:label>
         <rdfs:label xml:lang="de">Stufe 2</rdfs:label>
         <rdfs:label xml:lang="it">livello 2°</rdfs:label>
@@ -5131,7 +5131,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Level3">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
         <rdfs:label xml:lang="en">Level 3</rdfs:label>
         <rdfs:label xml:lang="de">Stufe 3</rdfs:label>
         <rdfs:label xml:lang="it">livello 3°</rdfs:label>
@@ -5143,7 +5143,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelB1">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
         <rdfs:label xml:lang="en">Level B1</rdfs:label>
         <rdfs:label xml:lang="de">Stufe B1</rdfs:label>
         <rdfs:label xml:lang="it">livello B1</rdfs:label>
@@ -5155,7 +5155,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelC1">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
         <rdfs:label xml:lang="en">Level C1</rdfs:label>
         <rdfs:label xml:lang="de">Stufe C1</rdfs:label>
         <rdfs:label xml:lang="it">livello C1</rdfs:label>
@@ -5167,7 +5167,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelC2">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
         <rdfs:label xml:lang="en">Level C2</rdfs:label>
         <rdfs:label xml:lang="de">Stufe C2</rdfs:label>
         <rdfs:label xml:lang="it">livello C2</rdfs:label>
@@ -5179,7 +5179,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelC3">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
         <rdfs:label xml:lang="en">Level C3</rdfs:label>
         <rdfs:label xml:lang="de">Stufe C3</rdfs:label>
         <rdfs:label xml:lang="it">livello C3</rdfs:label>
@@ -5191,7 +5191,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelD1">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
         <rdfs:label xml:lang="en">Level D1</rdfs:label>
         <rdfs:label xml:lang="de">Stufe D1</rdfs:label>
         <rdfs:label xml:lang="it">livello D1</rdfs:label>
@@ -5203,7 +5203,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelD2">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
         <rdfs:label xml:lang="en">Level D2</rdfs:label>
         <rdfs:label xml:lang="de">Stufe D2</rdfs:label>
         <rdfs:label xml:lang="it">livello D2</rdfs:label>
@@ -5418,7 +5418,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Metalworkers">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
         <rdfs:label xml:lang="de">Metallarbeiter</rdfs:label>
         <rdfs:label xml:lang="en">Metalworkers</rdfs:label>
         <rdfs:label xml:lang="it">metalmeccanici</rdfs:label>
@@ -9026,7 +9026,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Worker">
-        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfLabour"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfLabor"/>
         <rdfs:label xml:lang="de">Arbeiter</rdfs:label>
         <rdfs:label xml:lang="it">Operaio</rdfs:label>
         <rdfs:label xml:lang="en">Worker</rdfs:label>
