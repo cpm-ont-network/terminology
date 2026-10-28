@@ -17,39 +17,133 @@
   } ]
 }, {
   "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#EquipmentResource"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#ClassificationSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasClassificationSystem"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#code"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#DimensionParameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#Standard"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasParameterStandard"
   } ]
 }, {
   "@id" : "_:genid14",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
-    }, {
-      "@id" : "https://w3id.org/ci#CostComponent"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#Resource"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://qudt.org/schema/qudt/Unit"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#hasUnit"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterSymbol1"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterSymbol2"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterValue1"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterValue2"
   } ]
 }, {
   "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#CostComponent"
-    }, {
-      "@id" : "https://w3id.org/ci#CostItem"
-    } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#PerformanceParameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -60,30 +154,69 @@
     "@value" : "Politecnico di Milano, Dipartimento ABC"
   } ]
 }, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#EquipmentResource"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/cterm#PhysicalParameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#parameterType"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid26",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
-    }, {
-      "@id" : "https://w3id.org/ci#CostComponent"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#Resource"
-    } ]
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#standardBody"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#standardNumber"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#standardPart"
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/cterm#standardYear"
   } ]
 }, {
   "@id" : "_:genid3",
@@ -103,80 +236,12 @@
     "@value" : "Sigalov, Katharina"
   } ]
 }, {
-  "@id" : "_:genid31",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#EquipmentResource"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid39",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#CostComponent"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#EquipmentResource"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
-  } ]
-}, {
   "@id" : "_:genid4",
   "https://schema.org/identifier" : [ {
     "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/katharina_sigalov.html.en"
   } ],
   "https://schema.org/name" : [ {
     "@value" : "Ruhr University Bochum"
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
-    }, {
-      "@id" : "https://w3id.org/ci#CostComponent"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#Resource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid49",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
-    }, {
-      "@id" : "https://w3id.org/ci#CostComponent"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#EquipmentResource"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
   } ]
 }, {
   "@id" : "_:genid5",
@@ -196,66 +261,12 @@
     "@value" : "Cassandro, Jacopo"
   } ]
 }, {
-  "@id" : "_:genid55",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
-    }, {
-      "@id" : "https://w3id.org/ci#CostComponent"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#EquipmentResource"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
-  } ]
-}, {
   "@id" : "_:genid6",
   "https://schema.org/identifier" : [ {
     "@id" : "https://www.dabc.polimi.it/persona/jacopo-cassandro/"
   } ],
   "https://schema.org/name" : [ {
     "@value" : "Politecnico di Milano"
-  } ]
-}, {
-  "@id" : "_:genid61",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#EquipmentResource"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid65",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#EquipmentResource"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid69",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
-    }, {
-      "@id" : "https://w3id.org/ci#CostComponent"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#Resource"
-    } ]
   } ]
 }, {
   "@id" : "_:genid7",
@@ -277,33 +288,6 @@
     "@value" : "Hagedorn, Philipp"
   } ]
 }, {
-  "@id" : "_:genid74",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://w3id.org/ci#Activity"
-    }, {
-      "@id" : "https://w3id.org/ci#Work"
-    }, {
-      "@id" : "https://w3id.org/cr#EquipmentResource"
-    }, {
-      "@id" : "https://w3id.org/cr#MaterialResource"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid79",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#code"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
   "@id" : "_:genid8",
   "https://schema.org/identifier" : [ {
     "@id" : "https://www.inf.bi.ruhr-uni-bochum.de/iib/lehrstuhl/mitarbeiter/philipp_hagedorn.html.en"
@@ -312,192 +296,13 @@
     "@value" : "Ruhr University Bochum, Computing in Engineering"
   } ]
 }, {
-  "@id" : "_:genid80",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#ClassificationSystem"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasClassificationSystem"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid81",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#DimensionParameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid82",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#Standard"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasParameterStandard"
-  } ]
-}, {
-  "@id" : "_:genid83",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://qudt.org/schema/qudt/Unit"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#hasUnit"
-  } ]
-}, {
-  "@id" : "_:genid84",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterSymbol1"
-  } ]
-}, {
-  "@id" : "_:genid85",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterSymbol2"
-  } ]
-}, {
-  "@id" : "_:genid86",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterValue1"
-  } ]
-}, {
-  "@id" : "_:genid87",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterValue2"
-  } ]
-}, {
-  "@id" : "_:genid88",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#PerformanceParameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
-  "@id" : "_:genid89",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://w3id.org/cterm#PhysicalParameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#parameterType"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ]
-}, {
   "@id" : "_:genid9",
   "https://schema.org/name" : [ {
     "@value" : "Politecnico di Milano"
   } ]
 }, {
-  "@id" : "_:genid90",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#standardBody"
-  } ]
-}, {
-  "@id" : "_:genid91",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#standardNumber"
-  } ]
-}, {
-  "@id" : "_:genid92",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#standardPart"
-  } ]
-}, {
-  "@id" : "_:genid93",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
-  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/cterm#standardYear"
-  } ]
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -535,61 +340,8 @@
   "@id" : "http://qudt.org/schema/qudt/Unit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://w3id.org/cterm",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : ""
-  } ],
-  "http://purl.org/dc/terms/contributor" : [ {
-    "@id" : "_:genid1"
-  }, {
-    "@id" : "_:genid3"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2024-10-12"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "_:genid5"
-  }, {
-    "@id" : "_:genid7"
-  } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management."
-  } ],
-  "http://purl.org/dc/terms/license" : [ {
-    "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  } ],
-  "http://purl.org/dc/terms/modified" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2025-04-07"
-  } ],
-  "http://purl.org/dc/terms/rights" : [ {
-    "@value" : "Copyright 2025 by DABC, PoliMi"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@language" : "en",
-    "@value" : "The Construction Terminology (CTERM) Ontology"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
-    "@value" : "cterm"
-  } ],
-  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "http://w3id.org/cterm#"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.2"
-  } ],
-  "https://schema.org/codeRepository" : [ {
-    "@id" : "https://github.com/cpm-ont-network/terminology"
-  } ]
-}, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
-}, {
-  "@id" : "http://www.w3.org/2001/XMLSchema#string",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://schema.org/Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -609,34 +361,77 @@
   "@id" : "https://schema.org/name",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://w3id.org/ci#Activity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/ci#CostComponent",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/ci#CostItem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/ci#Work",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/cr#EquipmentResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/cr#LaborResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/cr#MaterialResource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/cr#Resource",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@id" : "https://w3id.org/cterm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@language" : "it",
+    "@value" : "L'ontologia Construction Terminology (CTERM) fornisce una terminologia controllata per descrivere entità, risorse, attività, opere, componenti di costo, parametri, classificazioni, materiali, funzioni, usi, dimensioni, prestazioni e altre caratteristiche tecniche relative alle costruzioni. CTERM è progettata come livello terminologico condiviso e riutilizzabile dalle ontologie Cost Item (CI) e Construction Resources (CR)."
+  }, {
+    "@language" : "en",
+    "@value" : "The Construction Terminology (CTERM) Ontology provides controlled terminology for describing construction-related entities, resources, activities, works, cost components, parameters, classifications, materials, functions, uses, dimensions, performances, and other technical characteristics. CTERM is designed as a shared terminology layer that can be reused by the Cost Item (CI) and Construction Resources (CR) ontologies."
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Cassandro, J., Hagedorn, P., Sigalov, K., Gatto, C., Mirarchi, C., Pavan, A., & König, M. (2025). Semantic Integration of Cost, Time and Geometry for a Resource-centred Perspective of Managing Construction Projects: . Proceedings of the 2025 European Conference on Computing in Construction. Publiziert. European Conference on Computing in Construction, Porto. https://doi.org/10.35490/ec3.2025.263"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid3"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-10-12"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid7"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "it",
+    "@value" : "L'ontologia Construction Terminology (CTERM) fornisce la terminologia da utilizzare con le ontologie Construction Resource (CR) e Cost Item (CI), nonché con l'ontologia DTC, nel più ampio ambito della gestione dei progetti di costruzione."
+  }, {
+    "@language" : "en",
+    "@value" : "The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2026-10-12"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@value" : "Copyright 2025 by DABC, PoliMi"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "The Construction Terminology (CTERM) Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "cterm"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/cterm#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.3"
+  } ],
+  "https://schema.org/codeRepository" : [ {
+    "@id" : "https://github.com/cpm-ont-network/terminology"
+  } ],
+  "https://w3id.org/widoco/vocab#introduction" : [ {
+    "@language" : "en",
+    "@value" : "Construction information is frequently expressed through heterogeneous terminology, synonyms, and domain-specific descriptions, limiting semantic interoperability and automated data processing. The Construction Terminology (CTERM) Ontology provides a shared controlled vocabulary for describing construction concepts and technical attributes in a consistent and machine-readable way. It supports the semantic description of cost items and construction resources while remaining independent from the application-specific structures of CI and CR."
+  }, {
+    "@language" : "it",
+    "@value" : "Le informazioni relative alle costruzioni sono frequentemente espresse mediante terminologie eterogenee, sinonimi e descrizioni specifiche di dominio, limitando l'interoperabilità semantica e l'elaborazione automatizzata dei dati. L'ontologia Construction Terminology (CTERM) fornisce un vocabolario controllato condiviso per descrivere concetti e attributi tecnici delle costruzioni in modo coerente e leggibile automaticamente. Supporta la descrizione semantica delle voci di costo e delle risorse delle costruzioni mantenendosi indipendente dalle strutture applicative specifiche di CI e CR."
+  } ]
 }, {
   "@id" : "https://w3id.org/cterm#AboveGround",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -668,7 +463,7 @@
   "@id" : "https://w3id.org/cterm#Acoustic",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -716,7 +511,7 @@
   "@id" : "https://w3id.org/cterm#Agriculture",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FamilyOfLabor"
+    "@id" : "https://w3id.org/cterm#FamilyOfLabour"
   }, {
     "@id" : "https://w3id.org/cterm#ObjectOfCostComponent"
   } ],
@@ -753,7 +548,7 @@
   "@id" : "https://w3id.org/cterm#AluminumFoil",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -877,6 +672,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Aspect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to express an aspect by which a construction-related entity can be characterized."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per esprimere un aspetto secondo cui un'entità relativa alle costruzioni può essere caratterizzata."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Aspect"
   } ],
@@ -886,6 +688,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#AspectOfEquipment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Aspect specialization used to represent aspect terminology for equipment."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per le attrezzature."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Aspect Of Equipment"
   } ],
@@ -895,6 +704,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#AspectOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Aspect specialization used to represent aspect terminology for material."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per i materiali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Aspect Of Material"
   } ],
@@ -902,36 +718,57 @@
     "@id" : "https://w3id.org/cterm#Aspect"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Aspect Of Work Of ConstructionWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/cterm#Aspect"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfProductWork"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Aspect specialization used to represent aspect terminology for the work associated with a construction component."
   }, {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryWork"
-  } ]
-}, {
-  "@id" : "https://w3id.org/cterm#AspectOfWorkOfProductWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+    "@language" : "it",
+    "@value" : "Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per il Work associato a un ConstructionComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Aspect Of Work Of ProductWork"
+    "@value" : "Aspect Of Work Of ConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Aspect"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfProductComponent"
+  }, {
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#AspectOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Aspect specialization used to represent aspect terminology for the work associated with a product component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per il Work associato a un ProductComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Aspect Of Work Of TemporaryWork"
+    "@value" : "Aspect Of Work Of ProductComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/cterm#Aspect"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Aspect specialization used to represent aspect terminology for the work associated with a temporary component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per il Work associato a un TemporaryComponent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aspect Of Work Of TemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Aspect"
@@ -980,7 +817,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1044,7 +881,7 @@
   "@id" : "https://w3id.org/cterm#BasementFlooring",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1060,7 +897,7 @@
   "@id" : "https://w3id.org/cterm#BasementWalls",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1092,7 +929,7 @@
   "@id" : "https://w3id.org/cterm#Bathrooms-Kitchens",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1110,7 +947,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -1126,7 +963,7 @@
   "@id" : "https://w3id.org/cterm#Beams",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -1224,7 +1061,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FinishingOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -1240,7 +1077,7 @@
   "@id" : "https://w3id.org/cterm#BitumenLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1253,7 +1090,7 @@
   "@id" : "https://w3id.org/cterm#BituminizedFeltboard",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1266,7 +1103,7 @@
   "@id" : "https://w3id.org/cterm#BituminizedGlassFiber",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1375,7 +1212,7 @@
   "@id" : "https://w3id.org/cterm#Building",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfLabor"
+    "@id" : "https://w3id.org/cterm#CategoryOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -1423,7 +1260,7 @@
   "@id" : "https://w3id.org/cterm#Bush-Hammered",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -1461,7 +1298,7 @@
   "@id" : "https://w3id.org/cterm#Casing",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1492,6 +1329,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Category",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to assign a category to a construction-related entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per assegnare una categoria a un'entità relativa alle costruzioni."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Category"
   } ],
@@ -1501,6 +1345,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#CategoryOfActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Category specialization used to represent category terminology for an activity."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per un'Activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Category Of Activity"
   } ],
@@ -1510,15 +1361,22 @@
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/cterm#CategoryOfCostComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#CategoryOfCostComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Category specialization used to represent category terminology for a cost component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per un CostComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Category Of CostComponent"
   } ],
@@ -1526,15 +1384,22 @@
     "@id" : "https://w3id.org/cterm#Category"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#CategoryOfEquipment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Category specialization used to represent category terminology for equipment."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per le attrezzature."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Category of equipment"
   } ],
@@ -1542,10 +1407,17 @@
     "@id" : "https://w3id.org/cterm#Category"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#CategoryOfLabor",
+  "@id" : "https://w3id.org/cterm#CategoryOfLabour",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Category specialization used to represent category terminology for labour."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per la manodopera."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Category of labor"
+    "@value" : "Category of labour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Category"
@@ -1553,6 +1425,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#CategoryOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Category specialization used to represent category terminology for material."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per i materiali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Category of material"
   } ],
@@ -1560,36 +1439,57 @@
     "@id" : "https://w3id.org/cterm#Category"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Category Of Work Of ConstructionWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/cterm#Category"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductWork"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Category specialization used to represent category terminology for the work associated with a construction component."
   }, {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
-  } ]
-}, {
-  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+    "@language" : "it",
+    "@value" : "Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per il Work associato a un ConstructionComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Category Of Work Of ProductWork"
+    "@value" : "Category Of Work Of ConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Category"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductComponent"
+  }, {
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Category specialization used to represent category terminology for the work associated with a product component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per il Work associato a un ProductComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Category Of Work Of TemporaryWork"
+    "@value" : "Category Of Work Of ProductComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/cterm#Category"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Category specialization used to represent category terminology for the work associated with a temporary component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per il Work associato a un TemporaryComponent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Category Of Work Of TemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Category"
@@ -1598,7 +1498,7 @@
   "@id" : "https://w3id.org/cterm#Cavities",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1614,7 +1514,7 @@
   "@id" : "https://w3id.org/cterm#Ceilings",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1728,7 +1628,7 @@
   "@id" : "https://w3id.org/cterm#ChemicalWorkers",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfLabor"
+    "@id" : "https://w3id.org/cterm#CategoryOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1746,7 +1646,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1778,7 +1678,7 @@
   "@id" : "https://w3id.org/cterm#Classic-Rustic",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1793,19 +1693,33 @@
 }, {
   "@id" : "https://w3id.org/cterm#Classification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A classification entry identified by a code and associated with a ClassificationSystem."
+  }, {
+    "@language" : "it",
+    "@value" : "Una voce di classificazione identificata da un codice e associata a un ClassificationSystem."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Classification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
-    "@id" : "_:genid79"
+    "@id" : "_:genid10"
   }, {
-    "@id" : "_:genid80"
+    "@id" : "_:genid11"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#ClassificationSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A system used to organize and identify classification entries."
+  }, {
+    "@language" : "it",
+    "@value" : "Un sistema utilizzato per organizzare e identificare le voci di classificazione."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Classification system"
   } ],
@@ -1866,7 +1780,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FinishingOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -1885,7 +1799,7 @@
   "@id" : "https://w3id.org/cterm#CoatedWithRefractoryCeramicLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1898,7 +1812,7 @@
   "@id" : "https://w3id.org/cterm#CoatedWithSpecialCardboard",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1911,7 +1825,7 @@
   "@id" : "https://w3id.org/cterm#CoatedwithFireproofMortar",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1927,7 +1841,7 @@
   "@id" : "https://w3id.org/cterm#CoatedwithRefractoryCeramicLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1943,7 +1857,7 @@
   "@id" : "https://w3id.org/cterm#CoatedwithSpecialCardboard",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2023,7 +1937,7 @@
   "@id" : "https://w3id.org/cterm#Colored",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2039,7 +1953,7 @@
   "@id" : "https://w3id.org/cterm#Columns",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2087,7 +2001,7 @@
   "@id" : "https://w3id.org/cterm#ComplementarySystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2218,7 +2132,7 @@
   "@id" : "https://w3id.org/cterm#ConcreteStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -2234,7 +2148,7 @@
   "@id" : "https://w3id.org/cterm#ConcreteStructures",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -2282,7 +2196,7 @@
   "@id" : "https://w3id.org/cterm#ConnectingBeams",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2298,7 +2212,7 @@
   "@id" : "https://w3id.org/cterm#Connections",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2346,7 +2260,7 @@
   "@id" : "https://w3id.org/cterm#Consolidation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   }, {
     "@id" : "https://w3id.org/cterm#ObjectOfActivity"
   } ],
@@ -2369,7 +2283,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FamilyOfCostComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#FamilyOfLabor"
+    "@id" : "https://w3id.org/cterm#FamilyOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -2383,6 +2297,22 @@
   }, {
     "@language" : "it",
     "@value" : "Edilizia"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cterm#ConstructionComponenters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/cterm#CategoryOfLabour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bauarbeiter"
+  }, {
+    "@language" : "en",
+    "@value" : "Construction Workers"
+  }, {
+    "@language" : "it",
+    "@value" : "edili"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#ConstructionSite",
@@ -2414,22 +2344,6 @@
     "@value" : "recinzioni cantieri"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#ConstructionWorkers",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfLabor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "Bauarbeiter"
-  }, {
-    "@language" : "en",
-    "@value" : "Construction Workers"
-  }, {
-    "@language" : "it",
-    "@value" : "edili"
-  } ]
-}, {
   "@id" : "https://w3id.org/cterm#ContaminatedSites",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -2451,7 +2365,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2512,7 +2426,7 @@
   "@id" : "https://w3id.org/cterm#Curved-Oblique",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2530,7 +2444,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2643,7 +2557,7 @@
   "@id" : "https://w3id.org/cterm#Diaphragms",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -2674,13 +2588,20 @@
 }, {
   "@id" : "https://w3id.org/cterm#DimensionParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Parameter specialization used to represent dimensional information."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Parameter utilizzata per rappresentare informazioni dimensionali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Dimension Parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Parameter"
   }, {
-    "@id" : "_:genid81"
+    "@id" : "_:genid12"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/cterm#PerformanceParameter"
@@ -2690,6 +2611,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#DimensionParameterType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A ParameterType specialization used to classify DimensionParameter instances."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di ParameterType utilizzata per classificare le istanze di DimensionParameter."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Dimension parameter type"
   } ],
@@ -2812,7 +2740,7 @@
   "@id" : "https://w3id.org/cterm#DriveableFlatRoof",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -2828,7 +2756,7 @@
   "@id" : "https://w3id.org/cterm#Drywall",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2940,7 +2868,7 @@
   "@id" : "https://w3id.org/cterm#Electro-WeldedMesh",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2972,7 +2900,7 @@
   "@id" : "https://w3id.org/cterm#Elevation-Foundation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3036,7 +2964,7 @@
   "@id" : "https://w3id.org/cterm#ExcavationSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -3068,7 +2996,7 @@
   "@id" : "https://w3id.org/cterm#ExistingScreeds",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3282,6 +3210,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Family",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to group construction-related entities into families."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per raggruppare entità relative alle costruzioni in famiglie."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Family"
   } ],
@@ -3291,6 +3226,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#FamilyOfActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Family specialization used to represent family terminology for an activity."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per un'Activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Family of Activity"
   } ],
@@ -3305,6 +3247,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#FamilyOfCostComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Family specialization used to represent family terminology for a cost component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per un CostComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Family of CostComponent"
   } ],
@@ -3317,6 +3266,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#FamilyOfEquipment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Family specialization used to represent family terminology for equipment."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per le attrezzature."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Family of equipment"
   } ],
@@ -3324,10 +3280,17 @@
     "@id" : "https://w3id.org/cterm#Family"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#FamilyOfLabor",
+  "@id" : "https://w3id.org/cterm#FamilyOfLabour",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Family specialization used to represent family terminology for labour."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per la manodopera."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Family of labor"
+    "@value" : "Family of labour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Family"
@@ -3335,6 +3298,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#FamilyOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Family specialization used to represent family terminology for material."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per i materiali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Family of material"
   } ],
@@ -3344,6 +3314,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#FamilyOfWork",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Family specialization used to represent family terminology for a work."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per un Work."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Family of Work"
   } ],
@@ -3356,7 +3333,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -3436,7 +3413,7 @@
   "@id" : "https://w3id.org/cterm#Filling",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3452,7 +3429,7 @@
   "@id" : "https://w3id.org/cterm#FilteringGeotextile",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3483,6 +3460,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Finishing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to describe finishing-related characteristics of a construction-related entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per descrivere caratteristiche relative alla finitura di un'entità delle costruzioni."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Finishing"
   } ],
@@ -3492,6 +3476,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#FinishingOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Finishing specialization used to represent finishing terminology for material."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Finishing utilizzata per rappresentare la terminologia relativa alle finiture per i materiali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Finishing of material"
   } ],
@@ -3499,28 +3490,49 @@
     "@id" : "https://w3id.org/cterm#Finishing"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Finishing specialization used to represent finishing terminology for the work associated with a construction component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Finishing utilizzata per rappresentare la terminologia relativa alle finiture per il Work associato a un ConstructionComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Finishing Of Work Of ConstructionWork"
+    "@value" : "Finishing Of Work Of ConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Finishing"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfProductWork",
+  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Finishing specialization used to represent finishing terminology for the work associated with a product component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Finishing utilizzata per rappresentare la terminologia relativa alle finiture per il Work associato a un ProductComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Finishing Of Work Of ProductWork"
+    "@value" : "Finishing Of Work Of ProductComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Finishing"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#FinishingOfWorkOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Finishing specialization used to represent finishing terminology for the work associated with a temporary component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Finishing utilizzata per rappresentare la terminologia relativa alle finiture per il Work associato a un TemporaryComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Finishing Of Work Of TemporaryWork"
+    "@value" : "Finishing Of Work Of TemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Finishing"
@@ -3529,7 +3541,7 @@
   "@id" : "https://w3id.org/cterm#FirWool",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3631,7 +3643,7 @@
   "@id" : "https://w3id.org/cterm#FireproofPartition",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -3647,7 +3659,7 @@
   "@id" : "https://w3id.org/cterm#FireproofPartitionWall",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -3759,7 +3771,7 @@
   "@id" : "https://w3id.org/cterm#FlatRoof",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -3775,7 +3787,7 @@
   "@id" : "https://w3id.org/cterm#FlatRoofWithWalkableSurface",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -3823,11 +3835,11 @@
   "@id" : "https://w3id.org/cterm#FloorSlab",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   }, {
     "@id" : "https://w3id.org/cterm#UseOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -3855,7 +3867,7 @@
   "@id" : "https://w3id.org/cterm#FloorSlabs",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -3871,7 +3883,7 @@
   "@id" : "https://w3id.org/cterm#FloorUnderlay",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3911,7 +3923,7 @@
   "@id" : "https://w3id.org/cterm#Floors",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -3929,7 +3941,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -3964,7 +3976,7 @@
   "@id" : "https://w3id.org/cterm#Footings-InvertedBeams-Slabs",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3980,7 +3992,7 @@
   "@id" : "https://w3id.org/cterm#ForDamConstruction",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4028,7 +4040,7 @@
   "@id" : "https://w3id.org/cterm#Forestry",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfLabor"
+    "@id" : "https://w3id.org/cterm#CategoryOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4062,7 +4074,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#ObjectOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4116,7 +4128,7 @@
   "@id" : "https://w3id.org/cterm#Foundation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4132,7 +4144,7 @@
   "@id" : "https://w3id.org/cterm#FoundationSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4179,6 +4191,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Function",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to describe the function associated with a construction-related entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per descrivere la funzione associata a un'entità relativa alle costruzioni."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Function"
   } ],
@@ -4188,6 +4207,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#FunctionOfActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Function specialization used to represent function terminology for an activity."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per un'Activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "FunctionOfActivity"
   } ],
@@ -4195,15 +4221,22 @@
     "@id" : "https://w3id.org/cterm#Function"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#FunctionOfEquipment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Function specialization used to represent function terminology for equipment."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per le attrezzature."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Function of equipment"
   } ],
@@ -4213,6 +4246,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#FunctionOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Function specialization used to represent function terminology for material."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per i materiali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Function of material"
   } ],
@@ -4220,36 +4260,57 @@
     "@id" : "https://w3id.org/cterm#Function"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "FunctionOfWorkOfConstructionWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/cterm#Function"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductWork"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Function specialization used to represent function terminology for the work associated with a construction component."
   }, {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork"
-  } ]
-}, {
-  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+    "@language" : "it",
+    "@value" : "Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per il Work associato a un ConstructionComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "FunctionOfWorkOfProductWork"
+    "@value" : "FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Function"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductComponent"
+  }, {
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Function specialization used to represent function terminology for the work associated with a product component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per il Work associato a un ProductComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "FunctionOfWorkOfTemporaryWork"
+    "@value" : "FunctionOfWorkOfProductComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/cterm#Function"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Function specialization used to represent function terminology for the work associated with a temporary component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per il Work associato a un TemporaryComponent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FunctionOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Function"
@@ -4257,6 +4318,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Furnishing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to describe furnishing-related characteristics associated with a construction-related entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per descrivere caratteristiche relative alla fornitura associate a un'entità delle costruzioni."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Furnishing"
   } ],
@@ -4299,7 +4367,7 @@
   "@id" : "https://w3id.org/cterm#GasImpermeableMultilayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4312,7 +4380,7 @@
   "@id" : "https://w3id.org/cterm#Generic",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4550,7 +4618,7 @@
   "@id" : "https://w3id.org/cterm#GlassFiber",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4645,7 +4713,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FinishingOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -4762,7 +4830,7 @@
   "@id" : "https://w3id.org/cterm#HardNaturalStoneStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4925,7 +4993,7 @@
   "@id" : "https://w3id.org/cterm#HollowBox",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4957,7 +5025,7 @@
   "@id" : "https://w3id.org/cterm#HorizontalStructures",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4986,7 +5054,7 @@
   "@id" : "https://w3id.org/cterm#HousingStructuralElements",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5052,7 +5120,7 @@
   "@id" : "https://w3id.org/cterm#InBlocks",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5068,7 +5136,7 @@
   "@id" : "https://w3id.org/cterm#InBricks",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5084,7 +5152,7 @@
   "@id" : "https://w3id.org/cterm#InHollowBlocks",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5103,7 +5171,7 @@
   "@id" : "https://w3id.org/cterm#InHoneycombBlocks",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5135,7 +5203,7 @@
   "@id" : "https://w3id.org/cterm#InMulti-HoleBlocks",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5153,7 +5221,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#AspectOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5169,7 +5237,7 @@
   "@id" : "https://w3id.org/cterm#InPerforatedBricks",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5185,7 +5253,7 @@
   "@id" : "https://w3id.org/cterm#InSemi-SolidBlocks",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5201,7 +5269,7 @@
   "@id" : "https://w3id.org/cterm#InSlabs",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5217,7 +5285,7 @@
   "@id" : "https://w3id.org/cterm#InSolidBlocks",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5233,7 +5301,7 @@
   "@id" : "https://w3id.org/cterm#InSwiss-TypeBlocks",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5281,7 +5349,7 @@
   "@id" : "https://w3id.org/cterm#Inland",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -5315,7 +5383,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   }, {
     "@id" : "https://w3id.org/cterm#TypeOfMaterial"
   } ],
@@ -5345,10 +5413,10 @@
   "@id" : "https://w3id.org/cterm#InsulationSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "it",
+    "@language" : "de",
     "@value" : "Dämmsysteme"
   }, {
     "@language" : "en",
@@ -5395,7 +5463,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5443,7 +5511,7 @@
   "@id" : "https://w3id.org/cterm#InternalWalls",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5504,7 +5572,7 @@
   "@id" : "https://w3id.org/cterm#KraftPaper",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -5600,7 +5668,7 @@
   "@id" : "https://w3id.org/cterm#Level1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfLabor"
+    "@id" : "https://w3id.org/cterm#TypeOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5616,7 +5684,7 @@
   "@id" : "https://w3id.org/cterm#Level2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfLabor"
+    "@id" : "https://w3id.org/cterm#TypeOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5632,7 +5700,7 @@
   "@id" : "https://w3id.org/cterm#Level3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfLabor"
+    "@id" : "https://w3id.org/cterm#TypeOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5648,7 +5716,7 @@
   "@id" : "https://w3id.org/cterm#LevelB1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfLabor"
+    "@id" : "https://w3id.org/cterm#TypeOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5664,7 +5732,7 @@
   "@id" : "https://w3id.org/cterm#LevelC1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfLabor"
+    "@id" : "https://w3id.org/cterm#TypeOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5680,7 +5748,7 @@
   "@id" : "https://w3id.org/cterm#LevelC2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfLabor"
+    "@id" : "https://w3id.org/cterm#TypeOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5696,7 +5764,7 @@
   "@id" : "https://w3id.org/cterm#LevelC3",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfLabor"
+    "@id" : "https://w3id.org/cterm#TypeOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5712,7 +5780,7 @@
   "@id" : "https://w3id.org/cterm#LevelD1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfLabor"
+    "@id" : "https://w3id.org/cterm#TypeOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5728,7 +5796,7 @@
   "@id" : "https://w3id.org/cterm#LevelD2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfLabor"
+    "@id" : "https://w3id.org/cterm#TypeOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5776,7 +5844,7 @@
   "@id" : "https://w3id.org/cterm#Lintels",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -5805,7 +5873,7 @@
   "@id" : "https://w3id.org/cterm#Load-Bearing",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5919,9 +5987,9 @@
   "@id" : "https://w3id.org/cterm#MasonryLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5939,6 +6007,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Material",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to identify or characterize a material."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per identificare o caratterizzare un materiale."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Material"
   } ],
@@ -6019,7 +6094,7 @@
   "@id" : "https://w3id.org/cterm#Metalworkers",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfLabor"
+    "@id" : "https://w3id.org/cterm#CategoryOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -6099,7 +6174,7 @@
   "@id" : "https://w3id.org/cterm#MineralizedFirWool",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -6112,7 +6187,7 @@
   "@id" : "https://w3id.org/cterm#MineralizedGlassFiber",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6138,7 +6213,7 @@
   "@id" : "https://w3id.org/cterm#MineralizedWoodWool",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -6151,7 +6226,7 @@
   "@id" : "https://w3id.org/cterm#MixedSlabStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -6169,7 +6244,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -6187,7 +6262,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -6267,7 +6342,7 @@
   "@id" : "https://w3id.org/cterm#Modular",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -6400,7 +6475,7 @@
   "@id" : "https://w3id.org/cterm#NonHeatedAttics",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6413,7 +6488,7 @@
   "@id" : "https://w3id.org/cterm#NonWalkableAttics",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -6429,7 +6504,7 @@
   "@id" : "https://w3id.org/cterm#NormalColor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6444,6 +6519,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Object",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to identify the object associated with a construction-related entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per identificare l'oggetto associato a un'entità relativa alle costruzioni."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Object"
   } ],
@@ -6453,6 +6535,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#ObjectOfActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Object specialization used to represent object terminology for an activity."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per un'Activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ObjectOfActivity"
   } ],
@@ -6462,15 +6551,22 @@
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/cterm#ObjectOfCostComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#ObjectOfCostComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Object specialization used to represent object terminology for a cost component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per un CostComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "ObjectOfCostComponent"
   } ],
@@ -6478,15 +6574,22 @@
     "@id" : "https://w3id.org/cterm#Object"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#ObjectOfEquipment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Object specialization used to represent object terminology for equipment."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per le attrezzature."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Object of equipment"
   } ],
@@ -6494,10 +6597,17 @@
     "@id" : "https://w3id.org/cterm#Object"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#ObjectOfLabor",
+  "@id" : "https://w3id.org/cterm#ObjectOfLabour",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Object specialization used to represent object terminology for labour."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per la manodopera."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Object of labor"
+    "@value" : "Object of labour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Object"
@@ -6505,6 +6615,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#ObjectOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Object specialization used to represent object terminology for material."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per i materiali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Object of material"
   } ],
@@ -6512,36 +6629,57 @@
     "@id" : "https://w3id.org/cterm#Object"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ObjectOfWorkOfConstructionWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/cterm#Object"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductWork"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Object specialization used to represent object terminology for the work associated with a construction component."
   }, {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"
-  } ]
-}, {
-  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+    "@language" : "it",
+    "@value" : "Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per il Work associato a un ConstructionComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ObjectOfWorkOfProductWork"
+    "@value" : "ObjectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Object"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductComponent"
+  }, {
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Object specialization used to represent object terminology for the work associated with a product component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per il Work associato a un ProductComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "ObjectOfWorkOfTemporaryWork"
+    "@value" : "ObjectOfWorkOfProductComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/cterm#Object"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An Object specialization used to represent object terminology for the work associated with a temporary component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per il Work associato a un TemporaryComponent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ObjectOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Object"
@@ -6607,7 +6745,7 @@
   "@id" : "https://w3id.org/cterm#Openings",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6673,7 +6811,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#AspectOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -6688,27 +6826,41 @@
 }, {
   "@id" : "https://w3id.org/cterm#Parameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A structured terminology entity used to represent a parameter through an optional type, unit, standard, symbols, and one or two textual values, allowing either a single value or a bounded range."
+  }, {
+    "@language" : "it",
+    "@value" : "Un'entità terminologica strutturata utilizzata per rappresentare un parametro mediante un tipo opzionale, un'unità, uno standard, simboli e uno o due valori testuali, consentendo di rappresentare sia un valore singolo sia un intervallo delimitato."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
   }, {
-    "@id" : "_:genid82"
+    "@id" : "_:genid13"
   }, {
-    "@id" : "_:genid83"
+    "@id" : "_:genid14"
   }, {
-    "@id" : "_:genid84"
+    "@id" : "_:genid15"
   }, {
-    "@id" : "_:genid85"
+    "@id" : "_:genid16"
   }, {
-    "@id" : "_:genid86"
+    "@id" : "_:genid17"
   }, {
-    "@id" : "_:genid87"
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#ParameterType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to classify the semantic type of a Parameter."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per classificare il tipo semantico di un Parameter."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Parameter type"
   } ],
@@ -6783,7 +6935,7 @@
   "@id" : "https://w3id.org/cterm#PartitionWall",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6847,7 +6999,7 @@
   "@id" : "https://w3id.org/cterm#PastelColor",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6862,13 +7014,20 @@
 }, {
   "@id" : "https://w3id.org/cterm#PerformanceParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Parameter specialization used to represent performance-related information."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Parameter utilizzata per rappresentare informazioni prestazionali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Performance Parameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Parameter"
   }, {
-    "@id" : "_:genid88"
+    "@id" : "_:genid19"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
     "@id" : "https://w3id.org/cterm#PhysicalParameter"
@@ -6876,6 +7035,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#PerformanceParameterType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A ParameterType specialization used to classify PerformanceParameter instances."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di ParameterType utilizzata per classificare le istanze di PerformanceParameter."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Performance parameter type"
   } ],
@@ -6886,7 +7052,7 @@
   "@id" : "https://w3id.org/cterm#PerimeterCavities",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -6914,17 +7080,31 @@
 }, {
   "@id" : "https://w3id.org/cterm#PhysicalParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Parameter specialization used to represent physical-property information."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Parameter utilizzata per rappresentare informazioni relative a proprietà fisiche."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "PhysicalParameter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Parameter"
   }, {
-    "@id" : "_:genid89"
+    "@id" : "_:genid20"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#PhysicalParameterType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A ParameterType specialization used to classify PhysicalParameter instances."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di ParameterType utilizzata per classificare le istanze di PhysicalParameter."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Physical parameter type"
   } ],
@@ -6935,7 +7115,7 @@
   "@id" : "https://w3id.org/cterm#Piles",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -6951,7 +7131,7 @@
   "@id" : "https://w3id.org/cterm#Pillars",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -6960,7 +7140,7 @@
     "@language" : "en",
     "@value" : "Pillars"
   }, {
-    "@language" : "en",
+    "@language" : "de",
     "@value" : "Säulen"
   } ]
 }, {
@@ -6983,7 +7163,7 @@
   "@id" : "https://w3id.org/cterm#PipeClosures",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6999,7 +7179,7 @@
   "@id" : "https://w3id.org/cterm#PitchedRoof",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -7079,7 +7259,7 @@
   "@id" : "https://w3id.org/cterm#Plastered",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -7145,7 +7325,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FinishingOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -7179,7 +7359,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -7195,7 +7375,7 @@
   "@id" : "https://w3id.org/cterm#Polished",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -7275,7 +7455,7 @@
   "@id" : "https://w3id.org/cterm#Polyolefins",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -7288,7 +7468,7 @@
   "@id" : "https://w3id.org/cterm#PolypropyleneFilm",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -7301,7 +7481,7 @@
   "@id" : "https://w3id.org/cterm#PolypropyleneNonwovenFabricLayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -7346,7 +7526,7 @@
   "@id" : "https://w3id.org/cterm#PouringWalkway",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -7380,7 +7560,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -7626,6 +7806,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#QualificationLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to represent a labour qualification level."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per rappresentare un livello di qualificazione della manodopera."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "QualificationLevel"
   } ],
@@ -7780,7 +7967,7 @@
   "@id" : "https://w3id.org/cterm#RectangularColumns",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -7860,7 +8047,7 @@
   "@id" : "https://w3id.org/cterm#Reinforced",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -7894,7 +8081,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -7910,7 +8097,7 @@
   "@id" : "https://w3id.org/cterm#ReinforcedMembraneWithGlassFiber",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -7923,7 +8110,7 @@
   "@id" : "https://w3id.org/cterm#ReinforcedMembraneWithPolyesterNonwoven",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -7936,7 +8123,7 @@
   "@id" : "https://w3id.org/cterm#ReinforcedSlateGlassFiberMembrane",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -7949,9 +8136,9 @@
   "@id" : "https://w3id.org/cterm#Reinforcement",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8154,7 +8341,7 @@
   "@id" : "https://w3id.org/cterm#RibbedBars",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8349,7 +8536,7 @@
   "@id" : "https://w3id.org/cterm#RoofGarden",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8365,7 +8552,7 @@
   "@id" : "https://w3id.org/cterm#RoofPanelling",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8417,7 +8604,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FinishingOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8433,7 +8620,7 @@
   "@id" : "https://w3id.org/cterm#Rough-Sandblasted",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8529,7 +8716,7 @@
   "@id" : "https://w3id.org/cterm#Sandblasted",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8561,7 +8748,7 @@
   "@id" : "https://w3id.org/cterm#ScreedFormation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8577,7 +8764,7 @@
   "@id" : "https://w3id.org/cterm#Screeds",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8593,7 +8780,7 @@
   "@id" : "https://w3id.org/cterm#Seams",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8673,7 +8860,7 @@
   "@id" : "https://w3id.org/cterm#Semi-Load-Bearing",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8785,7 +8972,7 @@
   "@id" : "https://w3id.org/cterm#SimpleConcreteStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8801,7 +8988,7 @@
   "@id" : "https://w3id.org/cterm#SitePreparationSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8833,7 +9020,7 @@
   "@id" : "https://w3id.org/cterm#Skin",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -8878,7 +9065,7 @@
   "@id" : "https://w3id.org/cterm#Smooth",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8894,7 +9081,7 @@
   "@id" : "https://w3id.org/cterm#SmoothWithSkin",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -8907,7 +9094,7 @@
   "@id" : "https://w3id.org/cterm#SmoothedonGlass",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8927,7 +9114,7 @@
   }, {
     "@id" : "https://w3id.org/cterm#FamilyOfWork"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8978,7 +9165,7 @@
   "@id" : "https://w3id.org/cterm#SolidBrick-Stone-MixedMasonry",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -8996,7 +9183,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9357,7 +9544,7 @@
   "@id" : "https://w3id.org/cterm#Staircase-ElevatorShaftWalls",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9372,25 +9559,32 @@
 }, {
   "@id" : "https://w3id.org/cterm#Standard",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to represent a standard reference, optionally characterized by issuing body, number, part, and year."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per rappresentare un riferimento normativo, eventualmente caratterizzato da ente emittente, numero, parte e anno."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Standard"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Terminology"
   }, {
-    "@id" : "_:genid90"
+    "@id" : "_:genid21"
   }, {
-    "@id" : "_:genid91"
+    "@id" : "_:genid22"
   }, {
-    "@id" : "_:genid92"
+    "@id" : "_:genid23"
   }, {
-    "@id" : "_:genid93"
+    "@id" : "_:genid24"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#Stitching",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -9422,7 +9616,7 @@
   "@id" : "https://w3id.org/cterm#Straight-CurvedAxis",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -9438,7 +9632,7 @@
   "@id" : "https://w3id.org/cterm#StraightBalconyParapets",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -9470,7 +9664,7 @@
   "@id" : "https://w3id.org/cterm#StraightStairLandingsandRamps",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -9518,7 +9712,7 @@
   "@id" : "https://w3id.org/cterm#Strands",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -9534,7 +9728,7 @@
   "@id" : "https://w3id.org/cterm#Stringcourses",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -9598,7 +9792,7 @@
   "@id" : "https://w3id.org/cterm#StructuralSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9614,7 +9808,7 @@
   "@id" : "https://w3id.org/cterm#Structure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9630,7 +9824,7 @@
   "@id" : "https://w3id.org/cterm#Subfoundation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9825,7 +10019,7 @@
   "@id" : "https://w3id.org/cterm#Tensioning",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -9856,6 +10050,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Terminology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "La classe radice dei concetti di terminologia controllata definiti dall'ontologia CTERM."
+  }, {
+    "@language" : "en",
+    "@value" : "The root class for controlled terminology concepts defined by the CTERM ontology."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Terminology"
   } ],
@@ -9882,7 +10083,7 @@
   "@id" : "https://w3id.org/cterm#Thermal",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -9949,7 +10150,7 @@
   "@id" : "https://w3id.org/cterm#ThermalInsulatingandSoundAbsorbingPartitionWall",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9967,7 +10168,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -10005,7 +10206,7 @@
   "@id" : "https://w3id.org/cterm#Thermal_Acoustic",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -10168,7 +10369,7 @@
   "@id" : "https://w3id.org/cterm#Traditional",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -10216,7 +10417,7 @@
   "@id" : "https://w3id.org/cterm#TreatedForOutdoors",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -10277,7 +10478,7 @@
   "@id" : "https://w3id.org/cterm#Truss",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -10324,6 +10525,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Type",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to assign a type to a construction-related entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per assegnare un tipo a un'entità relativa alle costruzioni."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Type"
   } ],
@@ -10333,6 +10541,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#TypeOfActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for an activity."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per un'Activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "TypeOfActivity"
   } ],
@@ -10340,21 +10555,28 @@
     "@id" : "https://w3id.org/cterm#Type"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfProductWork"
+    "@id" : "https://w3id.org/cterm#TypeOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfTemporaryComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#TypeOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for a construction component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per un ConstructionComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Type of construction work"
   } ],
@@ -10362,19 +10584,26 @@
     "@id" : "https://w3id.org/cterm#Type"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfProductWork"
+    "@id" : "https://w3id.org/cterm#TypeOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfTemporaryComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#TypeOfEquipment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for equipment."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per le attrezzature."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Type of equipment"
   } ],
@@ -10382,10 +10611,17 @@
     "@id" : "https://w3id.org/cterm#Type"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfLabor",
+  "@id" : "https://w3id.org/cterm#TypeOfLabour",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for labour."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per la manodopera."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Type of labor"
+    "@value" : "Type of labour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Type"
@@ -10393,6 +10629,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#TypeOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for material."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per i materiali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Type of material"
   } ],
@@ -10400,70 +10643,105 @@
     "@id" : "https://w3id.org/cterm#Type"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfProductWork",
+  "@id" : "https://w3id.org/cterm#TypeOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for a product component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per un ProductComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Type Of ProductWork"
+    "@value" : "Type Of ProductComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Type"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfTemporaryComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#TypeOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for a temporary component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per un TemporaryComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Type Of TemporaryWork"
+    "@value" : "Type Of TemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Type"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#TypeOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for the work associated with a construction component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per il Work associato a un ConstructionComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Type Of Work Of ConstructionWork"
+    "@value" : "Type Of Work Of ConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Type"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductWork",
+  "@id" : "https://w3id.org/cterm#TypeOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for the work associated with a product component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per il Work associato a un ProductComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Type Of Work Of ProductWork"
+    "@value" : "Type Of Work Of ProductComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Type"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Type specialization used to represent type terminology for the work associated with a temporary component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per il Work associato a un TemporaryComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Type Of Work Of TemporaryWork"
+    "@value" : "Type Of Work Of TemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Type"
@@ -10481,7 +10759,7 @@
   "@id" : "https://w3id.org/cterm#Underpinnings",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -10530,6 +10808,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#Use",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A terminology concept used to describe the intended or recognized use of a construction-related entity."
+  }, {
+    "@language" : "it",
+    "@value" : "Un concetto terminologico utilizzato per descrivere l'uso previsto o riconosciuto di un'entità relativa alle costruzioni."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Use"
   } ],
@@ -10539,6 +10824,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#UseOfActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Use specialization used to represent use terminology for an activity."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per un'Activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Use Of Activity"
   } ],
@@ -10546,15 +10838,22 @@
     "@id" : "https://w3id.org/cterm#Use"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfProductWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfProductComponent"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#UseOfEquipment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Use specialization used to represent use terminology for equipment."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per le attrezzature."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Use of equipment"
   } ],
@@ -10564,6 +10863,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#UseOfMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Use specialization used to represent use terminology for material."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per i materiali."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Use of material"
   } ],
@@ -10571,36 +10877,57 @@
     "@id" : "https://w3id.org/cterm#Use"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork",
+  "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Use Of Work Of ConstructionWork"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/cterm#Use"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfProductWork"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Use specialization used to represent use terminology for the work associated with a construction component."
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
-  } ]
-}, {
-  "@id" : "https://w3id.org/cterm#UseOfWorkOfProductWork",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+    "@language" : "it",
+    "@value" : "Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per il Work associato a un ConstructionComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Use Of Work Of ProductWork"
+    "@value" : "Use Of Work Of ConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Use"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfProductComponent"
+  }, {
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ]
 }, {
-  "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork",
+  "@id" : "https://w3id.org/cterm#UseOfWorkOfProductComponent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Use specialization used to represent use terminology for the work associated with a product component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per il Work associato a un ProductComponent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Use Of Work Of TemporaryWork"
+    "@value" : "Use Of Work Of ProductComponent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/cterm#Use"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Use specialization used to represent use terminology for the work associated with a temporary component."
+  }, {
+    "@language" : "it",
+    "@value" : "Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per il Work associato a un TemporaryComponent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Use Of Work Of TemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/cterm#Use"
@@ -10609,7 +10936,7 @@
   "@id" : "https://w3id.org/cterm#VariousStructures",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -10625,7 +10952,7 @@
   "@id" : "https://w3id.org/cterm#VentilatedCrawlSpaceFormation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -10641,7 +10968,7 @@
   "@id" : "https://w3id.org/cterm#VentilatedFacade",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -10657,7 +10984,7 @@
   "@id" : "https://w3id.org/cterm#VentilatedPitchedRoof",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -10675,7 +11002,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#FunctionOfMaterial"
   }, {
-    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -10691,7 +11018,7 @@
   "@id" : "https://w3id.org/cterm#VerticalStructures",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -10771,7 +11098,7 @@
   "@id" : "https://w3id.org/cterm#WalkableAttics",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -10787,7 +11114,7 @@
   "@id" : "https://w3id.org/cterm#Wall-Ceiling",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -10803,7 +11130,7 @@
   "@id" : "https://w3id.org/cterm#WallSystems",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -10819,7 +11146,7 @@
   "@id" : "https://w3id.org/cterm#Walls",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -10853,7 +11180,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -10871,7 +11198,7 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://w3id.org/cterm#UseOfEquipment"
   }, {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -11226,7 +11553,7 @@
   "@id" : "https://w3id.org/cterm#WoodWool",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "it",
@@ -11239,7 +11566,7 @@
   "@id" : "https://w3id.org/cterm#WoodenStructures",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionWork"
+    "@id" : "https://w3id.org/cterm#UseOfWorkOfConstructionComponent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -11255,7 +11582,7 @@
   "@id" : "https://w3id.org/cterm#Worker",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://w3id.org/cterm#ObjectOfLabor"
+    "@id" : "https://w3id.org/cterm#ObjectOfLabour"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -11269,7 +11596,14 @@
   } ]
 }, {
   "@id" : "https://w3id.org/cterm#code",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica il codice che identifica una voce di Classification all'interno del relativo ClassificationSystem."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the code identifying a Classification entry within its ClassificationSystem."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/cterm#Classification"
   } ],
@@ -11282,8 +11616,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasAspect",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid10"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Aspect utilizzato per caratterizzarla."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to an Aspect term used to characterize it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasAspect"
@@ -11294,8 +11632,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid14"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Category utilizzato per categorizzarla."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Category term used to categorize it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasCategory"
@@ -11306,8 +11648,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasClassification",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid19"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con una voce di Classification."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Classification entry."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has classification"
@@ -11318,6 +11664,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasClassificationSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione una voce di Classification con il ClassificationSystem al quale appartiene."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a Classification entry to the ClassificationSystem to which it belongs."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/cterm#Classification"
   } ],
@@ -11330,8 +11683,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasDimensionParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid22"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un DimensionParameter che descrive informazioni dimensionali."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a DimensionParameter describing dimensional information."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasDimensionParameter"
@@ -11342,8 +11699,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasFamily",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid26"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Family utilizzato per raggrupparla o caratterizzarla."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Family term used to group or characterize it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasFamily"
@@ -11354,8 +11715,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasFinishing",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid31"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Finishing che ne descrive le caratteristiche di finitura."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Finishing term describing its finishing-related characteristics."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasFinishing"
@@ -11366,8 +11731,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid34"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Function che ne descrive la funzione."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Function term describing its function."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasFunction"
@@ -11378,8 +11747,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasFurnishing",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/cr#MaterialResource"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Furnishing che descrive caratteristiche relative alla fornitura."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Furnishing term describing furnishing-related characteristics."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasFurnishing"
@@ -11390,8 +11763,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasMaterial",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid39"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Material utilizzato per caratterizzarne il materiale."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Material term used to characterize its material."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasMaterial"
@@ -11402,8 +11779,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid44"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Object che identifica l'oggetto ad essa associato."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to an Object term identifying the object associated with it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasObject"
@@ -11414,8 +11795,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasObjectStandard",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid49"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con uno Standard associato specificamente alla caratterizzazione del relativo oggetto."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Standard associated specifically with its object characterization."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasObjectStandard"
@@ -11426,8 +11811,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasOtherStandard",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid55"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con uno Standard aggiuntivo associato alla sua descrizione."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to an additional Standard associated with its description."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasOtherStandard"
@@ -11438,6 +11827,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasParameterStandard",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un Parameter con uno Standard associato a tale parametro."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a Parameter to a Standard associated with that parameter."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/cterm#Parameter"
   } ],
@@ -11450,8 +11846,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasPerformanceParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid61"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un PerformanceParameter che descrive informazioni prestazionali."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a PerformanceParameter describing performance-related information."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasPerformanceParameter"
@@ -11462,8 +11862,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasPhysicalParameter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid65"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un PhysicalParameter che descrive informazioni relative a proprietà fisiche."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a PhysicalParameter describing physical-property information."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasPhysicalParameter"
@@ -11474,8 +11878,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasQualificationLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/cr#LaborResource"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di QualificationLevel."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a QualificationLevel term."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasQualificationLevel"
@@ -11486,8 +11894,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid69"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Type utilizzato per caratterizzarne il tipo."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Type term used to characterize its type."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasType"
@@ -11498,6 +11910,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un Parameter con l'unità QUDT nella quale è espresso il relativo valore."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates a Parameter to the QUDT Unit in which its value is expressed."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/cterm#Parameter"
   } ],
@@ -11510,8 +11929,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#hasUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid74"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità con un termine di Use che ne descrive l'uso previsto o riconosciuto."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity to a Use term describing its intended or recognized use."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "hasUse"
@@ -11522,11 +11945,15 @@
 }, {
   "@id" : "https://w3id.org/cterm#parameterSymbol1",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/cterm#Parameter"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Memorizza il primo simbolo testuale di confronto o relazione associato a parameterValue1; può essere utilizzato per un valore singolo o come primo limite di un intervallo."
+  }, {
+    "@language" : "en",
+    "@value" : "Stores the first textual comparison or relational symbol associated with parameterValue1; it can be used for a single value or as the first bound of a range."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "parameterSimbol1"
+    "@value" : "parameterSymbol1"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -11534,11 +11961,15 @@
 }, {
   "@id" : "https://w3id.org/cterm#parameterSymbol2",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/cterm#Parameter"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Memorizza il secondo simbolo testuale di confronto o relazione associato a parameterValue2 quando un parametro è rappresentato come intervallo."
+  }, {
+    "@language" : "en",
+    "@value" : "Stores the second textual comparison or relational symbol associated with parameterValue2 when a parameter is represented as a range."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "parameterSimbol2"
+    "@value" : "parameterSymbol2"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -11546,8 +11977,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#parameterType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/cterm#Parameter"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Mette in relazione un'entità rappresentata mediante la struttura dei parametri CTERM con un ParameterType."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates an entity represented through the CTERM parameter structure to a ParameterType."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "parameter type"
@@ -11558,8 +11993,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#parameterValue1",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/cterm#Parameter"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Memorizza il primo valore testuale di un parametro; può rappresentare un valore singolo o il primo limite di un intervallo."
+  }, {
+    "@language" : "en",
+    "@value" : "Stores the first textual value of a parameter; it can represent a single value or the first bound of a range."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "parameterValue1"
@@ -11570,8 +12009,12 @@
 }, {
   "@id" : "https://w3id.org/cterm#parameterValue2",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/cterm#Parameter"
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Memorizza il secondo valore testuale opzionale utilizzato come secondo limite quando un parametro è rappresentato come intervallo."
+  }, {
+    "@language" : "en",
+    "@value" : "Stores the optional second textual value used as the second bound when a parameter is represented as a range."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "parameterValue2"
@@ -11582,6 +12025,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#standardBody",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica l'ente emittente o responsabile associato a uno Standard."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the issuing or responsible body associated with a Standard."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/cterm#Standard"
   } ],
@@ -11594,6 +12044,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#standardNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica l'identificatore numerico di uno Standard."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the numerical identifier of a Standard."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/cterm#Standard"
   } ],
@@ -11606,6 +12063,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#standardPart",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica il numero della parte di uno Standard."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the part number of a Standard."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/cterm#Standard"
   } ],
@@ -11618,6 +12082,13 @@
 }, {
   "@id" : "https://w3id.org/cterm#standardYear",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "it",
+    "@value" : "Specifica l'anno di pubblicazione o di riferimento di uno Standard."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the publication or reference year of a Standard."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/cterm#Standard"
   } ],
@@ -11627,4 +12098,7 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
+}, {
+  "@id" : "https://w3id.org/widoco/vocab#introduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 } ]

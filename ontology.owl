@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://w3id.org/cterm#"
-     xml:base="http://w3id.org/cterm"
+<rdf:RDF xmlns="https://w3id.org/cterm#"
+     xml:base="https://w3id.org/cterm"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,23 +8,29 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="https://w3id.org/widoco/vocab#"
      xmlns:schema="https://schema.org/">
-    <owl:Ontology rdf:about="http://w3id.org/cterm">
-        <terms:bibliographicCitation></terms:bibliographicCitation>
+    <owl:Ontology rdf:about="https://w3id.org/cterm">
+        <terms:abstract xml:lang="it">L&apos;ontologia Construction Terminology (CTERM) fornisce una terminologia controllata per descrivere entità, risorse, attività, opere, componenti di costo, parametri, classificazioni, materiali, funzioni, usi, dimensioni, prestazioni e altre caratteristiche tecniche relative alle costruzioni. CTERM è progettata come livello terminologico condiviso e riutilizzabile dalle ontologie Cost Item (CI) e Construction Resources (CR).</terms:abstract>
+        <terms:abstract xml:lang="en">The Construction Terminology (CTERM) Ontology provides controlled terminology for describing construction-related entities, resources, activities, works, cost components, parameters, classifications, materials, functions, uses, dimensions, performances, and other technical characteristics. CTERM is designed as a shared terminology layer that can be reused by the Cost Item (CI) and Construction Resources (CR) ontologies.</terms:abstract>
+        <terms:bibliographicCitation>Cassandro, J., Hagedorn, P., Sigalov, K., Gatto, C., Mirarchi, C., Pavan, A., &amp; König, M. (2025). Semantic Integration of Cost, Time and Geometry for a Resource-centred Perspective of Managing Construction Projects: . Proceedings of the 2025 European Conference on Computing in Construction. Publiziert. European Conference on Computing in Construction, Porto. https://doi.org/10.35490/ec3.2025.263</terms:bibliographicCitation>
         <terms:contributor rdf:nodeID="genid1"/>
         <terms:contributor rdf:nodeID="genid3"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-12</terms:created>
         <terms:creator rdf:nodeID="genid5"/>
         <terms:creator rdf:nodeID="genid7"/>
+        <terms:description xml:lang="it">L&apos;ontologia Construction Terminology (CTERM) fornisce la terminologia da utilizzare con le ontologie Construction Resource (CR) e Cost Item (CI), nonché con l&apos;ontologia DTC, nel più ampio ambito della gestione dei progetti di costruzione.</terms:description>
         <terms:description xml:lang="en">The Construction Terminology (CTERM) Ontology is providing terminology to use with the Construction Resource (CR) and Cost Item (CI), as well as with the DTC ontology for the broader scope of construction project management.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-07</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-10-12</terms:modified>
         <terms:rights>Copyright 2025 by DABC, PoliMi</terms:rights>
         <terms:title xml:lang="en">The Construction Terminology (CTERM) Ontology</terms:title>
         <vann:preferredNamespacePrefix>cterm</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="http://w3id.org/cterm#"/>
-        <owl:versionInfo>0.2</owl:versionInfo>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/cterm#"/>
+        <owl:versionInfo>0.3</owl:versionInfo>
         <schema:codeRepository rdf:resource="https://github.com/cpm-ont-network/terminology"/>
+        <vocab:introduction xml:lang="en">Construction information is frequently expressed through heterogeneous terminology, synonyms, and domain-specific descriptions, limiting semantic interoperability and automated data processing. The Construction Terminology (CTERM) Ontology provides a shared controlled vocabulary for describing construction concepts and technical attributes in a consistent and machine-readable way. It supports the semantic description of cost items and construction resources while remaining independent from the application-specific structures of CI and CR.</vocab:introduction>
+        <vocab:introduction xml:lang="it">Le informazioni relative alle costruzioni sono frequentemente espresse mediante terminologie eterogenee, sinonimi e descrizioni specifiche di dominio, limitando l&apos;interoperabilità semantica e l&apos;elaborazione automatizzata dei dati. L&apos;ontologia Construction Terminology (CTERM) fornisce un vocabolario controllato condiviso per descrivere concetti e attributi tecnici delle costruzioni in modo coerente e leggibile automaticamente. Supporta la descrizione semantica delle voci di costo e delle risorse delle costruzioni mantenendosi indipendente dalle strutture applicative specifiche di CI e CR.</vocab:introduction>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
         <rdf:type rdf:resource="https://schema.org/Person"/>
@@ -87,6 +93,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
 
 
@@ -202,6 +215,13 @@
     
 
 
+    <!-- https://w3id.org/widoco/vocab#introduction -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/widoco/vocab#introduction"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -233,31 +253,13 @@
     
 
 
-    <!-- https://w3id.org/cterm#code -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/cterm#code">
-        <rdfs:domain rdf:resource="https://w3id.org/cterm#Classification"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>code</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://w3id.org/cterm#hasAspect -->
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasAspect">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Aspect"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Aspect utilizzato per caratterizzarla.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to an Aspect term used to characterize it.</rdfs:comment>
         <rdfs:label>hasAspect</rdfs:label>
     </owl:ObjectProperty>
     
@@ -267,17 +269,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasCategory">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#Resource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Category"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Category utilizzato per categorizzarla.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Category term used to categorize it.</rdfs:comment>
         <rdfs:label>hasCategory</rdfs:label>
     </owl:ObjectProperty>
     
@@ -287,15 +281,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasClassification">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#CostItem"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Classification"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con una voce di Classification.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Classification entry.</rdfs:comment>
         <rdfs:label>has classification</rdfs:label>
     </owl:ObjectProperty>
     
@@ -307,6 +295,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasClassificationSystem">
         <rdfs:domain rdf:resource="https://w3id.org/cterm#Classification"/>
         <rdfs:range rdf:resource="https://w3id.org/cterm#ClassificationSystem"/>
+        <rdfs:comment xml:lang="it">Mette in relazione una voce di Classification con il ClassificationSystem al quale appartiene.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a Classification entry to the ClassificationSystem to which it belongs.</rdfs:comment>
         <rdfs:label>has classification system</rdfs:label>
     </owl:ObjectProperty>
     
@@ -316,16 +306,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasDimensionParameter">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#DimensionParameter"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un DimensionParameter che descrive informazioni dimensionali.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a DimensionParameter describing dimensional information.</rdfs:comment>
         <rdfs:label>hasDimensionParameter</rdfs:label>
     </owl:ObjectProperty>
     
@@ -335,17 +318,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasFamily">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#Resource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Family"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Family utilizzato per raggrupparla o caratterizzarla.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Family term used to group or characterize it.</rdfs:comment>
         <rdfs:label>hasFamily</rdfs:label>
     </owl:ObjectProperty>
     
@@ -355,15 +330,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasFinishing">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Finishing"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Finishing che ne descrive le caratteristiche di finitura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Finishing term describing its finishing-related characteristics.</rdfs:comment>
         <rdfs:label>hasFinishing</rdfs:label>
     </owl:ObjectProperty>
     
@@ -373,17 +342,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasFunction">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Function"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Function che ne descrive la funzione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Function term describing its function.</rdfs:comment>
         <rdfs:label>hasFunction</rdfs:label>
     </owl:ObjectProperty>
     
@@ -393,8 +354,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasFurnishing">
-        <rdfs:domain rdf:resource="https://w3id.org/cr#MaterialResource"/>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Furnishing"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Furnishing che descrive caratteristiche relative alla fornitura.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Furnishing term describing furnishing-related characteristics.</rdfs:comment>
         <rdfs:label>hasFurnishing</rdfs:label>
     </owl:ObjectProperty>
     
@@ -404,17 +366,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasMaterial">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Material"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Material utilizzato per caratterizzarne il materiale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Material term used to characterize its material.</rdfs:comment>
         <rdfs:label>hasMaterial</rdfs:label>
     </owl:ObjectProperty>
     
@@ -424,17 +378,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasObject">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#Resource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Object"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Object che identifica l&apos;oggetto ad essa associato.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to an Object term identifying the object associated with it.</rdfs:comment>
         <rdfs:label>hasObject</rdfs:label>
     </owl:ObjectProperty>
     
@@ -444,18 +390,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasObjectStandard">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Standard"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con uno Standard associato specificamente alla caratterizzazione del relativo oggetto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Standard associated specifically with its object characterization.</rdfs:comment>
         <rdfs:label>hasObjectStandard</rdfs:label>
     </owl:ObjectProperty>
     
@@ -465,18 +402,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasOtherStandard">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Standard"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con uno Standard aggiuntivo associato alla sua descrizione.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to an additional Standard associated with its description.</rdfs:comment>
         <rdfs:label>hasOtherStandard</rdfs:label>
     </owl:ObjectProperty>
     
@@ -488,6 +416,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasParameterStandard">
         <rdfs:domain rdf:resource="https://w3id.org/cterm#Parameter"/>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Standard"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un Parameter con uno Standard associato a tale parametro.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a Parameter to a Standard associated with that parameter.</rdfs:comment>
         <rdfs:label>hasParameterStandard</rdfs:label>
     </owl:ObjectProperty>
     
@@ -497,16 +427,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasPerformanceParameter">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#PerformanceParameter"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un PerformanceParameter che descrive informazioni prestazionali.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a PerformanceParameter describing performance-related information.</rdfs:comment>
         <rdfs:label>hasPerformanceParameter</rdfs:label>
     </owl:ObjectProperty>
     
@@ -516,16 +439,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasPhysicalParameter">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#PhysicalParameter"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un PhysicalParameter che descrive informazioni relative a proprietà fisiche.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a PhysicalParameter describing physical-property information.</rdfs:comment>
         <rdfs:label>hasPhysicalParameter</rdfs:label>
     </owl:ObjectProperty>
     
@@ -535,8 +451,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasQualificationLevel">
-        <rdfs:domain rdf:resource="https://w3id.org/cr#LaborResource"/>
         <rdfs:range rdf:resource="https://w3id.org/cterm#QualificationLevel"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di QualificationLevel.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a QualificationLevel term.</rdfs:comment>
         <rdfs:label>hasQualificationLevel</rdfs:label>
     </owl:ObjectProperty>
     
@@ -546,17 +463,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasType">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#CostComponent"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#Resource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Type"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Type utilizzato per caratterizzarne il tipo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Type term used to characterize its type.</rdfs:comment>
         <rdfs:label>hasType</rdfs:label>
     </owl:ObjectProperty>
     
@@ -568,6 +477,8 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasUnit">
         <rdfs:domain rdf:resource="https://w3id.org/cterm#Parameter"/>
         <rdfs:range rdf:resource="http://qudt.org/schema/qudt/Unit"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un Parameter con l&apos;unità QUDT nella quale è espresso il relativo valore.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates a Parameter to the QUDT Unit in which its value is expressed.</rdfs:comment>
         <rdfs:label>hasUnit</rdfs:label>
     </owl:ObjectProperty>
     
@@ -577,17 +488,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#hasUse">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ci#Activity"/>
-                    <rdf:Description rdf:about="https://w3id.org/ci#Work"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#EquipmentResource"/>
-                    <rdf:Description rdf:about="https://w3id.org/cr#MaterialResource"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="https://w3id.org/cterm#Use"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità con un termine di Use che ne descrive l&apos;uso previsto o riconosciuto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity to a Use term describing its intended or recognized use.</rdfs:comment>
         <rdfs:label>hasUse</rdfs:label>
     </owl:ObjectProperty>
     
@@ -597,8 +500,9 @@
 
 
     <owl:ObjectProperty rdf:about="https://w3id.org/cterm#parameterType">
-        <rdfs:domain rdf:resource="https://w3id.org/cterm#Parameter"/>
         <rdfs:range rdf:resource="https://w3id.org/cterm#ParameterType"/>
+        <rdfs:comment xml:lang="it">Mette in relazione un&apos;entità rappresentata mediante la struttura dei parametri CTERM con un ParameterType.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates an entity represented through the CTERM parameter structure to a ParameterType.</rdfs:comment>
         <rdfs:label>parameter type</rdfs:label>
     </owl:ObjectProperty>
     
@@ -616,13 +520,27 @@
     
 
 
+    <!-- https://w3id.org/cterm#code -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/cterm#code">
+        <rdfs:domain rdf:resource="https://w3id.org/cterm#Classification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Specifica il codice che identifica una voce di Classification all&apos;interno del relativo ClassificationSystem.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the code identifying a Classification entry within its ClassificationSystem.</rdfs:comment>
+        <rdfs:label>code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://w3id.org/cterm#parameterSymbol1 -->
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/cterm#parameterSymbol1">
-        <rdfs:domain rdf:resource="https://w3id.org/cterm#Parameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>parameterSimbol1</rdfs:label>
+        <rdfs:comment xml:lang="it">Memorizza il primo simbolo testuale di confronto o relazione associato a parameterValue1; può essere utilizzato per un valore singolo o come primo limite di un intervallo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Stores the first textual comparison or relational symbol associated with parameterValue1; it can be used for a single value or as the first bound of a range.</rdfs:comment>
+        <rdfs:label>parameterSymbol1</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -631,9 +549,10 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/cterm#parameterSymbol2">
-        <rdfs:domain rdf:resource="https://w3id.org/cterm#Parameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label>parameterSimbol2</rdfs:label>
+        <rdfs:comment xml:lang="it">Memorizza il secondo simbolo testuale di confronto o relazione associato a parameterValue2 quando un parametro è rappresentato come intervallo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Stores the second textual comparison or relational symbol associated with parameterValue2 when a parameter is represented as a range.</rdfs:comment>
+        <rdfs:label>parameterSymbol2</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -642,8 +561,9 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/cterm#parameterValue1">
-        <rdfs:domain rdf:resource="https://w3id.org/cterm#Parameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Memorizza il primo valore testuale di un parametro; può rappresentare un valore singolo o il primo limite di un intervallo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Stores the first textual value of a parameter; it can represent a single value or the first bound of a range.</rdfs:comment>
         <rdfs:label>parameterValue1</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -653,8 +573,9 @@
 
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/cterm#parameterValue2">
-        <rdfs:domain rdf:resource="https://w3id.org/cterm#Parameter"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Memorizza il secondo valore testuale opzionale utilizzato come secondo limite quando un parametro è rappresentato come intervallo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Stores the optional second textual value used as the second bound when a parameter is represented as a range.</rdfs:comment>
         <rdfs:label>parameterValue2</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -666,6 +587,8 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/cterm#standardBody">
         <rdfs:domain rdf:resource="https://w3id.org/cterm#Standard"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Specifica l&apos;ente emittente o responsabile associato a uno Standard.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the issuing or responsible body associated with a Standard.</rdfs:comment>
         <rdfs:label>standardBody</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -677,6 +600,8 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/cterm#standardNumber">
         <rdfs:domain rdf:resource="https://w3id.org/cterm#Standard"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">Specifica l&apos;identificatore numerico di uno Standard.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the numerical identifier of a Standard.</rdfs:comment>
         <rdfs:label>standardNumber</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -688,6 +613,8 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/cterm#standardPart">
         <rdfs:domain rdf:resource="https://w3id.org/cterm#Standard"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">Specifica il numero della parte di uno Standard.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the part number of a Standard.</rdfs:comment>
         <rdfs:label>standardPart</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -699,6 +626,8 @@
     <owl:DatatypeProperty rdf:about="https://w3id.org/cterm#standardYear">
         <rdfs:domain rdf:resource="https://w3id.org/cterm#Standard"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">Specifica l&apos;anno di pubblicazione o di riferimento di uno Standard.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the publication or reference year of a Standard.</rdfs:comment>
         <rdfs:label>standardYear</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -730,67 +659,13 @@
     
 
 
-    <!-- https://w3id.org/ci#Activity -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ci#Activity"/>
-    
-
-
-    <!-- https://w3id.org/ci#CostComponent -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ci#CostComponent"/>
-    
-
-
-    <!-- https://w3id.org/ci#CostItem -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ci#CostItem"/>
-    
-
-
-    <!-- https://w3id.org/ci#Work -->
-
-
-    <owl:Class rdf:about="https://w3id.org/ci#Work"/>
-    
-
-
-    <!-- https://w3id.org/cr#EquipmentResource -->
-
-
-    <owl:Class rdf:about="https://w3id.org/cr#EquipmentResource"/>
-    
-
-
-    <!-- https://w3id.org/cr#LaborResource -->
-
-
-    <owl:Class rdf:about="https://w3id.org/cr#LaborResource"/>
-    
-
-
-    <!-- https://w3id.org/cr#MaterialResource -->
-
-
-    <owl:Class rdf:about="https://w3id.org/cr#MaterialResource"/>
-    
-
-
-    <!-- https://w3id.org/cr#Resource -->
-
-
-    <owl:Class rdf:about="https://w3id.org/cr#Resource"/>
-    
-
-
     <!-- https://w3id.org/cterm#Aspect -->
 
 
     <owl:Class rdf:about="https://w3id.org/cterm#Aspect">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to express an aspect by which a construction-related entity can be characterized.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per esprimere un aspetto secondo cui un&apos;entità relativa alle costruzioni può essere caratterizzata.</rdfs:comment>
         <rdfs:label>Aspect</rdfs:label>
     </owl:Class>
     
@@ -801,6 +676,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#AspectOfEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Aspect"/>
+        <rdfs:comment xml:lang="en">An Aspect specialization used to represent aspect terminology for equipment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per le attrezzature.</rdfs:comment>
         <rdfs:label>Aspect Of Equipment</rdfs:label>
     </owl:Class>
     
@@ -811,40 +688,48 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#AspectOfMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Aspect"/>
+        <rdfs:comment xml:lang="en">An Aspect specialization used to represent aspect terminology for material.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per i materiali.</rdfs:comment>
         <rdfs:label>Aspect Of Material</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#AspectOfWorkOfConstructionWork -->
+    <!-- https://w3id.org/cterm#AspectOfWorkOfConstructionComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#AspectOfWorkOfConstructionWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#AspectOfWorkOfConstructionComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Aspect"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#AspectOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#AspectOfWorkOfTemporaryWork"/>
-        <rdfs:label>Aspect Of Work Of ConstructionWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#AspectOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">An Aspect specialization used to represent aspect terminology for the work associated with a construction component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per il Work associato a un ConstructionComponent.</rdfs:comment>
+        <rdfs:label>Aspect Of Work Of ConstructionComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#AspectOfWorkOfProductWork -->
+    <!-- https://w3id.org/cterm#AspectOfWorkOfProductComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#AspectOfWorkOfProductWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#AspectOfWorkOfProductComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Aspect"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#AspectOfWorkOfTemporaryWork"/>
-        <rdfs:label>Aspect Of Work Of ProductWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">An Aspect specialization used to represent aspect terminology for the work associated with a product component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per il Work associato a un ProductComponent.</rdfs:comment>
+        <rdfs:label>Aspect Of Work Of ProductComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#AspectOfWorkOfTemporaryWork -->
+    <!-- https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#AspectOfWorkOfTemporaryWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#AspectOfWorkOfTemporaryComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Aspect"/>
-        <rdfs:label>Aspect Of Work Of TemporaryWork</rdfs:label>
+        <rdfs:comment xml:lang="en">An Aspect specialization used to represent aspect terminology for the work associated with a temporary component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Aspect utilizzata per rappresentare la terminologia relativa agli aspetti per il Work associato a un TemporaryComponent.</rdfs:comment>
+        <rdfs:label>Aspect Of Work Of TemporaryComponent</rdfs:label>
     </owl:Class>
     
 
@@ -854,6 +739,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Category">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to assign a category to a construction-related entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per assegnare una categoria a un&apos;entità relativa alle costruzioni.</rdfs:comment>
         <rdfs:label>Category</rdfs:label>
     </owl:Class>
     
@@ -865,9 +752,11 @@
     <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfActivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
         <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfCostComponent"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Category specialization used to represent category terminology for an activity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per un&apos;Activity.</rdfs:comment>
         <rdfs:label>Category Of Activity</rdfs:label>
     </owl:Class>
     
@@ -878,9 +767,11 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfCostComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Category specialization used to represent category terminology for a cost component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per un CostComponent.</rdfs:comment>
         <rdfs:label>Category Of CostComponent</rdfs:label>
     </owl:Class>
     
@@ -891,17 +782,21 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
+        <rdfs:comment xml:lang="en">A Category specialization used to represent category terminology for equipment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per le attrezzature.</rdfs:comment>
         <rdfs:label>Category of equipment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#CategoryOfLabor -->
+    <!-- https://w3id.org/cterm#CategoryOfLabour -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfLabor">
+    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfLabour">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
-        <rdfs:label>Category of labor</rdfs:label>
+        <rdfs:comment xml:lang="en">A Category specialization used to represent category terminology for labour.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per la manodopera.</rdfs:comment>
+        <rdfs:label>Category of labour</rdfs:label>
     </owl:Class>
     
 
@@ -911,40 +806,48 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
+        <rdfs:comment xml:lang="en">A Category specialization used to represent category terminology for material.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per i materiali.</rdfs:comment>
         <rdfs:label>Category of material</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#CategoryOfWorkOfConstructionWork -->
+    <!-- https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfWorkOfConstructionWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"/>
-        <rdfs:label>Category Of Work Of ConstructionWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Category specialization used to represent category terminology for the work associated with a construction component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per il Work associato a un ConstructionComponent.</rdfs:comment>
+        <rdfs:label>Category Of Work Of ConstructionComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#CategoryOfWorkOfProductWork -->
+    <!-- https://w3id.org/cterm#CategoryOfWorkOfProductComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfWorkOfProductWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfWorkOfProductComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"/>
-        <rdfs:label>Category Of Work Of ProductWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Category specialization used to represent category terminology for the work associated with a product component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per il Work associato a un ProductComponent.</rdfs:comment>
+        <rdfs:label>Category Of Work Of ProductComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork -->
+    <!-- https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Category"/>
-        <rdfs:label>Category Of Work Of TemporaryWork</rdfs:label>
+        <rdfs:comment xml:lang="en">A Category specialization used to represent category terminology for the work associated with a temporary component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Category utilizzata per rappresentare la terminologia relativa alle categorie per il Work associato a un TemporaryComponent.</rdfs:comment>
+        <rdfs:label>Category Of Work Of TemporaryComponent</rdfs:label>
     </owl:Class>
     
 
@@ -956,18 +859,20 @@
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/cterm#code"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/cterm#hasClassificationSystem"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/cterm#ClassificationSystem"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/cterm#code"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A classification entry identified by a code and associated with a ClassificationSystem.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una voce di classificazione identificata da un codice e associata a un ClassificationSystem.</rdfs:comment>
         <rdfs:label>Classification</rdfs:label>
     </owl:Class>
     
@@ -978,6 +883,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#ClassificationSystem">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A system used to organize and identify classification entries.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un sistema utilizzato per organizzare e identificare le voci di classificazione.</rdfs:comment>
         <rdfs:label>Classification system</rdfs:label>
     </owl:Class>
     
@@ -997,6 +904,8 @@
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/cterm#PerformanceParameter"/>
         <owl:disjointWith rdf:resource="https://w3id.org/cterm#PhysicalParameter"/>
+        <rdfs:comment xml:lang="en">A Parameter specialization used to represent dimensional information.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Parameter utilizzata per rappresentare informazioni dimensionali.</rdfs:comment>
         <rdfs:label>Dimension Parameter</rdfs:label>
     </owl:Class>
     
@@ -1007,6 +916,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#DimensionParameterType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#ParameterType"/>
+        <rdfs:comment xml:lang="en">A ParameterType specialization used to classify DimensionParameter instances.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di ParameterType utilizzata per classificare le istanze di DimensionParameter.</rdfs:comment>
         <rdfs:label>Dimension parameter type</rdfs:label>
     </owl:Class>
     
@@ -1017,6 +928,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Family">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to group construction-related entities into families.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per raggruppare entità relative alle costruzioni in famiglie.</rdfs:comment>
         <rdfs:label>Family</rdfs:label>
     </owl:Class>
     
@@ -1029,6 +942,8 @@
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Family"/>
         <owl:disjointWith rdf:resource="https://w3id.org/cterm#FamilyOfCostComponent"/>
         <owl:disjointWith rdf:resource="https://w3id.org/cterm#FamilyOfWork"/>
+        <rdfs:comment xml:lang="en">A Family specialization used to represent family terminology for an activity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per un&apos;Activity.</rdfs:comment>
         <rdfs:label>Family of Activity</rdfs:label>
     </owl:Class>
     
@@ -1040,6 +955,8 @@
     <owl:Class rdf:about="https://w3id.org/cterm#FamilyOfCostComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Family"/>
         <owl:disjointWith rdf:resource="https://w3id.org/cterm#FamilyOfWork"/>
+        <rdfs:comment xml:lang="en">A Family specialization used to represent family terminology for a cost component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per un CostComponent.</rdfs:comment>
         <rdfs:label>Family of CostComponent</rdfs:label>
     </owl:Class>
     
@@ -1050,17 +967,21 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#FamilyOfEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Family"/>
+        <rdfs:comment xml:lang="en">A Family specialization used to represent family terminology for equipment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per le attrezzature.</rdfs:comment>
         <rdfs:label>Family of equipment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#FamilyOfLabor -->
+    <!-- https://w3id.org/cterm#FamilyOfLabour -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#FamilyOfLabor">
+    <owl:Class rdf:about="https://w3id.org/cterm#FamilyOfLabour">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Family"/>
-        <rdfs:label>Family of labor</rdfs:label>
+        <rdfs:comment xml:lang="en">A Family specialization used to represent family terminology for labour.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per la manodopera.</rdfs:comment>
+        <rdfs:label>Family of labour</rdfs:label>
     </owl:Class>
     
 
@@ -1070,6 +991,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#FamilyOfMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Family"/>
+        <rdfs:comment xml:lang="en">A Family specialization used to represent family terminology for material.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per i materiali.</rdfs:comment>
         <rdfs:label>Family of material</rdfs:label>
     </owl:Class>
     
@@ -1080,6 +1003,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#FamilyOfWork">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Family"/>
+        <rdfs:comment xml:lang="en">A Family specialization used to represent family terminology for a work.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Family utilizzata per rappresentare la terminologia relativa alle famiglie per un Work.</rdfs:comment>
         <rdfs:label>Family of Work</rdfs:label>
     </owl:Class>
     
@@ -1090,6 +1015,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Finishing">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to describe finishing-related characteristics of a construction-related entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per descrivere caratteristiche relative alla finitura di un&apos;entità delle costruzioni.</rdfs:comment>
         <rdfs:label>Finishing</rdfs:label>
     </owl:Class>
     
@@ -1100,37 +1027,45 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#FinishingOfMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Finishing"/>
+        <rdfs:comment xml:lang="en">A Finishing specialization used to represent finishing terminology for material.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Finishing utilizzata per rappresentare la terminologia relativa alle finiture per i materiali.</rdfs:comment>
         <rdfs:label>Finishing of material</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#FinishingOfWorkOfConstructionWork -->
+    <!-- https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Finishing"/>
-        <rdfs:label>Finishing Of Work Of ConstructionWork</rdfs:label>
+        <rdfs:comment xml:lang="en">A Finishing specialization used to represent finishing terminology for the work associated with a construction component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Finishing utilizzata per rappresentare la terminologia relativa alle finiture per il Work associato a un ConstructionComponent.</rdfs:comment>
+        <rdfs:label>Finishing Of Work Of ConstructionComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#FinishingOfWorkOfProductWork -->
+    <!-- https://w3id.org/cterm#FinishingOfWorkOfProductComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#FinishingOfWorkOfProductWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#FinishingOfWorkOfProductComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Finishing"/>
-        <rdfs:label>Finishing Of Work Of ProductWork</rdfs:label>
+        <rdfs:comment xml:lang="en">A Finishing specialization used to represent finishing terminology for the work associated with a product component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Finishing utilizzata per rappresentare la terminologia relativa alle finiture per il Work associato a un ProductComponent.</rdfs:comment>
+        <rdfs:label>Finishing Of Work Of ProductComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork -->
+    <!-- https://w3id.org/cterm#FinishingOfWorkOfTemporaryComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#FinishingOfWorkOfTemporaryWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#FinishingOfWorkOfTemporaryComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Finishing"/>
-        <rdfs:label>Finishing Of Work Of TemporaryWork</rdfs:label>
+        <rdfs:comment xml:lang="en">A Finishing specialization used to represent finishing terminology for the work associated with a temporary component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Finishing utilizzata per rappresentare la terminologia relativa alle finiture per il Work associato a un TemporaryComponent.</rdfs:comment>
+        <rdfs:label>Finishing Of Work Of TemporaryComponent</rdfs:label>
     </owl:Class>
     
 
@@ -1140,6 +1075,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Function">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to describe the function associated with a construction-related entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per descrivere la funzione associata a un&apos;entità relativa alle costruzioni.</rdfs:comment>
         <rdfs:label>Function</rdfs:label>
     </owl:Class>
     
@@ -1150,9 +1087,11 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfActivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Function"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Function specialization used to represent function terminology for an activity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per un&apos;Activity.</rdfs:comment>
         <rdfs:label>FunctionOfActivity</rdfs:label>
     </owl:Class>
     
@@ -1163,6 +1102,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Function"/>
+        <rdfs:comment xml:lang="en">A Function specialization used to represent function terminology for equipment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per le attrezzature.</rdfs:comment>
         <rdfs:label>Function of equipment</rdfs:label>
     </owl:Class>
     
@@ -1173,40 +1114,48 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Function"/>
+        <rdfs:comment xml:lang="en">A Function specialization used to represent function terminology for material.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per i materiali.</rdfs:comment>
         <rdfs:label>Function of material</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#FunctionOfWorkOfConstructionWork -->
+    <!-- https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Function"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork"/>
-        <rdfs:label>FunctionOfWorkOfConstructionWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Function specialization used to represent function terminology for the work associated with a construction component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per il Work associato a un ConstructionComponent.</rdfs:comment>
+        <rdfs:label>FunctionOfWorkOfConstructionComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#FunctionOfWorkOfProductWork -->
+    <!-- https://w3id.org/cterm#FunctionOfWorkOfProductComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfWorkOfProductWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfWorkOfProductComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Function"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork"/>
-        <rdfs:label>FunctionOfWorkOfProductWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Function specialization used to represent function terminology for the work associated with a product component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per il Work associato a un ProductComponent.</rdfs:comment>
+        <rdfs:label>FunctionOfWorkOfProductComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork -->
+    <!-- https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfWorkOfTemporaryWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#FunctionOfWorkOfTemporaryComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Function"/>
-        <rdfs:label>FunctionOfWorkOfTemporaryWork</rdfs:label>
+        <rdfs:comment xml:lang="en">A Function specialization used to represent function terminology for the work associated with a temporary component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Function utilizzata per rappresentare la terminologia relativa alle funzioni per il Work associato a un TemporaryComponent.</rdfs:comment>
+        <rdfs:label>FunctionOfWorkOfTemporaryComponent</rdfs:label>
     </owl:Class>
     
 
@@ -1216,6 +1165,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Furnishing">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to describe furnishing-related characteristics associated with a construction-related entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per descrivere caratteristiche relative alla fornitura associate a un&apos;entità delle costruzioni.</rdfs:comment>
         <rdfs:label>Furnishing</rdfs:label>
     </owl:Class>
     
@@ -1226,6 +1177,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Material">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to identify or characterize a material.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per identificare o caratterizzare un materiale.</rdfs:comment>
         <rdfs:label>Material</rdfs:label>
     </owl:Class>
     
@@ -1236,6 +1189,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Object">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to identify the object associated with a construction-related entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per identificare l&apos;oggetto associato a un&apos;entità relativa alle costruzioni.</rdfs:comment>
         <rdfs:label>Object</rdfs:label>
     </owl:Class>
     
@@ -1247,9 +1202,11 @@
     <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfActivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Object"/>
         <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfCostComponent"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">An Object specialization used to represent object terminology for an activity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per un&apos;Activity.</rdfs:comment>
         <rdfs:label>ObjectOfActivity</rdfs:label>
     </owl:Class>
     
@@ -1260,9 +1217,11 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfCostComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Object"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">An Object specialization used to represent object terminology for a cost component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per un CostComponent.</rdfs:comment>
         <rdfs:label>ObjectOfCostComponent</rdfs:label>
     </owl:Class>
     
@@ -1273,17 +1232,21 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Object"/>
+        <rdfs:comment xml:lang="en">An Object specialization used to represent object terminology for equipment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per le attrezzature.</rdfs:comment>
         <rdfs:label>Object of equipment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#ObjectOfLabor -->
+    <!-- https://w3id.org/cterm#ObjectOfLabour -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfLabor">
+    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfLabour">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Object"/>
-        <rdfs:label>Object of labor</rdfs:label>
+        <rdfs:comment xml:lang="en">An Object specialization used to represent object terminology for labour.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per la manodopera.</rdfs:comment>
+        <rdfs:label>Object of labour</rdfs:label>
     </owl:Class>
     
 
@@ -1293,40 +1256,48 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Object"/>
+        <rdfs:comment xml:lang="en">An Object specialization used to represent object terminology for material.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per i materiali.</rdfs:comment>
         <rdfs:label>Object of material</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#ObjectOfWorkOfConstructionWork -->
+    <!-- https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfWorkOfConstructionWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Object"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"/>
-        <rdfs:label>ObjectOfWorkOfConstructionWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">An Object specialization used to represent object terminology for the work associated with a construction component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per il Work associato a un ConstructionComponent.</rdfs:comment>
+        <rdfs:label>ObjectOfWorkOfConstructionComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#ObjectOfWorkOfProductWork -->
+    <!-- https://w3id.org/cterm#ObjectOfWorkOfProductComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfWorkOfProductWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfWorkOfProductComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Object"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"/>
-        <rdfs:label>ObjectOfWorkOfProductWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">An Object specialization used to represent object terminology for the work associated with a product component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per il Work associato a un ProductComponent.</rdfs:comment>
+        <rdfs:label>ObjectOfWorkOfProductComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork -->
+    <!-- https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Object"/>
-        <rdfs:label>ObjectOfWorkOfTemporaryWork</rdfs:label>
+        <rdfs:comment xml:lang="en">An Object specialization used to represent object terminology for the work associated with a temporary component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Object utilizzata per rappresentare la terminologia relativa agli oggetti per il Work associato a un TemporaryComponent.</rdfs:comment>
+        <rdfs:label>ObjectOfWorkOfTemporaryComponent</rdfs:label>
     </owl:Class>
     
 
@@ -1378,6 +1349,8 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A structured terminology entity used to represent a parameter through an optional type, unit, standard, symbols, and one or two textual values, allowing either a single value or a bounded range.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un&apos;entità terminologica strutturata utilizzata per rappresentare un parametro mediante un tipo opzionale, un&apos;unità, uno standard, simboli e uno o due valori testuali, consentendo di rappresentare sia un valore singolo sia un intervallo delimitato.</rdfs:comment>
         <rdfs:label>Parameter</rdfs:label>
     </owl:Class>
     
@@ -1388,6 +1361,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#ParameterType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to classify the semantic type of a Parameter.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per classificare il tipo semantico di un Parameter.</rdfs:comment>
         <rdfs:label>Parameter type</rdfs:label>
     </owl:Class>
     
@@ -1406,6 +1381,8 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://w3id.org/cterm#PhysicalParameter"/>
+        <rdfs:comment xml:lang="en">A Parameter specialization used to represent performance-related information.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Parameter utilizzata per rappresentare informazioni prestazionali.</rdfs:comment>
         <rdfs:label>Performance Parameter</rdfs:label>
     </owl:Class>
     
@@ -1416,6 +1393,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#PerformanceParameterType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#ParameterType"/>
+        <rdfs:comment xml:lang="en">A ParameterType specialization used to classify PerformanceParameter instances.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di ParameterType utilizzata per classificare le istanze di PerformanceParameter.</rdfs:comment>
         <rdfs:label>Performance parameter type</rdfs:label>
     </owl:Class>
     
@@ -1433,6 +1412,8 @@
                 <owl:onClass rdf:resource="https://w3id.org/cterm#PhysicalParameterType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A Parameter specialization used to represent physical-property information.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Parameter utilizzata per rappresentare informazioni relative a proprietà fisiche.</rdfs:comment>
         <rdfs:label>PhysicalParameter</rdfs:label>
     </owl:Class>
     
@@ -1443,6 +1424,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#PhysicalParameterType">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#ParameterType"/>
+        <rdfs:comment xml:lang="en">A ParameterType specialization used to classify PhysicalParameter instances.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di ParameterType utilizzata per classificare le istanze di PhysicalParameter.</rdfs:comment>
         <rdfs:label>Physical parameter type</rdfs:label>
     </owl:Class>
     
@@ -1453,6 +1436,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#QualificationLevel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to represent a labour qualification level.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per rappresentare un livello di qualificazione della manodopera.</rdfs:comment>
         <rdfs:label>QualificationLevel</rdfs:label>
     </owl:Class>
     
@@ -1491,6 +1476,8 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A terminology concept used to represent a standard reference, optionally characterized by issuing body, number, part, and year.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per rappresentare un riferimento normativo, eventualmente caratterizzato da ente emittente, numero, parte e anno.</rdfs:comment>
         <rdfs:label>Standard</rdfs:label>
     </owl:Class>
     
@@ -1501,6 +1488,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Terminology">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="it">La classe radice dei concetti di terminologia controllata definiti dall&apos;ontologia CTERM.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The root class for controlled terminology concepts defined by the CTERM ontology.</rdfs:comment>
         <rdfs:label>Terminology</rdfs:label>
     </owl:Class>
     
@@ -1511,6 +1500,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Type">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to assign a type to a construction-related entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per assegnare un tipo a un&apos;entità relativa alle costruzioni.</rdfs:comment>
         <rdfs:label>Type</rdfs:label>
     </owl:Class>
     
@@ -1521,27 +1512,31 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#TypeOfActivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfTemporaryWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfTemporaryComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for an activity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per un&apos;Activity.</rdfs:comment>
         <rdfs:label>TypeOfActivity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#TypeOfConstructionWork -->
+    <!-- https://w3id.org/cterm#TypeOfConstructionComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfConstructionWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfConstructionComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfTemporaryWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfTemporaryComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for a construction component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per un ConstructionComponent.</rdfs:comment>
         <rdfs:label>Type of construction work</rdfs:label>
     </owl:Class>
     
@@ -1552,17 +1547,21 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#TypeOfEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for equipment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per le attrezzature.</rdfs:comment>
         <rdfs:label>Type of equipment</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#TypeOfLabor -->
+    <!-- https://w3id.org/cterm#TypeOfLabour -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfLabor">
+    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfLabour">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
-        <rdfs:label>Type of labor</rdfs:label>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for labour.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per la manodopera.</rdfs:comment>
+        <rdfs:label>Type of labour</rdfs:label>
     </owl:Class>
     
 
@@ -1572,67 +1571,79 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#TypeOfMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for material.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per i materiali.</rdfs:comment>
         <rdfs:label>Type of material</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#TypeOfProductWork -->
+    <!-- https://w3id.org/cterm#TypeOfProductComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfProductWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfProductComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfTemporaryWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"/>
-        <rdfs:label>Type Of ProductWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfTemporaryComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for a product component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per un ProductComponent.</rdfs:comment>
+        <rdfs:label>Type Of ProductComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#TypeOfTemporaryWork -->
+    <!-- https://w3id.org/cterm#TypeOfTemporaryComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfTemporaryWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfTemporaryComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"/>
-        <rdfs:label>Type Of TemporaryWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for a temporary component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per un TemporaryComponent.</rdfs:comment>
+        <rdfs:label>Type Of TemporaryComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#TypeOfWorkOfConstructionWork -->
+    <!-- https://w3id.org/cterm#TypeOfWorkOfConstructionComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfWorkOfConstructionWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"/>
-        <rdfs:label>Type Of Work Of ConstructionWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for the work associated with a construction component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per il Work associato a un ConstructionComponent.</rdfs:comment>
+        <rdfs:label>Type Of Work Of ConstructionComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#TypeOfWorkOfProductWork -->
+    <!-- https://w3id.org/cterm#TypeOfWorkOfProductComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfWorkOfProductWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfWorkOfProductComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"/>
-        <rdfs:label>Type Of Work Of ProductWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for the work associated with a product component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per il Work associato a un ProductComponent.</rdfs:comment>
+        <rdfs:label>Type Of Work Of ProductComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#TypeOfWorkOfTemporaryWork -->
+    <!-- https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Type"/>
-        <rdfs:label>Type Of Work Of TemporaryWork</rdfs:label>
+        <rdfs:comment xml:lang="en">A Type specialization used to represent type terminology for the work associated with a temporary component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Type utilizzata per rappresentare la terminologia relativa ai tipi per il Work associato a un TemporaryComponent.</rdfs:comment>
+        <rdfs:label>Type Of Work Of TemporaryComponent</rdfs:label>
     </owl:Class>
     
 
@@ -1642,6 +1653,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#Use">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Terminology"/>
+        <rdfs:comment xml:lang="en">A terminology concept used to describe the intended or recognized use of a construction-related entity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un concetto terminologico utilizzato per descrivere l&apos;uso previsto o riconosciuto di un&apos;entità relativa alle costruzioni.</rdfs:comment>
         <rdfs:label>Use</rdfs:label>
     </owl:Class>
     
@@ -1652,9 +1665,11 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#UseOfActivity">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Use"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Use specialization used to represent use terminology for an activity.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per un&apos;Activity.</rdfs:comment>
         <rdfs:label>Use Of Activity</rdfs:label>
     </owl:Class>
     
@@ -1665,6 +1680,8 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#UseOfEquipment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Use"/>
+        <rdfs:comment xml:lang="en">A Use specialization used to represent use terminology for equipment.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per le attrezzature.</rdfs:comment>
         <rdfs:label>Use of equipment</rdfs:label>
     </owl:Class>
     
@@ -1675,40 +1692,48 @@
 
     <owl:Class rdf:about="https://w3id.org/cterm#UseOfMaterial">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Use"/>
+        <rdfs:comment xml:lang="en">A Use specialization used to represent use terminology for material.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per i materiali.</rdfs:comment>
         <rdfs:label>Use of material</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#UseOfWorkOfConstructionWork -->
+    <!-- https://w3id.org/cterm#UseOfWorkOfConstructionComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#UseOfWorkOfConstructionWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#UseOfWorkOfConstructionComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Use"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfProductWork"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
-        <rdfs:label>Use Of Work Of ConstructionWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfProductComponent"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Use specialization used to represent use terminology for the work associated with a construction component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per il Work associato a un ConstructionComponent.</rdfs:comment>
+        <rdfs:label>Use Of Work Of ConstructionComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#UseOfWorkOfProductWork -->
+    <!-- https://w3id.org/cterm#UseOfWorkOfProductComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#UseOfWorkOfProductWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#UseOfWorkOfProductComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Use"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
-        <rdfs:label>Use Of Work Of ProductWork</rdfs:label>
+        <owl:disjointWith rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
+        <rdfs:comment xml:lang="en">A Use specialization used to represent use terminology for the work associated with a product component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per il Work associato a un ProductComponent.</rdfs:comment>
+        <rdfs:label>Use Of Work Of ProductComponent</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/cterm#UseOfWorkOfTemporaryWork -->
+    <!-- https://w3id.org/cterm#UseOfWorkOfTemporaryComponent -->
 
 
-    <owl:Class rdf:about="https://w3id.org/cterm#UseOfWorkOfTemporaryWork">
+    <owl:Class rdf:about="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent">
         <rdfs:subClassOf rdf:resource="https://w3id.org/cterm#Use"/>
-        <rdfs:label>Use Of Work Of TemporaryWork</rdfs:label>
+        <rdfs:comment xml:lang="en">A Use specialization used to represent use terminology for the work associated with a temporary component.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una specializzazione di Use utilizzata per rappresentare la terminologia relativa agli usi per il Work associato a un TemporaryComponent.</rdfs:comment>
+        <rdfs:label>Use Of Work Of TemporaryComponent</rdfs:label>
     </owl:Class>
     
 
@@ -1729,7 +1754,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#AboveGround">
-        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Above Ground</rdfs:label>
         <rdfs:label xml:lang="it">fuori terra</rdfs:label>
         <rdfs:label xml:lang="de">Überirdisch</rdfs:label>
@@ -1753,7 +1778,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Acoustic">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Acoustic</rdfs:label>
         <rdfs:label xml:lang="it">Acustico</rdfs:label>
         <rdfs:label xml:lang="de">Akustik</rdfs:label>
@@ -1789,7 +1814,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Agriculture">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfLabour"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfCostComponent"/>
         <rdfs:label xml:lang="en">Agriculture</rdfs:label>
         <rdfs:label xml:lang="it">Colture/Agricoltura</rdfs:label>
@@ -1815,7 +1840,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#AluminumFoil">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Aluminum Foil</rdfs:label>
         <rdfs:label xml:lang="it">Lamina In Alluminio</rdfs:label>
     </owl:NamedIndividual>
@@ -1937,7 +1962,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Attic">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Attic</rdfs:label>
         <rdfs:label xml:lang="de">Dachboden</rdfs:label>
         <rdfs:label xml:lang="it">Sottotetto</rdfs:label>
@@ -1985,7 +2010,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#BasementFlooring">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Basement Flooring</rdfs:label>
         <rdfs:label xml:lang="de">Fußböden im Untergeschoss</rdfs:label>
         <rdfs:label xml:lang="it">Pavimenti Piano Cantina</rdfs:label>
@@ -1997,7 +2022,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#BasementWalls">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Buried Walls</rdfs:label>
         <rdfs:label xml:lang="it">Pareti Interrate</rdfs:label>
         <rdfs:label xml:lang="de">Wände im Untergeschoss</rdfs:label>
@@ -2021,7 +2046,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Bathrooms-Kitchens">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Bathrooms-Kitchens</rdfs:label>
         <rdfs:label xml:lang="de">Bäder-Küchen</rdfs:label>
         <rdfs:label xml:lang="it">bagni-cucine</rdfs:label>
@@ -2034,7 +2059,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#BeamEdgesandCurbs">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Balken und Randplatten</rdfs:label>
         <rdfs:label xml:lang="en">Beam Edges and Curbs</rdfs:label>
         <rdfs:label xml:lang="it">sponde di travi e cordoli</rdfs:label>
@@ -2046,7 +2071,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Beams">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Balken</rdfs:label>
         <rdfs:label xml:lang="en">Beams</rdfs:label>
         <rdfs:label xml:lang="it">travi</rdfs:label>
@@ -2119,7 +2144,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Bitumen">
         <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Bitume</rdfs:label>
         <rdfs:label xml:lang="de">Bitumen</rdfs:label>
         <rdfs:label xml:lang="en">Bitumen</rdfs:label>
@@ -2131,7 +2156,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#BitumenLayer">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Bitumen Layer</rdfs:label>
         <rdfs:label xml:lang="it">Strato Di Bitume</rdfs:label>
     </owl:NamedIndividual>
@@ -2142,7 +2167,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#BituminizedFeltboard">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Bituminized Feltboard</rdfs:label>
         <rdfs:label xml:lang="it">Cartonfeltro Bitumato</rdfs:label>
     </owl:NamedIndividual>
@@ -2153,7 +2178,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#BituminizedGlassFiber">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Bituminized Glass Fiber</rdfs:label>
         <rdfs:label xml:lang="it">Velo Vetro Bitumato</rdfs:label>
     </owl:NamedIndividual>
@@ -2236,7 +2261,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Building">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
         <rdfs:label xml:lang="de">Bau</rdfs:label>
         <rdfs:label xml:lang="en">Building</rdfs:label>
         <rdfs:label xml:lang="it">edile</rdfs:label>
@@ -2272,7 +2297,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Bush-Hammered">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Bossiert</rdfs:label>
         <rdfs:label xml:lang="en">Bush-Hammered</rdfs:label>
         <rdfs:label xml:lang="it">bocciardato</rdfs:label>
@@ -2298,7 +2323,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Casing">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Casing</rdfs:label>
         <rdfs:label xml:lang="de">Kassettierungen</rdfs:label>
         <rdfs:label xml:lang="it">incassettature</rdfs:label>
@@ -2322,7 +2347,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Cavities">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Cavities</rdfs:label>
         <rdfs:label xml:lang="it">Intercapedini</rdfs:label>
         <rdfs:label xml:lang="de">Zwischenräume</rdfs:label>
@@ -2334,7 +2359,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Ceilings">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Ceilings</rdfs:label>
         <rdfs:label xml:lang="it">Controsoffitti</rdfs:label>
         <rdfs:label xml:lang="de">Decken</rdfs:label>
@@ -2419,7 +2444,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ChemicalWorkers">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
         <rdfs:label xml:lang="en">Chemical Workers</rdfs:label>
         <rdfs:label xml:lang="de">Chemiearbeiter</rdfs:label>
         <rdfs:label xml:lang="it">chimici</rdfs:label>
@@ -2432,7 +2457,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#CircularColumns">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="en">Circular Columns</rdfs:label>
         <rdfs:label xml:lang="de">Runde Pfeiler</rdfs:label>
         <rdfs:label xml:lang="it">pilastri circolari</rdfs:label>
@@ -2456,7 +2481,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Classic-Rustic">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Classic-Rustic</rdfs:label>
         <rdfs:label xml:lang="de">Klassisch-Rustikal</rdfs:label>
         <rdfs:label xml:lang="it">classica-rustica</rdfs:label>
@@ -2505,7 +2530,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Coated">
         <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Beschichtet</rdfs:label>
         <rdfs:label xml:lang="en">Coated</rdfs:label>
         <rdfs:label xml:lang="it">Rivestito</rdfs:label>
@@ -2518,7 +2543,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#CoatedWithRefractoryCeramicLayer">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Coated With Refractory Ceramic Layer</rdfs:label>
         <rdfs:label xml:lang="it">Rivestito Con Strato Ceramico Refrattario</rdfs:label>
     </owl:NamedIndividual>
@@ -2529,7 +2554,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#CoatedWithSpecialCardboard">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Coated With Special Cardboard</rdfs:label>
         <rdfs:label xml:lang="it">Rivestito Di Cartone Speciale</rdfs:label>
     </owl:NamedIndividual>
@@ -2540,7 +2565,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#CoatedwithFireproofMortar">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Coated with Fireproof Mortar</rdfs:label>
         <rdfs:label xml:lang="de">Mit Brandschutzmörtel beschichtet</rdfs:label>
         <rdfs:label xml:lang="it">rivestito con malta antincendio</rdfs:label>
@@ -2552,7 +2577,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#CoatedwithRefractoryCeramicLayer">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Coated with Refractory Ceramic Layer</rdfs:label>
         <rdfs:label xml:lang="de">Mit feuerfester Keramik beschichtet</rdfs:label>
         <rdfs:label xml:lang="it">rivestito con strato di ceramica refrattaria</rdfs:label>
@@ -2564,7 +2589,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#CoatedwithSpecialCardboard">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Coated with Special Cardboard</rdfs:label>
         <rdfs:label xml:lang="de">Mit Spezialpappe beschichtet</rdfs:label>
         <rdfs:label xml:lang="it">rivestito in cartone speciale</rdfs:label>
@@ -2624,7 +2649,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Colored">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Colored</rdfs:label>
         <rdfs:label xml:lang="de">Gefärbt</rdfs:label>
         <rdfs:label xml:lang="it">colorato</rdfs:label>
@@ -2636,7 +2661,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Columns">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Columns</rdfs:label>
         <rdfs:label xml:lang="de">Pfeiler</rdfs:label>
         <rdfs:label xml:lang="it">pilastri</rdfs:label>
@@ -2672,7 +2697,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ComplementarySystems">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Complementary Systems</rdfs:label>
         <rdfs:label xml:lang="de">Ergänzende Systeme</rdfs:label>
         <rdfs:label xml:lang="it">sistemi complementari</rdfs:label>
@@ -2769,7 +2794,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ConcreteStructure">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Betonstruktur</rdfs:label>
         <rdfs:label xml:lang="en">Concrete Structure</rdfs:label>
         <rdfs:label xml:lang="it">struttura in conglomerato cementizio</rdfs:label>
@@ -2781,7 +2806,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ConcreteStructures">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Betonstrukturen</rdfs:label>
         <rdfs:label xml:lang="en">Concrete Structures</rdfs:label>
         <rdfs:label xml:lang="it">strutture in conglomerato cementizio</rdfs:label>
@@ -2817,7 +2842,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ConnectingBeams">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Connecting Beams</rdfs:label>
         <rdfs:label xml:lang="de">Streifenfundamentbalken</rdfs:label>
         <rdfs:label xml:lang="it">corree</rdfs:label>
@@ -2829,7 +2854,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Connections">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Connections</rdfs:label>
         <rdfs:label xml:lang="de">Verbindungen</rdfs:label>
         <rdfs:label xml:lang="it">collegamenti</rdfs:label>
@@ -2865,7 +2890,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Consolidation">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfActivity"/>
         <rdfs:label xml:lang="it">Consolidamento</rdfs:label>
         <rdfs:label xml:lang="en">Consolidation</rdfs:label>
@@ -2880,11 +2905,23 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Construction">
         <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfCostComponent"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfLabour"/>
         <rdfs:label xml:lang="de">Bauwerk</rdfs:label>
         <rdfs:label xml:lang="en">Construction</rdfs:label>
         <rdfs:label xml:lang="it">Costruzioni</rdfs:label>
         <rdfs:label xml:lang="it">Edilizia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/cterm#ConstructionComponenters -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ConstructionComponenters">
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
+        <rdfs:label xml:lang="de">Bauarbeiter</rdfs:label>
+        <rdfs:label xml:lang="en">Construction Workers</rdfs:label>
+        <rdfs:label xml:lang="it">edili</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2912,18 +2949,6 @@
     
 
 
-    <!-- https://w3id.org/cterm#ConstructionWorkers -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ConstructionWorkers">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
-        <rdfs:label xml:lang="de">Bauarbeiter</rdfs:label>
-        <rdfs:label xml:lang="en">Construction Workers</rdfs:label>
-        <rdfs:label xml:lang="it">edili</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/cterm#ContaminatedSites -->
 
 
@@ -2941,7 +2966,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ContinuousFoundations">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="en">Continuous Foundations</rdfs:label>
         <rdfs:label xml:lang="de">Streifenfundamente</rdfs:label>
         <rdfs:label xml:lang="it">fondazioni continue</rdfs:label>
@@ -2988,7 +3013,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Curved-Oblique">
-        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Curved-Oblique</rdfs:label>
         <rdfs:label xml:lang="de">Gebogen-Schief</rdfs:label>
         <rdfs:label xml:lang="it">curva-obliqua</rdfs:label>
@@ -3001,7 +3026,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#CurvedWallsinElevation">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="en">Curved Walls in Elevation</rdfs:label>
         <rdfs:label xml:lang="de">Geschwungene Wände in Höhe</rdfs:label>
         <rdfs:label xml:lang="it">pareti curvilinee in elevazione</rdfs:label>
@@ -3086,7 +3111,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Diaphragms">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Diaphragmen</rdfs:label>
         <rdfs:label xml:lang="en">Diaphragms</rdfs:label>
         <rdfs:label xml:lang="it">diaframmi</rdfs:label>
@@ -3194,7 +3219,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#DriveableFlatRoof">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Befahrbares Flachdach</rdfs:label>
         <rdfs:label xml:lang="it">Copertura Piana Carrabile</rdfs:label>
         <rdfs:label xml:lang="en">Driveable Flat Roof</rdfs:label>
@@ -3206,7 +3231,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Drywall">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Drywall</rdfs:label>
         <rdfs:label xml:lang="de">Trockenbau</rdfs:label>
         <rdfs:label xml:lang="it">a secco</rdfs:label>
@@ -3290,7 +3315,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Electro-WeldedMesh">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Electro-Welded Mesh</rdfs:label>
         <rdfs:label xml:lang="de">Geschweißtes Netz</rdfs:label>
         <rdfs:label xml:lang="it">rete elettrosaldata</rdfs:label>
@@ -3314,7 +3339,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Elevation-Foundation">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Elevation-Foundation</rdfs:label>
         <rdfs:label xml:lang="de">Erhöhung-Fundament</rdfs:label>
         <rdfs:label xml:lang="it">elevazione-fondazione</rdfs:label>
@@ -3362,7 +3387,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ExcavationSystems">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Aushubsysteme</rdfs:label>
         <rdfs:label xml:lang="en">Excavation Systems</rdfs:label>
         <rdfs:label xml:lang="it">sistemi di scavo</rdfs:label>
@@ -3386,7 +3411,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ExistingScreeds">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Existing Screeds</rdfs:label>
         <rdfs:label xml:lang="it">Massetti Esistenti</rdfs:label>
         <rdfs:label xml:lang="de">Vorhandene Estriche</rdfs:label>
@@ -3552,7 +3577,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Fastening">
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Befestigung</rdfs:label>
         <rdfs:label xml:lang="en">Fastening</rdfs:label>
         <rdfs:label xml:lang="it">fissaggio</rdfs:label>
@@ -3612,7 +3637,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Filling">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Filling</rdfs:label>
         <rdfs:label xml:lang="de">Verfüllung</rdfs:label>
         <rdfs:label xml:lang="it">tamponamento</rdfs:label>
@@ -3624,7 +3649,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FilteringGeotextile">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Filtering Geotextile</rdfs:label>
         <rdfs:label xml:lang="de">Filtrierendes Geotextil</rdfs:label>
         <rdfs:label xml:lang="it">Geotessile Filtrante</rdfs:label>
@@ -3648,7 +3673,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FirWool">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Fir Wool</rdfs:label>
         <rdfs:label xml:lang="it">Lana Di Abete</rdfs:label>
     </owl:NamedIndividual>
@@ -3722,7 +3747,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FireproofPartition">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Brandschutztrennwand</rdfs:label>
         <rdfs:label xml:lang="en">Fireproof Partition</rdfs:label>
         <rdfs:label xml:lang="it">divisorio antincendio</rdfs:label>
@@ -3734,7 +3759,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FireproofPartitionWall">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Brandschutzvorsatzschale</rdfs:label>
         <rdfs:label xml:lang="en">Fireproof Partition Wall</rdfs:label>
         <rdfs:label xml:lang="it">controparete antincendio</rdfs:label>
@@ -3818,7 +3843,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FlatRoof">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Copertura Piana</rdfs:label>
         <rdfs:label xml:lang="de">Flachdach</rdfs:label>
         <rdfs:label xml:lang="en">Flat Roof</rdfs:label>
@@ -3830,7 +3855,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FlatRoofWithWalkableSurface">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Copertura Piana Con Pavimentazione Pedonabile</rdfs:label>
         <rdfs:label xml:lang="de">Flachdach mit begehbarem Belag</rdfs:label>
         <rdfs:label xml:lang="en">Flat roof with walk-on covering</rdfs:label>
@@ -3866,9 +3891,9 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FloorSlab">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Bodenplatte</rdfs:label>
         <rdfs:label xml:lang="de">Decke</rdfs:label>
         <rdfs:label xml:lang="de">Deckenplatte</rdfs:label>
@@ -3884,7 +3909,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FloorSlabs">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Bodenplatten</rdfs:label>
         <rdfs:label xml:lang="en">Floor Slabs</rdfs:label>
         <rdfs:label xml:lang="it">solette</rdfs:label>
@@ -3896,7 +3921,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FloorUnderlay">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Floor Underlay</rdfs:label>
         <rdfs:label xml:lang="de">Fußbodenunterlage</rdfs:label>
         <rdfs:label xml:lang="it">Sottopavimenti</rdfs:label>
@@ -3923,7 +3948,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Floors">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Bodenbeläge</rdfs:label>
         <rdfs:label xml:lang="en">Floors</rdfs:label>
         <rdfs:label xml:lang="it">Pavimenti</rdfs:label>
@@ -3936,7 +3961,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FloorsOverUnheatedAreas">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Böden über unbeheizten Bereichen</rdfs:label>
         <rdfs:label xml:lang="de">Decken über unbeheizten Bereichen</rdfs:label>
         <rdfs:label xml:lang="en">Floors Over Unheated Areas</rdfs:label>
@@ -3961,7 +3986,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Footings-InvertedBeams-Slabs">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Footings-Inverted Beams-Slabs</rdfs:label>
         <rdfs:label xml:lang="de">Fundamente-Umgekehrte Balken-Platten</rdfs:label>
         <rdfs:label xml:lang="it">plinti-travi rovesce-platee</rdfs:label>
@@ -3973,7 +3998,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ForDamConstruction">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">For Dam Construction</rdfs:label>
         <rdfs:label xml:lang="de">Zur Realisierung von Stauwerken</rdfs:label>
         <rdfs:label xml:lang="it">per realizzazione di briglia</rdfs:label>
@@ -4009,7 +4034,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Forestry">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
         <rdfs:label xml:lang="en">Forestry</rdfs:label>
         <rdfs:label xml:lang="de">Forstwirtschaft</rdfs:label>
         <rdfs:label xml:lang="it">forestale</rdfs:label>
@@ -4034,7 +4059,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Formwork">
         <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="en">Formwork</rdfs:label>
         <rdfs:label xml:lang="de">Schalung</rdfs:label>
         <rdfs:label xml:lang="de">Schalungen</rdfs:label>
@@ -4072,7 +4097,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Foundation">
-        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Foundation</rdfs:label>
         <rdfs:label xml:lang="de">Fundament</rdfs:label>
         <rdfs:label xml:lang="it">fondazione</rdfs:label>
@@ -4084,7 +4109,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#FoundationSystems">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Foundation Systems</rdfs:label>
         <rdfs:label xml:lang="de">Fundamentensysteme</rdfs:label>
         <rdfs:label xml:lang="it">sistemi di fondazione</rdfs:label>
@@ -4144,7 +4169,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#GasImpermeableMultilayer">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Gas Impermeable Multilayer</rdfs:label>
         <rdfs:label xml:lang="it">Multistrato Gas Impermeabile</rdfs:label>
     </owl:NamedIndividual>
@@ -4155,7 +4180,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Generic">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Generic</rdfs:label>
         <rdfs:label xml:lang="it">Generico</rdfs:label>
         <rdfs:label xml:lang="de">Generisch</rdfs:label>
@@ -4328,7 +4353,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#GlassFiber">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Glass Fiber</rdfs:label>
         <rdfs:label xml:lang="it">Velo Vetro</rdfs:label>
     </owl:NamedIndividual>
@@ -4400,7 +4425,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#GrayColor">
         <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Colore Grigio</rdfs:label>
         <rdfs:label xml:lang="de">Graue Farbe</rdfs:label>
         <rdfs:label xml:lang="en">Gray Color</rdfs:label>
@@ -4486,7 +4511,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#HardNaturalStoneStructure">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Hard Natural Stone Structure</rdfs:label>
         <rdfs:label xml:lang="de">Struktur aus Naturhartstein</rdfs:label>
         <rdfs:label xml:lang="it">struttura in pietra naturale dura</rdfs:label>
@@ -4607,7 +4632,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#HollowBox">
-        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Hollow Box</rdfs:label>
         <rdfs:label xml:lang="de">Mit Hohlkasten</rdfs:label>
         <rdfs:label xml:lang="it">a cassa vuota</rdfs:label>
@@ -4631,7 +4656,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#HorizontalStructures">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">HorizontalStructures</rdfs:label>
         <rdfs:label xml:lang="it">StruttureOrizzontali</rdfs:label>
     </owl:NamedIndividual>
@@ -4654,7 +4679,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#HousingStructuralElements">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Housing Structural Elements</rdfs:label>
         <rdfs:label xml:lang="de">Unterbringung struktureller Elemente</rdfs:label>
         <rdfs:label xml:lang="it">alloggiamento elementi strutturali</rdfs:label>
@@ -4703,7 +4728,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InBlocks">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Aus Blöcken</rdfs:label>
         <rdfs:label xml:lang="en">In Blocks</rdfs:label>
         <rdfs:label xml:lang="it">in blocchi</rdfs:label>
@@ -4715,7 +4740,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InBricks">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Aus Fliesen</rdfs:label>
         <rdfs:label xml:lang="en">In Bricks</rdfs:label>
         <rdfs:label xml:lang="it">in tavelle</rdfs:label>
@@ -4727,7 +4752,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InHollowBlocks">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Aus Hohlblöcken</rdfs:label>
         <rdfs:label xml:lang="en">In Hollow Blocks</rdfs:label>
         <rdfs:label xml:lang="it">in blocchi cavi</rdfs:label>
@@ -4740,7 +4765,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InHoneycombBlocks">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Aus Wabenblöcken</rdfs:label>
         <rdfs:label xml:lang="en">In Honeycomb Blocks</rdfs:label>
         <rdfs:label xml:lang="it">in blocchi alveolati</rdfs:label>
@@ -4764,7 +4789,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InMulti-HoleBlocks">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Aus Mehrlochblöcken</rdfs:label>
         <rdfs:label xml:lang="en">In Multi-Hole Blocks</rdfs:label>
         <rdfs:label xml:lang="it">in blocchi multiforo</rdfs:label>
@@ -4777,7 +4802,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InPanels">
         <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">In Paneelen</rdfs:label>
         <rdfs:label xml:lang="en">In Panels</rdfs:label>
         <rdfs:label xml:lang="it">in pannelli</rdfs:label>
@@ -4789,7 +4814,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InPerforatedBricks">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Aus gelochten Fliesen</rdfs:label>
         <rdfs:label xml:lang="en">In Perforated Bricks</rdfs:label>
         <rdfs:label xml:lang="it">in tavelle forate</rdfs:label>
@@ -4801,7 +4826,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InSemi-SolidBlocks">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Aus Halbvollen Blöcken</rdfs:label>
         <rdfs:label xml:lang="en">In Semi-Solid Blocks</rdfs:label>
         <rdfs:label xml:lang="it">in blocchi semipieni</rdfs:label>
@@ -4813,7 +4838,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InSlabs">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">In Platten</rdfs:label>
         <rdfs:label xml:lang="en">In Slabs</rdfs:label>
         <rdfs:label xml:lang="it">in lastre</rdfs:label>
@@ -4825,7 +4850,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InSolidBlocks">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Aus Vollblöcken</rdfs:label>
         <rdfs:label xml:lang="en">In Solid Blocks</rdfs:label>
         <rdfs:label xml:lang="it">in blocchi pieni</rdfs:label>
@@ -4837,7 +4862,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InSwiss-TypeBlocks">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Aus Schweizer Typ-Blöcken</rdfs:label>
         <rdfs:label xml:lang="en">In Swiss-Type Blocks</rdfs:label>
         <rdfs:label xml:lang="it">in blocchi tipo svizzero</rdfs:label>
@@ -4873,7 +4898,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Inland">
-        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Hinterland</rdfs:label>
         <rdfs:label xml:lang="en">Inland</rdfs:label>
         <rdfs:label xml:lang="it">entroterra</rdfs:label>
@@ -4898,7 +4923,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Insulation">
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfMaterial"/>
         <rdfs:label xml:lang="it">Coibentazione</rdfs:label>
         <rdfs:label xml:lang="de">Dämmstoff</rdfs:label>
@@ -4915,8 +4940,8 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InsulationSystems">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionWork"/>
-        <rdfs:label xml:lang="it">Dämmsysteme</rdfs:label>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfConstructionComponent"/>
+        <rdfs:label xml:lang="de">Dämmsysteme</rdfs:label>
         <rdfs:label xml:lang="en">Insulation Systems</rdfs:label>
         <rdfs:label xml:lang="it">Sistemi Di Isolamento</rdfs:label>
     </owl:NamedIndividual>
@@ -4952,7 +4977,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#IntermediateFloors">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Intermediate Floors</rdfs:label>
         <rdfs:label xml:lang="it">Solai Intermedi</rdfs:label>
         <rdfs:label xml:lang="de">Zwischendecken</rdfs:label>
@@ -4988,7 +5013,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#InternalWalls">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Internal Walls</rdfs:label>
         <rdfs:label xml:lang="it">Pareti Dall Interno</rdfs:label>
     </owl:NamedIndividual>
@@ -5035,7 +5060,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#KraftPaper">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Carta Kraft</rdfs:label>
         <rdfs:label xml:lang="en">Kraft Paper</rdfs:label>
     </owl:NamedIndividual>
@@ -5107,7 +5132,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Level1">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
         <rdfs:label xml:lang="en">Level 1</rdfs:label>
         <rdfs:label xml:lang="de">Stufe 1</rdfs:label>
         <rdfs:label xml:lang="it">livello 1°</rdfs:label>
@@ -5119,7 +5144,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Level2">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
         <rdfs:label xml:lang="en">Level 2</rdfs:label>
         <rdfs:label xml:lang="de">Stufe 2</rdfs:label>
         <rdfs:label xml:lang="it">livello 2°</rdfs:label>
@@ -5131,7 +5156,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Level3">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
         <rdfs:label xml:lang="en">Level 3</rdfs:label>
         <rdfs:label xml:lang="de">Stufe 3</rdfs:label>
         <rdfs:label xml:lang="it">livello 3°</rdfs:label>
@@ -5143,7 +5168,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelB1">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
         <rdfs:label xml:lang="en">Level B1</rdfs:label>
         <rdfs:label xml:lang="de">Stufe B1</rdfs:label>
         <rdfs:label xml:lang="it">livello B1</rdfs:label>
@@ -5155,7 +5180,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelC1">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
         <rdfs:label xml:lang="en">Level C1</rdfs:label>
         <rdfs:label xml:lang="de">Stufe C1</rdfs:label>
         <rdfs:label xml:lang="it">livello C1</rdfs:label>
@@ -5167,7 +5192,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelC2">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
         <rdfs:label xml:lang="en">Level C2</rdfs:label>
         <rdfs:label xml:lang="de">Stufe C2</rdfs:label>
         <rdfs:label xml:lang="it">livello C2</rdfs:label>
@@ -5179,7 +5204,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelC3">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
         <rdfs:label xml:lang="en">Level C3</rdfs:label>
         <rdfs:label xml:lang="de">Stufe C3</rdfs:label>
         <rdfs:label xml:lang="it">livello C3</rdfs:label>
@@ -5191,7 +5216,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelD1">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
         <rdfs:label xml:lang="en">Level D1</rdfs:label>
         <rdfs:label xml:lang="de">Stufe D1</rdfs:label>
         <rdfs:label xml:lang="it">livello D1</rdfs:label>
@@ -5203,7 +5228,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#LevelD2">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfLabour"/>
         <rdfs:label xml:lang="en">Level D2</rdfs:label>
         <rdfs:label xml:lang="de">Stufe D2</rdfs:label>
         <rdfs:label xml:lang="it">livello D2</rdfs:label>
@@ -5239,7 +5264,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Lintels">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Architravi</rdfs:label>
         <rdfs:label xml:lang="en">Lintels</rdfs:label>
     </owl:NamedIndividual>
@@ -5262,7 +5287,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Load-Bearing">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Load-Bearing</rdfs:label>
         <rdfs:label xml:lang="de">Tragend</rdfs:label>
         <rdfs:label xml:lang="it">portante</rdfs:label>
@@ -5347,8 +5372,8 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#MasonryLayer">
-        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Masonry Layer</rdfs:label>
         <rdfs:label xml:lang="de">Mauerwerksschicht</rdfs:label>
         <rdfs:label xml:lang="it">Strato Di Muratura</rdfs:label>
@@ -5418,7 +5443,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Metalworkers">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfLabour"/>
         <rdfs:label xml:lang="de">Metallarbeiter</rdfs:label>
         <rdfs:label xml:lang="en">Metalworkers</rdfs:label>
         <rdfs:label xml:lang="it">metalmeccanici</rdfs:label>
@@ -5478,7 +5503,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#MineralizedFirWool">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Lana Di Abete Mineralizzata</rdfs:label>
         <rdfs:label xml:lang="en">Mineralized FirWool</rdfs:label>
     </owl:NamedIndividual>
@@ -5489,7 +5514,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#MineralizedGlassFiber">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Mineralized Glass Fiber</rdfs:label>
         <rdfs:label xml:lang="it">Velo Vetro Mineralizzato</rdfs:label>
     </owl:NamedIndividual>
@@ -5511,7 +5536,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#MineralizedWoodWool">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Lana Di Legno Mineralizzata</rdfs:label>
         <rdfs:label xml:lang="en">Mineralized Wood Wool</rdfs:label>
     </owl:NamedIndividual>
@@ -5522,7 +5547,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#MixedSlabStructure">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Mischdeckenkonstruktion</rdfs:label>
         <rdfs:label xml:lang="en">Mixed Slab Structure</rdfs:label>
         <rdfs:label xml:lang="it">struttura in solaio misto</rdfs:label>
@@ -5535,7 +5560,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#MixedSlabwithDeepBeams">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Mischdecke mit Balken in der Dicke</rdfs:label>
         <rdfs:label xml:lang="en">Mixed Slab with Deep Beams</rdfs:label>
         <rdfs:label xml:lang="it">solaio misto con travi a spessore</rdfs:label>
@@ -5548,7 +5573,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#MixedSlabwithDeepBeamsforFlatStructures">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Mischdecke mit Balken in der Dicke für flache Strukturen</rdfs:label>
         <rdfs:label xml:lang="en">Mixed Slab with Deep Beams for Flat Structures</rdfs:label>
         <rdfs:label xml:lang="it">solaio misto con travi in spessore per strutture piane</rdfs:label>
@@ -5608,7 +5633,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Modular">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Modular</rdfs:label>
         <rdfs:label xml:lang="en">Modular</rdfs:label>
         <rdfs:label xml:lang="it">componibile</rdfs:label>
@@ -5706,7 +5731,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#NonHeatedAttics">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Non Heated Attics</rdfs:label>
         <rdfs:label xml:lang="it">Sottotetti Non Riscaldati</rdfs:label>
     </owl:NamedIndividual>
@@ -5717,7 +5742,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#NonWalkableAttics">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Nicht begehbare Dachböden</rdfs:label>
         <rdfs:label xml:lang="en">Non Walkable Attics</rdfs:label>
         <rdfs:label xml:lang="it">Sottotetti Non Praticabili</rdfs:label>
@@ -5729,7 +5754,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#NormalColor">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Normal Color</rdfs:label>
         <rdfs:label xml:lang="de">Normale Farbe</rdfs:label>
         <rdfs:label xml:lang="it">colore normale</rdfs:label>
@@ -5787,7 +5812,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Openings">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Openings</rdfs:label>
         <rdfs:label xml:lang="it">aperture</rdfs:label>
         <rdfs:label xml:lang="de">Öffnungen</rdfs:label>
@@ -5836,7 +5861,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Panels">
         <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Paneele</rdfs:label>
         <rdfs:label xml:lang="en">Panels</rdfs:label>
         <rdfs:label xml:lang="it">Pannelli</rdfs:label>
@@ -5896,7 +5921,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PartitionWall">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Partition Wall</rdfs:label>
         <rdfs:label xml:lang="de">Vorsatzschale</rdfs:label>
         <rdfs:label xml:lang="it">controparete</rdfs:label>
@@ -5944,7 +5969,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PastelColor">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Pastel Color</rdfs:label>
         <rdfs:label xml:lang="de">Pastellfarbe</rdfs:label>
         <rdfs:label xml:lang="it">colore pastello</rdfs:label>
@@ -5956,7 +5981,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PerimeterCavities">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Intercapedini Perimetrali</rdfs:label>
         <rdfs:label xml:lang="en">Perimeter Cavities</rdfs:label>
     </owl:NamedIndividual>
@@ -5979,7 +6004,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Piles">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Pfähle</rdfs:label>
         <rdfs:label xml:lang="en">Piles</rdfs:label>
         <rdfs:label xml:lang="it">pali</rdfs:label>
@@ -5991,10 +6016,10 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Pillars">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Pilastri</rdfs:label>
         <rdfs:label xml:lang="en">Pillars</rdfs:label>
-        <rdfs:label xml:lang="en">Säulen</rdfs:label>
+        <rdfs:label xml:lang="de">Säulen</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -6015,7 +6040,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PipeClosures">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Pipe Closures</rdfs:label>
         <rdfs:label xml:lang="de">Verschlüsse für Rohre</rdfs:label>
         <rdfs:label xml:lang="it">chiusure canne</rdfs:label>
@@ -6027,7 +6052,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PitchedRoof">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Copertura A Falde</rdfs:label>
         <rdfs:label xml:lang="en">Pitched Roof</rdfs:label>
         <rdfs:label xml:lang="de">Pultdach</rdfs:label>
@@ -6087,7 +6112,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Plastered">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Plastered</rdfs:label>
         <rdfs:label xml:lang="de">Verputzt</rdfs:label>
         <rdfs:label xml:lang="it">intonacato</rdfs:label>
@@ -6136,7 +6161,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PlasticFilm">
         <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Film Plastico</rdfs:label>
         <rdfs:label xml:lang="de">Kunststofffolie</rdfs:label>
         <rdfs:label xml:lang="en">Plastic Film</rdfs:label>
@@ -6161,7 +6186,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PointFoundations">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="en">Point Foundations</rdfs:label>
         <rdfs:label xml:lang="de">Punktfundamente</rdfs:label>
         <rdfs:label xml:lang="it">fondazioni puntuali</rdfs:label>
@@ -6173,7 +6198,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Polished">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Geschliffen</rdfs:label>
         <rdfs:label xml:lang="en">Polished</rdfs:label>
         <rdfs:label xml:lang="it">levigato</rdfs:label>
@@ -6233,7 +6258,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Polyolefins">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Poliolefine</rdfs:label>
         <rdfs:label xml:lang="en">Polyolefins</rdfs:label>
     </owl:NamedIndividual>
@@ -6244,7 +6269,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PolypropyleneFilm">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Pellicola Polipropilenica</rdfs:label>
         <rdfs:label xml:lang="en">Polypropylene Film</rdfs:label>
     </owl:NamedIndividual>
@@ -6255,7 +6280,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PolypropyleneNonwovenFabricLayer">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Polypropylene Nonwoven Fabric Layer</rdfs:label>
         <rdfs:label xml:lang="it">Strato Di Tessuto Non Tessuto Polipropilenico</rdfs:label>
     </owl:NamedIndividual>
@@ -6290,7 +6315,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#PouringWalkway">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Gusslaufsteg</rdfs:label>
         <rdfs:label xml:lang="en">Pouring Walkway</rdfs:label>
         <rdfs:label xml:lang="it">passerella di getto</rdfs:label>
@@ -6315,7 +6340,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Pre-Tensioning">
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Pre-Tensioning</rdfs:label>
         <rdfs:label xml:lang="de">Vorspannung</rdfs:label>
         <rdfs:label xml:lang="it">precompressione</rdfs:label>
@@ -6606,7 +6631,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#RectangularColumns">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Rechteckige Pfeiler</rdfs:label>
         <rdfs:label xml:lang="en">Rectangular Columns</rdfs:label>
         <rdfs:label xml:lang="it">pilastri a sezione rettangolare</rdfs:label>
@@ -6666,7 +6691,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Reinforced">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Bewehrt</rdfs:label>
         <rdfs:label xml:lang="en">Reinforced</rdfs:label>
         <rdfs:label xml:lang="it">armato</rdfs:label>
@@ -6691,7 +6716,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ReinforcedConcreteStructures">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Reinforced Concrete Structures</rdfs:label>
         <rdfs:label xml:lang="de">Strukturen aus Stahlbeton</rdfs:label>
         <rdfs:label xml:lang="it">strutture in conglomerato cementizio armato</rdfs:label>
@@ -6703,7 +6728,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ReinforcedMembraneWithGlassFiber">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Membrana Armata Con Velo Vetro</rdfs:label>
         <rdfs:label xml:lang="en">Reinforced Membrane With Glass Fiber</rdfs:label>
     </owl:NamedIndividual>
@@ -6714,7 +6739,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ReinforcedMembraneWithPolyesterNonwoven">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Membrana Armata Con TNT Di Poliestere</rdfs:label>
         <rdfs:label xml:lang="en">Reinforced Membrane With Polyester Nonwoven</rdfs:label>
     </owl:NamedIndividual>
@@ -6725,7 +6750,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ReinforcedSlateGlassFiberMembrane">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Membrana Armata Con Velo Vetro Ardesiata</rdfs:label>
         <rdfs:label xml:lang="en">Reinforced Slate Glass Fiber Membrane</rdfs:label>
     </owl:NamedIndividual>
@@ -6736,8 +6761,8 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Reinforcement">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Bewehrung</rdfs:label>
         <rdfs:label xml:lang="en">Reinforcement</rdfs:label>
         <rdfs:label xml:lang="de">Verstärkung</rdfs:label>
@@ -6885,7 +6910,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#RibbedBars">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Gerippte Stäbe</rdfs:label>
         <rdfs:label xml:lang="en">Ribbed Bars</rdfs:label>
         <rdfs:label xml:lang="it">barre nervate</rdfs:label>
@@ -7030,7 +7055,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#RoofGarden">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Dachgarten</rdfs:label>
         <rdfs:label xml:lang="it">Giardino pensile</rdfs:label>
         <rdfs:label xml:lang="en">Roof garden</rdfs:label>
@@ -7042,7 +7067,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#RoofPanelling">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Dachschalung</rdfs:label>
         <rdfs:label xml:lang="en">Roof panelling</rdfs:label>
         <rdfs:label xml:lang="it">Sotto Tavolati</rdfs:label>
@@ -7080,7 +7105,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Rough">
         <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Rau</rdfs:label>
         <rdfs:label xml:lang="en">Rough</rdfs:label>
         <rdfs:label xml:lang="it">Ruvida</rdfs:label>
@@ -7092,7 +7117,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Rough-Sandblasted">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Rau-Gesandstrahlt</rdfs:label>
         <rdfs:label xml:lang="en">Rough-Sandblasted</rdfs:label>
         <rdfs:label xml:lang="it">rugoso-sabbiato</rdfs:label>
@@ -7164,7 +7189,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Sandblasted">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Gesandstrahlt</rdfs:label>
         <rdfs:label xml:lang="en">Sandblasted</rdfs:label>
         <rdfs:label xml:lang="it">sabbiato</rdfs:label>
@@ -7188,7 +7213,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ScreedFormation">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Estrich legen</rdfs:label>
         <rdfs:label xml:lang="it">Formazione Massetti</rdfs:label>
         <rdfs:label xml:lang="en">Screed Formation</rdfs:label>
@@ -7200,7 +7225,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Screeds">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Estrich</rdfs:label>
         <rdfs:label xml:lang="it">Massetti</rdfs:label>
         <rdfs:label xml:lang="en">Screeds</rdfs:label>
@@ -7212,7 +7237,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Seams">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Nähte</rdfs:label>
         <rdfs:label xml:lang="en">Seams</rdfs:label>
         <rdfs:label xml:lang="it">cuciture</rdfs:label>
@@ -7272,7 +7297,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Semi-Load-Bearing">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Halbtragend</rdfs:label>
         <rdfs:label xml:lang="en">Semi-Load-Bearing</rdfs:label>
         <rdfs:label xml:lang="it">semiportante</rdfs:label>
@@ -7356,7 +7381,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#SimpleConcreteStructure">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Einfache Betonstruktur</rdfs:label>
         <rdfs:label xml:lang="en">Simple Concrete Structure</rdfs:label>
         <rdfs:label xml:lang="it">struttura in conglomerato cementizio semplice</rdfs:label>
@@ -7368,7 +7393,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#SitePreparationSystems">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Baustelleneinrichtungen</rdfs:label>
         <rdfs:label xml:lang="en">Site Setup Systems</rdfs:label>
         <rdfs:label xml:lang="it">sistemi di apprestamento di cantiere</rdfs:label>
@@ -7392,7 +7417,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Skin">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Pelle</rdfs:label>
         <rdfs:label xml:lang="en">Skin</rdfs:label>
     </owl:NamedIndividual>
@@ -7427,7 +7452,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Smooth">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Glatt</rdfs:label>
         <rdfs:label xml:lang="en">Smooth</rdfs:label>
         <rdfs:label xml:lang="it">liscio</rdfs:label>
@@ -7439,7 +7464,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#SmoothWithSkin">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Liscia Con Pelle</rdfs:label>
         <rdfs:label xml:lang="en">Smooth With Skin</rdfs:label>
     </owl:NamedIndividual>
@@ -7450,7 +7475,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#SmoothedonGlass">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Auf Glas geglättet</rdfs:label>
         <rdfs:label xml:lang="en">Smoothed on Glass</rdfs:label>
         <rdfs:label xml:lang="it">rasato su vetro</rdfs:label>
@@ -7464,7 +7489,7 @@
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Soil">
         <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfMaterial"/>
         <rdf:type rdf:resource="https://w3id.org/cterm#FamilyOfWork"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Boden</rdfs:label>
         <rdfs:label xml:lang="en">Soil</rdfs:label>
         <rdfs:label xml:lang="it">Suolo</rdfs:label>
@@ -7501,7 +7526,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#SolidBrick-Stone-MixedMasonry">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Mauerwerk aus Vollziegeln-Naturstein-Gemisch</rdfs:label>
         <rdfs:label xml:lang="en">Solid Brick-Stone-Mixed Masonry</rdfs:label>
         <rdfs:label xml:lang="it">muratura in mattoni pieni-pietrame-miste</rdfs:label>
@@ -7514,7 +7539,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#SolidSlabsandFloorsinReinforcedConcretewithDeepBeams">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="en">Solid Slabs and Floors in Reinforced Concrete with Deep Beams</rdfs:label>
         <rdfs:label xml:lang="de">Vollbetonböden und -platten mit Balken in der Dicke</rdfs:label>
         <rdfs:label xml:lang="it">solai e solette piene in c.a. con travi a spessore</rdfs:label>
@@ -7788,7 +7813,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Staircase-ElevatorShaftWalls">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Staircase-Elevator Shaft Walls</rdfs:label>
         <rdfs:label xml:lang="de">Wände für Treppen- und Aufzugsschächte</rdfs:label>
         <rdfs:label xml:lang="it">murature vani scala-ascensori</rdfs:label>
@@ -7800,7 +7825,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Stitching">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Naht</rdfs:label>
         <rdfs:label xml:lang="en">Stitching</rdfs:label>
         <rdfs:label xml:lang="it">cucitura</rdfs:label>
@@ -7824,7 +7849,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Straight-CurvedAxis">
-        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#AspectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Gerade-Gebogene Achse</rdfs:label>
         <rdfs:label xml:lang="en">Straight-Curved Axis</rdfs:label>
         <rdfs:label xml:lang="it">asse rettilineo-curvilineo</rdfs:label>
@@ -7836,7 +7861,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#StraightBalconyParapets">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Geländer für gerade Balkone</rdfs:label>
         <rdfs:label xml:lang="en">Straight Balcony Parapets</rdfs:label>
         <rdfs:label xml:lang="it">parapetti per balconi rettilinei</rdfs:label>
@@ -7860,7 +7885,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#StraightStairLandingsandRamps">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Gerade Treppenabsätze und Rampen</rdfs:label>
         <rdfs:label xml:lang="en">Straight Stair Landings and Ramps</rdfs:label>
         <rdfs:label xml:lang="it">pianerottoli e rampe scale rettilinei</rdfs:label>
@@ -7896,7 +7921,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Strands">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Litzen</rdfs:label>
         <rdfs:label xml:lang="en">Strands</rdfs:label>
         <rdfs:label xml:lang="it">trefoli</rdfs:label>
@@ -7908,7 +7933,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Stringcourses">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Cordoli</rdfs:label>
         <rdfs:label xml:lang="de">Randsteine</rdfs:label>
         <rdfs:label xml:lang="en">Stringcourses</rdfs:label>
@@ -7956,7 +7981,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#StructuralSystem">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="en">Structural System</rdfs:label>
         <rdfs:label xml:lang="de">Struktursystem</rdfs:label>
         <rdfs:label xml:lang="it">sistema stutturale</rdfs:label>
@@ -7968,7 +7993,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Structure">
-        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Structure</rdfs:label>
         <rdfs:label xml:lang="de">Struktur</rdfs:label>
         <rdfs:label xml:lang="it">struttura</rdfs:label>
@@ -7980,7 +8005,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Subfoundation">
-        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Subfoundation</rdfs:label>
         <rdfs:label xml:lang="de">Unterfundamentierung</rdfs:label>
         <rdfs:label xml:lang="it">sottofondazione</rdfs:label>
@@ -8125,7 +8150,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Tensioning">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Abspannung</rdfs:label>
         <rdfs:label xml:lang="en">Tensioning</rdfs:label>
         <rdfs:label xml:lang="it">tirantatura</rdfs:label>
@@ -8161,7 +8186,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Thermal">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Termico</rdfs:label>
         <rdfs:label xml:lang="en">Thermal</rdfs:label>
         <rdfs:label xml:lang="de">Thermisch</rdfs:label>
@@ -8210,7 +8235,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ThermalInsulatingandSoundAbsorbingPartitionWall">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Thermal Insulating and Sound Absorbing Partition Wall</rdfs:label>
         <rdfs:label xml:lang="de">Wärmedämmende und schallabsorbierende Vorsatzschale</rdfs:label>
         <rdfs:label xml:lang="it">controparete termoisolante-fonoassorbente</rdfs:label>
@@ -8223,7 +8248,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#ThermalInsulation">
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Isolamento Termico</rdfs:label>
         <rdfs:label xml:lang="it">Termoisolante</rdfs:label>
         <rdfs:label xml:lang="en">Thermal Insulation</rdfs:label>
@@ -8249,7 +8274,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Thermal_Acoustic">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Termico/Acustico</rdfs:label>
         <rdfs:label xml:lang="en">Thermal/Acoustic</rdfs:label>
         <rdfs:label xml:lang="de">Thermisch-Akustisch</rdfs:label>
@@ -8370,7 +8395,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Traditional">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="en">Traditional</rdfs:label>
         <rdfs:label xml:lang="de">Traditionell</rdfs:label>
         <rdfs:label xml:lang="it">tradizionale</rdfs:label>
@@ -8406,7 +8431,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#TreatedForOutdoors">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Trattato Per Esterni</rdfs:label>
         <rdfs:label xml:lang="en">Treated For Outdoors</rdfs:label>
     </owl:NamedIndividual>
@@ -8453,7 +8478,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Truss">
-        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#TypeOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Fachwerk</rdfs:label>
         <rdfs:label xml:lang="en">Truss</rdfs:label>
         <rdfs:label xml:lang="it">traliccio</rdfs:label>
@@ -8499,7 +8524,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Underpinnings">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Underpinnings</rdfs:label>
         <rdfs:label xml:lang="de">Unterfangungen</rdfs:label>
         <rdfs:label xml:lang="it">sottomurazioni</rdfs:label>
@@ -8543,7 +8568,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#VariousStructures">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Various Structures</rdfs:label>
         <rdfs:label xml:lang="de">Verschiedene Strukturen</rdfs:label>
         <rdfs:label xml:lang="it">strutture varie</rdfs:label>
@@ -8555,7 +8580,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#VentilatedCrawlSpaceFormation">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Formazione Vespai Aerati</rdfs:label>
         <rdfs:label xml:lang="en">Ventilated Hollow Space Formation</rdfs:label>
         <rdfs:label xml:lang="de">Verlegung von Hohlkörpern zur Belüftung</rdfs:label>
@@ -8567,7 +8592,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#VentilatedFacade">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Belüftete Fassade</rdfs:label>
         <rdfs:label xml:lang="it">Facciata Ventilata</rdfs:label>
         <rdfs:label xml:lang="en">Ventilated Facade</rdfs:label>
@@ -8579,7 +8604,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#VentilatedPitchedRoof">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Belüftetes Pultdach</rdfs:label>
         <rdfs:label xml:lang="it">Copertura Ventilata A Falde</rdfs:label>
         <rdfs:label xml:lang="en">Ventilated Pitched Roof</rdfs:label>
@@ -8592,7 +8617,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Ventilation">
         <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfMaterial"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FunctionOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Belüftung</rdfs:label>
         <rdfs:label xml:lang="en">Ventilation</rdfs:label>
         <rdfs:label xml:lang="it">Ventilazione</rdfs:label>
@@ -8604,7 +8629,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#VerticalStructures">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Strutture Verticali</rdfs:label>
         <rdfs:label xml:lang="en">Vertical Structures</rdfs:label>
         <rdfs:label xml:lang="de">Vertikale Strukturen</rdfs:label>
@@ -8664,7 +8689,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WalkableAttics">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Begehbare Dachböden</rdfs:label>
         <rdfs:label xml:lang="it">Sottotetti Praticabili</rdfs:label>
         <rdfs:label xml:lang="en">Walkable Attics</rdfs:label>
@@ -8676,7 +8701,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Wall-Ceiling">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="en">Wall-Ceiling</rdfs:label>
         <rdfs:label xml:lang="de">Wand-Decke</rdfs:label>
         <rdfs:label xml:lang="it">parete-soffitto</rdfs:label>
@@ -8688,7 +8713,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WallSystems">
-        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#CategoryOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="de">Mauersysteme</rdfs:label>
         <rdfs:label xml:lang="en">Wall Systems</rdfs:label>
         <rdfs:label xml:lang="it">sistemi murari</rdfs:label>
@@ -8700,7 +8725,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Walls">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Pareti</rdfs:label>
         <rdfs:label xml:lang="en">Walls</rdfs:label>
         <rdfs:label xml:lang="de">Wände</rdfs:label>
@@ -8725,7 +8750,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WallsforStaircasesandElevators">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="it">Pareti per Vani Scala e Ascensori</rdfs:label>
         <rdfs:label xml:lang="en">Walls for Staircases and Elevators</rdfs:label>
         <rdfs:label xml:lang="de">Wände für Treppen- und Aufzugsschächte</rdfs:label>
@@ -8738,7 +8763,7 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WallsinElevation">
         <rdf:type rdf:resource="https://w3id.org/cterm#UseOfEquipment"/>
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfTemporaryComponent"/>
         <rdfs:label xml:lang="it">Pareti in Elevazione</rdfs:label>
         <rdfs:label xml:lang="en">Walls in Elevation</rdfs:label>
         <rdfs:label xml:lang="de">Wände in Höhe</rdfs:label>
@@ -9003,7 +9028,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WoodWool">
-        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#FinishingOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="it">Lana Di Legno</rdfs:label>
         <rdfs:label xml:lang="en">Wood Wool</rdfs:label>
     </owl:NamedIndividual>
@@ -9014,7 +9039,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#WoodenStructures">
-        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionWork"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#UseOfWorkOfConstructionComponent"/>
         <rdfs:label xml:lang="de">Holzstrukturen</rdfs:label>
         <rdfs:label xml:lang="it">Strutture In Legno</rdfs:label>
         <rdfs:label xml:lang="en">Wooden Structures</rdfs:label>
@@ -9026,7 +9051,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://w3id.org/cterm#Worker">
-        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfLabor"/>
+        <rdf:type rdf:resource="https://w3id.org/cterm#ObjectOfLabour"/>
         <rdfs:label xml:lang="de">Arbeiter</rdfs:label>
         <rdfs:label xml:lang="it">Operaio</rdfs:label>
         <rdfs:label xml:lang="en">Worker</rdfs:label>
